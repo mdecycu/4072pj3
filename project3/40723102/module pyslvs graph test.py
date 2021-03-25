@@ -1,4 +1,4 @@
-
+'''
 from pyslvs import example_list, parse_vpoints, t_config, expr_solving
 
 # Get example with name
@@ -256,29 +256,49 @@ print(result)
 
 Graph.is_connected()
 Graph.is_degenerate()
- 
- 
- 
- 
 
- 
- 
- 
- 
- 
- 
- 
+#new#
+ ####Graph.add_edge()####
+from pyslvs.graph import *
+
+g1 = Graph([(0, 1), (1, 2), (2, 3), (0, 3)])
+print("g1_origin: ", g1)
+n1=2
+n2=4
+result = g1.add_edge(n1,n2)
+print("g1_after: ", g1)
+print(result)
+print(type(result))
+print("-"*50)
+
+####Graph.add_vertices()####
+from pyslvs.graph import *
+g1 = Graph([(0, 1), (1, 2), (2, 3), (0, 3)])
+print("g1_origin: ", g1)
+vertices= [n1,n2]
+result = g1.add_vertices(vertices)
+print("g1_after: ", g1)
+print(result)
+
+ ####Graph.duplicate()####
+from pyslvs.graph import *
+
+g1 = Graph([(0, 1), (1, 2), (2, 3), (0, 3)])
+vertices = [1,2]
+times = 1
+result = g1.duplicate(vertices,times)
+print(result)
+
+'''
 
 
+#####Graph.is_isomorphic_degree_code()#####
+from pyslvs.graph import *
+g1 = Graph([(0, 1), (0, 4), (1, 5), (2, 3), (2, 4), (3, 5), (4, 5)])
 
 
-
-
-
-
-
-
-
+result =is_planar(g1)
+print(result)
 
 
 

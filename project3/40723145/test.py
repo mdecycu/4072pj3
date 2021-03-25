@@ -1,144 +1,133 @@
-from pyslvs import *
-from pyslvs.graph import *
-from pyslvs.metaheuristics import *
+import sys
+import os
+sys.path.append("..")    # add the directory path as "project3"
+from lib.synthesis import *
 
 
-class settings:
-    def __init__(self, PMKSexpr, input, graph, placement, track_point, pass_point, cus={}, same={}):
-        self.expr = PMKSexpr
-        self.input = input
-        self.graph = graph
-        self.placement = placement
-        self.track_point = track_point
-        self.pass_point = pass_point
-        self.cus = cus
-        self.same = same
-        self.collection = self.collection()
-        # self.graph = self.graph()
-        
-        
-    """  ### incompletely function ### 
-    def graph(self, nl=4, j2=0, dof=1):
-        # dof = 3 * (nl - 1) - (2 * j1) - j2        # j1 = nj
-        nj = (dof - 3 * (nl-1) + j2 ) / (-2)
-        # print(nj)
-    """
-        
-    def collection(self) -> dict:
-        format = {
-        'expression': self.expr,
-        'input': [self.input],
-        'graph': self.graph,
-        'placement': self.placement,
-        'target': {self.track_point: self.pass_point},
-        'cus': self.cus,
-        'same': self.same,
-        'upper': 100,
-        'lower': 0,
-        }
-        return format
-        
-    
-def PMKS_expr(*args: VPoint) -> list:
-    vp_list = []
-    for vp in args:
-        vp_list.append(vp)
-    # print(vp_list)
-    return vp_list
-    
-    
-def mech_expr(*args: VPoint) -> str:
-    mech_exprs = ""
-    for vp in args:
-        mech_expr = vp.expr()
-        mech_exprs += mech_expr + "," + "\n"
-    result = "M[" + "\n" + mech_exprs + "]"
-    # print(result)
-    return result
+#cwd = os.getcwd()
+# print(synthesis_import_test())
 
-
-def algorithm_RGA(collection: settings.collection) -> str:
-    planar = FMatch(collection)
-    settings = {'max_gen': 10, 'report': 10}
-    algorithm = ALGORITHM[AlgorithmType.RGA](planar, settings)
-    result = algorithm.run()
-    # history = algorithm.history()
-    return result
-    
-    
-def run() -> str:
+def _run() -> str:
+    ### define the parameters ###
+    num_links = 4
+    pos = {0: (0, 0), 1: (90, 0), 2: (12.92, 32.53), 3: (73.28, 67.97), 4: (33.3, 66.95)}
+    # expr is unuse now 
     expr = PMKS_expr(
+        [
         VPoint(["ground", "L1"], 0, 0, "green", 0, 0),
         VPoint(["ground", "L2"], 0, 0, "green", 90, 0),
         VPoint(["L1", "L3"], 0, 0, "green", 12.92, 32.53),
         VPoint(["L2", "L3"], 0, 0, "green", 73.28, 67.97),
         VPoint(["L3"], 0, 0, "green", 33.3, 66.95),
+        ]
     )
-    set = settings(expr, [(0, 2), (0, 360)], ((0, 1), (0, 2), (1, 3), (2, 3)), {0: (-70, -70, 10), 1: (70, -70, 10)}, 4, [(60.3, 118.12), (31.02, 115.62), (3.52, 110.62)])
-    four_bar = set.collection
+    input = [(0, 2), (0, 360)]
+    # graph = [(0, 1), (0, 2), (1, 3), (2, 3)]
+    placement = {0: (-70, -70, 10), 1: (70, -70, 10)}
+    pass_point = {4: [(60.3, 118.12), (31.02, 115.62), (3.52, 110.62)]}
+    cus = {4: 2}
+    ### define the parameters ###
+    
+    set = settings(num_links, pos, input, placement, pass_point, cus)
+    # set.graph2vpoints()
+    four_bar = set.collection()
     # print(type(four_bar))
-    result = algorithm_RGA(four_bar)
-    print(f"The expression of synthesis result:\n {result}")
-    # print(f"four_bar: {four_bar}")
+    mech_expr = algorithm_RGA(four_bar)
+    # print(f"The expression of synthesis result:\n {result}")
+    return mech_expr
+    
+    
+def get_vlink(mech_expr):
+    vlinks = parse_vlinks(mech_expr)
+    print(vlinks)
+    return vlinks
+    
+    
+def test_parse_func(mech_expr):
+    vpoints = parse_vpoints(mech_expr)
+    print(vpoints, "\n")
+    pos = parse_pos(mech_expr)
+    print(pos, "\n")
+    vlinks = parse_vlinks(mech_expr)
+    print(vlinks, "\n")
+    
+
+def test_link_gen(joint_coord, link_point):
+    # generate the links by the coordinate.
+    part = inv()
+    for index, link in enumerate(link_point):
+        # print(link)
+        
+        if len(link) == 2:
+            part.open('Y:/pyslvs.io/project3/40723145/binary_link.ipt')
+            part.parameter(
+                x1=joint_coord[link[0]][0], y1=joint_coord[link[0]][1],
+                x2=joint_coord[link[1]][0], y2=joint_coord[link[1]][1],
+                hole=3,
+                thickness=10
+            )
+        elif len(link) == 3:
+            part.open('Y:/pyslvs.io/project3/40723145/ternary_link.ipt')
+            part.parameter(
+                x1=joint_coord[link[0]][0], y1=joint_coord[link[0]][1],
+                x2=joint_coord[link[1]][0], y2=joint_coord[link[1]][1],
+                x3=joint_coord[link[2]][0], y3=joint_coord[link[2]][1],
+                hole=3,
+                thickness=10
+            )
+        else:
+            print(f"The template doesn't support the {len(link)}-joints-link")
 
 
-def structural_synthesis(nl, j2=0, dof=1):
-    # [dof,J2]=[1,0]
-    # nl=6 #Input
-    nj=( dof-3*(nl-1)+j2 )/-2
-    type1= link_synthesis(nl , nj)
-    #print(type(type1))
+def dis_func(x1, x2, y1, y2):
+    result = sqrt((x1-x2)**2 + (y1-y2)**2)
+    print(result)
 
-    cg_list =contracted_graph(type1[0]) 
-    c_j_list=contracted_link_synthesis(type1[0])
 
-    L=[]
-    for  x in range(3):
-        answer = conventional_graph(cg_list, c_j_list[x])
-        if answer == []:
-            continue
-        L.append(answer)
-    #print(L)
-    return L
+def test_vpointclass():
+    vpoints = set.graph2vpoints()
+    print("original vpoints: ", vpoints, "\n")
+    # print(vpoints[0], "\n")
+    slider_joint = vpoints[0].slider_joint(("L1", "ground") , type_int=VJoint.P, angle=30, x=50, y=50)
+    # print(slider_joint, "\n")
+    vpoints[0] = slider_joint
+    print("replace_vpoints: ", vpoints)
     
     
-def test_graph2vpoints():
-    # Not finish.
-    graph1 = structural_synthesis(nl=6)[0][0]
-    graph2 = structural_synthesis(nl=6)[1][0]
-    coord = Coord(12.3, 15.6)
-    '''
-    ed = edges_view(graph1)
-    print(ed)
-    print(graph1)
-    print(type(ed))
-    '''
-    
-    print(graph1)
-    # pos = {1: coord}
-    # print(pos.keys())
-    # print(pos.values())
-    
-    #x, y = pos[0]
-    #print(x)
-    #print(y)
-    #print(pos[0])
-    g2v = graph2vpoints(graph1, {1: coord})
-    print(g2v)
-    
+def test_vp():
+    sixbar1 = [(0, 1), (0, 2), (2, 3), (3, 1), (0, 4), (4, 5), (5, 1)]
+    gv = graph2vpoints(sixbar1)
+    print(gv)
     
     
 if __name__ == "__main__":
-    # run()
-    # print(set.collection())
-    # print(structural_synthesis(nl=6))
-    test_graph2vpoints()
+    ### define the parameters ###
+    num_links = 4
+    pos = {0: (0, 0), 1: (90, 0), 2: (12.92, 32.53), 3: (73.28, 67.97), 4: (33.3, 66.95)}
+    # expr is unuse now 
+    expr = PMKS_expr(
+        [
+        VPoint(["ground", "L1"], 0, 0, "green", 0, 0),
+        VPoint(["ground", "L2"], 0, 0, "green", 90, 0),
+        VPoint(["L1", "L3"], 0, 0, "green", 12.92, 32.53),
+        VPoint(["L2", "L3"], 0, 0, "green", 73.28, 67.97),
+        VPoint(["L3"], 0, 0, "green", 33.3, 66.95),
+        ]
+    )
+    input = [(0, 2), (0, 360)]
+    # graph = [(0, 1), (0, 2), (1, 3), (2, 3)]
+    placement = {0: (-70, -70, 10), 1: (70, -70, 10)}
+    pass_point = {4: [(60.3, 118.12), (31.02, 115.62), (3.52, 110.62)]}
+    cus = {4: 2}
+    ### define the parameters ###
     
-    """
-    tt = Graph(((2,2), (3, 3)))    #Graph(Tuple[Tuple[int, int], ...])
-    print(tt)
-    print(type(tt))
-    """
+    set = settings(num_links, pos, input, placement, pass_point, cus)
+    mechanism = set.collection()
+    mech_expr = algorithm_RGA(mechanism)
+    # print(mech_expr, "\n")
     
+    test_vpointclass()
     
-    
+    # vlinks = get_vlink(mech_expr)
+    # print(vlinks[0])
+    # test_vp()
