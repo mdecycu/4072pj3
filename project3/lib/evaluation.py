@@ -1,5 +1,6 @@
 import numpy as np
 from sympy import *
+import matplotlib.pyplot as plt
 
 
 def func_UpChain(pp):
@@ -53,15 +54,28 @@ def anti_squat(rg, ic, wheel_travel=0):
     fwgl = 1160 - x
     intersection = solve([func_gic, fwgl], [x, y])
     print(intersection)
-
     
-
-# result = func_RearAxle([(-476, 67.1), (-476.05, 104.69), (-466.05, 163.6)])
-# func = (76.149849246) * (-476.05)**2 + (71746.6639748) * (-476.05) + (16897750.9092261)
-# print(func)
+    
+def test_image():
+    wheel_travel = [i for i in range(0, 160, 10)]
+    h2 = [1389.3537, 1328.70, 1282.04, 1248.82, 1228.1094, 1218.5712, 1218.4187, 1225.4416, 1237.00, 1250, 1260.72, 1264.5, 1254.91, 1221.5628, 1144.2291, 970.9124]
+    as_list = []
+    h1 = 1133.6821
+    for j in h2:
+        a = (j/h1) *100
+        as_list.append(a)
+    plt.xlim(0, 160)
+    plt.ylim(-60, 140)
+    plt.xlabel("wheel travel")
+    plt.ylabel("AS%")
+    plt.grid(True, linewidth="0.5")
+    plt.plot(wheel_travel, as_list, color="orange", label="Firebird")
+    plt.legend(loc="lower right")
+    plt.show()
 
 
 
 # func_RearAxle([(-476, 67.1), (-476.05, 104.69), (-466.05, 163.6)])
 # func_UpChain([(-474.46, 97), (-40, 86.2)])
 anti_squat((0, 0), (422.4587, 392.1147), 100)
+test_image()
