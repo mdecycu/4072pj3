@@ -16,7 +16,7 @@ def synthesis(set: settings) -> str:
 
 def get_joint_coord(mech_expr: str) -> list([tuple([float, float])]):
     coord_list = []
-    XorY_coord_list = re.findall("[-]*\d*[.]\d*", mech_expr)
+    XorY_coord_list = re.findall("[-]?\d+[.]?\d+", mech_expr)
     # print(XorY_coord_list)
     for index in range(len(XorY_coord_list)):
         if index % 2 != 0:
@@ -31,6 +31,7 @@ def get_joint_coord(mech_expr: str) -> list([tuple([float, float])]):
 def get_link_point(mech_expr: str) -> list([tuple([int, int])]):
     link_point_list = []
     vlink = parse_vlinks(mech_expr)
+    # print(vlink)
     # The regular expression, the seeked characters may be shorten.
     link_num = re.findall("[(]\d[,{1}]\s\d[)$]|[(]\d[,{1}]\s\d[,]\s\d[)$]", str(vlink))
     
@@ -102,13 +103,13 @@ if __name__ == "__main__":
     
     mech_expr = synthesis(set)
     print("mech_expr:\n", mech_expr, "\n")
-    """
+    
     joint_coord = get_joint_coord(mech_expr)
     print("joint_coord:\n", joint_coord, "\n")
     link_point = get_link_point(mech_expr)
     print("link_point:\n", link_point, "\n")
     # link_gen(joint_coord, link_point)
-    """
+    
     
     
 
