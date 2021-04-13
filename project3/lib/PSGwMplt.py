@@ -5,7 +5,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolb
 import matplotlib
 
 
-
+# ------------------------------- Initialize the figure -----------------------
 fig = matplotlib.figure.Figure(figsize=(5, 4), dpi=100)
 ax = fig.add_subplot(111)
 
@@ -40,15 +40,20 @@ def img_info(v):
     y = np.sin(x) * v
     line = ax.plot(x, y)
     
+    o_y = np.sin(x) * 250 #input the default value
+    o_line = ax.plot(x, o_y)
+    
     
 # ------------------------------- PySimpleGUI CODE
-val = 250
+default_val = 250
 layout = [
-    [sg.Slider(range=(0, 500), default_value=val, size=(50, 10), orientation="horizontal", enable_events=True, key="slider")],
-    [sg.Spin(values=[i for i in range(1000)], initial_value=val, size=(8, 4),enable_events=True, key="spin")],
+    [sg.Slider(range=(0, 500), default_value=default_val, size=(50, 10), orientation="horizontal", enable_events=True, key="slider")],
+    [sg.Spin(values=[i for i in range(1000)], initial_value=default_val, size=(8, 4),enable_events=True, key="spin_x"), sg.Text("Px"),
+        sg.Spin(values=[i for i in range(1000)], initial_value=default_val, size=(8, 4),enable_events=True, key="spin_y"), sg.Text("Py")],
     [sg.Canvas(key='-CANVAS-')],
-    [sg.Button("OK")]
+    [sg.Button("Reset")]
 ]
+
 """  # Test to add the control panel
 layout_slider = [
     [sg.Slider(range=(0, 500), default_value=val, size=(50, 10), orientation="horizontal", enable_events=True, key="slider_cont")],
@@ -68,31 +73,52 @@ while True:
     event, values = window.Read()
     # print(event, values)
     # print(values["slider"])
-    fig_canvas_agg = draw_figure(window['-CANVAS-'].TKCanvas, fig)
+    # fig_canvas_agg = draw_figure(window['-CANVAS-'].TKCanvas, fig)
     
   
     if event == sg.WIN_CLOSED:
         break
+        
     elif event == "slider":
         # generate the new figure
         fig = matplotlib.figure.Figure(figsize=(5, 4), dpi=100)
         ax = fig.add_subplot(111)
         
-        val = values["slider"]
+        val = int(values["slider"])
         img_info(val)
+        fig_canvas_agg = draw_figure(window['-CANVAS-'].TKCanvas, fig)
         # synchronize the values of event
-        # window.Element("spin").Update(val)
-"""
-    elif event == "spin":
-        val = values["spin"]
-        window.Element("slider").Update(val)
-"""
-"""
-    elif event == "OK":
+        window.Element("spin_x").Update(val)
+        window.Element("spin_y").Update(val)
+        
+    elif event == "Reset":
         # fig.clf()
         fig = matplotlib.figure.Figure(figsize=(5, 4), dpi=100)
         ax = fig.add_subplot(111)
-"""        
+        
+        img_info(default_val)
+        fig_canvas_agg = draw_figure(window['-CANVAS-'].TKCanvas, fig)
+        
+    elif event == "spin_x":
+        fig = matplotlib.figure.Figure(figsize=(5, 4), dpi=100)
+        ax = fig.add_subplot(111)
+        
+        val = int(values["spin_x"])
+        img_info(val)
+        fig_canvas_agg = draw_figure(window['-CANVAS-'].TKCanvas, fig)
+        window.Element("slider").Update(val)
+        window.Element("spin_y").Update(val)
+        
+    elif event == "spin_y":
+        fig = matplotlib.figure.Figure(figsize=(5, 4), dpi=100)
+        ax = fig.add_subplot(111)
+        
+        val = int(values["spin_y"])
+        img_info(val)
+        fig_canvas_agg = draw_figure(window['-CANVAS-'].TKCanvas, fig)
+        window.Element("slider").Update(val)
+        window.Element("spin_x").Update(val)
+        
         
 window.close()
 
