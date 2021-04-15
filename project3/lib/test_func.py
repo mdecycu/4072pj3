@@ -62,12 +62,33 @@ def out_tanglin(p1: tuple, p2: tuple, r1: float, r2: float):
     """
     return p_tang
 
+
+def anti_squat(rear_pline_pos, IFC):
+    origin2front = 662.88
+    rear2rearpath = -413.68
     
+    h2l_coe = line_func(rear_pline_pos, IFC)
+    o_h2 = h2l_coe[0] * origin2front + h2l_coe[1]
+    h2 = o_h2 - rear2rearpath
+    # print(h2 -  rear2rearpath)
+    return h2
+    
+
+def _img(travel_step, h1):
+    import matplotlib.pyplot as plt
+    wheel_travel = [i for i in range(0, 160, travel_step)]
+    as_list = []
+    for j in wheel_travel:
+        h2 = anti_squat((-397.12, -413.68+j), IFC)
+        as_list.append(h2)
+    plt.plot(wheel_travel, as_list)
+    plt.show()
+
+
 if __name__ == "__main__":
-    # line_func(points["p3"], points["p4"])
     IC = intersection(points["p0"], points["p1"], points["p3"], points["p4"])
-    #print(IC)
-    
-    aa = out_tanglin(points["lf"], points["p2"], radius["lf_r"], radius["p2_r"])
-    IFC = intersection(points["p2"], IC, lcoe=aa)
-    print(IFC)
+    otl = out_tanglin(points["lf"], points["p2"], radius["lf_r"], radius["p2_r"])
+    IFC = intersection(points["p2"], IC, lcoe=otl)
+    # print(IFC)
+    # anti_squat((-397.12, -413.68), IFC)
+    _img(10, 1133.68)
