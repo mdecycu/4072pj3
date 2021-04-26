@@ -1,16 +1,18 @@
 import numpy as np
 from sympy import *
 
-points = {
-    "p0": (0, 0), 
-    "p1": (-41.52, -5.1),
-    "p2": (-397.41, -42.50),
-    "p3": (17.68, 111.69),
-    "p4": (-3.2, 154.98),
-    "p5": (89, 201.72), 
-    "lf": (-12.72, -63.05)
-}
-radius = {"lf_r": 105.16/2, "p2_r": 85.56/2}
+
+p0 = (0, 0)
+p1 = (-41.52, -5.1)
+p2 = (-397.41, -42.50)
+p3 = (17.68, 111.69)
+p4 = (-3.2, 154.98)
+p5 = (89, 201.72)
+
+# lf = lower frame
+lf = (-12.72, -63.05)
+lf_r = 105.16/2
+p2_r = 85.56/2
 
 
 def line_func(point1: tuple, point2: tuple):
@@ -91,4 +93,4 @@ if __name__ == "__main__":
     IFC = intersection(points["p2"], IC, lcoe=otl)
     # print(IFC)
     # anti_squat((-397.12, -413.68), IFC)
-    _img(10, 1133.68)
+    # _img(10, 1133.68)
