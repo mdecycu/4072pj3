@@ -1,0 +1,182 @@
+\documentclass[14pt,a4paper]{report}  %紙張設定
+\usepackage{xeCJK}%中文字體模組
+\setCJKmainfont{標楷體} %中文字體
+\usepackage{amsmath,amssymb}%數學公式、符號
+\usepackage{graphicx, subfig}%圖形
+\usepackage{graphicx, subfig}%圖片模組
+\usepackage{type1cm} %調整字體絕對大小
+\usepackage{textpos} %設定文字絕對位置
+\usepackage[top=2.5truecm,bottom=2.5truecm,
+left=3truecm,right=2.5truecm]{geometry}
+\usepackage{titlesec} %目錄標題設定模組
+\usepackage{titletoc} %目錄內容設定模組
+\usepackage{CJK} %中文模組
+\usepackage{CJKnumb} %中文數字模組
+\usepackage{wallpaper} %浮水印
+
+\newcommand{\thirty}{\fontsize{30pt}\baselineskip\selectfont}%字體大小30pt
+\newcommand{\twentyfour}{\fontsize{24pt}{\baselineskip}\selectfont}%字體大小24pt
+\newcommand{\twenty}{\fontsize{20pt}{\baselineskip}\selectfont}%字體大小20pt
+\newcommand{\eigh}{\fontsize{18pt}{\baselineskip}\selectfont}%字體大小18pt
+\newcommand{\sixteen}{\fontsize{16pt}{\baselineskip}\selectfont}%字體大小14pt
+\newcommand{\fourteen}{\fontsize{14pt}{\baselineskip}\selectfont}%字體大小12pt
+\newcommand{\twelve}{\fontsize{12pt}{\baselineskip}\selectfont}%字體大小10pt
+
+%=------------------更改標題內容----------------------=%
+\titleformat{\chapter}[hang]{\fontsize{20pt}{2.5pt}\bfseries}{\twenty 第\CJKnumber{\thechapter}章}{1em}{\center}[]
+\titleformat{\section}[hang]{\fontsize{18pt}{2.5pt}\bfseries}{\eigh 第{\thesection}節}{1em}{\center}[]
+\titleformat{\subsection}[hang]{\fontsize{18pt}{2.5pt}\bfseries}{\sixteen {\thesubsection}}{1em}{\center}[]
+%=------------------更改目錄內容-----------------------=%
+\titlecontents{chapter}[11mm]{}{\normalfont\fontsize{14pt}{2.5pt}\bfseries\makebox[3.5em][l]
+{第\CJKnumber{\thecontentslabel}章}}{}{\titlerule*[0.7pc]{.}\contentspage}
+
+\titlecontents{section}[18mm]{}{\normalfont\fontsize{14pt}{2.5pt}\makebox[1.5em][l]
+{\thecontentslabel}}{}{\titlerule*[0.7pc]{.}\contentspage}
+
+\titlecontents{subsection}[4em]{}{\normalfont\fontsize{14pt}{2.5pt}\makebox[2em][l]{{\thecontentslabel}}}{}{\titlerule*[0.7pc]{.}\contentspage}
+
+\begin{document}
+    \pagestyle{plain} %設定每頁頁碼
+    {\renewcommand\baselinestretch{1.4}\selectfont %設定以下行距
+    {\begin{center} %以下文字置中
+        \twentyfour{國立虎尾科技大學}\\{機械設計工程系}\\{專題製作報告}\\
+        \hspace*{\fill} \\
+        \bf \thirty {Pyslvs-UI 平面多連桿機構套件之合成與應用}\\
+        {\renewcommand\baselinestretch{1.3}\selectfont %設定以下行距
+        \bf \thirty {Synthesis and Application of Pyslvs-UI Planar Multi-link Mechanism Package}\\}
+    \end{center}}
+    \par} %結束指定行距
+
+     {\renewcommand\baselinestretch{1.2}\selectfont %設定以下行距
+    {\begin{textblock}{30}(1.45,1.1) %{寬度}(以左上角為原點之右移量,下移量)
+    \noindent \eigh \makebox[6em][s]{指導教授}\enspace:\qquad
+    \eigh \makebox[8em][s]{李武鉦}\\ %\noindent指定首行不進行縮排
+    \eigh \makebox[6em][s]{班級}\enspace:\qquad
+    \eigh \makebox[8em][s]{四設計三甲} \\ %\makebox為文本盒子
+    \eigh \makebox[6em][s]{學生}\enspace:\qquad
+    {\begin{minipage}[t][9.8em][s]{12em}
+    \eigh \setlength{\baselineskip}{10pt plus 2pt}
+    林昱秀\qquad40723102\vfill 林晏瑩\qquad40723103\vfill 劉光智\qquad40723145\vfill 吳佳穎\qquad40723153\vfill 蔡育灃\qquad40723245
+    \end{minipage}}
+    \end{textblock}} %指定以下文字整體偏移至頁面的絕對位置
+    \par} %結束指定行距
+
+    {\begin{textblock}{12}(0,6.6)
+    {\begin{center}
+    \noindent \eigh \makebox[12em][s]{中華民國一一零年三月}
+    \end{center}}
+    \end{textblock}}
+    \newpage
+%專題製作合可證明
+ {\renewcommand\baselinestretch{1.4}\selectfont %設定以下行距
+ {\begin{center}
+    {\eigh {國立虎尾科技大學 \qquad 機械設計工程系}\\{學生專題製作合格認可證明}\\
+    \hspace*{\fill} \\ %似enter鍵換行
+    \par}
+     \end{center}}
+    {\begin{textblock}{60}(1.85,1)
+    \noindent \fourteen 專題製作修習學生\enspace:\quad
+    {\begin{minipage}[t]{10em}\underline{　　　　　　　　　　　　}\\ \underline{　　　　　　　　　　　　}\\ \underline{　　　　　　　　　　　　}\\ \underline{　　　　　　　　　　　　}\\ \underline{　　　　　　　　　　　　}\\ %下劃線符號指令
+    \end{minipage}}
+         \par} %結束指定行距
+    {\renewcommand\baselinestretch{1.2}\selectfont %設定以下行距
+    {\begin{textblock}{30}(1.8,4)
+    \noindent \fourteen 專題製作題目\enspace:\quad
+    \hspace*{\fill} \\
+    \hspace*{\fill} \\
+    \noindent \fourteen 經評量合格，特此證明
+    \hspace*{\fill} \\
+    \hspace*{\fill} \\
+    \noindent \fourteen \makebox[6em][s]{評審委員}\enspace:\quad
+    {\begin{minipage}[t]{6em} \underline{　　　　　　　　　　　　}\\ \underline{　　　　　　　　　　　　}\\ \underline{　　　　　　　　　　　　}\\
+    \end{minipage}}
+    \end{textblock}}
+    {\begin{textblock}{10}(1.8,9)
+    {\begin{flushleft}
+    \fourteen \makebox[6em][s]{指導老師}\enspace:\quad \underline{　　　　　　　　　　　　}\\
+    \fourteen \makebox[6em][s]{系主任}\enspace:\quad \underline{　　　　　　　　　　　　}\\
+    \hspace*{\fill} \\
+    \fourteen \makebox[6em][s]{中華民國}\qquad\quad{年}\qquad\quad{月}\qquad\quad{日}
+    \end{flushleft}}
+    \end{textblock}}
+    \end{textblock}}
+     \par} %結束指定行距
+    \newpage
+    
+ \renewcommand{\contentsname}\bf \twenty\center{目錄} %将content转为目录
+ \tableofcontents
+        \newpage
+         {\begin{center}
+        \chapter{摘要Abstract}
+        \end{center}}
+        {\begin{flushleft}
+        \twenty {生產自動化是現今工業界中最重要的一環，如何以更低的成本與縮短生產製程，來提高在國際上的競爭力，是大家所努力的目標，而身為未來二十一世紀的一員，更需了解其重要性。}
+        \sixteen\\{目前於市面上的數位控制加工機（CNC），其成本昂貴，且體積龐大，故本組決定運用在校所學之相關課程，以完成一部具有高精度、體積小與低成本（十五萬元以下）的 PC-Based 三軸運動控制實驗台為研究目標，達成在教學上的需要，並增加系內的實驗設備。}
+        \sixteen\\{本專題主要目的在了解伺服馬達的控制原理、三軸運動控制卡的使用方式、人機介面程式的撰寫與增加機械實務加工的能力。}
+        \end{flushleft}
+        \newpage
+{\begin{center}
+     \chapter{簡介 Introduction}
+     \end{center}}
+     {\begin{center}
+      \section{研究背景與動機 Research Background and Motivation}
+      \section{研究目的 Purpose of Research}
+      \section{研究方法 Methods of Research}
+     \end{center}}
+     \newpage
+
+    {\begin{center}
+        \chapter{文獻探討 Literature Review}
+        \end{center}}
+        {\begin{flushleft}
+        \sixteen {內文內文內文123ABC}
+        \end{flushleft}
+        {\begin{center}
+      \section{平面機構分析套件 Planar Mechanism Analysis Packages}
+      \section{平面機構合成套件 Planar Mechanism Synthesis Packages}
+      \section{自行車避震機構研究 Research on Bicycle Shock-absorbing Mechanism}
+     \end{center}}
+        \newpage
+
+ {\begin{center}
+        \chapter{Pyslvs-UI 套件介紹 Introduction of Pyslvs-UI}
+        \end{center}}
+        {\begin{flushleft}
+        \sixteen {內文內文內文123ABC}
+        \end{flushleft}
+        {\begin{center}
+      \section{Pyslvs-UI 架構與原理 Architecture and Theory of Pyslvs-UI}
+      \section{Pyslvs-UI 編譯 Compilation of Pyslvs-UI}
+      \section{Pyslvs-UI 範例 Pyslvs-UI Examples}
+     \end{center}}
+        \newpage
+
+ {\begin{center}
+        \chapter{登山車避震機構 Shock-absorbing Mechanism of Mountain Bicycle}
+        \end{center}}
+        {\begin{flushleft}
+        \sixteen {內文內文內文123ABC}
+        \end{flushleft}
+        {\begin{center}
+      \section{避震機構合成 Synthesis of Shock-absorbing Mechanism}
+      \section{避震機構評量 Evaluation of Shock-absorbing Mechanism}
+      \section{避震機構分析範例 Examples of Mechanism Analysis}
+     \end{center}}
+        \newpage
+ 
+ {\begin{center}
+        \chapter{結論 Conclusion}
+        \end{center}}
+        {\begin{flushleft}
+        \sixteen {內文內文內文123ABC}
+        \end{flushleft}
+        \newpage
+
+ {\begin{center}
+        \chapter{未來研究建議 Suggestions for Future Research}
+        \end{center}}
+        {\begin{flushleft}
+        \sixteen {內文內文內文123ABC}
+        \end{flushleft}
+        \newpage
+\end{document} 
