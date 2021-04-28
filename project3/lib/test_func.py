@@ -29,6 +29,21 @@ def line_func(point1: tuple, point2: tuple):
     # a = lcoe[0][0], b = lcoe[1][0]
     return lcoe
     
+def quadratic_func(point1: tuple, point2: tuple, point3:tuple):
+    #y =ax^2 + bx +c
+    A = np.array([
+        [point1[0]**2, point1[0], 1],
+        [point2[0]**2, point2[0], 1],
+        [point3[0]**2, point3[0], 1]
+    ])
+    B = np.array([point1[1], point2[1], point3[1]]).reshape(3, 1)
+    A_inv = np.linalg.inv(A)
+    ans = A_inv.dot(B)
+    # print("ans: ", ans)
+    lcoe = (ans[0][0], ans[1][0], ans[2][0])
+    # a = lcoe[0][0], b = lcoe[1][0], c = lcoe[2][0]
+    return lcoe
+    
     
 def intersection(p1: tuple, p2: tuple, p3=None, p4=None, lcoe=None):
     # ax - y = -b
@@ -88,9 +103,20 @@ def _img(travel_step, h1):
 
 
 if __name__ == "__main__":
-    IC = intersection(points["p0"], points["p1"], points["p3"], points["p4"])
-    otl = out_tanglin(points["lf"], points["p2"], radius["lf_r"], radius["p2_r"])
-    IFC = intersection(points["p2"], IC, lcoe=otl)
+    IC = intersection(p0, p1, p3, p4)
+    otl = out_tanglin(lf, p2, lf_r, p2_r)
+    IFC = intersection(p2, IC, lcoe=otl)
     # print(IFC)
     # anti_squat((-397.12, -413.68), IFC)
     # _img(10, 1133.68)
+    
+    qfunc = quadratic_func(p2, (-399.43, 7.1047), (-395.3689, 57.1047))
+    print(qfunc)
+    
+    test_p = (-399.43, 7.1047)
+    # test_qfunc = 18.063160*test_p[0]**2 + 14368.8922148*test_p[0] + 2857498.93
+    a = 18.063160731140137
+    b = 14368.892214823521
+    c =  2857498.9376570154
+    test_qfunc = (-b - np.sqrt(b**2 - 4*a*(c-test_p[1]))) / 2*a
+    print(test_qfunc)
