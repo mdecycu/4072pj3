@@ -2,10 +2,16 @@ import numpy as np
 from pyslvs import *
 from sympy import *
 import matplotlib.pyplot as plt
+import os.path
+
+
+def import_test():
+    filename = os.path.basename(__file__)
+    return filename + " import successfully !"
 
 
 def distance(pp1: tuple, pp2: tuple):
-        return np.sqrt((pp1[0]-pp2[0])**2 + (pp1[1]-pp2[1])**2)
+    return np.sqrt((pp1[0]-pp2[0])**2 + (pp1[1]-pp2[1])**2)
 
 
 class Pos(object):
@@ -49,6 +55,7 @@ class Pos(object):
             (self.p4.x, self.p4.y),
             (self.p5.x, self.p5.y),
         ]
+        
         return posf
 
 
@@ -115,7 +122,6 @@ def out_tanglin(p1: tuple, p2: tuple, r1: float, r2: float):
 
 
 def anti_squat(rear_pline_pos: tuple, IFC: tuple, h1: float, origin2front=662.8):
-    
     h2l_coe = line_func(rear_pline_pos, IFC)
     o_h2 = h2l_coe[0] * origin2front + h2l_coe[1]
     # 2-D plane
@@ -145,7 +151,7 @@ def _img(travel_step=10):
         theta -= dtheta_list[index]
         # print(theta)
         pos = Pos(p0, p1, p2, p3, p4, p5, theta)
-        # print(index, step, pos.ppos())
+        print(index, step, pos.ppos(), "\n")
         IC = intersection(pos.ppos()[0], pos.ppos()[1], pos.ppos()[3], pos.ppos()[4])
         # print("IC: ", IC)
         otl = out_tanglin(lf, pos.ppos()[2], lf_r, p2_r)
@@ -171,10 +177,10 @@ if __name__ == "__main__":
     ########### Joint configuration ###########
     p0 = (0, 0)
     p1 = (-41.52, -5.1)
-    # p1 = (-42.52, -7.1)
     p2 = (-397.41, -42.50)
     p3 = (17.68, 111.69)
-    p4 = (-3.2, 154.98)
+    # p4 = (-3.2, 154.98)
+    p4 = (-2.2, 154.98)
     p5 = (89, 201.72)
     theta = 187.14
 
