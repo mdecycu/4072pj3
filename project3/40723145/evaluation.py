@@ -56,13 +56,13 @@ def anti_squat(rg, ic, wheel_travel=0):
     print(intersection)
     
     
-def test_image():
+def test_Firebird(COGy):
     wheel_travel = [i for i in range(0, 160, 10)]
     h2 = [1389.3537, 1328.70, 1282.04, 1248.82, 1228.1094, 1218.5712, 1218.4187, 1225.4416, 1237.00, 1250, 1260.72, 1264.5, 1254.91, 1221.5628, 1144.2291, 970.9124]
     as_list = []
-    h1 = 1133.6821
+    # h1 = 1133.6821
     for j in h2:
-        a = (j/h1) *100
+        a = (j/COGy) *100
         as_list.append(a)
     plt.xlim(0, 160)
     plt.ylim(-60, 140)
@@ -74,8 +74,27 @@ def test_image():
     plt.show()
 
 
+def test_RDO(COGy):
+    wheel_travel = [i for i in range(0, 160, 10)]
+    h2 = [1408.28, 1172.4695, 942.3872, 718.1976, 500.1066, 288.3392, 83.1073, -115.4366, -307.2646, -492.5643, -671.86, -846.1753, -1017.2479, -1187.8199, -1362.0397, -1546.048]
+    as_list = []
+    h1 = 1057
+    for j in h2:
+        a = (j/h1) *100
+        as_list.append(a)
+    plt.xlim(0, 160)
+    plt.ylim(-160, 140)
+    plt.xlabel("wheel travel")
+    plt.ylabel("AS%")
+    plt.grid(True, linewidth="0.5")
+    plt.plot(wheel_travel, as_list, color="orange", label="RDO 29ㄋ")
+    plt.legend(loc="upper right")
+    plt.show()
+    
 
-# func_RearAxle([(-476, 67.1), (-476.05, 104.69), (-466.05, 163.6)])
-# func_UpChain([(-474.46, 97), (-40, 86.2)])
-anti_squat((0, 0), (422.4587, 392.1147), 100)
-test_image()
+if __name__ == "__main__":
+    # func_RearAxle([(-476, 67.1), (-476.05, 104.69), (-466.05, 163.6)])
+    # func_UpChain([(-474.46, 97), (-40, 86.2)])
+    # anti_squat((0, 0), (422.4587, 392.1147), 100)
+    test_Firebird(COGy=1133.6821)
+    test_RDO(COGy=1057)

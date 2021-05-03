@@ -66,7 +66,7 @@ if __name__ == "__main__":
     """
     
     """
-    inv.open('Y:/pyslvs.io/project3/40723145/ternary_link.ipt')
+    inv.open('G:/4072pj3/project3/40723145/ternary_link.ipt')
     inv.parameter(
         # ternary link
         center_distance1=80,
@@ -75,6 +75,35 @@ if __name__ == "__main__":
         hole=10,
         thickness=3
     )
+    
     """
-    # inv.save_as("Y:/pyslvs.io/project3/40723145/test.ipt")
+    
+    """
+    inv.open('G:/4072pj3/project3/bike/Slider1.ipt')
+    inv.parameter(
+        # slide block
+        center_distance1=10,
+        center_distance2=10,
+        hole=10,
+        thickness1=5,
+        thickness2=170,
+        slide_diameter=19
+    )
+    """
+
+    inv.open('G:/4072pj3/project3/bike/Slider.ipt')
+    inv.parameter(
+        # slide
+        center_distance1=15,
+        hole1=20,
+        hole2=10,
+        thickness1=96.127,
+        thickness2=70,
+        thickness3=5,
+        slide_diameter=36.544
+    )
+
+    
+    
+    #inv.save_as("G:/4072pj3/project3/bike/Slider22.ipt")
     
