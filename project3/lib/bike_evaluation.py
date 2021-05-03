@@ -118,6 +118,7 @@ def out_tanglin(p1: tuple, p2: tuple, r1: float, r2: float):
     tang = solve([func_c1, func_c2], [k, b])
     # print(tang[0][1])
     p_tang = (float(tang[0][0]), float(tang[0][1]))
+    # print(p_tang)
     return p_tang
 
 
@@ -139,14 +140,16 @@ def anti_rise(rear_pline_pos: tuple, IC: tuple, h1: float, origin2front=662.8):
     return h2_percent
     
     
-def _img(travel_step=10):
-    wheel_travel = [i for i in range(0, 170, travel_step)]
+def _img(type, h1, rear_pline_pos, theta, travel_step=10):
+    wheel_travel = [i for i in range(0, 160, travel_step)]
     as_list = []
     ar_list = []
     
-    dtheta_list = [0, 3.16, 2.9642, 2.7607, 2.5415, 2.3085, 2.0611, 1.799, 1.5202, 1.2224, 0.9009, 0.5468, 0.1447, -0.3348, 0.0453, -2.8763, -3.743]
+    if type == "Twin-link suspension (Firebird)":
+        dtheta_list = [0, 3.16, 2.9642, 2.7607, 2.5415, 2.3085, 2.0611, 1.799, 1.5202, 1.2224, 0.9009, 0.5468, 0.1447, -0.3348, 0.0453, -2.8763]
+    elif type =="Horst-link suspension (RDO)":
+        dtheta_list = [0, 3.17, 3.09, 3.0223, 2.9428, 2.8634, 2.7809, 2.6942, 2.602, 2.5036, 2.3974, 2.2824, 2.1573, 2.0207, 1.8711, 1.7067]
     
-    theta = 187.14
     for index, step in enumerate(wheel_travel):
         theta -= dtheta_list[index]
         # print(theta)
@@ -157,17 +160,21 @@ def _img(travel_step=10):
         otl = out_tanglin(lf, pos.ppos()[2], lf_r, p2_r)
         IFC = intersection(pos.ppos()[2], IC, lcoe=otl)
         # print("IFC: ", IFC)
-        h2_as = anti_squat((-397.12, -411.68+step), IFC, h1=1057, origin2front=662.8)
-        h2_ar = anti_rise((-397.12, -411.68+step), IC, h1 = 1057, origin2front=662.8)
+        h2_as = anti_squat((rear_pline_pos[0], rear_pline_pos[1]+step), IFC, h1, origin2front)
+        h2_ar = anti_rise((rear_pline_pos[0], rear_pline_pos[1]+step), IC, h1, origin2front)
         # print("h2_as: ", h2_as)
         as_list.append(h2_as)
         ar_list.append(h2_ar)
         
         # print("\n")
-    plt.plot(wheel_travel, as_list)
-    plt.plot(wheel_travel, ar_list)
-    plt.xlim(0, 170)
-    plt.ylim(-100, 160,)
+    plt.plot(wheel_travel, as_list, label="Anti squat")
+    plt.plot(wheel_travel, ar_list, label="Anti rise")
+    plt.xlabel("wheel travel")
+    plt.ylabel("%")
+    # plt.xlim(0, 170)
+    # plt.ylim(-100, 160,)
+    plt.legend(loc="best")
+    plt.title(type)
     plt.grid(True, linewidth="0.5")
     plt.show()
         
@@ -175,12 +182,14 @@ def _img(travel_step=10):
 
 if __name__ == "__main__":
     ########### Joint configuration ###########
+    """
+    # Firebird
     p0 = (0, 0)
     p1 = (-41.52, -5.1)
     p2 = (-397.41, -42.50)
     p3 = (17.68, 111.69)
     # p4 = (-3.2, 154.98)
-    p4 = (-2.2, 154.98)
+    p4 = (-7.02, 156.06)    # test the point from different algorithm
     p5 = (89, 201.72)
     theta = 187.14
 
@@ -188,12 +197,32 @@ if __name__ == "__main__":
     lf = (-12.72, -63.05)
     lf_r = 105.16/2
     p2_r = 85.56/2
-    ########### Joint configuration ###########
-    """
-    IC = intersection(p0, p1, p3, p4)
-    otl = out_tanglin(lf, p2, lf_r, p2_r)
-    IFC = intersection(p2, IC, lcoe=otl)
-    h2 = anti_squat((-397.12, -411.68), IFC, origin2front=662.8)
+    
+    # other essential config
+    h1 = 1037
+    origin2front = 662.6
+    rear_pline_pos = (-394.0851, -368.3)
     """
     
-    _img()
+    # RDO
+    p0 = (0, 0)
+    p1 = (-73, -44)
+    p2 = (-474, 61.3)
+    p3 = (-27.53, 241.43)
+    # p4 = (-121.02, 282.65)
+    p4 = (-136.02, 294.46)    # test the point from different algorithm
+    p5 = (80.94, 242.93)
+    theta = 209.15
+
+    # lf = lower frame
+    lf = (-27.5, 24.0354)
+    lf_r = 124.3426/2
+    p2_r = 60/2
+    
+    h1 = 1037
+    rear_pline_pos = (-474.4089, -307)
+    origin2front = 684.45
+    
+    
+    ########### Joint configuration ###########
+    _img("Horst-link suspension (RDO)", h1, rear_pline_pos, theta)

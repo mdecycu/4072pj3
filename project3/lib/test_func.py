@@ -73,6 +73,7 @@ def out_tanglin(p1: tuple, p2: tuple, r1: float, r2: float):
     tang = solve([func_c1, func_c2], [k, b])
     # print(tang[0][1])
     p_tang = (float(tang[0][0]), float(tang[0][1]))
+    print(p_tang)
     """
     ttt = tang[0][0] * (-396) + tang[0][1]
     print(ttt)
@@ -111,7 +112,7 @@ if __name__ == "__main__":
     # _img(10, 1133.68)
     
     qfunc = quadratic_func(p2, (-399.43, 7.1047), (-395.3689, 57.1047))
-    print(qfunc)
+    # print(qfunc)
     
     test_p = (-399.43, 7.1047)
     # test_qfunc = 18.063160*test_p[0]**2 + 14368.8922148*test_p[0] + 2857498.93
@@ -119,4 +120,4 @@ if __name__ == "__main__":
     b = 14368.892214823521
     c =  2857498.9376570154
     test_qfunc = (-b - np.sqrt(b**2 - 4*a*(c-test_p[1]))) / 2*a
-    print(test_qfunc)
+    # print(test_qfunc)

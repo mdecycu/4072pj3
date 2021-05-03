@@ -50,11 +50,11 @@ def img_info(px, py, travel_step=10):
     lf_r = 105.16/2
     p2_r = 85.56/2
     ########### Joint configuration ###########
-    wheel_travel = [i for i in range(0, 170, travel_step)]
+    wheel_travel = [i for i in range(0, 160, travel_step)]
     as_list = []
     ar_list = []
     
-    dtheta_list = [0, 3.16, 2.9642, 2.7607, 2.5415, 2.3085, 2.0611, 1.799, 1.5202, 1.2224, 0.9009, 0.5468, 0.1447, -0.3348, 0.0453, -2.8763, -3.743]
+    dtheta_list = [0, 3.16, 2.9642, 2.7607, 2.5415, 2.3085, 2.0611, 1.799, 1.5202, 1.2224, 0.9009, 0.5468, 0.1447, -0.3348, 0.0453, -2.8763]
     
     theta = 187.14
     for index, step in enumerate(wheel_travel):
