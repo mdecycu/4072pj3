@@ -16,6 +16,7 @@ left=3truecm,right=2.5truecm]{geometry}
 \usepackage{wallpaper} %浮水印
 \usepackage{float}
 \usepackage{enumerate}
+\usepackage{subfigure}
 \renewcommand{\baselinestretch}{1.0} %設定行距1.0
 
 \newcommand{\thirty}{\fontsize{30pt}\baselineskip\selectfont}%字體大小30pt
@@ -161,6 +162,30 @@ left=3truecm,right=2.5truecm]{geometry}
         \chapter{文獻探討}
         \end{center}}
       \section{平面機構分析套件}
+       	\hspace*{\fill} \\
+       	\subsection{Linkage}
+       	\hspace*{\fill} \\        
+        \fourteen {Linkage為電腦輔助設計的應用程式，用於機械鏈接的原型製作。基本功能為設計帶有樞軸連接器或滑動連接器之機構、驅動機構的輸入可以是旋轉或線性的、在運動的連桿上安裝齒輪和鏈條機構、將繪圖功能分配給連接器顯示其運動之軌跡。}
+ 		\begin{figure}[H]
+        \centering
+        \includegraphics[scale=1]{Linkage.png} 
+        \caption{Linkage工作介面} 
+        \label{fig:scale}
+    	\end{figure}
+	  	\hspace*{\fill} \\
+	  	\subsection{M.Sketch}
+       	\hspace*{\fill} \\        
+        \fourteen {目的和考慮機制示意圖，運動可視化，自上而下的設計方法，加工支持，高可達性
+M.Sketch是作為基於Web的應用程序開發的，可用於公共和教育領域。 用戶可以在支持WebGL的Web瀏覽器（例如Google Chrome和MozillaFirefox）上直接訪問和使用它，而無需在計算機上進行任何安裝。該Web應用程序還具有很高的設備兼容性，因此M.Sketch可以與Android和iOS一起使用 基於平板電腦。 M.Sketch為每個用戶提供一個個人存儲庫。 用戶可以通過服務器保存和打開他們的項目，以及上傳和下載文件
+
+}
+ 		\begin{figure}[H]
+        \centering
+        \includegraphics[scale=1]{Linkage.png} 
+        \caption{Linkage工作介面} 
+        \label{fig:scale}
+    	\end{figure}
+	  	\hspace*{\fill} \\
       \section{平面機構合成套件}
       \subsection{MeKin2D}
        \hspace*{\fill} \\
@@ -171,27 +196,45 @@ left=3truecm,right=2.5truecm]{geometry}
        \item LibAssur:對被動模塊進行建模
        \item LibCams:用於運動學合成並分析盤式凸輪
        \end{enumerate}
-       \begin{figure}[H]
-        \centering
-        \includegraphics[scale=0.4]{平面連桿之運動學模擬.png} 
-        \caption{平面連桿之運動學模擬} 
-        \label{fig:scale}
-        \includegraphics[scale=0.8]{盤式凸輪機構之合成與分析.png} 
-        \caption{盤式凸輪機構之合成與分析} 
-        \label{fig:scale}   
+       	\begin{figure}[H]
+        	\centering
+        	\includegraphics[scale=0.4]{平面連桿之運動學模擬.png} 
+        	\caption{平面連桿之運動學模擬} 
+        	\label{fig:scale}
+        	\includegraphics[scale=0.8]{盤式凸輪機構之合成與分析.png} 
+        	\caption{盤式凸輪機構之合成與分析} 
+        	\label{fig:scale}   
     	\end{figure}
     	 \hspace*{\fill} \\
        \subsection{MechDev}
        \hspace*{\fill} \\        
-        \fourteen {MechDev是一種機構設計軟件，專注於可用性和機構設計功能。
-基本功能為分析機構運動學、運動靜力學、帶有滾輪從動件或平面從動件的凸輪機構的合成與分析
-}
-	  \hspace*{\fill} \\
+        \fourteen {MechDev是一種機構設計軟件，專注於可用性和機構設計功能。基本功能為分析機構運動學、分析運動靜力學、合成與分析帶有滾輪從動件或平面從動件的凸輪機構。}
+	  	\hspace*{\fill} \\
        \subsection{WinMecC}
-       \hspace*{\fill} \\        
-        \fourteen {WinMecC為一種計算機軟件，用於平面機構具有一個自由度和任意數量鏈接。基本功能為將機構的運動學和動力學分析所獲得的大量結果，顯示成數值化或圖視化、可以優化分析創建的任何機構，並依據特定點所期望遵循之路徑，進行機構合成。
-
-}
+       	\hspace*{\fill} \\        
+        \fourteen {WinMecC為一種電腦軟件，用於平面機構具有一個自由度和任意數量鏈接。基本功能為將機構的運動學和動力學分析之結果數值化或圖視化、可以優化分析創建的機構，依據特定點所期望遵循之路徑進行機構合成，如圖2.4所示。}
+        \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.6]{WinMecC.png} 
+        \caption{WinMecC} 
+        \label{fig:scale}
+    	\end{figure}
+    	 \hspace*{\fill} \\
+       \subsection{GIM}
+       	\hspace*{\fill} \\        
+        \fourteen {GIM是COMPMECH Research Group創建的註冊免費軟件，用於平面機構的運動模擬合成以及機械結構的靜態分析。GIM軟件具有三個主要模塊：幾何、運動、合成。}
+        \begin{enumerate} 
+       \item 幾何模塊:設計要分析的機構，建立其節點與元件，定義連接點的類型（旋轉
+接頭或滑塊，並設定固定點。
+       \item 運動模塊:透過運動學分析與模擬，在運動點繪製路徑以及路徑的曲率中心，可在畫面上看到運動極點的位置、速度和加速度向量，並繪製與分析數據相關的圖形和表格。
+       \item 合成模塊: 依據特定點所期望之運動路徑，進行機構軌跡合成。如圖2.5所示。
+       \end{enumerate}
+        \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{GIM.png} 
+        \caption{GIM合成介面} 
+        \label{fig:scale}
+    	\end{figure}
       \newpage
       \section{自行車避震機構研究}
        \subsection{Single-pivot suspension(單軸懸架)}
