@@ -1,29 +1,39 @@
+<<<<<<< HEAD
 This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.2) (preloaded format=xelatex 2021.4.24)  3 MAY 2021 18:46
 entering extended mode
 **./專題版面.tex
 (專題版面.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> xparse <2020-03-03>
+=======
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11) (preloaded format=xelatex 2020.12.16)  3 MAY 2021 17:02
+entering extended mode
+**./專題版面.tex
+(專題版面.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-10-27> xparse <2020-03-03>
+>>>>>>> 7fcda81bde4134b808b8c17061846409b404b376
 (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
 (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count175
-\c@chapter=\count176
-\c@section=\count177
-\c@subsection=\count178
-\c@subsubsection=\count179
-\c@paragraph=\count180
-\c@subparagraph=\count181
-\c@figure=\count182
-\c@table=\count183
+\c@part=\count171
+\c@chapter=\count172
+\c@section=\count173
+\c@subsection=\count174
+\c@subsubsection=\count175
+\c@paragraph=\count176
+\c@subparagraph=\count177
+\c@figure=\count178
+\c@table=\count179
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
 (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/xelatex/xecjk\xeCJK.sty
 (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+<<<<<<< HEAD
 Package: expl3 2021-02-18 L3 programming layer (loader) 
 
 (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xe
@@ -34,10 +44,17 @@ File: l3backend-xetex.def 2021-02-18 L3 backend support: XeTeX
 \l__color_backend_stack_int=\count185
 \g__color_backend_stack_int=\count186
 \g__graphics_track_int=\count187
+=======
+Package: expl3 2020-10-27 L3 programming layer (loader) 
+
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xe
+tex.def
+File: l3backend-xetex.def 2020-09-24 L3 backend support: XeTeX
+\g__graphics_track_int=\count180
+>>>>>>> 7fcda81bde4134b808b8c17061846409b404b376
 \l__pdf_internal_box=\box47
-\g__pdf_backend_object_int=\count188
-\g__pdf_backend_annotation_int=\count189
-\g__pdf_backend_link_int=\count190
+\g__pdf_backend_object_int=\count181
+\g__pdf_backend_annotation_int=\count182
 ))
 Package: xeCJK 2020/10/19 v3.8.6 Typesetting CJK scripts with XeLaTeX
 
@@ -49,7 +66,7 @@ Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
 template.sty
 Package: xtemplate 2020-10-27 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen139
-\l__xtemplate_tmp_int=\count191
+\l__xtemplate_tmp_int=\count183
 \l__xtemplate_tmp_muskip=\muskip16
 \l__xtemplate_tmp_skip=\skip49
 )
@@ -59,17 +76,25 @@ Package: xparse 2020-10-27 L3 Experimental document command parser
 
 (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpar
 se-generic.tex))
+<<<<<<< HEAD
 \l__xeCJK_tmp_int=\count192
+=======
+\l__xeCJK_tmp_int=\count184
+>>>>>>> 7fcda81bde4134b808b8c17061846409b404b376
 \l__xeCJK_tmp_box=\box48
 \l__xeCJK_tmp_dim=\dimen140
 \l__xeCJK_tmp_skip=\skip50
 
 (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/ctex\ctexhook.sty
+<<<<<<< HEAD
 Package: ctexhook 2021/03/14 v2.5.6 Document and package hooks (CTEX)
+=======
+Package: ctexhook 2020/10/19 v2.5.5 Document and package hooks (CTEX)
+>>>>>>> 7fcda81bde4134b808b8c17061846409b404b376
 )
-\g__xeCJK_space_factor_int=\count193
-\l__xeCJK_begin_int=\count194
-\l__xeCJK_end_int=\count195
+\g__xeCJK_space_factor_int=\count185
+\l__xeCJK_begin_int=\count186
+\l__xeCJK_end_int=\count187
 \c__xeCJK_CJK_class_int=\XeTeXcharclass1
 \c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
 \c__xeCJK_FullRight_class_int=\XeTeXcharclass3
@@ -79,7 +104,7 @@ Package: ctexhook 2021/03/14 v2.5.6 Document and package hooks (CTEX)
 \c__xeCJK_CM_class_int=\XeTeXcharclass7
 \c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
 \l__xeCJK_last_skip=\skip51
-\g__xeCJK_node_int=\count196
+\g__xeCJK_node_int=\count188
 \c__xeCJK_CJK_node_dim=\dimen141
 \c__xeCJK_CJK-space_node_dim=\dimen142
 \c__xeCJK_default_node_dim=\dimen143
@@ -89,10 +114,10 @@ Package: ctexhook 2021/03/14 v2.5.6 Document and package hooks (CTEX)
 \l__xeCJK_ccglue_skip=\skip52
 \l__xeCJK_ecglue_skip=\skip53
 \l__xeCJK_punct_kern_skip=\skip54
-\l__xeCJK_last_penalty_int=\count197
+\l__xeCJK_last_penalty_int=\count189
 \l__xeCJK_last_bound_dim=\dimen147
 \l__xeCJK_last_kern_dim=\dimen148
-\l__xeCJK_widow_penalty_int=\count198
+\l__xeCJK_widow_penalty_int=\count190
 
 Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 (xtemplate)             argument(s) on line 2341.
@@ -116,10 +141,10 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 \l__xeCJK_margin_dim=\dimen165
 \l__xeCJK_minimum_bound_dim=\dimen166
 \l__xeCJK_kerning_margin_dim=\dimen167
-\g__xeCJK_family_int=\count199
-\l__xeCJK_fam_int=\count266
-\g__xeCJK_fam_allocation_int=\count267
-\l__xeCJK_verb_case_int=\count268
+\g__xeCJK_family_int=\count191
+\l__xeCJK_fam_int=\count192
+\g__xeCJK_fam_allocation_int=\count193
+\l__xeCJK_verb_case_int=\count194
 \l__xeCJK_verb_exspace_skip=\skip55
 
 (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty
@@ -129,17 +154,17 @@ Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
 x.sty
 Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count269
-\l__fontspec_language_int=\count270
-\l__fontspec_strnum_int=\count271
-\l__fontspec_tmp_int=\count272
-\l__fontspec_tmpa_int=\count273
-\l__fontspec_tmpb_int=\count274
-\l__fontspec_tmpc_int=\count275
-\l__fontspec_em_int=\count276
-\l__fontspec_emdef_int=\count277
-\l__fontspec_strong_int=\count278
-\l__fontspec_strongdef_int=\count279
+\l__fontspec_script_int=\count195
+\l__fontspec_language_int=\count196
+\l__fontspec_strnum_int=\count197
+\l__fontspec_tmp_int=\count198
+\l__fontspec_tmpa_int=\count199
+\l__fontspec_tmpb_int=\count266
+\l__fontspec_tmpc_int=\count267
+\l__fontspec_em_int=\count268
+\l__fontspec_emdef_int=\count269
+\l__fontspec_strong_int=\count270
+\l__fontspec_strongdef_int=\count271
 \l__fontspec_tmpa_dim=\dimen168
 \l__fontspec_tmpb_dim=\dimen169
 \l__fontspec_tmpc_dim=\dimen170
@@ -193,13 +218,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count280
+\inf@bad=\count272
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count281
-\leftroot@=\count282
+\uproot@=\count273
+\leftroot@=\count274
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count283
-\DOTSCASE@=\count284
+\classnum@=\count275
+\DOTSCASE@=\count276
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -208,15 +233,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen173
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count285
-\c@MaxMatrixCols=\count286
+\macc@depth=\count277
+\c@MaxMatrixCols=\count278
 \dotsspace@=\muskip17
-\c@parentequation=\count287
-\dspbrk@lvl=\count288
+\c@parentequation=\count279
+\dspbrk@lvl=\count280
 \tag@help=\toks16
-\row@=\count289
-\column@=\count290
-\maxfields@=\count291
+\row@=\count281
+\column@=\count282
+\maxfields@=\count283
 \andhelp@=\toks17
 \eqnshift@=\dimen174
 \alignsep@=\dimen175
@@ -283,20 +308,20 @@ Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \caption@hangindent=\dimen188
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count292
-\c@continuedfloat=\count293
+\c@caption@flags=\count284
+\c@continuedfloat=\count285
 )
-\c@KVtest=\count294
+\c@KVtest=\count286
 \sf@farskip=\skip59
 \sf@captopadj=\dimen189
 \sf@capskip=\skip60
 \sf@nearskip=\skip61
-\c@subfigure=\count295
-\c@subfigure@save=\count296
-\c@lofdepth=\count297
-\c@subtable=\count298
-\c@subtable@save=\count299
-\c@lotdepth=\count300
+\c@subfigure=\count287
+\c@subfigure@save=\count288
+\c@lofdepth=\count289
+\c@subtable=\count290
+\c@subtable@save=\count291
+\c@lotdepth=\count292
 \sf@top=\skip62
 \sf@bottom=\skip63
 ) (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/type1cm\type1cm.sty
@@ -325,9 +350,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count301
-\Gm@cntv=\count302
-\c@Gm@tempcnt=\count303
+\Gm@cnth=\count293
+\Gm@cntv=\count294
+\c@Gm@tempcnt=\count295
 \Gm@bindingoffset=\dimen195
 \Gm@wd@mp=\dimen196
 \Gm@odd@mp=\dimen197
@@ -357,8 +382,8 @@ Package: titletoc 2019/10/16 v2.13 TOC entries
 \ttl@leftsep=\dimen264
 ) (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/cjk\CJKnumb.sty
 Package: CJKnumb 2015/04/18 4.8.4
-\CJK@q=\count304
-\CJK@r=\count305
+\CJK@q=\count296
+\CJK@r=\count297
 )
 (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/wallpaper\wallpaper.st
 y
@@ -366,17 +391,21 @@ Package: wallpaper 2005/01/18, v1.01 easy wallpaper formatting (MHFW)
  (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
+<<<<<<< HEAD
 (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\calc.sty
+=======
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+>>>>>>> 7fcda81bde4134b808b8c17061846409b404b376
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count306
-\calc@Bcount=\count307
+\calc@Acount=\count298
+\calc@Bcount=\count299
 \calc@Adimen=\dimen265
 \calc@Bdimen=\dimen266
 \calc@Askip=\skip66
 \calc@Bskip=\skip67
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count308
+\calc@Ccount=\count300
 \calc@Cskip=\skip68
 )
 (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
@@ -410,14 +439,18 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 \tileY=\skip76
 ) (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count309
+\c@float@type=\count301
 \float@exts=\toks24
 \float@box=\box53
 \@float@everytoks=\toks25
 \@floatcapt=\box54
 )
+<<<<<<< HEAD
 (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\enumerate.
 sty
+=======
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
+>>>>>>> 7fcda81bde4134b808b8c17061846409b404b376
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks26
 )
@@ -650,6 +683,7 @@ LaTeX Warning: Label `fig:scale' multiply defined.
 )
 \openout1 = `專題版面.aux'.
 
+<<<<<<< HEAD
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
 LaTeX Font Info:    ... okay on input line 50.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
@@ -661,6 +695,19 @@ LaTeX Font Info:    ... okay on input line 50.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
 0.
+=======
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
+9.
+>>>>>>> 7fcda81bde4134b808b8c17061846409b404b376
  (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1001,6 +1048,7 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 146 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  9566 strings out of 411732
  214119 string characters out of 2836788
  580639 words of memory out of 3000000
@@ -1008,5 +1056,14 @@ Here is how much of TeX's memory you used:
  407405 words of font info for 71 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  82i,6n,88p,319b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
+=======
+ 9375 strings out of 412197
+ 210773 string characters out of 2849426
+ 567730 words of memory out of 3000000
+ 28774 multiletter control sequences out of 15000+200000
+ 539063 words of font info for 73 fonts, out of 3000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 79i,6n,85p,319b,522s stack positions out of 5000i,500n,10000p,200000b,50000s
+>>>>>>> 7fcda81bde4134b808b8c17061846409b404b376
 
 Output written on 專題版面.pdf (22 pages).

@@ -9,7 +9,7 @@ p2 = (-397.41, -42.50)
 p3 = (17.68, 111.69)
 p4 = (-3.2, 154.98)
 p5 = (89, 201.72)
-theta = 187
+theta = 187.14
 ########################
 
 
@@ -51,17 +51,6 @@ class pos(object):
         print(a0d)
         self.p2 = plap(self.p1, self.r12, a0r, self.p4)
         
-        """
-        print(
-            "p0: ", self.p0, "\n"
-            "P1: ", self.p1, "\n"
-            "p2: ", self.p2, "\n"
-            "p3: ", self.p3, "\n"
-            "p4: ", self.p4, "\n"
-            "p5: ", self.p5, "\n"
-        )"""
-        
-    def result(self):
         posf = [
             (self.p0.x, self.p0.y),
             (self.p1.x, self.p1.y),
@@ -78,7 +67,7 @@ if __name__ == "__main__":
     # pos.ppos()
     # print(type(pos.p2))
     # print(pos.p2.x)
-    print(pos.result())
+    print(pos.ppos())
 
 
 

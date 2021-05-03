@@ -1,0 +1,46 @@
+    <joint>
+      <common>
+        <name>motor2</name>
+        <localFrame>
+          <position>1 0 0</position>
+          <euler>0 0 0</euler>
+        </localFrame>
+        <localObjectProperty>
+          <selectModelBaseInstead>true</selectModelBaseInstead>
+        </localObjectProperty>
+      </common>
+      <type>revolute</type>
+      <mode>force</mode>
+      <switches>
+        <cyclic>true</cyclic>
+      </switches>
+      <sizes>
+        <length>0.2</length>
+        <diameter>0.1</diameter>
+      </sizes>
+      <dynamics>
+        <maxForce>2.5</maxForce>
+        <upperVelocityLimit>360</upperVelocityLimit>
+        <switches>
+          <motorEnabled>true</motorEnabled>
+        </switches>
+      </dynamics>
+        <shape>
+          <common>
+            <name>Handlebar</name>
+          </common>
+          <mesh>
+            <fileName>Handlebar.stl</fileName>
+            <localFrame>
+              <position>0.1 -0.1 -0.1</position>
+              <euler>0 0 90</euler>
+            </localFrame>
+          </mesh>
+          <dynamics>
+            <switches>
+              <static>false</static>
+              <respondable>true</respondable>
+            </switches>
+          </dynamics>
+        </shape>
+    </joint>
