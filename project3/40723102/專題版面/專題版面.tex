@@ -165,7 +165,7 @@ left=3truecm,right=2.5truecm]{geometry}
        	\hspace*{\fill} \\
        	\subsection{Linkage}
        	\hspace*{\fill} \\        
-        \fourteen {Linkage為電腦輔助設計的應用程式，用於機械鏈接的原型製作。基本功能為設計帶有樞軸連接器或滑動連接器之機構、驅動機構的輸入可以是旋轉或線性的、在運動的連桿上安裝齒輪和鏈條機構、將繪圖功能分配給連接器顯示其運動之軌跡。}
+        \fourteen {Linkage為電腦輔助設計的應用程式，用於機械鏈接的原型製作。基本功能為設計帶有樞軸連接器或滑動連接器之機構、驅動機構的輸入可以是旋轉或線性的、可在運動的連桿上安裝齒輪和鏈條機構、將繪圖功能分配給連接點顯示其運動之軌跡。}
  		\begin{figure}[H]
         \centering
         \includegraphics[scale=1]{Linkage.png} 
@@ -175,14 +175,19 @@ left=3truecm,right=2.5truecm]{geometry}
 	  	\hspace*{\fill} \\
 	  	\subsection{M.Sketch}
        	\hspace*{\fill} \\        
-        \fourteen {目的和考慮機制示意圖，運動可視化，自上而下的設計方法，加工支持，高可達性
-M.Sketch是作為基於Web的應用程序開發的，可用於公共和教育領域。 用戶可以在支持WebGL的Web瀏覽器（例如Google Chrome和MozillaFirefox）上直接訪問和使用它，而無需在計算機上進行任何安裝。該Web應用程序還具有很高的設備兼容性，因此M.Sketch可以與Android和iOS一起使用 基於平板電腦。 M.Sketch為每個用戶提供一個個人存儲庫。 用戶可以通過服務器保存和打開他們的項目，以及上傳和下載文件
-
+       \fourteen {M.Sketch，一種原型設計工具，設計目的在為非專業人士提供簡單直觀的界面，輕鬆學習與使用幾何圖形的模擬，如圖2.2。其中有五個主要功能:}
+       \begin{enumerate} 
+       \item 機構草圖:M.Sketch軟體中，藉由單擊與拖動滑鼠來簡單的繪製連桿接點，也可將接點轉換為滑塊，以此快速設計連桿機構的界面。
+       \item 運動可視化:根據馬達的旋轉值可看到動畫上每個鏈接的坐標變化、設定想關注之端點並給予標記，則可視化該端點預期的運動路徑。
+       \item 自上而下的設計:根據繪製所需之運動，生成機構路徑、優化當前配置以適合所需的路徑。
+       \item 加工支持:可導出PDF文件中每個鏈接的組合圖、示意圖和零件圖，或導出鏈接和關聯零件的3D模型以匯入3D列印機。
+		\item 高可及性:M.Sketch是作為Web的應用程序開發的，用戶可以在Web瀏覽器（例如GoogleChrome和MozillaFirefox）上申請帳號後，即直接可使用，無需在電腦上進行任何安裝。
 }
+       \end{enumerate}
  		\begin{figure}[H]
         \centering
-        \includegraphics[scale=1]{Linkage.png} 
-        \caption{Linkage工作介面} 
+        \includegraphics[scale=0.25]{M.Sketch.jpg} 
+        \caption{M.Sketch工作介面} 
         \label{fig:scale}
     	\end{figure}
 	  	\hspace*{\fill} \\
@@ -191,7 +196,7 @@ M.Sketch是作為基於Web的應用程序開發的，可用於公共和教育領
        \hspace*{\fill} \\
        \fourteen {MeKin2D為一種用Free Pascal編寫的子程序包。主要功能使用模組化設計對平面連桿進行運動學模擬、盤式凸輪機構的合成與分析，如圖2.1、圖2.2。其中，MeKin2D的套件包含4個子程式。 分別有:}
        \begin{enumerate} 
-       \item LibMec2D:定義偏移點將復雜形狀附加到運動的鏈接			上，並添加模擬線性和角度量度，作為向量的速度和加速度			以及運動點的軌跡
+       \item LibMec2D:定義偏移點將復雜形狀附加到運動的鏈接上，並添加模擬線性和角度量度，作為向量的速度和加速度			以及運動點的軌跡
        \item LibMecIn:定義基本輸入，例如曲柄或滑塊
        \item LibAssur:對被動模塊進行建模
        \item LibCams:用於運動學合成並分析盤式凸輪
