@@ -151,7 +151,7 @@
     <mesh>
       <fileName>Handlebar.stl</fileName>
       <localFrame>
-        <position>0 0.09 0.75</position>
+        <position>0 0.38 0.89</position>
         <euler>-20 0 0</euler>
       </localFrame>
     </mesh>
@@ -179,6 +179,222 @@
       <fileName>Wheel.stl</fileName>
       <localFrame>
         <position>0 0.09 0.25</position>
+        <euler>0 90 0</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>2.000000</mass>
+    <localInertiaFrame>
+      <position>0.040001 0.019509 0.044991</position>
+      <euler>90.595184 20.325485 119.255615</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001000 0.012904 0.012904</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <startSleeping>false</startSleeping>
+      <setToDynamicIfGetsParent>false</setToDynamicIfGetsParent>
+    </switches>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>pin</name>
+    </common>
+    <mesh>
+      <fileName>pin.stl</fileName>
+      <localFrame>
+        <position>0.125 0.092 0.248</position>
+        <euler>0 90 0</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>2.000000</mass>
+    <localInertiaFrame>
+      <position>0.040001 0.019509 0.044991</position>
+      <euler>90.595184 20.325485 119.255615</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001000 0.012904 0.012904</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <startSleeping>false</startSleeping>
+      <setToDynamicIfGetsParent>false</setToDynamicIfGetsParent>
+    </switches>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>frame</name>
+    </common>
+    <mesh>
+      <fileName>frame.stl</fileName>
+      <localFrame>
+        <position>0 0.7375 0.15</position>
+        <euler>90 -90 0</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>2.000000</mass>
+    <localInertiaFrame>
+      <position>0.040001 0.019509 0.044991</position>
+      <euler>90.595184 20.325485 119.255615</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001000 0.012904 0.012904</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <startSleeping>false</startSleeping>
+      <setToDynamicIfGetsParent>false</setToDynamicIfGetsParent>
+    </switches>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Rod</name>
+    </common>
+    <mesh>
+      <fileName>Rod.stl</fileName>
+      <localFrame>
+        <position>0.002 0.718 0.19</position>
+        <euler>-50 0 90</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>2.000000</mass>
+    <localInertiaFrame>
+      <position>0.040001 0.019509 0.044991</position>
+      <euler>90.595184 20.325485 119.255615</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001000 0.012904 0.012904</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <startSleeping>false</startSleeping>
+      <setToDynamicIfGetsParent>false</setToDynamicIfGetsParent>
+    </switches>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Slider</name>
+    </common>
+    <mesh>
+      <fileName>Slider.stl</fileName>
+      <localFrame>
+        <position>0 0.695 0.3125</position>
+        <euler>10 180 90</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>2.000000</mass>
+    <localInertiaFrame>
+      <position>0.040001 0.019509 0.044991</position>
+      <euler>90.595184 20.325485 119.255615</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001000 0.012904 0.012904</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <startSleeping>false</startSleeping>
+      <setToDynamicIfGetsParent>false</setToDynamicIfGetsParent>
+    </switches>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Slider1</name>
+    </common>
+    <mesh>
+      <fileName>Slider1.stl</fileName>
+      <localFrame>
+        <position>0 0.716 0.2</position>
+        <euler>10 180 90</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>2.000000</mass>
+    <localInertiaFrame>
+      <position>0.040001 0.019509 0.044991</position>
+      <euler>90.595184 20.325485 119.255615</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001000 0.012904 0.012904</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <startSleeping>false</startSleeping>
+      <setToDynamicIfGetsParent>false</setToDynamicIfGetsParent>
+    </switches>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Triangle fame1</name>
+    </common>
+    <mesh>
+      <fileName>Triangle fame1.stl</fileName>
+      <localFrame>
+        <position>-0.0025 0.84 0.45</position>
+        <euler>10 0 -90</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>2.000000</mass>
+    <localInertiaFrame>
+      <position>0.040001 0.019509 0.044991</position>
+      <euler>90.595184 20.325485 119.255615</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001000 0.012904 0.012904</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <startSleeping>false</startSleeping>
+      <setToDynamicIfGetsParent>false</setToDynamicIfGetsParent>
+    </switches>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Triangle fame</name>
+    </common>
+    <mesh>
+      <fileName>Triangle fame.stl</fileName>
+      <localFrame>
+        <position>0.0025 1.215 0.285</position>
+        <euler>20 180 -90</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>2.000000</mass>
+    <localInertiaFrame>
+      <position>0.040001 0.019509 0.044991</position>
+      <euler>90.595184 20.325485 119.255615</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001000 0.012904 0.012904</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <startSleeping>false</startSleeping>
+      <setToDynamicIfGetsParent>false</setToDynamicIfGetsParent>
+    </switches>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Behind_wheel</name>
+    </common>
+    <mesh>
+      <fileName>Wheel.stl</fileName>
+      <localFrame>
+        <position>0 1.215 0.285</position>
         <euler>0 90 0</euler>
       </localFrame>
     </mesh>
