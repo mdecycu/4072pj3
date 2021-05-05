@@ -36,14 +36,14 @@
 \contentsline {subsection}{\numberline {3.3.5}Double Ball Lifter(二段式提球機構)}{21}{}%
 \contentsline {chapter}{\numberline {4}登山車避震機構}{24}{}%
 \contentsline {section}{\numberline {4.1}避震機構合成}{24}{}%
-\contentsline {section}{\numberline {4.2}避震機構評量}{24}{}%
-\contentsline {subsection}{\numberline {4.2.1}Anti-squat}{24}{}%
-\contentsline {subsection}{\numberline {4.2.2}Anti-rise}{24}{}%
-\contentsline {subsection}{\numberline {4.2.3}Leverage Ratio}{24}{}%
-\contentsline {section}{\numberline {4.3}避震機構分析範例}{24}{}%
-\contentsline {chapter}{\numberline {5}結論}{25}{}%
-\contentsline {chapter}{\numberline {6}未來研究建議}{26}{}%
-\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {參考文獻}}{27}{}%
-\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {誌謝}}{28}{}%
-\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {作者簡介}}{29}{}%
+\contentsline {section}{\numberline {4.2}避震機構評量}{25}{}%
+\contentsline {subsection}{\numberline {4.2.1}Anti-squat}{25}{}%
+\contentsline {subsection}{\numberline {4.2.2}Anti-rise}{25}{}%
+\contentsline {subsection}{\numberline {4.2.3}Leverage Ratio}{25}{}%
+\contentsline {section}{\numberline {4.3}避震機構分析範例}{25}{}%
+\contentsline {chapter}{\numberline {5}結論}{27}{}%
+\contentsline {chapter}{\numberline {6}未來研究建議}{28}{}%
+\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {參考文獻}}{29}{}%
+\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {誌謝}}{30}{}%
+\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {作者簡介}}{31}{}%
 \contentsfinish 

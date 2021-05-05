@@ -11,7 +11,7 @@ left=3truecm,right=2.5truecm]{geometry}
 \usepackage{titlesec} %目錄標題設定模組
 \usepackage{titletoc} %目錄內容設定模組
 \usepackage{caption} %圖片標題設定
-\usepackage{CJK} %中文模組
+\usepackage{CJKutf8} %中文模組
 \usepackage{CJKnumb} %中文數字模組
 %\usepackage{wallpaper} %浮水印
 \usepackage{float}
@@ -159,13 +159,13 @@ left=3truecm,right=2.5truecm]{geometry}
         }
         \end{flushleft}
         \newpage
-     {\begin{center}
+        
       \section{研究背景與動機}
-      隨著科技越來越發達網路上有許多機構分析的套件，但是鮮少有機構合成功能的套件，且大多為收費或無公開原始碼。而本專題所使用的套件-Pyslvs-UI為本研究室所開發的套件且有公開原始碼，因此此專題利用該套件來合成一登山車避震機構。
+      \fourteen {隨著科技越來越發達網路上有許多機構分析的套件，但是鮮少有機構合成功能的套件，且大多為收費或無公開原始碼。而本專題所使用的套件-Pyslvs-UI為本研究室所開發的套件且有公開原始碼，因此本專題利用該套件驗證合成及模擬功能並以合成一登山車後避震機構為例。}
       \section{研究目的}
       \section{研究方法}
       \fourteen {首先建立一現有登山車避震機構，再針對不影響現有自行車車架的尺寸但對於避震能力有較大影響的接頭利用遺傳演算法求解最佳位置以得到最佳連桿尺寸，接著將上述所得到的接頭位置和連桿長度利用Inventor自動產生對應連桿尺寸，後續利用xml格式匯入CoppeliaSim並利用CoppeliaSim API設定馬達讓該機構以一自由度進行運動模擬。上述流程如圖XXXX所示。}
-     \end{center}}
+     
 
     {\begin{center}
         \chapter{文獻探討}
@@ -263,7 +263,7 @@ left=3truecm,right=2.5truecm]{geometry}
         \label{fig:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
     \end{figure}
        \hspace*{\fill} \\
-       \subsection{Linkage-driven Single-pivot Suspension(連桿驅動之單樞軸懸架)}
+       \subsection{Linkage-driven Single-pivot suspension(連桿驅動之單樞軸懸架)}
        \hspace*{\fill} \\        
         \fourteen {如同單樞軸設計藉由後軸通過搖臂連接到主樞軸，增加聯動裝置在避震與搖臂間允許調整槓桿比率曲線，並在搖臂與避震器間建立連桿以改變槓桿比，搖臂圍繞在主軸旋轉且將中心固定於整個行程中，示意圖產品車架為Orange Stage的Orange 2020 Alpine 6 Frame 27.5，如圖(2.2)。}
      \begin{figure}[H]
@@ -274,7 +274,7 @@ left=3truecm,right=2.5truecm]{geometry}
         \label{fig:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
     \end{figure}
         \newpage
-        \subsection{High-Pivot Idler Suspension(高樞轉惰輪懸架)}
+        \subsection{High-Pivot Idler suspension(高樞轉惰輪懸架)}
         \hspace*{\fill} \\
         \fourteen{通常建構在單樞軸或鏈接驅動的單樞軸設計上，其樞軸位置位於鏈條上方，為使控制鏈條增長，鏈輪惰輪將鏈條從鏈輪佈置到主樞軸的頂部或非常靠近主樞軸的位置，主樞軸定位在鏈輪上方更高的位置，使用單樞軸同時中心在整個行程中是固定的。
          \hspace*{\fill} \\  
@@ -289,7 +289,7 @@ left=3truecm,right=2.5truecm]{geometry}
         \label{fig:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
     \end{figure}  
        \hspace*{\fill} \\
-        \subsection{Twin-link Suspension(雙連桿懸掛)}
+        \subsection{Twin-link suspension(雙連桿懸掛)}
         \hspace*{\fill} \\
          \fourteen {搖臂通過兩個搖桿連桿安裝在框架上，從而將搖臂連接到主機樞軸，通過擺臂或搖臂連桿之一來驅動衝擊。
          \hspace*{\fill} \\  
@@ -303,7 +303,7 @@ left=3truecm,right=2.5truecm]{geometry}
     \end{figure}
     \newpage  
     	\hspace*{\fill} \\
-        \subsection{Horst-link Suspension(霍斯特鏈懸掛)}
+        \subsection{Horst-link suspension(霍斯特鏈懸掛)}
         \hspace*{\fill} \\
          \fourteen {特性在於樞軸底端的鏈條，後軸則安裝在腳撐上增加了樞軸，其修改後的軸距繞即時中心旋轉，改變行進路線的位置，可在行進的不同階段優化防下蹲與上抬。
          \hspace*{\fill} \\  
@@ -673,7 +673,53 @@ if py_nm=='36w':
     \end{figure}
         \chapter{登山車避震機構}
       \section{避震機構合成}
-      \fourteen {機構合成設計需求為騎乘姿勢改變時或遇到顛頗不整的路時仍能保持整體的平衡，即Anti-squat及Anti-rise的數值能在100%附近，而上述合成需求之適應函數可表示為}
+      \fourteen {機構合成設計需求為騎乘姿勢改變時或遇到顛頗不整的路時仍能保持整體的平衡，即Anti-squat及Anti-rise的數值能在100\%附近，而上述合成需求之適應函數可表示為}
+      \hspace*{\fill} \\
+      
+      \begin{equation}
+      h_{2} = d_{of}\left (\frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}}\right ) + \left[ r_{ppy}-r_{ppx}\left( \frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}} \right) \right]
+      \end{equation}  
+      \hspace*{\fill} \\
+      
+      \fourteen {其中}
+      \begin{equation}
+      IFC_{x} = \frac{\left[ P_{2y} - \left( \frac{P_{2y} - IC_{y}}{P_{2x} - IC_{x}} \right )P_{2x} - otl_{b} \right ]}{\frac{P_{2y} - IC_{y}}{P_{2x} - IC_{x}}-otl_{a}}
+      \end{equation}
+      \hspace*{\fill} \\
+      
+
+      \begin{flushleft}
+      \begin{equation}
+      IFC_{y} = otl_{a} \cdot \left( IFC_{x} \right ) + otl_{b}
+      \end{equation}
+      \end{flushleft}
+      \hspace*{\fill} \\
+      
+      \begin{equation}
+      IC_{x} = \frac{P_{3y} - \left [ \frac {(P_{3y} - P_{4y})P_{3x}}{P_{3x}-P_{4x}} \right ]}{\frac{P_{1y}}{P_{1x}}-\left ( \frac{P_{3y} - P_{4y}}{P_{3x}-P_{4x}} \right )}
+      \end{equation}
+      \hspace*{\fill} \\
+      
+      \begin{equation}
+      IC_{y} = \left ( \frac{P_{1y}}{P_{1x}} \right ) IC_{x}
+      \end{equation}
+      \hspace*{\fill} \\
+      
+      \fourteen {
+      	\begin{flushleft}
+      	$r_{ppx}$: 後輪與地面接觸點到座標原點的x座標
+      	\\
+      	\hspace*{\fill} \\
+      	$r_{ppy}$: 後輪與地面接觸點到座標原點的y座標
+      	\\
+      	\hspace*{\fill} \\
+      	$P_{nx}$: 點n的x座標
+      	\\
+      	\hspace*{\fill} \\
+      	$P_{ny}$: 點n的y座標
+      	\end{flushleft}
+      	}
+      \hspace*{\fill} \\
       \section{避震機構評量}
       \subsection{Anti-squat}
       \fourteen {當加速時因不同騎乘姿勢導致的重心位置變化而產生的力量轉移會讓懸架受壓縮力，而Anti-squat即為抵抗此後沉的能力。}
@@ -694,19 +740,48 @@ if py_nm=='36w':
        \end{itemize}
        \hspace*{\fill} \\
        \subsection{Leverage Ratio}
-       \fourteen {Leverage ratio是避震器壓縮量和後輪行程的比值，當較大的槓桿比率會對避震器產生較大的衝擊，而在騎乘時對於地形變化的感受度較不敏感，相反地較小的槓桿比率對於地形的敏感度較高。}
+       \fourteen {Leverage ratio是避震器壓縮量和後輪行程的比值，當較大的槓桿比率會對避震器產生較大的衝擊，而在騎乘時對於地形變化的感受度較不敏感，相反地較小的槓桿比率對於地形的敏感度較高。其計算方式如下所示。}
+       \hspace*{\fill} \\
+       \begin{equation}
+       Leverage\, Ratio = \frac{wheel\,travel}{stroke}
+       \end{equation}
        \hspace*{\fill} \\
       \section{避震機構分析範例}
-    
+		\fourteen {此小節會將章節一所提到的自行車避震機構類型為範例，說明在不同避震機構下經由尺寸合成後得到的評比結果。此評比結果會以自行車後輪的垂直上升行程作為變數來探討Anti-squat以及Anti-rise的表現。
+      \hspace*{\fill} \\
+      \hspace*{\fill} \\
+      \hspace*{\fill} \\
+      \hspace*{\fill} \\
+      圖\ref{fig_Horst-link:scale}為Horst-link類型並以Niner RDO 29作為該類型自行車範例在後輪行程0到150mm的Anti-squat及Anti-rise的表現}
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.6]{Horst_link.png}
+        \caption{Horst-link suspension}
+        \label{fig_Horst-link:scale}
+    	\end{figure}
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.6]{Twin-link.png}
+        \caption{Twin-link suspension}
+        \label{fig:scale}
+    	\end{figure}    	
+    	
         \chapter{結論}
         {\begin{flushleft}
-        \sixteen {內文內文內文123ABC}
+        \sixteen {test內文內文內文123ABC}
         \end{flushleft}
 
         \chapter{未來研究建議}
         {\begin{flushleft}
         \sixteen {本專題以已建立一流程從尺寸合成至動態模擬軟體進行運動模擬，後續可將運動系統改為動力系統並利用有限元素法對該避震機構進行受力情況的分析。}
-        \end{flushleft}  
+        \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.6]{follow-up research.png}
+        \caption{後續研究}
+        \label{fig:scale}
+    	\end{figure}
+        \end{flushleft}
+          
         \newpage
         \addcontentsline{toc}{chapter}{\fourteen{參考文獻}}
 	\begin{center}
