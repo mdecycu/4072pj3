@@ -163,8 +163,7 @@ left=3truecm,right=2.5truecm]{geometry}
       \section{平面機構分析套件}
        	\hspace*{\fill} \\
        	\subsection{Linkage}
-       	\hspace*{\fill} \\        
-        \quad \fourteen {Linkage為電腦輔助設計的應用程式，用於機械鏈接的原型製作。基本功能為設計帶有樞軸連接器或滑動連接器之機構、驅動機構的輸入可以是旋轉或線性的、可在運動的連桿上安裝齒輪和鏈條機構、將繪圖功能分配給連接點顯示其運動之軌跡。}
+      \quad \fourteen {Linkage為電腦輔助設計的應用程式，用於機械鏈接的原型製作。基本功能為設計帶有樞軸連接器或滑動連接器之機構、驅動機構的輸入可以是旋轉或線性的、可在運動的連桿上安裝齒輪和鏈條機構、將繪圖功能分配給連接點顯示其運動之軌跡。}
  		\begin{figure}[H]
         \centering
         \includegraphics[scale=1]{Linkage.png} 
@@ -633,13 +632,6 @@ $sudo python3 install.py
        \subsection{Double Ball Lifter(二段式提球機構)}
        \hspace*{\fill} \\        
         \fourteen {由兩個史蒂芬生 (Stephenson) 機構衍伸出來，如圖(3.9)，將機構融合調整位置後為10個連桿、14個接頭，8個雙接頭連桿、1個三接頭連桿所組成，如圖(3.10)，便於機構執行時接近置球點底部，將球提起並筆直向上提升與下一個提球機構交會完成傳接行程，常運用在搖臂式發球機上，如圖(3.11)。}
-     \begin{figure}[H]
-        \centering
-        \includegraphics[scale=0.7]{史蒂芬生機構第一型.png} 
-        %照片須放在和文檔相同之資料夾內
-        \caption{史蒂芬生機構第一型} %有caption的圖才會編入目錄中
-        \label{fig:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
-    \end{figure}
     \begin{figure}[H]
         \centering
         \includegraphics[scale=0.6]{雙球升降器.png} 
@@ -649,7 +641,7 @@ $sudo python3 install.py
     \end{figure}
     \begin{figure}[H]
         \centering
-        \includegraphics[scale=0.6]{搖臂式發球機.jpg} 
+        \includegraphics[scale=0.3]{搖臂式發球機.jpg} 
         %照片須放在和文檔相同之資料夾內
         \caption{搖臂式發球機} %有caption的圖才會編入目錄中
         \label{fig:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
@@ -805,35 +797,116 @@ $sudo python3 install.py
 	最後感謝學校提供完善的設備與資源，使本專題能夠圓滿完成；在專題研究上，系上提供軟硬體設備以及專題實驗室，讓我們可以利用空堂及課後時間製作與討論專題。}
 
     \newpage
-    \addcontentsline{toc}{chapter}{\fourteen{作者簡介}}
+ 
+    \addcontentsline{toc}{chapter}
+   	{\fourteen{作者簡介}}
     \begin{center}
 	\twenty \bf{作者簡介}\\
 	\end{center}
-	 {\begin{textblock}{6}(0,0.5)
-    \begin{figure}
-        \includegraphics[width=1.15in]{st1.jpg} %{}內是圖片文件的相對路徑
-    \end{figure}
-    \end{textblock}}
-    
-    {\renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
-    {\begin{textblock}{15}(3.5,1.2) %{寬度}(以左上角為原點之右移量,下移量)
-	\fourteen \makebox[4em][s]{姓名}\enspace:\enspace
-    \fourteen \makebox[4em][s]{林昱秀}\\ %\noindent指定首行不進行縮排
+	
+	{\begin{textblock}{6}(0,0.5)
+	\begin{figure}
+	\includegraphics[width=1.15in]{st1.jpg} 
+	\end{figure}
+	\end{textblock}}
+	{\renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
+	{\begin{textblock}{15}(3.5,0.7)%{寬度}(以左上角為原點之右移量,下移量)
+	\noindent\fourteen \makebox[4em][s]{姓名}\enspace:\enspace
+    \fourteen \makebox[4em][s]{林昱秀}\\     \hspace*{\fill} \\
     \fourteen \makebox[4em][s]{學號}\enspace:\enspace
     \fourteen \makebox[4em][s]{40723102} \\ %\makebox為文本盒子
+    \hspace*{\fill} \\
     \fourteen \makebox[4em][s]{畢業學校}\enspace:\enspace
     \fourteen \makebox[9em][s]{國立虎尾科技大學}\\
     \fourteen \makebox[5em][s]{\quad}\enspace\enspace
     \fourteen \makebox[8em][s]{機械設計工程系}\\
+    \hspace*{\fill} \\
     \fourteen \makebox[4em][s]{經歷}\enspace:\enspace
     \end{textblock}}}
     \hspace*{\fill} \\
 
-    {\begin{textblock}{6}(0,2.3)
+	{\begin{textblock}{6}(0,2.3)
+	\begin{figure}
+	\includegraphics[width=1.15in]{st2.jpg} 
+    \end{figure}
+    \end{textblock}}
+    {\renewcommand\baselinestretch{0.99}
+    \selectfont %設定以下行距
+    {\begin{textblock}{15}(3.5,2.5) %{寬度}(以左上角為原點之右移量,下移量)
+\noindent\fourteen \makebox[4em][s]{姓名}\enspace:\enspace
+\fourteen \makebox[4em][s]{林晏瑩}\\ 
+\hspace*{\fill} \\
+\fourteen \makebox[4em][s]{學號}\enspace:\enspace
+\fourteen \makebox[4em][s]{40723103} \\ 
+\hspace*{\fill} \\
+\fourteen \makebox[4em][s]{畢業學校}\enspace:\enspace
+\fourteen \makebox[9em][s]{國立虎尾科技大學}\\
+\fourteen \makebox[5em][s]{\quad}\enspace\enspace
+\fourteen \makebox[8em][s]{機械設計工程系}\\
+\hspace*{\fill} \\
+\fourteen \makebox[4em][s]{經歷}\enspace:\enspace
+    \end{textblock}}}
+    \hspace*{\fill} \\
+
+
+    {\begin{textblock}{6}(0,4.1)
     \begin{figure}
-        \includegraphics[width=1.15in]{st2.jpg} %{}內是圖片文件的相對路徑
+        \includegraphics[width=1.15in]{st3.jpg} 
     \end{figure}
     \end{textblock}}
     {\renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
-    
+    {\begin{textblock}{15}(3.5,4.3) %{寬度}(以左上角為原點之右移量,下移量)
+\noindent\fourteen \makebox[4em][s]{姓名}\enspace:\enspace%\noindent指定首行不進行縮排
+\fourteen \makebox[4em][s]{劉光智}\\ 
+\hspace*{\fill} \\
+\fourteen \makebox[4em][s]{學號}\enspace:\enspace
+\fourteen \makebox[4em][s]{40723145} \\ %\makebox為文本盒子
+\hspace*{\fill} \\
+\fourteen \makebox[4em][s]{畢業學校}\enspace:\enspace
+\fourteen \makebox[9em][s]{國立虎尾科技大學}\\
+\fourteen \makebox[5em][s]{\quad}\enspace\enspace
+\fourteen \makebox[8em][s]{機械設計工程系}\\
+\hspace*{\fill} \\
+\fourteen \makebox[4em][s]{經歷}\enspace:\enspace
+    \end{textblock}}}
+    \hspace*{\fill} \\
+
+    {\begin{textblock}{6}(0,5.9)
+    \begin{figure}
+        \includegraphics[width=1.15in]{st4.jpg} %{}內是圖片文件的相對路徑
+    \end{figure}
+    \end{textblock}}
+    {\renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
+    {\begin{textblock}{15}(3.5,6.1) %{寬度}(以左上角為原點之右移量,下移量)
+\noindent\fourteen \makebox[4em][s]{姓名}\enspace:\enspace
+\fourteen \makebox[4em][s]{吳佳穎}\\ \hspace*{\fill} \\
+\fourteen \makebox[4em][s]{學號}\enspace:\enspace
+\fourteen \makebox[4em][s]{40723153} \\ \hspace*{\fill} \\
+\fourteen \makebox[4em][s]{畢業學校}\enspace:\enspace
+\fourteen \makebox[9em][s]{國立虎尾科技大學}\\
+\fourteen \makebox[5em][s]{\quad}\enspace\enspace
+\fourteen \makebox[8em][s]{機械設計工程系}\\
+\hspace*{\fill} \\
+\fourteen \makebox[4em][s]{經歷}\enspace:\enspace
+    \end{textblock}}}
+    \hspace*{\fill} \\
+
+    {\begin{textblock}{6}(0,7.7)
+    \begin{figure}
+        \includegraphics[width=1.15in]{st5.jpg} %{}內是圖片文件的相對路徑
+    \end{figure}
+    \end{textblock}}
+    \renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
+    {\begin{textblock}{15}(3.5,7.9) %{寬度}(以左上角為原點之右移量,下移量)
+	\noindent\fourteen \makebox[4em][s]{姓名}\enspace:\enspace
+	\fourteen \makebox[4em][s]{蔡育灃}\\ \hspace*{\fill} \\
+	\fourteen \makebox[4em][s]{學號}\enspace:\enspace
+	\fourteen \makebox[4em][s]{40723245} \\ \hspace*{\fill} \\
+	\fourteen \makebox[4em][s]{畢業學校}\enspace:\enspace
+	\fourteen \makebox[9em][s]{國立虎尾科技大學}\\
+	\fourteen \makebox[5em][s]{\quad}\enspace\enspace
+	\fourteen \makebox[8em][s]{機械設計工程系}\\
+	\hspace*{\fill} \\
+	\fourteen \makebox[4em][s]{經歷}\enspace:\enspace
+    \end{textblock}}
 \end{document}

@@ -1,15 +1,12 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7350 64-bit) (preloaded format=xelatex 2021.4.30)  6 MAY 2021 16:08
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7350 64-bit) (preloaded format=xelatex 2021.4.30)  6 MAY 2021 19:44
 entering extended mode
 **./4072pj3.tex
 (4072pj3.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/base\report.c
-ls
+(Y:\miktex-portable\texmfs\install\tex/latex/base\report.cls
 Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
-
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/base\size10.c
-lo
+(Y:\miktex-portable\texmfs\install\tex/latex/base\size10.clo
 File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count163
@@ -25,14 +22,11 @@ File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/xelatex/xecjk\xeCJK
-.sty
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/l3kernel\expl
-3.sty
+(Y:\miktex-portable\texmfs\install\tex/xelatex/xecjk\xeCJK.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/l3kernel\expl3.sty
 Package: expl3 2020-03-06 L3 programming layer (loader) 
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/l3backend\l3b
-ackend-xdvipdfmx.def
+(Y:\miktex-portable\texmfs\install\tex/latex/l3backend\l3backend-xdvipdfmx.def
 File: l3backend-xdvipdfmx.def 2020-03-12 L3 backend support: xdvipdfmx
 \g__graphics_track_int=\count172
 \l__pdf_internal_box=\box45
@@ -40,21 +34,16 @@ File: l3backend-xdvipdfmx.def 2020-03-12 L3 backend support: xdvipdfmx
 \g__pdf_backend_annotation_int=\count174
 ))
 Package: xeCJK 2020/02/18 v3.8.2 Typesetting CJK scripts with XeLaTeX
-
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/l3packages/l3
-keys2e\l3keys2e.sty
+ (Y:\miktex-portable\texmfs\install\tex/latex/l3packages/l3keys2e\l3keys2e.sty
 Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/l3packages/xt
-emplate\xtemplate.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/l3packages/xtemplate\xtemplate.sty
 Package: xtemplate 2020-03-06 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen135
 \l__xtemplate_tmp_int=\count175
 \l__xtemplate_tmp_muskip=\muskip16
 \l__xtemplate_tmp_skip=\skip49
-)
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/l3packages/xp
-arse\xparse.sty
+) (Y:\miktex-portable\texmfs\install\tex/latex/l3packages/xparse\xparse.sty
 Package: xparse 2020-03-06 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count176
 \g__xparse_grabber_int=\count177
@@ -120,12 +109,10 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 \l__xeCJK_verb_case_int=\count190
 \l__xeCJK_verb_exspace_skip=\skip55
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/fontspec\font
-spec.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/fontspec\fontspec.sty
 Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/fontspec\font
-spec-xetex.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/fontspec\fontspec-xetex.sty
 Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
 X
 \l__fontspec_script_int=\count191
@@ -143,14 +130,11 @@ X
 \l__fontspec_tmpb_dim=\dimen165
 \l__fontspec_tmpc_dim=\dimen166
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/base\fontenc.
-sty
+(Y:\miktex-portable\texmfs\install\tex/latex/base\fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/fontspec\font
-spec.cfg)))
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/xelatex/xecjk\xeCJK
-.cfg
+(Y:\miktex-portable\texmfs\install\tex/latex/fontspec\fontspec.cfg)))
+(Y:\miktex-portable\texmfs\install\tex/xelatex/xecjk\xeCJK.cfg
 File: xeCJK.cfg 2020/02/18 v3.8.2 Configuration file for xeCJK package
 ))
 
@@ -177,30 +161,24 @@ Package fontspec Info: Font family '標楷體(0)' created for font '標楷體' w
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/amsmath\amsma
-th.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip56
 
 For additional information on amsmath, use the `?' option.
-
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/amsmath\amste
-xt.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/amsmath\amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/amsmath\amsge
-n.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen167
 ))
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/amsmath\amsbs
-y.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen168
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/amsmath\amsop
-n.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count268
@@ -241,12 +219,10 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/amsfonts\amss
-ymb.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/amsfonts\amsf
-onts.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -254,46 +230,37 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/graphics\grap
-hicx.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/graphics\graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/graphics\keyv
-al.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/graphics\grap
-hics.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/graphics\graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/graphics\trig
-.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/graphics-cfg\
-graphics.cfg
+(Y:\miktex-portable\texmfs\install\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 105.
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/graphics-def\
-xetex.def
+(Y:\miktex-portable\texmfs\install\tex/latex/graphics-def\xetex.def
 File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 ))
 \Gin@req@height=\dimen176
 \Gin@req@width=\dimen177
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/subfig\subfig
-.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/caption\capti
-on.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/caption\caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/caption\capti
-on3.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/caption\caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \captionmargin=\dimen178
 \captionmargin@=\dimen179
@@ -321,13 +288,11 @@ Package caption Info: Standard document class detected.
 \sf@top=\skip62
 \sf@bottom=\skip63
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/type1cm\type1
-cm.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/type1cm\type1cm.sty
 Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
 atched RF)
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/textpos\textp
-os.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/textpos\textpos.sty
 Package: textpos 2020/09/26 v1.10
 
 Package: textpos 2020/09/26 1.10, absolute positioning of text on the page
@@ -340,17 +305,13 @@ Package textpos Info: choosing support for LaTeX2e on input line 61.
 Grid set 16 x 16 = 37.34424pt x 52.81541pt
 \TPboxrulesize=\dimen190
 \TP@tbargs=\toks21
-)
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/geometry\geom
-etry.sty
+) (Y:\miktex-portable\texmfs\install\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/generic/iftex\ifvte
-x.sty
+(Y:\miktex-portable\texmfs\install\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/generic/iftex\iftex
-.sty
+(Y:\miktex-portable\texmfs\install\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \Gm@cnth=\count289
@@ -366,10 +327,8 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutvoffset=\dimen198
 \Gm@dimlist=\toks22
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/xelatex/xetexconfig
-\geometry.cfg))
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/titlesec\titl
-esec.sty
+(Y:\miktex-portable\texmfs\install\tex/xelatex/xetexconfig\geometry.cfg))
+(Y:\miktex-portable\texmfs\install\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box50
 \beforetitleunit=\skip64
@@ -381,19 +340,16 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \titlewidthlast=\dimen258
 \titlewidthfirst=\dimen259
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/titlesec\titl
-etoc.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/titlesec\titletoc.sty
 Package: titletoc 2019/10/16 v2.13 TOC entries
 \ttl@leftsep=\dimen260
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/cjk\CJKnumb.s
-ty
+(Y:\miktex-portable\texmfs\install\tex/latex/cjk\CJKnumb.sty
 Package: CJKnumb 2015/04/18 4.8.4
 \CJK@q=\count292
 \CJK@r=\count293
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/float\float.s
-ty
+(Y:\miktex-portable\texmfs\install\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count294
 \float@exts=\toks24
@@ -401,13 +357,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box52
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/tools\enumera
-te.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/tools\enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks26
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/listings\list
-ings.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/listings\listings.sty
 \lst@mode=\count295
 \lst@gtempboxa=\box53
 \lst@token=\toks27
@@ -421,29 +375,24 @@ ings.sty
 \lst@lineno=\count300
 \lst@maxwidth=\dimen264
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/listings\lstm
-isc.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 \c@lstnumber=\count301
 \lst@skipnumbers=\count302
 \lst@framebox=\box54
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/listings\list
-ings.cfg
+(Y:\miktex-portable\texmfs\install\tex/latex/listings\listings.cfg
 File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/tools\indentf
-irst.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/tools\indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/listings\lstl
-ang1.sty
+(Y:\miktex-portable\texmfs\install\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/xelatex/xecjk\xeCJK
--listings.sty
+(Y:\miktex-portable\texmfs\install\tex/xelatex/xecjk\xeCJK-listings.sty
 Package: xeCJK-listings 2020/02/18 v3.8.2 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count303
 \l__xeCJK_listings_flag_int=\count304
@@ -612,9 +561,6 @@ LaTeX Warning: Label `fig:scale' multiply defined.
 
 LaTeX Warning: Label `fig:scale' multiply defined.
 
-
-LaTeX Warning: Label `fig:scale' multiply defined.
-
 )
 \openout1 = `4072pj3.aux'.
 
@@ -629,9 +575,7 @@ LaTeX Font Info:    ... okay on input line 58.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
 8.
-
-(D:\kmol\miktex-portable\miktex-portable\texmfs\install\tex/latex/base\ts1cmr.f
-d
+ (Y:\miktex-portable\texmfs\install\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 58.
@@ -931,65 +875,65 @@ Overfull \hbox (10.39996pt too wide) detected at line 33
  []
 
 
-Overfull \hbox (10.02197pt too wide) detected at line 34
+Overfull \hbox (6.21397pt too wide) detected at line 34
+ \TU/lmr/m/n/14 xxv
+ []
+
+
+Overfull \hbox (6.21397pt too wide) detected at line 35
+ \TU/lmr/m/n/14 xxv
+ []
+
+
+Overfull \hbox (10.02197pt too wide) detected at line 36
  \TU/lmr/m/n/14 xxvi
  []
 
 
-Overfull \hbox (10.02197pt too wide) detected at line 35
+Overfull \hbox (10.02197pt too wide) detected at line 37
  \TU/lmr/m/n/14 xxvi
  []
 
 
-Overfull \hbox (13.82997pt too wide) detected at line 36
- \TU/lmr/m/n/14 xxvii
+Overfull \hbox (10.02197pt too wide) detected at line 38
+ \TU/lmr/m/n/14 xxvi
  []
 
 
-Overfull \hbox (13.82997pt too wide) detected at line 37
- \TU/lmr/m/n/14 xxvii
+Overfull \hbox (10.02197pt too wide) detected at line 39
+ \TU/lmr/m/n/14 xxvi
  []
 
 
-Overfull \hbox (13.82997pt too wide) detected at line 38
- \TU/lmr/m/n/14 xxvii
+Overfull \hbox (10.02197pt too wide) detected at line 40
+ \TU/lmr/m/n/14 xxvi
  []
 
 
-Overfull \hbox (13.82997pt too wide) detected at line 39
- \TU/lmr/m/n/14 xxvii
+Overfull \hbox (17.63797pt too wide) detected at line 41
+ \TU/lmr/m/n/14 xxviii
  []
 
 
-Overfull \hbox (13.82997pt too wide) detected at line 40
- \TU/lmr/m/n/14 xxvii
- []
-
-
-Overfull \hbox (10.02197pt too wide) detected at line 41
+Overfull \hbox (10.02197pt too wide) detected at line 42
  \TU/lmr/m/n/14 xxix
  []
 
 
-Overfull \hbox (6.21397pt too wide) detected at line 42
+Overfull \hbox (6.21397pt too wide) detected at line 43
  \TU/lmr/m/n/14 xxx
- []
-
-
-Overfull \hbox (10.02197pt too wide) detected at line 43
- \TU/lmr/m/n/14 xxxi
  []
 
 [2
 
 ]
-Overfull \hbox (13.82997pt too wide) detected at line 44
- \TU/lmr/m/n/14 xxxii
+Overfull \hbox (10.02197pt too wide) detected at line 44
+ \TU/lmr/m/n/14 xxxi
  []
 
 
-Overfull \hbox (17.63797pt too wide) detected at line 45
- \TU/lmr/m/n/14 xxxiii
+Overfull \hbox (13.82997pt too wide) detected at line 45
+ \TU/lmr/m/n/14 xxxii
  []
 
 )
@@ -1057,23 +1001,18 @@ Overfull \hbox (10.02197pt too wide) detected at line 28
  []
 
 
-Overfull \hbox (6.21397pt too wide) detected at line 29
- \TU/lmr/m/n/14 xxv
+Overfull \hbox (13.82997pt too wide) detected at line 30
+ \TU/lmr/m/n/14 xxvii
  []
 
 
-Overfull \hbox (17.63797pt too wide) detected at line 31
- \TU/lmr/m/n/14 xxviii
+Overfull \hbox (13.82997pt too wide) detected at line 31
+ \TU/lmr/m/n/14 xxvii
  []
 
 
-Overfull \hbox (17.63797pt too wide) detected at line 32
- \TU/lmr/m/n/14 xxviii
- []
-
-
-Overfull \hbox (6.21397pt too wide) detected at line 35
- \TU/lmr/m/n/14 xxx
+Overfull \hbox (10.02197pt too wide) detected at line 34
+ \TU/lmr/m/n/14 xxix
  []
 
 )
@@ -1101,7 +1040,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--165
 File: Linkage.png Graphic file (type bmp)
 <Linkage.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
@@ -1111,7 +1050,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
 File: M.Sketch.jpg Graphic file (type bmp)
 <M.Sketch.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
@@ -1121,14 +1060,14 @@ File: 平面連桿之運動學模擬.png Graphic file (type bmp)
 File: 盤式凸輪機構之合成與分析.png Graphic file (type bmp)
 <盤式凸輪機構之合成與分析.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 File: WinMecC.png Graphic file (type bmp)
 <WinMecC.png>
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
@@ -1138,7 +1077,7 @@ File: GIM.png Graphic file (type bmp)
 File: 單軸懸架.jpg Graphic file (type bmp)
 <單軸懸架.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
@@ -1148,14 +1087,14 @@ File: 連桿驅動之單樞軸懸架.jpg Graphic file (type bmp)
 File: 高樞轉惰輪懸架.jpg Graphic file (type bmp)
 <高樞轉惰輪懸架.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--281
+Underfull \hbox (badness 10000) in paragraph at lines 266--280
 
  []
 
 File: 雙連桿懸掛.jpg Graphic file (type bmp)
 <雙連桿懸掛.jpg>
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
  []
 
@@ -1164,12 +1103,12 @@ File: 霍斯特鏈懸掛2.jpg Graphic file (type bmp)
 [12]
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
+Underfull \hbox (badness 10000) in paragraph at lines 327--329
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--340
+Underfull \hbox (badness 10000) in paragraph at lines 337--339
 
  []
 
@@ -1186,47 +1125,47 @@ File: 差分進化演算法.jpg Graphic file (type bmp)
 File: PyQt.png Graphic file (type bmp)
 <PyQt.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--397
+Underfull \hbox (badness 10000) in paragraph at lines 393--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--402
+Underfull \hbox (badness 10000) in paragraph at lines 399--401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 427--430
+Underfull \hbox (badness 10000) in paragraph at lines 426--429
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 454--455
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
+Underfull \hbox (badness 10000) in paragraph at lines 509--510
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
 
  []
 
@@ -1236,7 +1175,7 @@ File: 曲柄滑塊機構.png Graphic file (type bmp)
 File: 曲柄滑塊機構運用範圍.png Graphic file (type bmp)
 <曲柄滑塊機構運用範圍.png>
  [19]
-Underfull \hbox (badness 10000) in paragraph at lines 571--572
+Underfull \hbox (badness 10000) in paragraph at lines 570--571
 
  []
 
@@ -1245,7 +1184,7 @@ File: 曲柄搖桿機構.png Graphic file (type bmp)
 File: 曲柄搖桿機構範例.png Graphic file (type bmp)
 <曲柄搖桿機構範例.png>
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 591--592
+Underfull \hbox (badness 10000) in paragraph at lines 590--591
 
  []
 
@@ -1254,7 +1193,7 @@ File: 史蒂芬生機構作動.png Graphic file (type bmp)
 File: 史蒂芬生機構範例.jpg Graphic file (type bmp)
 <史蒂芬生機構範例.jpg>
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 612--613
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
 
  []
 
@@ -1263,157 +1202,336 @@ File: 瓦特氏運動機構.png Graphic file (type bmp)
 File: 瓦特氏運動機構飛機起落收放.png Graphic file (type bmp)
 <瓦特氏運動機構飛機起落收放.png>
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 632--633
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
 
  []
 
-File: 史蒂芬生機構第一型.png Graphic file (type bmp)
-<史蒂芬生機構第一型.png>
 File: 雙球升降器.png Graphic file (type bmp)
 <雙球升降器.png>
 File: 搖臂式發球機.jpg Graphic file (type bmp)
 <搖臂式發球機.jpg>
-[23] [24] [25]
+[23] [24]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 659--661
+Underfull \hbox (badness 10000) in paragraph at lines 651--653
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 664--666
+Underfull \hbox (badness 10000) in paragraph at lines 656--658
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 670--672
+Underfull \hbox (badness 10000) in paragraph at lines 662--664
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 679--680
+Underfull \hbox (badness 10000) in paragraph at lines 671--672
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--685
+Underfull \hbox (badness 10000) in paragraph at lines 675--677
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--690
+Underfull \hbox (badness 10000) in paragraph at lines 680--682
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 708--709
+Underfull \hbox (badness 10000) in paragraph at lines 700--701
 
  []
 
-[26
+[25
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Underfull \hbox (badness 10000) in paragraph at lines 710--711
 
  []
 
 
-Overfull \hbox (0.24342pt too wide) in paragraph at lines 720--721
+Overfull \hbox (0.24342pt too wide) in paragraph at lines 712--713
 []\TU/標楷體(0)/b/n/14 在 剎 車 的 時 候 因 為 力 量 轉 移 的 關 係 導 致 後 輪 產 生 升 起 的 情 況，|  而 \T
 U/lmr/m/n/14 Anti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 727--728
+Underfull \hbox (badness 10000) in paragraph at lines 719--720
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 729--731
+Underfull \hbox (badness 10000) in paragraph at lines 721--723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 733--735
+Underfull \hbox (badness 10000) in paragraph at lines 725--727
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 736--739
+Underfull \hbox (badness 10000) in paragraph at lines 728--731
 
  []
 
-[27]
+[26]
 File: Horst_link.png Graphic file (type bmp)
 <Horst_link.png>
 File: Twin-link.png Graphic file (type bmp)
 <Twin-link.png>
- [28]
+ [27]
 Chapter 5.
-[29
+[28
 
 ]
 Chapter 6.
 File: follow-up research.png Graphic file (type bmp)
 <follow-up research.png>
 
-Overfull \hbox (4.78572pt too wide) in paragraph at lines 768--769
+Overfull \hbox (4.78572pt too wide) in paragraph at lines 760--761
  [][] 
  []
 
-[30
+[29
 
-] [31] [32]
+] [30] [31]
 File: st1.jpg Graphic file (type bmp)
 <st1.jpg>
 
-Underfull \hbox (badness 10000) detected at line 820
+Underfull \hbox (badness 10000) detected at line 814
 \TU/標楷體(0)/b/n/14 姓 名
  []
 
 
-Underfull \hbox (badness 10000) detected at line 821
+Underfull \hbox (badness 10000) detected at line 815
 \TU/標楷體(0)/b/n/14 林 昱 秀
  []
 
 
-Underfull \hbox (badness 10000) detected at line 822
+Underfull \hbox (badness 10000) detected at line 816
 \TU/標楷體(0)/b/n/14 學 號
  []
 
 
-Underfull \hbox (badness 10000) detected at line 823
+Underfull \hbox (badness 10000) detected at line 817
 \TU/lmr/m/n/14 40723102
  []
 
 
-Underfull \hbox (badness 1112) detected at line 825
+Underfull \hbox (badness 1112) detected at line 820
 \TU/標楷體(0)/b/n/14 國 立 虎 尾 科 技 大 學
  []
 
 
-Underfull \hbox (badness 10000) detected at line 826
+Underfull \hbox (badness 10000) detected at line 821
  
  []
 
 
-Underfull \hbox (badness 1881) detected at line 827
+Underfull \hbox (badness 1881) detected at line 822
 \TU/標楷體(0)/b/n/14 機 械 設 計 工 程 系
  []
 
 
-Underfull \hbox (badness 10000) detected at line 828
+Underfull \hbox (badness 10000) detected at line 824
 \TU/標楷體(0)/b/n/14 經 歷
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 830--831
+Underfull \hbox (badness 10000) in paragraph at lines 826--827
 
  []
 
 File: st2.jpg Graphic file (type bmp)
 <st2.jpg>
-[33] (4072pj3.aux)
+
+Underfull \hbox (badness 10000) detected at line 836
+\TU/標楷體(0)/b/n/14 姓 名
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 837
+\TU/標楷體(0)/b/n/14 林 晏 瑩
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 839
+\TU/標楷體(0)/b/n/14 學 號
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 840
+\TU/lmr/m/n/14 40723103
+ []
+
+
+Underfull \hbox (badness 1112) detected at line 843
+\TU/標楷體(0)/b/n/14 國 立 虎 尾 科 技 大 學
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 844
+ 
+ []
+
+
+Underfull \hbox (badness 1881) detected at line 845
+\TU/標楷體(0)/b/n/14 機 械 設 計 工 程 系
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 847
+\TU/標楷體(0)/b/n/14 經 歷
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 849--850
+
+ []
+
+File: st3.jpg Graphic file (type bmp)
+<st3.jpg>
+
+Underfull \hbox (badness 10000) detected at line 859
+\TU/標楷體(0)/b/n/14 姓 名
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 860
+\TU/標楷體(0)/b/n/14 劉 光 智
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 862
+\TU/標楷體(0)/b/n/14 學 號
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 863
+\TU/lmr/m/n/14 40723145
+ []
+
+
+Underfull \hbox (badness 1112) detected at line 866
+\TU/標楷體(0)/b/n/14 國 立 虎 尾 科 技 大 學
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 867
+ 
+ []
+
+
+Underfull \hbox (badness 1881) detected at line 868
+\TU/標楷體(0)/b/n/14 機 械 設 計 工 程 系
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 870
+\TU/標楷體(0)/b/n/14 經 歷
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 872--873
+
+ []
+
+File: st4.jpg Graphic file (type bmp)
+<st4.jpg>
+
+Underfull \hbox (badness 10000) detected at line 881
+\TU/標楷體(0)/b/n/14 姓 名
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 882
+\TU/標楷體(0)/b/n/14 吳 佳 穎
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 883
+\TU/標楷體(0)/b/n/14 學 號
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 884
+\TU/lmr/m/n/14 40723153
+ []
+
+
+Underfull \hbox (badness 1112) detected at line 886
+\TU/標楷體(0)/b/n/14 國 立 虎 尾 科 技 大 學
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 887
+ 
+ []
+
+
+Underfull \hbox (badness 1881) detected at line 888
+\TU/標楷體(0)/b/n/14 機 械 設 計 工 程 系
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 890
+\TU/標楷體(0)/b/n/14 經 歷
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 892--893
+
+ []
+
+File: st5.jpg Graphic file (type bmp)
+<st5.jpg>
+
+Underfull \hbox (badness 10000) detected at line 901
+\TU/標楷體(0)/b/n/14 姓 名
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 902
+\TU/標楷體(0)/b/n/14 蔡 育 灃
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 903
+\TU/標楷體(0)/b/n/14 學 號
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 904
+\TU/lmr/m/n/14 40723245
+ []
+
+
+Underfull \hbox (badness 1112) detected at line 906
+\TU/標楷體(0)/b/n/14 國 立 虎 尾 科 技 大 學
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 907
+ 
+ []
+
+
+Underfull \hbox (badness 1881) detected at line 908
+\TU/標楷體(0)/b/n/14 機 械 設 計 工 程 系
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 910
+\TU/標楷體(0)/b/n/14 經 歷
+ []
+
+[32] (4072pj3.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1421,20 +1539,19 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
  )
-(\end occurred inside a group at level 4)
+(\end occurred inside a group at level 3)
 
-### simple group (level 4) entered at line 837 ({)
-### simple group (level 3) entered at line 764 ({)
-### simple group (level 2) entered at line 759 ({)
-### simple group (level 1) entered at line 736 ({)
+### simple group (level 3) entered at line 756 ({)
+### simple group (level 2) entered at line 751 ({)
+### simple group (level 1) entered at line 728 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10546 strings out of 414221
- 235581 string characters out of 2901377
+ 10558 strings out of 414221
+ 234666 string characters out of 2901377
  746586 words of memory out of 3000000
- 27891 multiletter control sequences out of 15000+200000
+ 27901 multiletter control sequences out of 15000+200000
  540103 words of font info for 88 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  48i,6n,60p,388b,1156s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on 4072pj3.pdf (35 pages).
+Output written on 4072pj3.pdf (34 pages).

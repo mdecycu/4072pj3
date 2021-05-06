@@ -31,16 +31,16 @@
 \contentsline {subsection}{\numberline {3.3.3}Stephenson(史蒂芬生機構)}{xxi}%
 \contentsline {subsection}{\numberline {3.3.4}Watt(瓦特氏運動機構)}{xxii}%
 \contentsline {subsection}{\numberline {3.3.5}Double Ball Lifter(二段式提球機構)}{xxiii}%
-\contentsline {chapter}{\numberline {4}登山車避震機構}{xxvi}%
-\contentsline {section}{\numberline {4.1}避震機構合成}{xxvi}%
-\contentsline {section}{\numberline {4.2}避震機構評量}{xxvii}%
-\contentsline {subsection}{\numberline {4.2.1}Anti-squat}{xxvii}%
-\contentsline {subsection}{\numberline {4.2.2}Anti-rise}{xxvii}%
-\contentsline {subsection}{\numberline {4.2.3}Leverage Ratio}{xxvii}%
-\contentsline {section}{\numberline {4.3}避震機構分析範例}{xxvii}%
-\contentsline {chapter}{\numberline {5}結論}{xxix}%
-\contentsline {chapter}{\numberline {6}未來研究建議}{xxx}%
-\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {參考文獻}}{xxxi}%
-\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {誌謝}}{xxxii}%
-\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {作者簡介}}{xxxiii}%
+\contentsline {chapter}{\numberline {4}登山車避震機構}{xxv}%
+\contentsline {section}{\numberline {4.1}避震機構合成}{xxv}%
+\contentsline {section}{\numberline {4.2}避震機構評量}{xxvi}%
+\contentsline {subsection}{\numberline {4.2.1}Anti-squat}{xxvi}%
+\contentsline {subsection}{\numberline {4.2.2}Anti-rise}{xxvi}%
+\contentsline {subsection}{\numberline {4.2.3}Leverage Ratio}{xxvi}%
+\contentsline {section}{\numberline {4.3}避震機構分析範例}{xxvi}%
+\contentsline {chapter}{\numberline {5}結論}{xxviii}%
+\contentsline {chapter}{\numberline {6}未來研究建議}{xxix}%
+\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {參考文獻}}{xxx}%
+\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {誌謝}}{xxxi}%
+\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {作者簡介}}{xxxii}%
 \contentsfinish 
