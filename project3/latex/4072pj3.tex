@@ -11,7 +11,7 @@ left=3truecm,right=2.5truecm]{geometry}
 \usepackage{titlesec} %目錄標題設定模組
 \usepackage{titletoc} %目錄內容設定模組
 \usepackage{caption} %圖片標題設定
-\usepackage{CJKutf8} %中文模組
+\usepackage{CJK} %中文模組
 \usepackage{CJKnumb} %中文數字模組
 %\usepackage{wallpaper} %浮水印
 \usepackage{float}
@@ -126,15 +126,15 @@ left=3truecm,right=2.5truecm]{geometry}
 	\pagenumbering{roman} %設定以下頁碼為羅馬數字
     \addcontentsline{toc}{chapter}{\fourteen{摘要}} %將摘要加入目錄
     \begin{center}
-	\twenty \bf{摘要}\\
-	\end{center}
+    \twenty \bf{摘要}\\
+    \end{center}
+	\hspace*{\fill} \\
+
+	\quad \fourteen {本專題利用一開源套件Pyslvs-UI進行機構尺寸合成，並以登山車避震機構作為範例，針對影響登山車騎乘舒適度及整體平衡進行防後蹲(Anti-squat)及防後升(Anti-rise)做為設計需求建立適應函數再將合成所得結果進行量化評比並探討不同避震機構類型的差異，後續將合成後的尺寸作為參數套入自行編寫的程式透過Inventor自動生成3D零件，接著將上述所建立的零件利用xml格式設定零件組合位置、零件從屬關係和動態系統的碰撞設定後匯入CoppeliaSim，最後以CoppeliaSim API控制馬達轉軸讓機構進行運動模擬。}
+    
 	\begin{flushleft}
-	\fourteen
-	{生產自動化是現今工業界中最重要的一環，如何以更低的成本與縮短生產製程，		來提高在國際上的競爭力，是大家所努力的目標，而身為未來二十一世紀的一員，		更需了解其重要性。}
-    \end{flushleft}
-	\begin{center}
-	\fontsize{14pt}{2.5pt}{關鍵字:機構模擬、機構分析}
-	\end{center}
+	\fontsize{14pt}{2.5pt}{關鍵字:機構合成、機構分析、登山車避震機構}
+	\end{flushleft}
 %目錄
 \addcontentsline{toc}{chapter}{\fourteen{目錄}} %將目錄加入目錄
 {\begin{center}
@@ -147,25 +147,14 @@ left=3truecm,right=2.5truecm]{geometry}
 {\fourteen \listoffigures}
 \end{center}}
          
-{\begin{center}
+	{\begin{center}
      \chapter{簡介}
      \end{center}}
-     \pagenumbering{arabic} %設定以下頁碼為阿拉伯數字
-     {\begin{flushleft}
-        \fourteen{生產自動化是現今工業界中最重要的一環，如何以更低的成本與			縮短生產製程，來提高在國際上的競爭力，是大家所努力的目標，而身為未來			二十一世紀的一員，更需了解其重要性。
-        \hspace*{\fill} \\
-        目前於市面上的數位控制加工機（CNC），其成本昂貴，且體積龐大，故本組			決定運用在校所學之相關課程，以完成一部具有高精度、體積小與低成本（十			五萬元以下）的 PC-Based 三軸運動控制實驗台為研究目標，達成在教學上			的需要，並增加系內的實驗設備。
-        \hspace*{\fill} \\
-        本專題主要目的在了解伺服馬達的控制原理、三軸運動控制卡的使用方式、人			機介面程式的撰寫與增加機械實務加工的能力。
-        }
-        \end{flushleft}
-        \newpage
-        
       \section{研究背景與動機}
-      \fourteen {隨著科技越來越發達網路上有許多機構分析的套件，但是鮮少有機構合成功能的套件，且大多為收費或無公開原始碼。而本專題所使用的套件-Pyslvs-UI為本研究室所開發的套件且有公開原始碼，因此本專題利用該套件驗證合成及模擬功能並以合成一登山車後避震機構為例。}
-      \section{研究目的}
-      \section{研究方法}
-      \fourteen {首先建立一現有登山車避震機構，再針對不影響現有自行車車架的尺寸但對於避震能力有較大影響的接頭利用遺傳演算法求解最佳位置以得到最佳連桿尺寸，接著將上述所得到的接頭位置和連桿長度利用Inventor自動產生對應連桿尺寸，後續利用xml格式匯入CoppeliaSim並利用CoppeliaSim API設定馬達讓該機構以一自由度進行運動模擬。上述流程如圖XXXX所示。}
+      \quad \fourteen {隨著科技越來越發達網路上有許多機構分析的套件，但是鮮少有機構合成功能的套件，且大多無公開原始碼。而本專題所使用的套件-Pyslvs-UI為本研究室所開發的套件且有公開原始碼，因此本專題利用該套件驗證合成及模擬功能並以合成一登山車後避震機構為例。}
+	  \\
+      \section{研究目的與方法}
+      \quad \fourteen {首先建立一現有登山車避震機構，再針對不影響現有自行車車架的尺寸但對於避震能力有較大影響的接頭利用遺傳演算法求解最佳位置以得到最佳連桿尺寸，接著將上述所得到的接頭位置和連桿長度利用Inventor自動產生對應連桿尺寸的零件，後續利用xml格式匯入CoppeliaSim並利用CoppeliaSim API設定馬達讓該機構進行運動模擬。上述流程如下圖所示。}
      
 
     {\begin{center}
@@ -175,7 +164,7 @@ left=3truecm,right=2.5truecm]{geometry}
        	\hspace*{\fill} \\
        	\subsection{Linkage}
        	\hspace*{\fill} \\        
-        \fourteen {Linkage為電腦輔助設計的應用程式，用於機械鏈接的原型製作。基本功能為設計帶有樞軸連接器或滑動連接器之機構、驅動機構的輸入可以是旋轉或線性的、可在運動的連桿上安裝齒輪和鏈條機構、將繪圖功能分配給連接點顯示其運動之軌跡。}
+        \quad \fourteen {Linkage為電腦輔助設計的應用程式，用於機械鏈接的原型製作。基本功能為設計帶有樞軸連接器或滑動連接器之機構、驅動機構的輸入可以是旋轉或線性的、可在運動的連桿上安裝齒輪和鏈條機構、將繪圖功能分配給連接點顯示其運動之軌跡。}
  		\begin{figure}[H]
         \centering
         \includegraphics[scale=1]{Linkage.png} 
@@ -308,13 +297,7 @@ left=3truecm,right=2.5truecm]{geometry}
          \fourteen {特性在於樞軸底端的鏈條，後軸則安裝在腳撐上增加了樞軸，其修改後的軸距繞即時中心旋轉，改變行進路線的位置，可在行進的不同階段優化防下蹲與上抬。
          \hspace*{\fill} \\  
 雙連桿懸掛相比，霍斯特連桿系統的較長連桿通常會提供更平滑的曲線，產品支架為RAAW Madonna的MADONNA V1 - FAST AND PREDICTABLE，如圖(2.5)，產品為 Canyon Spectral的Izzo Pro Race 29，如圖(2.6)。}
-     \begin{figure}[hbt!]
-        \centering
-        \includegraphics[scale=0.8]{霍斯特鏈懸掛.jpg} 
-        %照片須放在和文檔相同之資料夾內
-        \caption{霍斯特鏈懸掛} %有caption的圖才會編入目錄中
-        \label{fig:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
-    \end{figure}
+     
      \begin{figure}[hbt!]
         \centering
         \includegraphics[scale=0.2]{霍斯特鏈懸掛2.jpg} 
@@ -561,34 +544,6 @@ $sudo python3 install.py
 >python install.py
 		\end{lstlisting}
 		\end{itemize}
-		
-     \subsection{編譯步驟}
-		\begin{itemize}
-		\item 下載Pyslvs倉儲，並進行子倉儲更新
-		\begin{lstlisting}[caption=下載倉儲並更新]
-git clone https://github.com/KmolYuan/Pyslvs-PyQt5.git
-git submodule init
-git submodule update
-		\end{lstlisting}
-		\begin{lstlisting}[caption=安裝Python套件]
-pip install -r requirements.txt
-		\end{lstlisting}
-		編譯好的函式庫複製到core/kernel/對應的資料夾下。
-		\begin{lstlisting}[caption=複製函式庫]
-Ubuntu的Python 3.5 命名為py35。
-Windows的Python 3.6 命名為py36w。
-		\end{lstlisting}
-		並在core/calculation/calculation.py中匯入名稱。
-		\begin{lstlisting}[caption=匯入名稱]
-if py_nm=='36w':
-    from ..kernel.py36w.slvs import *
-    from ..kernel.pyslvs_generate.py36w import tinycadlib
-    from ..kernel.pyslvs_generate.py36w.planarlinkage import build_planar
-    from ..kernel.pyslvs_generate.py36w.rga import Genetic
-    from ..kernel.pyslvs_generate.py36w.firefly import Firefly
-    from ..kernel.pyslvs_generate.py36w.de import DiffertialEvolution
-    \end{lstlisting}
-    \end{itemize}
        
 
       
@@ -701,11 +656,11 @@ if py_nm=='36w':
     \end{figure}
         \chapter{登山車避震機構}
       \section{避震機構合成}
-      \fourteen {機構合成設計需求為騎乘姿勢改變時或遇到顛頗不整的路時仍能保持整體的平衡，即Anti-squat及Anti-rise的數值能在100\%附近，而上述合成需求之適應函數可表示為}
+      \quad \fourteen {機構合成設計需求為騎乘姿勢改變時或遇到顛頗不整的路時仍能保持整體的平衡，即Anti-squat及Anti-rise的數值能在100\%附近，而上述合成需求之適應函數可表示為}
       \hspace*{\fill} \\
       
       \begin{equation}
-      h_{2} = d_{of}\left (\frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}}\right ) + \left[ r_{ppy}-r_{ppx}\left( \frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}} \right) \right]
+      h_{2} = r_{of}\left (\frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}}\right ) + \left[ r_{ppy}-r_{ppx}\left( \frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}} \right) \right]
       \end{equation}  
       \hspace*{\fill} \\
       
@@ -745,6 +700,9 @@ if py_nm=='36w':
       	\\
       	\hspace*{\fill} \\
       	$P_{ny}$: 點n的y座標
+      	\\
+      	\hspace*{\fill} \\
+      	$r_{of}$: 座標原點到前輪樞紐的水平距離
       	\end{flushleft}
       	}
       \hspace*{\fill} \\
@@ -778,25 +736,28 @@ if py_nm=='36w':
 		\fourteen {此小節會將章節一所提到的自行車避震機構類型為範例，說明在不同避震機構下經由尺寸合成後得到的評比結果。此評比結果會以自行車後輪的垂直上升行程作為變數來探討Anti-squat以及Anti-rise的表現。
       \hspace*{\fill} \\
       \hspace*{\fill} \\
-      \hspace*{\fill} \\
-      \hspace*{\fill} \\
-      圖\ref{fig_Horst-link:scale}為Horst-link類型並以Niner RDO 29作為該類型自行車範例在後輪行程0到150mm的Anti-squat及Anti-rise的表現}
+      \newpage
+      \fourteen {圖\ref{fig_Horst-link:scale}為Horst-link類型並以Niner RDO 29作為該類型自行車範例在後輪行程0到150mm的Anti-squat及Anti-rise的表現。結果得出Horst-link類型在Anti-squat的表現會隨著後輪行程的上升而下降，較無維持在100\%的現象，而Anti-rise雖下降趨勢不明顯但數值僅維持在50\%較並不算特別突出的表現。}
       \begin{figure}[hbt!]
         \centering
         \includegraphics[scale=0.6]{Horst_link.png}
         \caption{Horst-link suspension}
         \label{fig_Horst-link:scale}
     	\end{figure}
+    	
+    \hspace*{\fill} \\
+    \fourteen {圖\ref{fig_Twin-link:scale}為Twin-link類型並以Pivot Firebird 29作為該類型自行車範例在後輪行程0到150mm的Anti-squat及Anti-rise的表現。結果得出Twin-link類型在Anti-squat的表現在後輪垂直上升行程到100mm的時候還能保持在90\%的效益接著才會有明顯下降的趨勢，而Anti-rise雖只能保持在約70\%的效益，但是降低的趨勢相較於Horst-link類型更為趨緩。}
+    
       \begin{figure}[hbt!]
         \centering
         \includegraphics[scale=0.6]{Twin-link.png}
         \caption{Twin-link suspension}
-        \label{fig:scale}
+        \label{fig_Twin-link:scale}
     	\end{figure}    	
     	
         \chapter{結論}
         {\begin{flushleft}
-        \fourteen {test內文內文內文123ABC}
+        \quad \quad \fourteen {對於科技的迅速進步，開源已成了當今趨勢，因此本專題所用的套件不僅能達到其他平面機構套件大部分所擁有的功能但又有公開原始碼的優勢因此在後續的發展應該會比相對封閉的套件更加快速。而在CAD當中常有許多相似專案但是每次繪製不同零件時又要從頭開始繪製的情形，此時若沒有一套程式流程將會產生高耗時的問題，因此在本專題中所建立的自動3D零件生成以及後續利用xml檔完成組立、碰撞設定、馬達轉軸輸出設定......再直接匯入至動態分析套件減少了很多我們在進行不同機構範例分析的時間。後續Pyslvs-UI若能有更多的機構類型或是做後續的CAE分析應該能有更完整的設計流程。}
         \end{flushleft}
 
         \chapter{未來研究建議}
@@ -816,8 +777,17 @@ if py_nm=='36w':
 	\twenty \bf{參考文獻}\\
 	\end{center}
 	\begin{flushleft}
-	\fourteen
-	{生產自動化是現今工業界中最重要的一環，如何以更低的成本與縮短生產製程，		來提高在國際上的競爭力，是大家所努力的目標，而身為未來二十一世紀的一員，		更需了解其重要性。}
+	\begin{enumerate}[1.]
+	\item \quad \fourteen {"How your bike’s suspension design affects its performance on the trail" \quad https://enduro-mtb.com/en/mtb-suspension-systems/}
+	\item \quad \fourteen {"What Is Anti-Squat \& How Does It Actually Affect Mountain Bike Performance" \quad https://www.pinkbike.com/news/definitions-what-is-anti-squat.html}
+	\item \quad \fourteen {"Suspension Design Theory and Anti-Squat Behavior" \quad http://blog.artscyclery.com/mountain/suspension-design-theory-and-anti-squat-behavior/}
+	\item \quad \fourteen {"How to Calculate Leverage Ratios" \quad https://mbaction.com/garage-files-leverage-ratio/}
+	\item \quad \fourteen {"Suspension Tech: What is Anti-Rise?" \quad https://bikerumor.com/2018/10/04/suspension-tech-what-is-anti-rise/}
+	\end{enumerate}
+	
+	
+	% [2] \quad \fourteen {"What Is Anti-Squat & How Does It Actually Affect Mountain Bike Performance" \quad https://www.pinkbike.com/news/definitions-what-is-anti-squat.html}
+	
     \end{flushleft}
     \newpage
     
@@ -835,7 +805,6 @@ if py_nm=='36w':
 	最後感謝學校提供完善的設備與資源，使本專題能夠圓滿完成；在專題研究上，系上提供軟硬體設備以及專題實驗室，讓我們可以利用空堂及課後時間製作與討論專題。}
 
     \newpage
-    
     \addcontentsline{toc}{chapter}{\fourteen{作者簡介}}
     \begin{center}
 	\twenty \bf{作者簡介}\\
@@ -845,6 +814,7 @@ if py_nm=='36w':
         \includegraphics[width=1.15in]{st1.jpg} %{}內是圖片文件的相對路徑
     \end{figure}
     \end{textblock}}
+    
     {\renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
     {\begin{textblock}{15}(3.5,1.2) %{寬度}(以左上角為原點之右移量,下移量)
 	\fourteen \makebox[4em][s]{姓名}\enspace:\enspace
@@ -865,73 +835,5 @@ if py_nm=='36w':
     \end{figure}
     \end{textblock}}
     {\renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
-    {\begin{textblock}{15}(3.5,3) %{寬度}(以左上角為原點之右移量,下移量)
-    \noindent \kaishu \fourteen \makebox[4em][s]{姓名}\enspace:\enspace
-    \kaishu \fourteen \makebox[4em][s]{林晏瑩}\\ %\noindent指定首行不進行縮排
-    \kaishu \fourteen \makebox[4em][s]{學號}\enspace:\enspace
-    \kaishu \fourteen \makebox[4em][s]{40723103} \\ %\makebox為文本盒子
-    \kaishu \fourteen \makebox[4em][s]{畢業學校}\enspace:\enspace
-    \kaishu \fourteen \makebox[9em][s]{國立虎尾科技大學}\\
-    \kaishu \fourteen \makebox[5em][s]{\quad}\enspace\enspace
-    \kaishu \fourteen \makebox[8em][s]{機械設計工程系}\\
-    \kaishu \fourteen \makebox[4em][s]{經歷}\enspace:\enspace
-    \end{textblock}}}
-    \hspace*{\fill} \\
-
-
-    {\begin{textblock}{6}(0,4.1)
-    \begin{figure}
-        \includegraphics[width=1.15in]{st3.jpg} 
-    \end{figure}
-    \end{textblock}}
-    {\renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
-    {\begin{textblock}{15}(3.5,4.8) %{寬度}(以左上角為原點之右移量,下移量)
-    \noindent \kaishu \fourteen \makebox[4em][s]{姓名}\enspace:\enspace
-    \kaishu \fourteen \makebox[4em][s]{劉光智}\\ %\noindent指定首行不進行縮排
-    \kaishu \fourteen \makebox[4em][s]{學號}\enspace:\enspace
-    \kaishu \fourteen \makebox[4em][s]{40723145} \\ %\makebox為文本盒子
-    \kaishu \fourteen \makebox[4em][s]{畢業學校}\enspace:\enspace
-    \kaishu \fourteen \makebox[9em][s]{國立虎尾科技大學}\\
-    \kaishu \fourteen \makebox[5em][s]{\quad}\enspace\enspace
-    \kaishu \fourteen \makebox[8em][s]{機械設計工程系}\\
-    \kaishu \fourteen \makebox[4em][s]{經歷}\enspace:\enspace
-    \end{textblock}}}
-    \hspace*{\fill} \\
-
-    {\begin{textblock}{6}(0,5.9)
-    \begin{figure}
-        \includegraphics[width=1.15in]{st4.jpg} %{}內是圖片文件的相對路徑
-    \end{figure}
-    \end{textblock}}
-    {\renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
-    {\begin{textblock}{15}(3.5,6.6) %{寬度}(以左上角為原點之右移量,下移量)
-    \noindent \kaishu \fourteen \makebox[4em][s]{姓名}\enspace:\enspace
-    \kaishu \fourteen \makebox[4em][s]{吳佳穎}\\ %\noindent指定首行不進行縮排
-    \kaishu \fourteen \makebox[4em][s]{學號}\enspace:\enspace
-    \kaishu \fourteen \makebox[4em][s]{40723153} \\ %\makebox為文本盒子
-    \kaishu \fourteen \makebox[4em][s]{畢業學校}\enspace:\enspace
-    \kaishu \fourteen \makebox[9em][s]{國立虎尾科技大學}\\
-    \kaishu \fourteen \makebox[5em][s]{\quad}\enspace\enspace
-    \kaishu \fourteen \makebox[8em][s]{機械設計工程系}\\
-    \kaishu \fourteen \makebox[4em][s]{經歷}\enspace:\enspace
-    \end{textblock}}}
-    \hspace*{\fill} \\
-
-    {\begin{textblock}{6}(0,7.7)
-    \begin{figure}
-        \includegraphics[width=1.15in]{st5.jpg} %{}內是圖片文件的相對路徑
-    \end{figure}
-    \end{textblock}}
-    \renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
-    {\begin{textblock}{15}(3.5,8.4) %{寬度}(以左上角為原點之右移量,下移量)
-    \noindent \kaishu \fourteen \makebox[4em][s]{姓名}\enspace:\enspace
-    \kaishu \fourteen \makebox[4em][s]{蔡育灃}\\ %\noindent指定首行不進行縮排
-    \kaishu \fourteen \makebox[4em][s]{學號}\enspace:\enspace
-    \kaishu \fourteen \makebox[4em][s]{40723245} \\ %\makebox為文本盒子
-    \kaishu \fourteen \makebox[4em][s]{畢業學校}\enspace:\enspace
-    \kaishu \fourteen \makebox[9em][s]{國立虎尾科技大學}\\
-    \kaishu \fourteen \makebox[5em][s]{\quad}\enspace\enspace
-    \kaishu \fourteen \makebox[8em][s]{機械設計工程系}\\
-    \kaishu \fourteen \makebox[4em][s]{經歷}\enspace:\enspace
-    \end{textblock}}
+    
 \end{document}
