@@ -307,14 +307,39 @@ left=3truecm,right=2.5truecm]{geometry}
       \chapter{Pyslvs-UI 套件介紹}
       \section{Pyslvs-UI 架構與原理}
        \fourteen{Pyslvs-UI是一套利用Python3與PyQt5建立的平面機構模擬與合成系統。機構模擬與合成的主要核心包括Python-Solvespace幾何約束求解程式庫、三角幾何函式程式庫(tinycadlib)、演算程式庫(ADesign)、幾何約束求解程式庫(bgfs)、類型合成程式庫(topologic)、數目合成程式庫(number)等。其中，ADesign演算程式庫內包含Real-coded Genetic Algorithm (RGA)、Differential Evolution(DE)與Firefly Algorithm (Firefly)等三種，用於平面機構尺寸合成演算}
+       \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.5]{Pyslvs-UI架構圖.png} 
+        \caption{Pyslvs-UI架構圖} 
+        \label{fig:scale}
+    	\end{figure}
+    	
+    	
       \subsection{平面連桿機構模擬}
       \begin{itemize} 
-      \item Python-Solvespace：Python-Solvespace以Cython編寫為核心
-      \item Pyslvs：以SketchSolve由Cython編寫為核心，其中包括平面機構的創新設計方法。
+      \item Solvespace：以C ++語言編寫的開放原始碼電腦輔助設計軟件，將幾何約束求解器分為實體與約束兩部份。其中，實體:表示每個圖形零件的幾何數據。約束: 表示圖形零件之間的關係。
+
+		\begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.6]{Python-Solvespace求解流程.png} 
+        \caption{Python-Solvespace流程圖} 
+        \label{fig:scale}
+    	\end{figure}
+    	
+      \item Sketch Solve：在BSD授權條款下，用C ++編寫的2D幾何求解器庫，原始碼僅使用表達式和函數來獲取答案。主要求解過程為:通過函數輸入創建約束對象，求解需要有參數列表、約束數據列表和步距精度，啟動BFGS算法後，參數將投影到每個實例，因此將更改值；若列表中沒有值，則該值將不會更改。
       	\end{itemize} 
       	
+		\begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.7]{Sketch slove.png} 
+        \caption{Sketch slove流程圖} 
+        \label{fig:scale}
+    	\end{figure}
+    	
       \fourteen{Cython是結合了Python和C語法的一種語言，使用者可以維持大部分的Python語法，而不需要大幅度調整主要的程式邏輯與演算法。}
-      \subsection{機構合成}
+      
+      
+      \subsection{平面連桿機構合成}
       \fourteen{進行機構設計與合成主要流程分為數目合成、構造合成、尺寸合成與運動學模擬，合成皆有其順序性存在，而運動學模擬則是進行分析前面的合成項目。}
       \begin{itemize} 
       \item 數目合成:用來決定其設計機構的桿數與接頭數，如四連桿、五連桿、六連桿等，然而當機構的桿數與接頭數越多的時候，其組合變化亦越多，將所有可能的運動鏈全部列出來。
@@ -648,8 +673,68 @@ $sudo python3 install.py
     \end{figure}
         \chapter{登山車避震機構}
       \section{避震機構合成}
-      \quad \fourteen {機構合成設計需求為騎乘姿勢改變時或遇到顛頗不整的路時仍能保持整體的平衡，即Anti-squat及Anti-rise的數值能在100\%附近，而上述合成需求之適應函數可表示為}
+      \subsection{差分進化演算法}
       \hspace*{\fill} \\
+      \fourteen \quad {差分進化演算法\textrm{(Differential Evolution Algorithm)}概念是以向量為基礎，透過母體間的個體差異性，並以隨機搜尋方式將差異向量加上其中之個體中，並透過突變(Mutation)、重組(Recombination)、選擇(Selection)三個步驟進行演化，而透過迭代不斷地進行運算，並觀察個體是否能在搜尋解空間找到最佳解，該流程圖如圖\ref{fig_DEflow:scale}所示。}\\
+	        
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.6]{DEflow.png}
+        \caption{差分進化演算法流程圖}
+        \label{fig_DEflow:scale}
+    	\end{figure}
+      
+      \newpage
+      \begin{enumerate}
+      \item{\fourteen {初始化(Initialization):設定初始參數值及隨機產生介於上下限值以內的變數。}
+      \begin{equation*}
+      x_{n,i} = x_{n,i}^{L}+rand()*(x_{n,i}^{U}- x_{n,i}^{L})
+	\qquad
+i = 1,2,3,...D \ and \ n = 1,2,3,...N
+	  \end{equation*}
+	  $x_{i}^{L}$: 變數$x_{i}$的下限值
+	  \hspace*{\fill} \\
+	  \hspace*{\fill} \\
+	  $x_{i}^{U}$: 變數$x_{i}$的上限值
+	  }
+	      
+      \item{\fourteen {突變(Mutation):隨機從母體中選取三個目標向量並透過突變權重因子(weight factor)結合而得一合成向量(donor vector)。}
+      \begin{equation*}
+      v_{n}^{g+1} = x_{r1n}^{g}+F(x_{r2n}^{g}- x_{r3n}^{g})
+      \end{equation*}
+      $v_{n}^{g+1}$: 合成向量
+      \hspace*{\fill} \\
+	  \hspace*{\fill} \\
+	  F: 權重因子
+      }\\
+      
+      \item{\fourteen {重組(Recombination):經過前一突變步驟產生的合成向量，將利用條件式與挑選中的目標向量 $x_{n,i}^{g}$作一結合重組，並於重組後得到一新的試驗向量(Trial Vector)$u_{n,i}^{g+1}$。}
+	  \begin{equation*}
+	  u_{n,i}^{g+1} = 
+\left\{\begin{matrix}
+ & v_{n,i}^{g+1} & if \ rand() \leq C_{p} \\ 
+ & x_{n,i}^{g} & if \ rand() > C_{p}
+\end{matrix}\right.
+\qquad i = 1,2,3,...D \ and \ n = 1,2,3,...N
+	  \end{equation*}
+	  $I_{rand}$: [1,D]之間的隨機整數
+      \hspace*{\fill} \\
+	  \hspace*{\fill} \\	
+	  $C_{p}$: 重組的可能性，其數值在[0,1]之間}\\
+	  
+	\item{\fourteen {選擇(Selection):選擇階段主要執行方式為藉由計算適應值來評估其該選擇試驗向量亦或是原始的目標向量進入下一迭代，成為此代演化過後的子代。}}  
+	  \begin{equation*}
+	  x_{n}^{g+1} = 
+\left\{\begin{matrix}
+ & u_{n,i}^{g+1}  & if \ f(u_{n}^{g+1} < f(x_{n}^{g})) \\ 
+ & x_{n}^{g} & otherwise
+\end{matrix}\right.
+\qquad n = 1,2,3,...N
+	  \end{equation*}
+      \end{enumerate}
+      
+      \subsection{適應性函數}
+	  \quad \fourteen {機構合成設計需求為騎乘姿勢改變時或遇到顛頗不整的路時仍能保持整體的平衡，即Anti-squat及Anti-rise的數值能在100\%附近，而上述合成需求之適應函數可表示為}      
       
       \begin{equation}
       h_{2} = r_{of}\left (\frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}}\right ) + \left[ r_{ppy}-r_{ppx}\left( \frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}} \right) \right]
@@ -694,9 +779,22 @@ $sudo python3 install.py
       	$P_{ny}$: 點n的y座標
       	\\
       	\hspace*{\fill} \\
+      	$IC_{x}$: 瞬時中心到座標原點的x座標
+      	\\
+      	\hspace*{\fill} \\
+      	$IC_{y}$: 瞬時中心到座標原點的y座標
+      	\\
+      	\hspace*{\fill} \\
+      	$IFC_{x}$: 瞬時力量中心到座標原點的x座標
+      	\\
+      	\hspace*{\fill} \\
+      	$IFC_{y}$: 瞬時力量中心到座標原點的y座標
+      	\\
+      	\hspace*{\fill} \\
       	$r_{of}$: 座標原點到前輪樞紐的水平距離
       	\end{flushleft}
       	}
+      	
       \hspace*{\fill} \\
       \section{避震機構評量}
       \subsection{Anti-squat}
@@ -707,6 +805,14 @@ $sudo python3 install.py
        \item 0~100\%: 表示部分後沉力量被抵抗
        \item < 0\%: 表示所有的後沉力量皆無被抵抗
        \end{itemize}
+       
+     \begin{figure}[hbt!]
+       \centering
+       \includegraphics[scale=0.4]{anti-squat.PNG}
+       \caption{Anti-squat}
+       \label{fig_anti-squat:scale}
+    \end{figure}
+       
        \hspace*{\fill} \\
        \subsection{Anti-rise}
        \fourteen {在剎車的時候因為力量轉移的關係導致後輪產生升起的情況，而Anti-rise即為抵抗此後升現象的能力。}
@@ -716,6 +822,14 @@ $sudo python3 install.py
        \item 0~100\%: 表示部分後升力量被抵抗
        \item < 0\%: 表示所有的後升力量皆無被抵抗
        \end{itemize}
+	\begin{figure}[hbt!]
+       \centering
+       \includegraphics[scale=0.45]{anti-rise.PNG}
+       \caption{Anti-rise}
+       \label{fig_anti-rise:scale}
+    \end{figure}
+       
+       
        \hspace*{\fill} \\
        \subsection{Leverage Ratio}
        \fourteen {Leverage ratio是避震器壓縮量和後輪行程的比值，當較大的槓桿比率會對避震器產生較大的衝擊，而在騎乘時對於地形變化的感受度較不敏感，相反地較小的槓桿比率對於地形的敏感度較高。其計算方式如下所示。}
@@ -723,29 +837,91 @@ $sudo python3 install.py
        \begin{equation}
        Leverage\, Ratio = \frac{wheel\,travel}{stroke}
        \end{equation}
-       \hspace*{\fill} \\
-      \section{避震機構分析範例}
-		\fourteen {此小節會將章節一所提到的自行車避震機構類型為範例，說明在不同避震機構下經由尺寸合成後得到的評比結果。此評比結果會以自行車後輪的垂直上升行程作為變數來探討Anti-squat以及Anti-rise的表現。
-      \hspace*{\fill} \\
-      \hspace*{\fill} \\
-      \newpage
-      \fourteen {圖\ref{fig_Horst-link:scale}為Horst-link類型並以Niner RDO 29作為該類型自行車範例在後輪行程0到150mm的Anti-squat及Anti-rise的表現。結果得出Horst-link類型在Anti-squat的表現會隨著後輪行程的上升而下降，較無維持在100\%的現象，而Anti-rise雖下降趨勢不明顯但數值僅維持在50\%較並不算特別突出的表現。}
+
+       
+       \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.4]{stroke.png}
+        \caption{避震器}
+        \label{fig_stroke:scale}
+    	\end{figure}
+       
+       
+       \section{避震機構分析範例}
+       \fourteen {此小節會將4.1節所得到的結果並配合4.2節所介紹的評比標準進行討論以檢驗是否得到最佳的尺寸。}
+		\begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.4]{Firebird_mechanism.png}
+        \caption{合成所得之機構}
+        \label{fig_Firebird_mechanism:scale}
+    	\end{figure}
+		
+		\newpage
+		\begin{flushleft}
+	    \fourteen {圖\ref{fig_antisquat_x-:scale}為Point4 在x座標往負x方向移動時所得到Anti-squat評比結果，由該圖可知當Point4越往負x方向移動時所得到的結果會越偏離100\%。}
+	    \end{flushleft}
       \begin{figure}[hbt!]
         \centering
-        \includegraphics[scale=0.6]{Horst_link.png}
-        \caption{Horst-link suspension}
-        \label{fig_Horst-link:scale}
+        \includegraphics[scale=0.6]{anti-squat_x-.png}
+        \caption{Anti-squat x座標減少}
+        \label{fig_antisquat_x-:scale}
     	\end{figure}
     	
-    \hspace*{\fill} \\
-    \fourteen {圖\ref{fig_Twin-link:scale}為Twin-link類型並以Pivot Firebird 29作為該類型自行車範例在後輪行程0到150mm的Anti-squat及Anti-rise的表現。結果得出Twin-link類型在Anti-squat的表現在後輪垂直上升行程到100mm的時候還能保持在90\%的效益接著才會有明顯下降的趨勢，而Anti-rise雖只能保持在約70\%的效益，但是降低的趨勢相較於Horst-link類型更為趨緩。}
-    
+    	\begin{flushleft}
+    	\fourteen {圖\ref{fig_antisquat_y-:scale} 在y座標往負y方向移動時所得到Anti-squat評比結果，由該圖可知當Point4越往負y方向移動時所得到的結果會越偏離100\%。}
+    	\end{flushleft}
       \begin{figure}[hbt!]
         \centering
-        \includegraphics[scale=0.6]{Twin-link.png}
-        \caption{Twin-link suspension}
-        \label{fig_Twin-link:scale}
-    	\end{figure}    	
+        \includegraphics[scale=0.6]{anti-squat_y-.png}
+        \caption{Anti-squat y座標減少}
+        \label{fig_antisquat_y-:scale}
+    	\end{figure}
+    	
+    	
+    	\newpage
+    	\begin{flushleft}
+    	\fourteen {圖\ref{fig_antisquat_x-y+:scale}為Point4 在x座標往負x方向y座標往正y方向移動時所得到Anti-squat評比結果，由該圖可知當Point4在x座標往負方向及y座標往正y方向移動時所得到的結果會越偏離100\%。}
+    	\end{flushleft}
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.6]{anti-squat_x-y+.png}
+        \caption{Anti-squat x座標減少 y座標增加}
+        \label{fig_antisquat_x-y+:scale}
+    	\end{figure}
+    	   	
+    	
+    	\begin{flushleft}
+    	\fourteen {圖\ref{fig_antirise_x-:scale}為Point4 在x座標往負x方向移動時所得到Anti-rise評比結果，由該圖可知當Point4在x座標往負方向移動時所得到的結果會越來越比原來的位置差。}
+    	\end{flushleft}
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.6]{anti-rise_x-.png}
+        \caption{Anti-rise x座標減少}
+        \label{fig_antirise_x-:scale}
+    	\end{figure}
+    	
+    	 \newpage
+    	 \begin{flushleft}
+    	 \fourteen {圖\ref{fig_antirise_y-:scale}為Point4 在y座標往負y方向移動時所得到Anti-rise評比結果，由該圖可知當Point4在y座標往負方向移動時所得到的結果會越來越比原來的位置差。}
+    	 \end{flushleft}
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.6]{anti-rise_y-.png}
+        \caption{Anti-rise y座標減少}
+        \label{fig_antirise_y-:scale}
+    	\end{figure}
+    	
+    	
+    	\begin{flushleft}
+    	\fourteen {圖\ref{fig_antirise_x-y+:scale}為Point4 在x座標往負x方向及y座標往正y方向移動時所得到Anti-rise評比結果，由該圖可知當Point4在x座標往負x方向及y座標往正方向移動時所得到的結果會越來越比原來的位置差。}
+    	\end{flushleft}
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.6]{anti-rise_x-y+.png}
+        \caption{Anti-rise x座標減少 y座標增加}
+        \label{fig_antirise_x-y+:scale}
+    	\end{figure} 	
+    	
     	
         \chapter{結論}
         {\begin{flushleft}
