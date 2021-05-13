@@ -140,14 +140,17 @@ left=3truecm,right=2.5truecm]{geometry}
 {\begin{center}
 \renewcommand{\contentsname}{\centerline{\fontsize{20pt}{\baselineskip}\selectfont\textbf{目\quad 錄}}}
 {\fourteen \tableofcontents}
+\end{center}} 
+{\begin{center}
 %圖表目錄
 \addcontentsline{toc}{chapter}{\fourteen{圖表目錄}} %將圖表目錄加入目錄
 \renewcommand{\listfigurename}{\centerline{\fontsize{20pt}{\baselineskip}\selectfont\textbf{圖\quad 表\quad 目\quad 錄 }}}
 \renewcommand{\numberline}[1]{\loflabel~#1\hspace*{1em}}
 {\fourteen \listoffigures}
-\end{center}}
-         
+\end{center}} 
+
 	{\begin{center}
+	\pagenumbering{arabic}  
      \chapter{簡介}
      \end{center}}
       \section{研究背景與動機}
@@ -309,10 +312,10 @@ left=3truecm,right=2.5truecm]{geometry}
       \section{Pyslvs-UI 架構與原理}
        \fourteen{Pyslvs-UI是一套利用Python3與PyQt5建立的平面機構模擬與合成系統。機構模擬與合成的主要核心包括Python-Solvespace幾何約束求解程式庫、三角幾何函式程式庫(tinycadlib)、演算程式庫(ADesign)、幾何約束求解程式庫(bgfs)、類型合成程式庫(topologic)、數目合成程式庫(number)等。其中，ADesign演算程式庫內包含Real-coded Genetic Algorithm (RGA)、Differential Evolution(DE)與Firefly Algorithm (Firefly)等三種，用於平面機構尺寸合成演算}
        
-        \begin{figure}[H]
+    	\begin{figure}[hbt!]
         \centering
-        \includegraphics[scale=0.5]{Pyslvs-UI架構圖.png} 
-        \caption{Pyslvs-UI架構圖} 
+        \includegraphics[scale=0.5]{Pyslvs-UI架構圖.png}
+        \caption{Pyslvs-UI架構圖}
         \label{fig:scale}
     	\end{figure}
 \newpage    	
@@ -320,9 +323,9 @@ left=3truecm,right=2.5truecm]{geometry}
       \begin{itemize} 
       \item Solvespace：以C ++語言編寫的開放原始碼電腦輔助設計軟件，將幾何約束求解器分為實體與約束兩部份。其中，實體:表示每個圖形零件的幾何數據。約束: 表示圖形零件之間的關係。
 
-		\begin{figure}[H]
+		\begin{figure}[hbt!]
         \centering
-        \includegraphics[scale=0.6]{Python-Solvespace求解流程.png} 
+        \includegraphics[scale=0.2]{Python-Solvespace求解流程.png} 
         \caption{Python-Solvespace流程圖} 
         \label{fig:scale}
     	\end{figure}
@@ -330,9 +333,9 @@ left=3truecm,right=2.5truecm]{geometry}
       \item Sketch Solve：在BSD授權條款下，用C ++編寫的2D幾何求解器庫，原始碼僅使用表達式和函數來獲取答案。主要求解過程為:通過函數輸入創建約束對象，求解需要有參數列表、約束數據列表和步距精度，啟動BFGS算法後，參數將投影到每個實例，因此將更改值；若列表中沒有值，則該值將不會更改。
       	\end{itemize} 
       	
-		\begin{figure}[H]
+		\begin{figure}[hbt!]
         \centering
-        \includegraphics[scale=0.7]{Sketch slove.png} 
+        \includegraphics[scale=0.25]{Sketch slove.png} 
         \caption{Sketch slove流程圖} 
         \label{fig:scale}
     	\end{figure}
@@ -385,13 +388,14 @@ left=3truecm,right=2.5truecm]{geometry}
         \label{fig:scale}
         \end{figure}
         
-        \begin{figure}[H]
+        \begin{figure}[hbt!]
         \centering
         \includegraphics[scale=0.4]{差分進化演算法.jpg} 
         \caption{差分進化演算法流程圖}
         \label{fig:scale}
-    \end{figure}
-    \newpage
+   		\end{figure}
+\newpage
+
       \subsection{圖形化使用者介面}
       \begin{itemize}
       \item{PyQt}
