@@ -322,7 +322,7 @@ left=3truecm,right=2.5truecm]{geometry}
 
 		\begin{figure}[H]
         \centering
-        \includegraphics[scale=0.6]{Python-Solvespace求解流程.png} 
+        \includegraphics[scale=0.25]{Python-Solvespace求解流程.png} 
         \caption{Python-Solvespace流程圖} 
         \label{fig:scale}
     	\end{figure}
@@ -332,7 +332,7 @@ left=3truecm,right=2.5truecm]{geometry}
       	
 		\begin{figure}[H]
         \centering
-        \includegraphics[scale=0.7]{Sketch slove.png} 
+        \includegraphics[scale=0.3]{Sketch slove.png} 
         \caption{Sketch slove流程圖} 
         \label{fig:scale}
     	\end{figure}
@@ -369,29 +369,32 @@ left=3truecm,right=2.5truecm]{geometry}
       \fourteen {通過隨機變量生成具有路徑限制的機構，生成結構參數來自變數設定，也有其它算法選擇，程式內共包含三種算法：實數編碼遺傳算法、螢火蟲算法與差分進化演算法。}
       \begin{enumerate}
       \item {實數編碼遺傳算法：在遺傳演算法的演算過程中，將設計變數以實數數值表示，稱為實數編碼遺傳演算法(RGA)，其演算流程如圖3.1}
-       \item {螢火蟲算法：其演算法是模擬螢火蟲離散的閃爍行為，算法將計算群體中螢火蟲的相對亮度和吸引度，並根據相對亮度決定螢火蟲的移動方向；更新螢火蟲的空間位置，對處在最佳位置的螢火蟲進行隨機移動；根據更新後螢火蟲位置，重新計算螢火蟲的亮度，最終輸出群體極值點和最優個體數值，演算流程如圖3.2。}
-       \item {差分進化演算法：是一種求解最佳化問題的進化演算法，其算法]]]原理採用對個體進行方向擾動，以達到對個體的函式值進行下降的目的，同其他進化演算法一樣，差分進化演算法不利用函式的梯度資訊，因此對函式的可導性甚至連續性沒有要求，適用性很強，演算流程如圖3.3。} 
-       \end{enumerate}
-        \begin{figure}[hbt!]
+      \begin{figure}[hbt!]
         \centering
-        \includegraphics[scale=0.4]{實數編碼遺傳算法.png} 
+        \includegraphics[scale=0.3]{實數編碼遺傳算法.png} 
         \caption{實數編碼遺傳算法流程圖}
         \label{fig:scale}
         \end{figure}
         
-        \begin{figure}[hbt!]
+       \item {螢火蟲算法：其演算法是模擬螢火蟲離散的閃爍行為，算法將計算群體中螢火蟲的相對亮度和吸引度，並根據相對亮度決定螢火蟲的移動方向；更新螢火蟲的空間位置，對處在最佳位置的螢火蟲進行隨機移動；根據更新後螢火蟲位置，重新計算螢火蟲的亮度，最終輸出群體極值點和最優個體數值，演算流程如圖3.2。}
+       
+		\begin{figure}[hbt!]
         \centering
-        \includegraphics[scale=0.4]{螢火蟲算法.jpg} 
+        \includegraphics[scale=0.3]{螢火蟲算法.png} 
         \caption{螢火蟲算法流程圖}
         \label{fig:scale}
         \end{figure}
-        
-        \begin{figure}[H]
+    \newpage   
+       \item {差分進化演算法：是一種求解最佳化問題的進化演算法，其算法]]]原理採用對個體進行方向擾動，以達到對個體的函式值進行下降的目的，同其他進化演算法一樣，差分進化演算法不利用函式的梯度資訊，因此對函式的可導性甚至連續性沒有要求，適用性很強，演算流程如圖3.3。} 
+                       
+        \begin{figure}[hbt!]
         \centering
-        \includegraphics[scale=0.4]{差分進化演算法.jpg} 
+        \includegraphics[scale=0.3]{差分進化演算法.png} 
         \caption{差分進化演算法流程圖}
         \label{fig:scale}
-    \end{figure}
+		\end{figure}
+		
+	\end{enumerate}
     \newpage
       \subsection{圖形化使用者介面}
       \begin{itemize}
