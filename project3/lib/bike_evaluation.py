@@ -189,7 +189,8 @@ if __name__ == "__main__":
     p2 = (-397.41, -42.50)
     p3 = (17.68, 111.69)
     # p4 = (-3.2, 154.98)
-    p4 = (-7.02, 156.06)    # test the point from different algorithm
+    # p4 = (-3, 153)    # test the point from different algorithm (OK)
+    p4 = (-4.39, 151.56)
     p5 = (89, 201.72)
     theta = 187.14
 
