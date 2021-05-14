@@ -475,9 +475,34 @@ left=3truecm,right=2.5truecm]{geometry}
 		}
 
 
-
-\subsection{環境與安裝套件}
+\subsection{Pyslvs大綱架構}
 		\begin{itemize}
+		\item{採用系統動機}\\
+		\fourteen {透過Pyslvs為平面多連桿機構設計分析之開放源套件系統、結構合成(Structural Synthesis)、驗證機構運動模擬(Kinematic Simulation) 的特性以此進行尺寸合成 (Dimensional Synthesis)相關主題的專題研究計畫，加上Pyslvs為開放源系統、同時延續學長開發出來的系統深入探討其軟體結構背景。} 
+      	\item{Pyslvs架構背景}\\
+		\fourteen {主要由Cython程式語言進行編譯成機構合成延伸做演算並搭配SWIG(Simplified Wrapper and Interface Generator)解析器使Python可呼叫C語言動態連結庫以建構平面連桿機構模擬作業系統。藉由PyQt程式庫中的GUI (Graphical User Interface)圖形化使用者介面，以便程式編譯內容後轉換成GUI圖形化介面，使操作者利用點選頁面、按鍵建立機構模擬分析。}
+
+		
+      	\begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.6]{Pyslvs架構背景.png} 
+        \caption{Pyslvs架構流程圖}
+        \label{fig:scale}
+        \end{figure}
+        
+      	\item{Cython}\\
+      	\fourteen {擁有Python簡潔有力的程式架構且在編譯完所生成的動態連結庫可直接被Python調用呼叫，透過對參數、變數宣告(cdef、def)轉變為C程式語言，同時提高程式整體運行速度，是兼具Python、C++兩者優點的程式語言。}
+      	\item{PyQt5}\\
+      	\fourteen {同樣與Qt都是由C++程式語言建構而成的程式庫，可直接使用Python程式語言使GUI (Graphical User Interface)創建圖形化介面，運用在作業系統上的範圍比Qt更加廣泛且在程式語法編寫上更加直觀方便debug。}
+		\item{SWIG}\\
+      	\fourteen {可將C++/C、其他高階程式語言(如:Python)進行連結的介面，為C++/C語言撰寫由Python呼叫動態函式庫或轉換成Python語法的解析器。}      	
+      	\end{itemize} 
+      	     	
+\subsection{環境與安裝套件}
+		\begin{itemize}		
+		\item{編譯過程}\\     
+		\fourteen {下載已經建立開發環境的套件(如:Mysy2程式、python38、solvespace)的可攜kmol-project檔案，之後安裝3.0a6版本的Cython模組以便進行Pyslvs編譯，另外安裝環境缺少的套件(如: PyQt、Numpy)，完成開發環境的架構後下載ps2020檔案，進入ps2020中在Makefile中進行編譯，完成後進入ps2020中Pyslvs檔案夾安裝setup.py檔，此動作主要壓縮並包裝檔案於資料夾中，最後回到ps2020根目錄再次安裝下載setup.py為使整個環境、編譯動態連結庫封裝成Pyslvs.exe執行檔，最後只需打Pyslvs即可呼叫啟動位於資料夾中的Pyslvs.exe執行檔，出現在畫面中的頁面為編譯完成後的結果。} 
+
 		\item 下載倉儲且安裝 3.0a6 版本的 Cython 模組
 		\begin{lstlisting}[caption=下載倉儲安裝Cython]
 https://github.com/mdecourse/ps2020.git
@@ -539,8 +564,8 @@ python setup.py install
       
 
       
-    
-      \section{Pyslvs-UI 範例}
+\newpage
+\section{Pyslvs-UI 範例}
 		\subsection{曲柄滑塊機構}
        \hspace*{\fill} \\
        \fourteen {主要以6個連桿、7個接頭，4個雙接頭連桿、1個三接頭連桿所構成，如圖\ref{fig_Crank Lifter:scale}，由四連桿機構衍伸而來多樣性運動型態、軌跡，可滿足一般運動需求，常用於汽車工業中加速與製動，從踏板的輸入到化油器、製動缸、自行車剎車都廣泛運用在其中，如圖\ref{fig_Crank Lifter1:scale}。}\\
