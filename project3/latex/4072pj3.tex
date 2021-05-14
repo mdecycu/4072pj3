@@ -18,6 +18,7 @@ left=3truecm,right=2.5truecm]{geometry}
 \usepackage{enumerate}
 \usepackage{listings} %引用程式碼
 \usepackage{indentfirst}
+\usepackage{diagbox}%引用表格
 
 \lstset{language=Python, %設定語言
 		basicstyle=\footnotesize, 
@@ -54,6 +55,7 @@ left=3truecm,right=2.5truecm]{geometry}
 \newcommand{\lotlabel}{表}
 \captionsetup{font={Large}} %設定標題大小
 \captionsetup[figure]{name=圖} %固定標題名稱
+\captionsetup[table]{name=表}
 
 \begin{document}
     {\renewcommand\baselinestretch{1.4}\selectfont %設定以下行距
@@ -135,110 +137,167 @@ left=3truecm,right=2.5truecm]{geometry}
 	\begin{flushleft}
 	\fontsize{14pt}{2.5pt}{關鍵字:機構合成、機構分析、登山車避震機構}
 	\end{flushleft}
-%目錄
+%---目錄---%
 \addcontentsline{toc}{chapter}{\fourteen{目錄}} %將目錄加入目錄
 {\begin{center}
 \renewcommand{\contentsname}{\centerline{\fontsize{20pt}{\baselineskip}\selectfont\textbf{目\quad 錄}}}
 {\fourteen \tableofcontents}
-%圖表目錄
-\addcontentsline{toc}{chapter}{\fourteen{圖表目錄}} %將圖表目錄加入目錄
-\renewcommand{\listfigurename}{\centerline{\fontsize{20pt}{\baselineskip}\selectfont\textbf{圖\quad 表\quad 目\quad 錄 }}}
+%---圖目錄---%
+\addcontentsline{toc}{chapter}{\fourteen{圖目錄}} %將圖表目錄加入目錄
+\renewcommand{\listfigurename}{\centerline{\fontsize{20pt}{\baselineskip}\selectfont\textbf{圖\quad 目\quad 錄 }}}
 \renewcommand{\numberline}[1]{\loflabel~#1\hspace*{1em}}
 {\fourteen \listoffigures}
+
+%---表目錄---%
+\addcontentsline{toc}{chapter}{\fourteen{表目錄}} %將圖表目錄加入目錄
+\renewcommand{\listtablename}{\centerline{\fontsize{20pt}{\baselineskip}\selectfont\textbf{表\quad 目\quad 錄 }}}
+\renewcommand{\numberline}[1]{\lotlabel~#1\hspace*{1em}}
+{\fourteen \listoftables}
+
 \end{center}}
-         
+
+
+
+%---簡介---%
 	{\begin{center}
-     \chapter{簡介}
-     \end{center}}
-      \section{研究背景與動機}
+	\chapter{簡介}
+	\end{center}}	
+\pagenumbering{arabic} %設定以下頁碼為阿拉伯數字
+
+	\section{研究背景與動機}
       \quad \fourteen {隨著科技越來越發達網路上有許多機構分析的套件，但是鮮少有機構合成功能的套件，且大多無公開原始碼。而本專題所使用的套件-Pyslvs-UI為本研究室所開發的套件且有公開原始碼，因此本專題利用該套件驗證合成及模擬功能並以合成一登山車後避震機構為例。}
 	  \\
-      \section{研究目的與方法}
+	\section{研究目的與方法}
       \quad \fourteen {首先建立一現有登山車避震機構，再針對不影響現有自行車車架的尺寸但對於避震能力有較大影響的接頭利用遺傳演算法求解最佳位置以得到最佳連桿尺寸，接著將上述所得到的接頭位置和連桿長度利用Inventor自動產生對應連桿尺寸的零件，後續利用xml格式匯入CoppeliaSim並利用CoppeliaSim API設定馬達讓該機構進行運動模擬。上述流程如下圖所示。}
      
-
+%---文獻探討---%
     {\begin{center}
-        \chapter{文獻探討}
-        \end{center}}
-      \section{平面機構分析套件}
-       	\hspace*{\fill} \\
-       	\subsection{Linkage}
-      \quad \fourteen {Linkage為電腦輔助設計的應用程式，用於機械鏈接的原型製作。基本功能為設計帶有樞軸連接器或滑動連接器之機構、驅動機構的輸入可以是旋轉或線性的、可在運動的連桿上安裝齒輪和鏈條機構、將繪圖功能分配給連接點顯示其運動之軌跡。}
- 		\begin{figure}[H]
+	\chapter{文獻探討}
+	\end{center}}
+%-------平面機構分析套件-------%	
+	\section{平面機構分析套件}
+		\hspace*{\fill} \\
+		\subsection{Linkage}
+		\fourteen {Linkage為電腦輔助設計的應用程式，用於機械鏈接的原型製作。基本功能為設計帶有樞軸連接器或滑動連接器之機構、驅動機構的輸入可以是旋轉或線性的、可在運動的連桿上安裝齒輪和鏈條機構、將繪圖功能分配給連接點顯示其運動之軌跡。其工作介面如圖\ref{fig_Linkage:scale}所示。}
+      
+      	\begin{figure}[hbt!]
         \centering
-        \includegraphics[scale=1]{Linkage.png} 
-        \caption{Linkage工作介面} 
-        \label{fig:scale}
+        \includegraphics[scale=1]{Linkage.png}
+        \caption{Linkage工作介面}
+        \label{fig_Linkage:scale}
     	\end{figure}
-	  	\hspace*{\fill} \\
+      	\hspace*{\fill} \\   	
+	  	 	
 \newpage
-	  	\subsection{M.Sketch}
-       	\hspace*{\fill} \\        
-       \fourteen {M.Sketch，一種原型設計工具，設計目的在為非專業人士提供簡單直觀的界面，輕鬆學習與使用幾何圖形的模擬，如圖2.2。其中有五個主要功能:}
-       \begin{itemize} 
-       \item 繪製機構草圖:軟體介面中，藉由單擊與拖動滑鼠來簡單的繪製連桿接點，也可將接點轉換為滑塊，以此快速設計連桿機構。
-       \item 運動軌跡可視化:根據馬達的旋轉值，可看到動畫上每個鏈接的坐標變化、設定欲關注之端點並給予標記，則可看到該端點預期的運動路徑。
-       \item 逐步設計:首先根據繪製所需之運動機構後，使其生成機構路徑，再優化當前機構所適合的路徑。
-       \item 加工支援:可導出PDF文件中每個鏈接的組合圖、示意圖和零件圖，亦可導出鏈接和關聯零件的3D模型，以匯入3D列印機等。
-       \item 高可及性:M.Sketch是作為Web的應用程序開發的，用戶可以在Web瀏覽器（例如GoogleChrome）上申請帳號後，即可直接使用，無需在電腦上進行任何安裝。
-\end{itemize}  
+
+		\subsection{M.Sketch}       
+		\fourteen {M.Sketch，一種原型設計工具，設計目的在為非專業人士提供簡單直觀的界面，輕鬆學習與使用幾何圖形的模擬。工作介面如圖\ref{fig_M.Sketch:scale}所示。\\
+		其中有五個主要功能:}
+		
+        \begin{itemize} 
+        \item 繪製機構草圖:軟體介面中，藉由單擊與拖動滑鼠來簡單的繪製連桿接點，也可將接點轉換為滑塊，以此快速設計連桿機構。
+        \item 運動軌跡可視化:根據馬達的旋轉值，可看到動畫上每個鏈接的坐標變化、設定欲關注之端點並給予標記，則可看到該端點預期的運動路徑。
+		\item 逐步設計:首先根據繪製所需之運動機構後，使其生成機構路徑，再優化當前機構所適合的路徑。
+		\item 加工支援:可導出PDF文件中每個鏈接的組合圖、示意圖和零件圖，亦可導出鏈接和關聯零件的3D模型，以匯入3D列印機等。
+		\item 高可及性:M.Sketch是作為Web的應用程序開發的，用戶可以在Web瀏覽器（例如GoogleChrome）上申請帳號後，即可直接使用，無需在電腦上進行任何安裝。
+		\end{itemize}  
        
  		\begin{figure}[H]
         \centering
         \includegraphics[scale=0.25]{M.Sketch.jpg} 
         \caption{M.Sketch工作介面} 
-        \label{fig:scale}
+		\label{fig_M.Sketch:scale}
     	\end{figure}
-\hspace*{\fill} \\
+		\hspace*{\fill} \\
 \newpage
-      \section{平面機構合成套件}
+
+%-------平面機構合成套件-------%
+	\section{平面機構合成套件}
       	\subsection{MeKin2D}
-       		\hspace*{\fill} \\
-       	\fourteen {MeKin2D是用Free Pascal編寫的子程序包，主要使用模組化方法對平面連桿機構進行運動學模擬，用於凸輪機構的合成和分析，以及漸開線齒輪的產生。MeKin2D的獨特功能包括:}
-       \begin{itemize}
-       \item 具有生成重複機構的能力。
-       \item 將速度和加速度（法向和切向）顯示為向量。
-       \item 將多邊形形狀附加到運動的接點。
-       \item 顯示動態時線性和角度的大小。
-       \item 顯示螺桿實際運作時的運動軌跡。
-       \item 可以合成與分析凸輪機構。
-\end{itemize}        
+		\fourteen {MeKin2D是用Free Pascal編寫的子程序包，主要使用模組化方法對平面連桿機構進行運動學模擬，運動學模擬圖如\ref{fig_平面連桿之運動學模擬:scale}所示。\\該套件亦可以用於凸輪機構的合成和分析，以及漸開線齒輪的產生，凸輪分析圖如\ref{fig_盤式凸輪機構之合成與分析:scale}所示。\\MeKin2D的獨特功能包括:}
+        \begin{itemize}
+        \item 具有生成重複機構的能力。
+        \item 將速度和加速度（法向和切向）顯示為向量。
+        \item 將多邊形形狀附加到運動的接點。
+        \item 顯示動態時線性和角度的大小。
+        \item 顯示螺桿實際運作時的運動軌跡。
+        \item 可以合成與分析凸輪機構。
+		\end{itemize}  
+		      
        	\begin{figure}[H]
-        	\centering
-        	\includegraphics[scale=0.4]{平面連桿之運動學模擬.png} 
-        	\caption{平面連桿之運動學模擬} 
-        	\label{fig:scale}
-        	\includegraphics[scale=0.8]{盤式凸輪機構之合成與分析.png} 
-        	\caption{盤式凸輪機構之合成與分析} 
-        	\label{fig:scale}   
+		\centering
+		\includegraphics[scale=0.4]{平面連桿之運動學模擬.png} 
+		\caption{平面連桿之運動學模擬} 
+		\label{fig_平面連桿之運動學模擬:scale}
+		
+		\includegraphics[scale=0.8]{盤式凸輪機構之合成與分析.png} 
+		\caption{盤式凸輪機構之合成與分析} 
+		\label{fig_盤式凸輪機構之合成與分析:scale}   
     	\end{figure}
-		 	\hspace*{\fill} \\
-       \subsection{WinMecC}
-       		\hspace*{\fill} \\        
-        \fourteen {WinMecC為一種電腦軟件，主要用於一自由度平面機構的分析與合成。基本功能為將機構的運動學和動力學分析之結果數值化或圖視化、可以優化分析創建的機構，依據特定點所期望遵循之路徑進行機構合成，如圖2.4所示。}
+		\hspace*{\fill} \\
+\newpage
+
+		\subsection{WinMecC}
+		\fourteen {WinMecC為一種電腦軟件，主要用於1個自由度平面機構的分析與合成。基本功能為將機構的運動學和動力學分析之結果數值化或圖視化、可以優化分析創建的機構，依據特定點所期望遵循之路徑進行機構合成，工作介面如圖\ref{fig_WinMecC:scale}所示。}
         \begin{figure}[H]
         \centering
         \includegraphics[scale=0.6]{WinMecC.png} 
         \caption{WinMecC} 
-        \label{fig:scale}
+        \label{fig_WinMecC:scale}
     	\end{figure}
-    	 \hspace*{\fill} \\
-       \subsection{GIM}
-       	\hspace*{\fill} \\        
-        \fourteen {GIM是COMPMECH Research Group創建的註冊免費軟件，用於平面機構的運動模擬合成以及機械結構的靜態分析。GIM軟件具有三個主要模組：幾何、運動、合成。}
+    	\hspace*{\fill} \\
+    	 
+		\subsection{GIM}     
+		\fourteen {GIM是COMPMECH Research Group創建的註冊免費軟件，用於平面機構的運動模擬合成以及機械結構的靜態分析。GIM軟件具有三個主要模組：幾何、運動、合成。}
         \begin{itemize} 
-       \item 幾何模組:設計要分析的機構，建立其節點與元件，定義連接點的類型（旋轉
-接頭或滑塊，並設定固定點。
-       \item 運動模組:透過運動學分析與模擬，在運動點繪製路徑以及路徑的曲率中心，可在畫面上看到運動極點的位置、速度和加速度向量，並繪製與分析數據相關的圖形和表格。
-       \item 合成模組:依據特定點所期望之運動路徑，進行機構軌跡合成。如圖2.5所示。
-       \end{itemize}
+       	\item 幾何模組:設計要分析的機構，建立其節點與元件，定義連接點的類型（旋轉接頭或滑塊)，並設定固定點。
+       	\item 運動模組:透過運動學分析與模擬，在運動點繪製路徑以及路徑的曲率中心，可在畫面上看到運動極點的位置、速度和加速度向量，並繪製與分析數據相關的圖形和表格。
+       	\item 合成模組:依據特定點所期望之運動路徑，進行機構軌跡合成。該套件之合成介面如圖\ref{fig_GIM:scale}所示。
+       	\end{itemize}
+       
         \begin{figure}[H]
         \centering
         \includegraphics[scale=0.8]{GIM.png} 
         \caption{GIM合成介面} 
-        \label{fig:scale}
+        \label{fig_GIM:scale}
     	\end{figure}
-      \newpage
+\newpage
+
+%-------比較結果-------%	
+	\section{比較結果}
+		\fourteen {經由表\ref{tab_機構套件比較表:scale}得知，市面上雖然有很多款平面機構分析與合成套件，各個套件的功能性質也都很高級，但共同缺點是各個套件都不是開源軟體，故最終選用\underline{張元}學長所開發的\underline{Pyslvs-UI平面多連桿機構套件}，運用其開源軟體的特點，來收集各套件優秀且實用的功能，進行組合與應用，來作為本專題之研究以及延伸。\\
+		\hspace*{\fill} \\
+
+		\begin{table}[htbp] %htbp代表表格浮動位置
+			\centering%表格居中
+			\caption{機構套件比較表}%表:標題
+			\large%字體大小
+			\label{tab_機構套件比較表:scale}
+			\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			\diagbox[width=9em]{功能}{套件}& Pyslvs-UI & Linkage & M.Sketch & MeKin2D & WinMecC & GIM \\ 
+			\hline
+			開源軟體 		&$\surd$&		&		&		&		&\\
+			\hline
+			編譯成可攜檔 	&$\surd$&		&		&		&		&\\
+			\hline
+			平面機構分析 	&$\surd$&$\surd$&$\surd$&$\surd$&$\surd$&\\
+			\hline
+			平面機構合成 	&$\surd$& 		&$\surd$&$\surd$&$\surd$&$\surd$\\
+			\hline
+			平面凸輪分析 	& 		&	    &		&$\surd$&		&\\
+			\hline
+			顯示運動軌跡 	&$\surd$&$\surd$&$\surd$&$\surd$&$\surd$&$\surd$\\
+			\hline
+			Web網頁版 	& 		&		&$\surd$&		&		&\\
+			\hline
+			速度/加速度向量 & 	&		&$\surd$&$\surd$&		&$\surd$\\
+			\hline
+			\end{tabular}
+		\end{table}	
+		
+		
+\newpage
       \section{自行車避震機構研究}
        \subsection{Single-pivot suspension(單軸懸架)}
        \hspace*{\fill} \\
@@ -897,7 +956,76 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
         \label{fig:scale}
     	\end{figure}
         \end{flushleft}
-          
+        
+        \newpage
+        \addcontentsline{toc}{chapter}{\fourteen{附錄}}
+        \addcontentsline{toc}{section}{\fourteen{LaTex}}
+	\begin{center}
+	\twenty \bf{附錄}\\
+	\end{center}
+	
+	 \begin{itemize} 
+        \item LaTex簡介：LaTex是一套由美國計算機科學家Leslie Lamport於20世紀80年代初期所開發的排版格式，相較於Word的「所見所得」編輯模式，純文字檔的模式更像在寫程式。LaTex當初建立的宗旨，就是要能完美排版文件，除了可編輯中文(簡、繁體)、英文，更可以畫圖、製表，甚至繪製五線譜和音符，基於其強大的對齊功能，LaTex已變成編輯各式文件的最佳排版方法。
+		\item 特點：\\
+		\end{itemize} 
+		
+		 \begin{enumerate}
+		 \item 相容性：LaTex是免費軟體並且具有極高的可移植性，因此它幾乎可以在任何硬體平台上運行。Word有分為舊版的.doc和新版的.docx，在平台支援上，也分為for Windows和for Mac。一份在Windows上完成的文件，拿到Mac開啟，原本設定好的表格和對齊的文字都會產生變動。相較LaTex，不管是將寫好的編碼在Mac或是Windows開啟並進行編譯，最後將能得到完全相同的文件內容。
+		 \item 文件排版：在處理多頁數文件時，若想將兩個不同小節互換，不僅中間每一小節在跨頁時設定好的分段都會受到影響，在進行整個區域的移動時，排版也會跑掉、長距離的圖片搬移也容易出現錯誤。且會因為快取內容即時預覽，導致向下滑動時會發生卡頓、程式短時間無法回應、甚至崩潰等情況，這些都是「前台編輯」容易發生的情況。\\
+LaTex屬於「後台編輯」，因此在還沒編譯前都不會產生PDF文件，所有圖片都是以路徑方式呈現，並透過參數來設定到時的排版位置、大小和效果，因此在全部都還是編碼的情況下，調整文字位置與圖片相較容易，編輯器也不會有需要及時預覽的問題。\\
+在撰寫英文文章時，LaTex也會自動幫你將每行文字數目做最佳分配，並在斷句時自動將單字從正確的音節位置分行。
+		\item 編輯數學式：數學是非常重要且強大的工具。從理論推導到各式分析等，都需要數學的幫助。因此如何以最佳方式呈現數學，就成了非常重要的問題。在Word排版時，大部分都是直接用MathType，在編輯器的面板上輸入數字、選擇希臘字母、上下標後，再將其插入Word，但不易更改字型且這些公式都不帶有書籤功能，因此在內文中無法自動引用這些方程式。\\
+在LaTex內進行編輯時我們只負責公式內容，公式在整份文件中的編號將會自動執行，且字型會以統一格式呈現。
+	
+		\begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{公式比較圖.png} 
+        \caption{公式比較圖} 
+		\label{fig_公式比較圖:scale}
+    	\end{figure}
+    	
+    	\item 巨集指令：
+在LaTex內有許多巨集套件(package)可供使用，這些套件能強化環境及增加許多讓使用者進行細部微調的功能，除了引用已有套件外，也可以編寫自己的巨集(macros)，為自己所需要的排版，量身訂做適合的套件。
+		 \end{enumerate}
+		 
+		 \begin{table}[htbp] %htbp代表表格浮動位置
+			\centering%表格居中
+			\caption{文字編輯軟體比較表}%表:標題
+			\large%字體大小
+			\label{tab_文字編輯軟體比較表:scale}
+			\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			\diagbox[width=4em]& 相容性 & 直觀性 & 排版對齊 & 數學公式 & 微調細部\\ 
+			\hline
+			LaTeX 		&$\surd$&		&$\surd$&$\surd$&$\surd$\\
+			\hline
+			Word	 	&		&$\surd$&		&		&$\surd$\\
+			\hline
+			
+			\end{tabular}
+		\end{table}	
+		
+		 \begin{itemize}
+		 \item 安裝流程：綜上所述，我們經過比較與研究最終選用LaTex編輯系統，以MikTex(系統套件)搭配Texmaker(編譯器)作為編寫專題報告的工具。
+		 
+        \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.2]{LaTex安裝流程圖.png} 
+        \caption{LaTex安裝流程圖} 
+		\label{fig_LaTex安裝流程圖:scale}
+    	\end{figure}
+		 
+		 \item 倉儲介紹：透過Github遠端連線協同，讓每位成員皆可在自己的電腦編譯文件，並且在倉儲內有清楚的提交紀錄與內容，在後續需要進行進度回顧或尋找某一特定版次時相較輕鬆且明確。
+        
+        \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.7]{倉儲推送紀錄.png} 
+        \caption{倉儲推送紀錄} 
+		\label{fig_倉儲推送紀錄:scale}
+    	\end{figure}
+    	
+    	\end{itemize}
+		
         \newpage
         \addcontentsline{toc}{chapter}{\fourteen{參考文獻}}
 	\begin{center}
