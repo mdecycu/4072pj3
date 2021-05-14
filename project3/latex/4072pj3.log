@@ -1,12 +1,12 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11 Portable) (preloaded format=xelatex 2020.12.8)  13 MAY 2021 18:36
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11) (preloaded format=xelatex 2020.12.16)  14 MAY 2021 15:29
 entering extended mode
 **./4072pj3.tex
 (4072pj3.tex
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-10-27> xparse <2020-03-03>
-(F:\miktex-portable\texmfs\install\tex/latex/base\report.cls
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
-(F:\miktex-portable\texmfs\install\tex/latex/base\size10.clo
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
 \c@part=\count171
@@ -22,11 +22,12 @@ File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(F:\miktex-portable\texmfs\install\tex/xelatex/xecjk\xeCJK.sty
-(F:\miktex-portable\texmfs\install\tex/latex/l3kernel\expl3.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/xelatex/xecjk\xeCJK.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2020-10-27 L3 programming layer (loader) 
 
-(F:\miktex-portable\texmfs\install\tex/latex/l3backend\l3backend-xetex.def
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xe
+tex.def
 File: l3backend-xetex.def 2020-09-24 L3 backend support: XeTeX
 \g__graphics_track_int=\count180
 \l__pdf_internal_box=\box47
@@ -35,25 +36,30 @@ File: l3backend-xetex.def 2020-09-24 L3 backend support: XeTeX
 ))
 Package: xeCJK 2020/10/19 v3.8.6 Typesetting CJK scripts with XeLaTeX
 
-(F:\miktex-portable\texmfs\install\tex/latex/l3packages/l3keys2e\l3keys2e.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3
+keys2e.sty
 Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
 )
-(F:\miktex-portable\texmfs\install\tex/latex/l3packages/xtemplate\xtemplate.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xtemplate\x
+template.sty
 Package: xtemplate 2020-10-27 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen139
 \l__xtemplate_tmp_int=\count183
 \l__xtemplate_tmp_muskip=\muskip16
 \l__xtemplate_tmp_skip=\skip49
-) (F:\miktex-portable\texmfs\install\tex/latex/l3packages/xparse\xparse.sty
+)
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpar
+se.sty
 Package: xparse 2020-10-27 L3 Experimental document command parser
 
-(F:\miktex-portable\texmfs\install\tex/latex/l3packages/xparse\xparse-generic.t
-ex))
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpar
+se-generic.tex))
 \l__xeCJK_tmp_int=\count184
 \l__xeCJK_tmp_box=\box48
 \l__xeCJK_tmp_dim=\dimen140
 \l__xeCJK_tmp_skip=\skip50
- (F:\miktex-portable\texmfs\install\tex/latex/ctex\ctexhook.sty
+
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/ctex\ctexhook.sty
 Package: ctexhook 2020/10/19 v2.5.5 Document and package hooks (CTEX)
 )
 \g__xeCJK_space_factor_int=\count185
@@ -111,10 +117,11 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 \l__xeCJK_verb_case_int=\count194
 \l__xeCJK_verb_exspace_skip=\skip55
 
-(F:\miktex-portable\texmfs\install\tex/latex/fontspec\fontspec.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty
 Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
 
-(F:\miktex-portable\texmfs\install\tex/latex/fontspec\fontspec-xetex.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-xete
+x.sty
 Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
 X
 \l__fontspec_script_int=\count195
@@ -131,12 +138,11 @@ X
 \l__fontspec_tmpa_dim=\dimen168
 \l__fontspec_tmpb_dim=\dimen169
 \l__fontspec_tmpc_dim=\dimen170
-
-(F:\miktex-portable\texmfs\install\tex/latex/base\fontenc.sty
+ (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 )
-(F:\miktex-portable\texmfs\install\tex/latex/fontspec\fontspec.cfg)))
-(F:\miktex-portable\texmfs\install\tex/xelatex/xecjk\xeCJK.cfg
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.cfg)
+)) (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/xelatex/xecjk\xeCJK.cfg
 File: xeCJK.cfg 2020/10/19 v3.8.6 Configuration file for xeCJK package
 ))
 
@@ -162,25 +168,24 @@ Package fontspec Info: Font family '標楷體(0)' created for font '標楷體' w
 (fontspec)             <->"標楷體/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-
-(F:\miktex-portable\texmfs\install\tex/latex/amsmath\amsmath.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip56
 
 For additional information on amsmath, use the `?' option.
-(F:\miktex-portable\texmfs\install\tex/latex/amsmath\amstext.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(F:\miktex-portable\texmfs\install\tex/latex/amsmath\amsgen.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen171
 ))
-(F:\miktex-portable\texmfs\install\tex/latex/amsmath\amsbsy.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen172
 )
-(F:\miktex-portable\texmfs\install\tex/latex/amsmath\amsopn.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count272
@@ -221,10 +226,10 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
-(F:\miktex-portable\texmfs\install\tex/latex/amsfonts\amssymb.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(F:\miktex-portable\texmfs\install\tex/latex/amsfonts\amsfonts.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -232,37 +237,37 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(F:\miktex-portable\texmfs\install\tex/latex/graphics\graphicx.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 
-(F:\miktex-portable\texmfs\install\tex/latex/graphics\keyval.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
 )
-(F:\miktex-portable\texmfs\install\tex/latex/graphics\graphics.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 
-(F:\miktex-portable\texmfs\install\tex/latex/graphics\trig.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(F:\miktex-portable\texmfs\install\tex/latex/graphics-cfg\graphics.cfg
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 105.
 
-(F:\miktex-portable\texmfs\install\tex/latex/graphics-def\xetex.def
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.def
 File: xetex.def 2020/08/26 v5.0i Graphics/color driver for xetex
 ))
 \Gin@req@height=\dimen180
 \Gin@req@width=\dimen181
-)
-(F:\miktex-portable\texmfs\install\tex/latex/subfig\subfig.sty
+) (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(F:\miktex-portable\texmfs\install\tex/latex/caption\caption.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
-(F:\miktex-portable\texmfs\install\tex/latex/caption\caption3.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \captionmargin=\dimen182
 \captionmargin@=\dimen183
@@ -289,12 +294,10 @@ Package caption Info: Standard document class detected.
 \c@lotdepth=\count292
 \sf@top=\skip62
 \sf@bottom=\skip63
-)
-(F:\miktex-portable\texmfs\install\tex/latex/type1cm\type1cm.sty
+) (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/type1cm\type1cm.sty
 Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
 atched RF)
-)
-(F:\miktex-portable\texmfs\install\tex/latex/textpos\textpos.sty
+) (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/textpos\textpos.sty
 Package: textpos 2020/09/26 v1.10
 
 Package: textpos 2020/09/26 1.10, absolute positioning of text on the page
@@ -307,13 +310,14 @@ Package textpos Info: choosing support for LaTeX3 on input line 61.
 Grid set 16 x 16 = 37.34424pt x 52.81541pt
 \TPboxrulesize=\dimen194
 \TP@tbargs=\toks21
-) (F:\miktex-portable\texmfs\install\tex/latex/geometry\geometry.sty
+)
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(F:\miktex-portable\texmfs\install\tex/generic/iftex\ifvtex.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(F:\miktex-portable\texmfs\install\tex/generic/iftex\iftex.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \Gm@cnth=\count293
@@ -329,8 +333,9 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutvoffset=\dimen258
 \Gm@dimlist=\toks22
 
-(F:\miktex-portable\texmfs\install\tex/xelatex/xetexconfig\geometry.cfg))
-(F:\miktex-portable\texmfs\install\tex/latex/titlesec\titlesec.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/xelatex/xetexconfig\geometry
+.cfg))
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box52
 \beforetitleunit=\skip64
@@ -341,17 +346,16 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \titlewidth=\dimen261
 \titlewidthlast=\dimen262
 \titlewidthfirst=\dimen263
-)
-(F:\miktex-portable\texmfs\install\tex/latex/titlesec\titletoc.sty
+) (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titletoc.st
+y
 Package: titletoc 2019/10/16 v2.13 TOC entries
 \ttl@leftsep=\dimen264
-)
-(F:\miktex-portable\texmfs\install\tex/latex/cjk\CJKnumb.sty
+) (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/cjk\CJKnumb.sty
 Package: CJKnumb 2015/04/18 4.8.4
 \CJK@q=\count296
 \CJK@r=\count297
 )
-(F:\miktex-portable\texmfs\install\tex/latex/float\float.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count298
 \float@exts=\toks24
@@ -359,11 +363,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box54
 )
-(F:\miktex-portable\texmfs\install\tex/latex/tools\enumerate.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks26
 )
-(F:\miktex-portable\texmfs\install\tex/latex/listings\listings.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count299
 \lst@gtempboxa=\box55
 \lst@token=\toks27
@@ -377,26 +381,27 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \lst@lineno=\count304
 \lst@maxwidth=\dimen268
 
-(F:\miktex-portable\texmfs\install\tex/latex/listings\lstmisc.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count305
 \lst@skipnumbers=\count306
 \lst@framebox=\box56
 )
-(F:\miktex-portable\texmfs\install\tex/latex/listings\listings.cfg
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
-(F:\miktex-portable\texmfs\install\tex/xelatex/xecjk\xeCJK-listings.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/xelatex/xecjk\xeCJK-listings
+.sty
 Package: xeCJK-listings 2020/10/19 v3.8.6 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count307
 \l__xeCJK_listings_flag_int=\count308
 )
-(F:\miktex-portable\texmfs\install\tex/latex/tools\indentfirst.sty
+(C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-)
-(F:\miktex-portable\texmfs\install\tex/latex/listings\lstlang1.sty
+) (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.st
+y
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 
@@ -469,7 +474,7 @@ LaTeX Font Info:    ... okay on input line 58.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
 8.
- (F:\miktex-portable\texmfs\install\tex/latex/base\ts1cmr.fd
+ (C:\Users\cadlab\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 58.
@@ -814,30 +819,35 @@ Overfull \hbox (17.63797pt too wide) detected at line 42
  []
 
 
-Overfull \hbox (13.82997pt too wide) detected at line 43
- \TU/lmr/m/n/14 xxxii
+Overfull \hbox (10.02197pt too wide) detected at line 43
+ \TU/lmr/m/n/14 xxxi
  []
 
 [2
 
 ]
-Overfull \hbox (17.63797pt too wide) detected at line 44
- \TU/lmr/m/n/14 xxxiii
- []
-
-
-Overfull \hbox (17.25996pt too wide) detected at line 45
+Overfull \hbox (17.25996pt too wide) detected at line 44
  \TU/lmr/m/n/14 xxxiv
  []
 
 
-Overfull \hbox (13.45197pt too wide) detected at line 46
+Overfull \hbox (13.45197pt too wide) detected at line 45
  \TU/lmr/m/n/14 xxxv
  []
 
 
-Overfull \hbox (17.25996pt too wide) detected at line 47
+Overfull \hbox (17.25996pt too wide) detected at line 46
  \TU/lmr/m/n/14 xxxvi
+ []
+
+
+Overfull \hbox (21.06798pt too wide) detected at line 47
+ \TU/lmr/m/n/14 xxxvii
+ []
+
+
+Overfull \hbox (24.87598pt too wide) detected at line 48
+ \TU/lmr/m/n/14 xxxviii
  []
 
 )
@@ -985,8 +995,23 @@ Overfull \hbox (10.02197pt too wide) detected at line 44
  []
 
 
-Overfull \hbox (17.63797pt too wide) detected at line 47
- \TU/lmr/m/n/14 xxxiii
+Overfull \hbox (13.82997pt too wide) detected at line 45
+ \TU/lmr/m/n/14 xxxii
+ []
+
+
+Overfull \hbox (13.82997pt too wide) detected at line 46
+ \TU/lmr/m/n/14 xxxii
+ []
+
+
+Overfull \hbox (13.82997pt too wide) detected at line 47
+ \TU/lmr/m/n/14 xxxii
+ []
+
+
+Overfull \hbox (13.45197pt too wide) detected at line 50
+ \TU/lmr/m/n/14 xxxv
  []
 
 )
@@ -1265,253 +1290,259 @@ File: anti-rise_y-.png Graphic file (type bmp)
 <anti-rise_y-.png>
 File: anti-rise_x-y+.png Graphic file (type bmp)
 <anti-rise_x-y+.png>
- [31]
+File: 3D零件生成.png Graphic file (type bmp)
+<3D零件生成.png>
+File: binary_link.png Graphic file (type bmp)
+<binary_link.png>
+File: ternary_link.png Graphic file (type bmp)
+<ternary_link.png>
+ [31] [32] [33]
 Chapter 5.
-[32
+[34
 
 ]
 Chapter 6.
 File: follow-up research.png Graphic file (type bmp)
 <follow-up research.png>
 
-Overfull \hbox (4.78572pt too wide) in paragraph at lines 845--846
+Overfull \hbox (4.78572pt too wide) in paragraph at lines 895--896
  [][] 
  []
 
-[33
+[35
 
-] [34] [35]
+] [36] [37]
 File: st1.jpg Graphic file (type bmp)
 <st1.jpg>
 
-Underfull \hbox (badness 10000) detected at line 899
+Underfull \hbox (badness 10000) detected at line 949
 \TU/標楷體(0)/b/n/14 姓 名
  []
 
 
-Underfull \hbox (badness 10000) detected at line 900
+Underfull \hbox (badness 10000) detected at line 950
 \TU/標楷體(0)/b/n/14 林 昱 秀
  []
 
 
-Underfull \hbox (badness 10000) detected at line 901
+Underfull \hbox (badness 10000) detected at line 951
 \TU/標楷體(0)/b/n/14 學 號
  []
 
 
-Underfull \hbox (badness 10000) detected at line 902
+Underfull \hbox (badness 10000) detected at line 952
 \TU/lmr/m/n/14 40723102
  []
 
 
-Underfull \hbox (badness 1112) detected at line 905
+Underfull \hbox (badness 1112) detected at line 955
 \TU/標楷體(0)/b/n/14 國 立 虎 尾 科 技 大 學
  []
 
 
-Underfull \hbox (badness 10000) detected at line 906
+Underfull \hbox (badness 10000) detected at line 956
  
  []
 
 
-Underfull \hbox (badness 1881) detected at line 907
+Underfull \hbox (badness 1881) detected at line 957
 \TU/標楷體(0)/b/n/14 機 械 設 計 工 程 系
  []
 
 
-Underfull \hbox (badness 10000) detected at line 909
+Underfull \hbox (badness 10000) detected at line 959
 \TU/標楷體(0)/b/n/14 經 歷
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 911--912
+Underfull \hbox (badness 10000) in paragraph at lines 961--962
 
  []
 
 File: st2.jpg Graphic file (type bmp)
 <st2.jpg>
 
-Underfull \hbox (badness 10000) detected at line 921
+Underfull \hbox (badness 10000) detected at line 971
 \TU/標楷體(0)/b/n/14 姓 名
  []
 
 
-Underfull \hbox (badness 10000) detected at line 922
+Underfull \hbox (badness 10000) detected at line 972
 \TU/標楷體(0)/b/n/14 林 晏 瑩
  []
 
 
-Underfull \hbox (badness 10000) detected at line 924
+Underfull \hbox (badness 10000) detected at line 974
 \TU/標楷體(0)/b/n/14 學 號
  []
 
 
-Underfull \hbox (badness 10000) detected at line 925
+Underfull \hbox (badness 10000) detected at line 975
 \TU/lmr/m/n/14 40723103
  []
 
 
-Underfull \hbox (badness 1112) detected at line 928
+Underfull \hbox (badness 1112) detected at line 978
 \TU/標楷體(0)/b/n/14 國 立 虎 尾 科 技 大 學
  []
 
 
-Underfull \hbox (badness 10000) detected at line 929
+Underfull \hbox (badness 10000) detected at line 979
  
  []
 
 
-Underfull \hbox (badness 1881) detected at line 930
+Underfull \hbox (badness 1881) detected at line 980
 \TU/標楷體(0)/b/n/14 機 械 設 計 工 程 系
  []
 
 
-Underfull \hbox (badness 10000) detected at line 932
+Underfull \hbox (badness 10000) detected at line 982
 \TU/標楷體(0)/b/n/14 經 歷
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 934--935
+Underfull \hbox (badness 10000) in paragraph at lines 984--985
 
  []
 
 File: st3.jpg Graphic file (type bmp)
 <st3.jpg>
 
-Underfull \hbox (badness 10000) detected at line 944
+Underfull \hbox (badness 10000) detected at line 994
 \TU/標楷體(0)/b/n/14 姓 名
  []
 
 
-Underfull \hbox (badness 10000) detected at line 945
+Underfull \hbox (badness 10000) detected at line 995
 \TU/標楷體(0)/b/n/14 劉 光 智
  []
 
 
-Underfull \hbox (badness 10000) detected at line 947
+Underfull \hbox (badness 10000) detected at line 997
 \TU/標楷體(0)/b/n/14 學 號
  []
 
 
-Underfull \hbox (badness 10000) detected at line 948
+Underfull \hbox (badness 10000) detected at line 998
 \TU/lmr/m/n/14 40723145
  []
 
 
-Underfull \hbox (badness 1112) detected at line 951
+Underfull \hbox (badness 1112) detected at line 1001
 \TU/標楷體(0)/b/n/14 國 立 虎 尾 科 技 大 學
  []
 
 
-Underfull \hbox (badness 10000) detected at line 952
+Underfull \hbox (badness 10000) detected at line 1002
  
  []
 
 
-Underfull \hbox (badness 1881) detected at line 953
+Underfull \hbox (badness 1881) detected at line 1003
 \TU/標楷體(0)/b/n/14 機 械 設 計 工 程 系
  []
 
 
-Underfull \hbox (badness 10000) detected at line 955
+Underfull \hbox (badness 10000) detected at line 1005
 \TU/標楷體(0)/b/n/14 經 歷
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--958
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1008
 
  []
 
 File: st4.jpg Graphic file (type bmp)
 <st4.jpg>
 
-Underfull \hbox (badness 10000) detected at line 966
+Underfull \hbox (badness 10000) detected at line 1016
 \TU/標楷體(0)/b/n/14 姓 名
  []
 
 
-Underfull \hbox (badness 10000) detected at line 967
+Underfull \hbox (badness 10000) detected at line 1017
 \TU/標楷體(0)/b/n/14 吳 佳 穎
  []
 
 
-Underfull \hbox (badness 10000) detected at line 968
+Underfull \hbox (badness 10000) detected at line 1018
 \TU/標楷體(0)/b/n/14 學 號
  []
 
 
-Underfull \hbox (badness 10000) detected at line 969
+Underfull \hbox (badness 10000) detected at line 1019
 \TU/lmr/m/n/14 40723153
  []
 
 
-Underfull \hbox (badness 1112) detected at line 971
+Underfull \hbox (badness 1112) detected at line 1021
 \TU/標楷體(0)/b/n/14 國 立 虎 尾 科 技 大 學
  []
 
 
-Underfull \hbox (badness 10000) detected at line 972
+Underfull \hbox (badness 10000) detected at line 1022
  
  []
 
 
-Underfull \hbox (badness 1881) detected at line 973
+Underfull \hbox (badness 1881) detected at line 1023
 \TU/標楷體(0)/b/n/14 機 械 設 計 工 程 系
  []
 
 
-Underfull \hbox (badness 10000) detected at line 975
+Underfull \hbox (badness 10000) detected at line 1025
 \TU/標楷體(0)/b/n/14 經 歷
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 977--978
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1028
 
  []
 
 File: st5.jpg Graphic file (type bmp)
 <st5.jpg>
 
-Underfull \hbox (badness 10000) detected at line 986
+Underfull \hbox (badness 10000) detected at line 1036
 \TU/標楷體(0)/b/n/14 姓 名
  []
 
 
-Underfull \hbox (badness 10000) detected at line 987
+Underfull \hbox (badness 10000) detected at line 1037
 \TU/標楷體(0)/b/n/14 蔡 育 灃
  []
 
 
-Underfull \hbox (badness 10000) detected at line 988
+Underfull \hbox (badness 10000) detected at line 1038
 \TU/標楷體(0)/b/n/14 學 號
  []
 
 
-Underfull \hbox (badness 10000) detected at line 989
+Underfull \hbox (badness 10000) detected at line 1039
 \TU/lmr/m/n/14 40723245
  []
 
 
-Underfull \hbox (badness 1112) detected at line 991
+Underfull \hbox (badness 1112) detected at line 1041
 \TU/標楷體(0)/b/n/14 國 立 虎 尾 科 技 大 學
  []
 
 
-Underfull \hbox (badness 10000) detected at line 992
+Underfull \hbox (badness 10000) detected at line 1042
  
  []
 
 
-Underfull \hbox (badness 1881) detected at line 993
+Underfull \hbox (badness 1881) detected at line 1043
 \TU/標楷體(0)/b/n/14 機 械 設 計 工 程 系
  []
 
 
-Underfull \hbox (badness 10000) detected at line 995
+Underfull \hbox (badness 10000) detected at line 1045
 \TU/標楷體(0)/b/n/14 經 歷
  []
 
-[36] (4072pj3.aux)
+[38] (4072pj3.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1521,16 +1552,16 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred inside a group at level 2)
 
-### simple group (level 2) entered at line 841 ({)
-### simple group (level 1) entered at line 836 ({)
+### simple group (level 2) entered at line 891 ({)
+### simple group (level 1) entered at line 886 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10399 strings out of 412197
- 229633 string characters out of 2851899
- 779533 words of memory out of 3000000
- 29752 multiletter control sequences out of 15000+200000
+ 10420 strings out of 412197
+ 230569 string characters out of 2849426
+ 780533 words of memory out of 3000000
+ 29770 multiletter control sequences out of 15000+200000
  539071 words of font info for 74 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  79i,7n,85p,388b,1163s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on 4072pj3.pdf (38 pages).
+Output written on 4072pj3.pdf (40 pages).

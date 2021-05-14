@@ -829,7 +829,57 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
         \includegraphics[scale=0.6]{anti-rise_x-y+.png}
         \caption{Anti-rise x座標減少 y座標增加}
         \label{fig_antirise_x-y+:scale}
-    	\end{figure} 	
+    	\end{figure}
+    	
+    	\subsection{3D零件自動生成}
+	\begin{flushleft}
+	\fourteen {完成機構設計後接著就要進入CAD階段，不過在此階段常面臨突然遇到有其他的因素導致需要修改尺寸，此時若以手動將一個個零件一一重新修改會浪費許多時間，因此本專題建立一程式流程來進行參數化修改。}
+	\end{flushleft}
+	\begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.6]{3D零件生成.png}
+        \caption{3D零件生成流程圖}
+        \label{fig_3Dparts:scale}
+    	\end{figure} 
+	
+	
+	\begin{enumerate}
+	\item{\fourteen{繪製零件:建立後續會用到的零件}
+	\begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.4]{binary_link.png}
+        \caption{二接頭連桿}
+        \label{fig_binary_link:scale}
+        
+        \centering
+        \includegraphics[scale=0.5]{ternary_link.png}
+        \caption{三接頭連桿}
+        \label{fig_ternary_link:scale}
+    \end{figure}
+    }
+    
+	
+	\item
+	{
+	\begin{flushleft}
+	\fourteen{關鍵尺寸設定:將所需要的零件關鍵尺寸找出並在CAD軟體中建立該參數}
+	\end{flushleft}
+	}
+	
+	\item{
+	\begin{flushleft}
+	\fourteen{程式流程:該流程主要以pywin32模組來完成，其中會利用該模組找到在電腦中的CAD軟體並開啟接著將找到要修改的零件模型的路徑並開啟，再將前面設定完成的尺寸參數名稱帶入函式中並輸入想要的數值，修改完畢後再更新零件才能在CAD軟體中看到修改後的變化，最後進行儲存的動作}    	
+    \end{flushleft}
+    }
+    	
+    % %%%% test the subfigure syntax
+	%\begin{figure}
+	%\centering
+	%$\subfigure$[binary_link]{\label{fig:a} \includegraphics[width=60mm]{binary_link.png}}$
+	%$\subfigure$[ternary_link]{\label{fig:b} \includegraphics[width=60mm]{ternary_link.png}}$
+	%\caption{my caption}
+	%\end{figure}
+	\end{enumerate}
     	
     	
         \chapter{結論}
