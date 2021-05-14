@@ -182,14 +182,15 @@ def _img(type, h1, rear_pline_pos, theta, travel_step=10):
 
 if __name__ == "__main__":
     ########### Joint configuration ###########
-    """
+    
     # Firebird
     p0 = (0, 0)
     p1 = (-41.52, -5.1)
     p2 = (-397.41, -42.50)
     p3 = (17.68, 111.69)
     # p4 = (-3.2, 154.98)
-    p4 = (-7.02, 156.06)    # test the point from different algorithm
+    # p4 = (-3, 153)    # test the point from different algorithm (OK)
+    p4 = (-4.39, 151.56)
     p5 = (89, 201.72)
     theta = 187.14
 
@@ -202,8 +203,8 @@ if __name__ == "__main__":
     h1 = 1037
     origin2front = 662.6
     rear_pline_pos = (-394.0851, -368.3)
-    """
     
+    """
     # RDO
     p0 = (0, 0)
     p1 = (-73, -44)
@@ -222,7 +223,8 @@ if __name__ == "__main__":
     h1 = 1037
     rear_pline_pos = (-474.4089, -307)
     origin2front = 684.45
-    
+    """
     
     ########### Joint configuration ###########
-    _img("Horst-link suspension (RDO)", h1, rear_pline_pos, theta)
+    # _img("Horst-link suspension (RDO)", h1, rear_pline_pos, theta)
+    _img("Twin-link suspension (Firebird)", h1, rear_pline_pos, theta)

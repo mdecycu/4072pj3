@@ -8,14 +8,13 @@ input:
 - - 0
   - 1
 links:
+  L1: Blue
+  L2: Blue
+  L3: Blue
+  L4: Blue
   ground: White
-  link_1: Blue
-  link_2: Blue
-  link_3: Blue
-  link_4: Blue
-mechanism: M[J[R, color[Blue], P[0, 0], L[ground, link_4]], J[R, color[Green], P[-41.52,
-  -5.1], L[link_1, link_4]], J[R, color[Green], P[-397.41, -42.5], L[link_1]], J[R,
-  color[Blue], P[17.68, 111.69], L[link_3, ground]], J[R, color[green], P[-3.2, 154.98],
-  L[link_3, link_1, link_2]], J[RP, A[30.0], color[Blue], P[84.1925, 189.1709], L[ground,
-  link_2]]]
+mechanism: M[J[R, color[Blue], P[0, 0], L[ground, L4]], J[R, color[Green], P[-41.52,
+  -5.1], L[L1, L4]], J[R, color[Green], P[-397.41, -42.5], L[L1]], J[R, color[Blue],
+  P[17.68, 111.69], L[L3, ground]], J[R, color[green], P[-3.4, 153.2], L[L3, L1, L2]],
+  J[RP, A[30.0], color[Blue], P[84.1925, 189.1709], L[ground, L2]]]
 pyslvs_ver: 20.12.0.dev0

@@ -94,7 +94,7 @@ layout = [
     [sg.Spin(values=[i for i in range(-200, 201)], initial_value=default_px, size=(8, 4),enable_events=True, key="spin_x"), sg.Text("Px"),
         sg.Spin(values=[i for i in range(-200, 201)], initial_value=default_py, size=(8, 4),enable_events=True, key="spin_y"), sg.Text("Py")],
     [sg.Canvas(key='-CANVAS-')],
-    [sg.Button("Reset"), sg.Button("Plot")]
+    [sg.Button("Reset"), sg.Button("Plot"), sg.Button("Record")]
 ]
 
 """  # Test to add the control panel
@@ -160,6 +160,17 @@ while True:
             window.Element("spin_x").Update(p4x)
             window.Element("spin_y").Update(p4y)
             
+    elif event == "Record":
+        fig = matplotlib.figure.Figure(figsize=(5, 4), dpi=100)
+        ax = fig.add_subplot(111)
+        
+        p4x = int(values["spin_x"])
+        p4y = int(values["spin_y"])
+        img_info(p4x, p4y)
+        window.Element("spin_x").Update(p4x)
+        window.Element("spin_y").Update(p4y)
+
+
         """
         if values["point"] == "p2":
             p2x = int(values["spin_x"])

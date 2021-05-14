@@ -1,28 +1,95 @@
 <CoppeliaSim>
-    <filetype>simpleScene</filetype>
+  <filetype>simpleScene</filetype>
   <xmlSerializationNb>1</xmlSerializationNb>
   <environment>
   </environment>
   <settings>
+    <visibleLayers>231</visibleLayers>
+    <switches>
+      <visionSensorsEnabled>true</visionSensorsEnabled>
+      <proximitySensorsEnabled>true</proximitySensorsEnabled>
+      <mirrorsEnabled>true</mirrorsEnabled>
+      <clippingPlanesEnabled>true</clippingPlanesEnabled>
+      <ikEnabled>true</ikEnabled>
+      <collisionDetectionsEnabled>true</collisionDetectionsEnabled>
+      <distanceCalculationsEnabled>true</distanceCalculationsEnabled>
+    </switches>
   </settings>
   <dynamics>
+    <engine>bullet</engine>
+    <engineVersion>0</engineVersion>
+    <engineMode>accurate</engineMode>
+    <gravity>0.000000 0.000000 -9.810000</gravity>
+    <switches>
+      <dynamicsEnabled>true</dynamicsEnabled>
+      <showContactPoints>false</showContactPoints>
+    </switches>
+    <engines>
+      <bullet>
+        <stepsize>0.005000</stepsize>
+        <internalscalingfactor>10.000000</internalscalingfactor>
+        <collisionmarginfactor>0.100000</collisionmarginfactor>
+        <constraintsolvingiterations>100</constraintsolvingiterations>
+        <constraintsolvertype>0</constraintsolvertype>
+        <fullinternalscaling>true</fullinternalscaling>
+      </bullet>
+      <ode>
+        <stepsize>0.005000</stepsize>
+        <internalscalingfactor>1.000000</internalscalingfactor>
+        <cfm>0.000010</cfm>
+        <erp>0.600000</erp>
+        <constraintsolvingiterations>100</constraintsolvingiterations>
+        <randomseed>-1</randomseed>
+        <fullinternalscaling>true</fullinternalscaling>
+        <quickstep>true</quickstep>
+      </ode>
+      <vortex>
+        <stepsize>0.005000</stepsize>
+        <internalscalingfactor>1.000000</internalscalingfactor>
+        <contacttolerance>0.001000</contacttolerance>
+        <constraintlinearcompliance>0.000000</constraintlinearcompliance>
+        <constraintlineardamping>8000000.000000</constraintlineardamping>
+        <constraintlinearkineticloss>0.000060</constraintlinearkineticloss>
+        <constraintangularcompliance>0.000000</constraintangularcompliance>
+        <constraintangulardamping>800000000.000000</constraintangulardamping>
+        <constraintangularkineticloss>0.000001</constraintangularkineticloss>
+        <autosleep>true</autosleep>
+        <multithreading>false</multithreading>
+      </vortex>
+      <newton>
+        <stepsize>0.005000</stepsize>
+        <contactmergetolerance>0.010000</contactmergetolerance>
+        <constraintsolvingiterations>8</constraintsolvingiterations>
+        <multithreading>true</multithreading>
+        <exactsolver>true</exactsolver>
+        <highjointaccuracy>true</highjointaccuracy>
+      </newton>
+    </engines>
   </dynamics>
   <simulation> 
   </simulation>
-  <dummy>
-    <camera>
-     <common>
+  <camera>
+    <common>
+      <name>main camera</name>
       <localFrame>
         <position>1 1 1</position>
         <euler>90 -45 0</euler>
       </localFrame>
-     </common>
-     <mainCamera>true</mainCamera>
-    </camera>
-  </dummy>
+    </common>
+    <mainCamera>true</mainCamera>
+  </camera>
+  <dummy>
+    <common>
+      <name>light</name>
+      <localFrame>
+        <position>0 0 0</position>
+        <euler>0 0 0</euler>
+      </localFrame>
+      <layer>0</layer>
+    </common>
   <light>
     <common>
-      <name>light1</name>
+      <name>lightA</name>
       <localFrame>
         <position>2.5 0 3</position>
         <euler>100 -50 0</euler>
@@ -38,7 +105,7 @@
  </light>
   <light>
     <common>
-      <name>light2</name>
+      <name>lightB</name>
       <localFrame>
         <position>0 2.5 3</position>
         <euler>100 -50 0</euler>
@@ -54,7 +121,7 @@
  </light>
   <light>
     <common>
-      <name>light3</name>
+      <name>lightC</name>
       <localFrame>
         <position>0 -2.5 3</position>
         <euler>-100 -50 0</euler>
@@ -70,7 +137,7 @@
  </light>
   <light>
     <common>
-      <name>light4</name>
+      <name>lightD</name>
       <localFrame>
         <position>-2.5 0 3</position>
         <euler>100 -50 0</euler>
@@ -84,278 +151,7 @@
       </light>
     </color>
   </light>
-  <shape>
-    <common>
-      <name>Fork</name>
-    </common>
-    <mesh>
-      <fileName>Fork.stl</fileName>
-      <localFrame>
-        <position>0 0 0</position>
-        <euler>0 0 0</euler>
-      </localFrame>
-    </mesh>
-  <dynamics>
-    <respondableMask>65535</respondableMask>
-    <initialLinearVelocity>0.000000 0.000000 0.000000</initialLinearVelocity>
-    <initialAngularVelocity>0.000000 0.000000 0.000000</initialAngularVelocity>
-    <mass>2.000000</mass>
-    <localInertiaFrame>
-        <position>0.040001 0.019509 0.044991</position>
-        <euler>90.595184 20.325485 119.255615</euler>
-    </localInertiaFrame>
-    <principalMomentOfInertia>0.001000 0.012904 0.012904</principalMomentOfInertia>
-    <switches>
-        <static>true</static>
-        <respondable>false</respondable>
-        <startSleeping>false</startSleeping>
-        <setToDynamicIfGetsParent>false</setToDynamicIfGetsParent>
-    </switches>
-      <material>
-        <engines>
-          <bullet>
-            <restitution>0.000000</restitution>
-            <friction>0.710000</friction>
-            <oldfriction>0.710000</oldfriction>
-            <lineardamping>0.000000</lineardamping>
-            <angulardamping>0.000000</angulardamping>
-            <nondefaultcollisionmargingfactor>0.100000</nondefaultcollisionmargingfactor>
-            <nondefaultcollisionmargingfactorconvex>0.002000</nondefaultcollisionmargingfactorconvex>
-            <sticky>false</sticky>
-            <usenondefaultcollisionmargin>false</usenondefaultcollisionmargin>
-            <usenondefaultcollisionmarginconvex>true</usenondefaultcollisionmarginconvex>
-            <autoshrinkconvex>false</autoshrinkconvex>
-          </bullet>
-          <ode>
-            <friction>0.710000</friction>
-            <softerp>0.200000</softerp>
-            <softcfm>0.000000</softcfm>
-            <lineardamping>0.000000</lineardamping>
-            <angulardamping>0.000000</angulardamping>
-            <maxcontacts>64</maxcontacts>
-          </ode>
-          <vortex>
-            <primlinearaxisfriction>0.500000</primlinearaxisfriction>
-            <seclinearaxisfriction>0.500000</seclinearaxisfriction>
-            <primangularaxisfriction>0.000000</primangularaxisfriction>
-            <secangularaxisfriction>0.000000</secangularaxisfriction>
-            <normalangularaxisfriction>0.000000</normalangularaxisfriction>
-            <primlinearaxisstaticfrictionscale>1.100000</primlinearaxisstaticfrictionscale>
-            <seclinearaxisstaticfrictionscale>1.100000</seclinearaxisstaticfrictionscale>
-            <primangularaxisstaticfrictionscale>1.000000</primangularaxisstaticfrictionscale>
-            <secangularaxisstaticfrictionscale>1.000000</secangularaxisstaticfrictionscale>
-            <normalangularaxisstaticfrictionscale>1.000000</normalangularaxisstaticfrictionscale>
-            <compliance>0.000000</compliance>
-            <damping>10000000.000000</damping>
-            <restitution>0.000000</restitution>
-            <restitutionthreshold>0.500000</restitutionthreshold>
-            <adhesiveforce>0.000000</adhesiveforce>
-            <linearvelocitydamping>0.000000</linearvelocitydamping>
-            <angularvelocitydamping>0.000000</angularvelocitydamping>
-            <primlinearaxisslide>0.000000</primlinearaxisslide>
-            <seclinearaxisslide>0.000000</seclinearaxisslide>
-            <primangularaxisslide>0.000000</primangularaxisslide>
-            <secangularaxisslide>0.000000</secangularaxisslide>
-            <normalangularaxisslide>0.000000</normalangularaxisslide>
-            <primlinearaxisslip>0.000000</primlinearaxisslip>
-            <seclinearaxisslip>0.000000</seclinearaxisslip>
-            <primangularaxisslip>0.000000</primangularaxisslip>
-            <secangularaxisslip>0.000000</secangularaxisslip>
-            <normalangularaxisslip>0.000000</normalangularaxisslip>
-            <autosleeplinearspeedthreshold>0.140000</autosleeplinearspeedthreshold>
-            <autosleeplinearaccelthreshold>0.045000</autosleeplinearaccelthreshold>
-            <autosleepangularspeedthreshold>0.030000</autosleepangularspeedthreshold>
-            <autosleepangularaccelthreshold>0.045000</autosleepangularaccelthreshold>
-            <skinthickness>0.000000</skinthickness>
-            <autoangulardampingtensionratio>0.010000</autoangulardampingtensionratio>
-            <primaxisvectorx>0.000000</primaxisvectorx>
-            <primaxisvectory>0.000000</primaxisvectory>
-            <primaxisvectorz>1.000000</primaxisvectorz>
-            <primlinearaxisfrictionmodel>4</primlinearaxisfrictionmodel>
-            <seclinearaxisfrictionmodel>4</seclinearaxisfrictionmodel>
-            <primangulararaxisfrictionmodel>6</primangulararaxisfrictionmodel>
-            <secmangulararaxisfrictionmodel>6</secmangulararaxisfrictionmodel>
-            <normalmangulararaxisfrictionmodel>6</normalmangulararaxisfrictionmodel>
-            <autosleepsteplivethreshold>10</autosleepsteplivethreshold>
-            <materialuniqueid>233</materialuniqueid>
-            <pureshapesasconvex>false</pureshapesasconvex>
-            <convexshapesasrandom>false</convexshapesasrandom>
-            <randomshapesasterrain>false</randomshapesasterrain>
-            <fastmoving>true</fastmoving>
-            <autoslip>false</autoslip>
-            <seclinaxissameasprimlinaxis>true</seclinaxissameasprimlinaxis>
-            <secangaxissameasprimangaxis>true</secangaxissameasprimangaxis>
-            <normangaxissameasprimangaxis>true</normangaxissameasprimangaxis>
-            <autoangulardamping>false</autoangulardamping>
-              </vortex>
-                <newton>
-                  <staticfriction>0.500000</staticfriction>
-                  <kineticfriction>0.500000</kineticfriction>
-                  <restitution>0.000000</restitution>
-                  <lineardrag>0.000000</lineardrag>
-                  <angulardrag>0.000000</angulardrag>
-                  <fastmoving>false</fastmoving>
-                </newton>
-        </engines>
-    </material>
-  </dynamics>
-    <shape>
-  <common>
-    <name>base</name>
-  </common>
-  <primitive>
-    <type>cylinder</type>
-    <size>
-      <length>0.2</length>
-      <diameter>0.1</diameter>
-    </size>
-    <localFrame>
-      <position>0.000000 0.000000 0.000000</position>
-      <euler>-0.000000 0.000000 -0.000000</euler>
-    </localFrame>
-  </primitive>
-  <dynamics>
-    <respondableMask>65535</respondableMask>
-    <initialLinearVelocity>0.000000 0.000000 0.000000</initialLinearVelocity>
-    <initialAngularVelocity>0.000000 0.000000 0.000000</initialAngularVelocity>
-    <mass>2.000000</mass>
-    <localInertiaFrame>
-        <position>0.040001 0.019509 0.044991</position>
-        <euler>90.595184 20.325485 119.255615</euler>
-    </localInertiaFrame>
-    <principalMomentOfInertia>0.001000 0.012904 0.012904</principalMomentOfInertia>
-    <switches>
-        <static>true</static>
-        <respondable>false</respondable>
-        <startSleeping>false</startSleeping>
-        <setToDynamicIfGetsParent>false</setToDynamicIfGetsParent>
-    </switches>
-      <material>
-        <engines>
-          <bullet>
-            <restitution>0.000000</restitution>
-            <friction>0.710000</friction>
-            <oldfriction>0.710000</oldfriction>
-            <lineardamping>0.000000</lineardamping>
-            <angulardamping>0.000000</angulardamping>
-            <nondefaultcollisionmargingfactor>0.100000</nondefaultcollisionmargingfactor>
-            <nondefaultcollisionmargingfactorconvex>0.002000</nondefaultcollisionmargingfactorconvex>
-            <sticky>false</sticky>
-            <usenondefaultcollisionmargin>false</usenondefaultcollisionmargin>
-            <usenondefaultcollisionmarginconvex>true</usenondefaultcollisionmarginconvex>
-            <autoshrinkconvex>false</autoshrinkconvex>
-          </bullet>
-          <ode>
-            <friction>0.710000</friction>
-            <softerp>0.200000</softerp>
-            <softcfm>0.000000</softcfm>
-            <lineardamping>0.000000</lineardamping>
-            <angulardamping>0.000000</angulardamping>
-            <maxcontacts>64</maxcontacts>
-          </ode>
-          <vortex>
-            <primlinearaxisfriction>0.500000</primlinearaxisfriction>
-            <seclinearaxisfriction>0.500000</seclinearaxisfriction>
-            <primangularaxisfriction>0.000000</primangularaxisfriction>
-            <secangularaxisfriction>0.000000</secangularaxisfriction>
-            <normalangularaxisfriction>0.000000</normalangularaxisfriction>
-            <primlinearaxisstaticfrictionscale>1.100000</primlinearaxisstaticfrictionscale>
-            <seclinearaxisstaticfrictionscale>1.100000</seclinearaxisstaticfrictionscale>
-            <primangularaxisstaticfrictionscale>1.000000</primangularaxisstaticfrictionscale>
-            <secangularaxisstaticfrictionscale>1.000000</secangularaxisstaticfrictionscale>
-            <normalangularaxisstaticfrictionscale>1.000000</normalangularaxisstaticfrictionscale>
-            <compliance>0.000000</compliance>
-            <damping>10000000.000000</damping>
-            <restitution>0.000000</restitution>
-            <restitutionthreshold>0.500000</restitutionthreshold>
-            <adhesiveforce>0.000000</adhesiveforce>
-            <linearvelocitydamping>0.000000</linearvelocitydamping>
-            <angularvelocitydamping>0.000000</angularvelocitydamping>
-            <primlinearaxisslide>0.000000</primlinearaxisslide>
-            <seclinearaxisslide>0.000000</seclinearaxisslide>
-            <primangularaxisslide>0.000000</primangularaxisslide>
-            <secangularaxisslide>0.000000</secangularaxisslide>
-            <normalangularaxisslide>0.000000</normalangularaxisslide>
-            <primlinearaxisslip>0.000000</primlinearaxisslip>
-            <seclinearaxisslip>0.000000</seclinearaxisslip>
-            <primangularaxisslip>0.000000</primangularaxisslip>
-            <secangularaxisslip>0.000000</secangularaxisslip>
-            <normalangularaxisslip>0.000000</normalangularaxisslip>
-            <autosleeplinearspeedthreshold>0.140000</autosleeplinearspeedthreshold>
-            <autosleeplinearaccelthreshold>0.045000</autosleeplinearaccelthreshold>
-            <autosleepangularspeedthreshold>0.030000</autosleepangularspeedthreshold>
-            <autosleepangularaccelthreshold>0.045000</autosleepangularaccelthreshold>
-            <skinthickness>0.000000</skinthickness>
-            <autoangulardampingtensionratio>0.010000</autoangulardampingtensionratio>
-            <primaxisvectorx>0.000000</primaxisvectorx>
-            <primaxisvectory>0.000000</primaxisvectory>
-            <primaxisvectorz>1.000000</primaxisvectorz>
-            <primlinearaxisfrictionmodel>4</primlinearaxisfrictionmodel>
-            <seclinearaxisfrictionmodel>4</seclinearaxisfrictionmodel>
-            <primangulararaxisfrictionmodel>6</primangulararaxisfrictionmodel>
-            <secmangulararaxisfrictionmodel>6</secmangulararaxisfrictionmodel>
-            <normalmangulararaxisfrictionmodel>6</normalmangulararaxisfrictionmodel>
-            <autosleepsteplivethreshold>10</autosleepsteplivethreshold>
-            <materialuniqueid>233</materialuniqueid>
-            <pureshapesasconvex>false</pureshapesasconvex>
-            <convexshapesasrandom>false</convexshapesasrandom>
-            <randomshapesasterrain>false</randomshapesasterrain>
-            <fastmoving>true</fastmoving>
-            <autoslip>false</autoslip>
-            <seclinaxissameasprimlinaxis>true</seclinaxissameasprimlinaxis>
-            <secangaxissameasprimangaxis>true</secangaxissameasprimangaxis>
-            <normangaxissameasprimangaxis>true</normangaxissameasprimangaxis>
-            <autoangulardamping>false</autoangulardamping>
-              </vortex>
-                <newton>
-                  <staticfriction>0.500000</staticfriction>
-                  <kineticfriction>0.500000</kineticfriction>
-                  <restitution>0.000000</restitution>
-                  <lineardrag>0.000000</lineardrag>
-                  <angulardrag>0.000000</angulardrag>
-                  <fastmoving>false</fastmoving>
-                </newton>
-        </engines>
-    </material>
-  </dynamics>
-  </shape>
-        <shape>
-          <common>
-            <name>Fork</name>
-          </common>
-        <mesh>
-          <fileName>Fork.stl</fileName>
-          <localFrame>
-            <position>-0.1 -0.1 0</position>
-            <euler>0 0 0</euler>
-          </localFrame>
-        </mesh>
-        <dynamics>
-          <switches>
-            <static>false</static>
-            <respondable>true</respondable>
-          </switches>
-        </dynamics>
-      </shape>
-        <shape>
-          <common>
-            <name>Handlebar</name>
-          </common>
-          <mesh>
-            <fileName>Handlebar.stl</fileName>
-            <localFrame>
-              <position>0.1 -0.1 -0.1</position>
-              <euler>0 0 90</euler>
-            </localFrame>
-          </mesh>
-          <dynamics>
-            <switches>
-              <static>false</static>
-              <respondable>true</respondable>
-            </switches>
-          </dynamics>
-        </shape>
-  </shape>
+  </dummy>
   <shape>
     <common>
       <name>floor</name>
@@ -385,5 +181,1028 @@
         <respondable>true</respondable>
       </switches>
     </dynamics>
- </shape>
+  </shape>
+  <shape>
+    <common>
+      <name>Fork</name>
+    </common>
+    <mesh>
+      <fileName>Fork.stl</fileName>
+      <localFrame>
+        <position>0 0.289 0.64</position>
+        <euler>70 0 0</euler>
+      </localFrame>
+      <localObjectProperty>
+        <selectable>false</selectable>
+      </localObjectProperty>
+      <localObjectSpecialProperty>
+        <collidable>true</collidable>
+        <measurable>true</measurable>
+        <renderable>true</renderable>
+        <detectable>true</detectable>
+      </localObjectSpecialProperty>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Handlebar</name>
+    </common>
+    <mesh>
+      <fileName>Handlebar.stl</fileName>
+      <localFrame>
+        <position>0 0.38 0.89</position>
+        <euler>-20 0 0</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Front wheel</name>
+    </common>
+    <mesh>
+      <fileName>Wheel.stl</fileName>
+      <localFrame>
+        <position>0 0.09 0.25</position>
+        <euler>0 90 0</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>pin</name>
+    </common>
+    <mesh>
+      <fileName>pin.stl</fileName>
+      <localFrame>
+        <position>0.125 0.092 0.248</position>
+        <euler>0 90 0</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>frame</name>
+      <layer>0</layer>
+    </common>
+    <mesh>
+      <fileName>frame.stl</fileName>
+      <localFrame>
+        <position>0 0.7375 0.15</position>
+        <euler>90 -90 0</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Rod</name>
+    </common>
+    <mesh>
+      <fileName>Rod.stl</fileName>
+      <localFrame>
+        <position>0.002 0.718 0.19</position>
+        <euler>-50 0 90</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Slider</name>
+    </common>
+    <mesh>
+      <fileName>Slider.stl</fileName>
+      <localFrame>
+        <position>0 0.695 0.3125</position>
+        <euler>10 180 90</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Slider1</name>
+    </common>
+    <mesh>
+      <fileName>Slider1.stl</fileName>
+      <localFrame>
+        <position>0 0.716 0.2</position>
+        <euler>10 180 90</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Triangle fame1</name>
+    </common>
+    <mesh>
+      <fileName>Triangle fame1.stl</fileName>
+      <localFrame>
+        <position>-0.0025 0.84 0.45</position>
+        <euler>10 0 -90</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Triangle fame</name>
+    </common>
+    <mesh>
+      <fileName>Triangle fame.stl</fileName>
+      <localFrame>
+        <position>0.0025 1.215 0.285</position>
+        <euler>20 180 -90</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Behind_wheel</name>
+    </common>
+    <mesh>
+      <fileName>Wheel.stl</fileName>
+      <localFrame>
+        <position>0 1.215 0.285</position>
+        <euler>0 90 0</euler>
+      </localFrame>
+    </mesh>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>
+  </shape>
+  <joint>
+    <common>
+      <name>motor1</name>
+      <localFrame>
+        <position>0 0.775 0.125</position>
+        <euler>0 90 0</euler>
+      </localFrame>
+      <localObjectProperty>
+        <selectModelBaseInstead>true</selectModelBaseInstead>
+      </localObjectProperty>
+    </common>
+    <type>revolute</type>
+    <mode>force</mode>
+    <switches>
+      <cyclic>true</cyclic>
+    </switches>
+    <sizes>
+      <length>0.05</length>
+      <diameter>0.01</diameter>
+    </sizes>
+    <dynamics>
+      <maxForce>2.5</maxForce>
+      <upperVelocityLimit>360</upperVelocityLimit>
+      <switches>
+        <motorEnabled>true</motorEnabled>
+      </switches>
+    </dynamics>
+  <shape>
+    <common>
+      <name>shape_motor1</name>
+    </common>
+    <primitive> <!--(should be compound, primitive, heightfield or mesh)-->
+      <type>cylinder</type> <!--(should be cuboid, sphere, cylinder, cone, plane or disc)-->
+      <size>0.01 0.01 0.025</size>
+      <localFrame> <!--(this is in addition to the local frame you may specify in <common>)-->
+        <position>0 0 0</position>
+        <euler>0 0 0</euler>
+      </localFrame>
+      <!--... (refer to generated files for details)-->
+    </primitive>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>   
+  </shape>
+  </joint>
+  <joint>
+    <common>
+      <name>motor2</name>
+      <localFrame>
+        <position>0 0.718 0.19</position>
+        <euler>0 90 0</euler>
+      </localFrame>
+      <localObjectProperty>
+        <selectModelBaseInstead>true</selectModelBaseInstead>
+      </localObjectProperty>
+    </common>
+    <type>revolute</type>
+    <mode>force</mode>
+    <switches>
+      <cyclic>true</cyclic>
+    </switches>
+    <sizes>
+      <length>0.05</length>
+      <diameter>0.01</diameter>
+    </sizes>
+    <dynamics>
+      <maxForce>2.5</maxForce>
+      <upperVelocityLimit>360</upperVelocityLimit>
+      <switches>
+        <motorEnabled>true</motorEnabled>
+      </switches>
+    </dynamics>
+  <shape>
+    <common>
+      <name>shape_motor2</name>
+    </common>
+    <primitive> <!--(should be compound, primitive, heightfield or mesh)-->
+      <type>cylinder</type> <!--(should be cuboid, sphere, cylinder, cone, plane or disc)-->
+      <size>0.01 0.01 0.025</size>
+      <localFrame> <!--(this is in addition to the local frame you may specify in <common>)-->
+        <position>0 0 0</position>
+        <euler>0 0 0</euler>
+      </localFrame>
+      <!--... (refer to generated files for details)-->
+    </primitive>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>   
+  </shape>
+  </joint>
+  <joint>
+    <common>
+      <name>motor3</name>
+      <localFrame>
+        <position>0 0.718 0.19</position>
+        <euler>0 90 0</euler>
+      </localFrame>
+      <localObjectProperty>
+        <selectModelBaseInstead>true</selectModelBaseInstead>
+      </localObjectProperty>
+    </common>
+    <type>revolute</type>
+    <mode>force</mode>
+    <switches>
+      <cyclic>true</cyclic>
+    </switches>
+    <sizes>
+      <length>0.05</length>
+      <diameter>0.01</diameter>
+    </sizes>
+    <dynamics>
+      <maxForce>2.5</maxForce>
+      <upperVelocityLimit>360</upperVelocityLimit>
+      <switches>
+        <motorEnabled>true</motorEnabled>
+      </switches>
+    </dynamics>
+  <shape>
+    <common>
+      <name>shape_motor3</name>
+    </common>
+    <primitive> <!--(should be compound, primitive, heightfield or mesh)-->
+      <type>cylinder</type> <!--(should be cuboid, sphere, cylinder, cone, plane or disc)-->
+      <size>0.01 0.01 0.025</size>
+      <localFrame> <!--(this is in addition to the local frame you may specify in <common>)-->
+        <position>0 0 0</position>
+        <euler>0 0 0</euler>
+      </localFrame>
+      <!--... (refer to generated files for details)-->
+    </primitive>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>   
+  </shape>
+  </joint>
+  <joint>
+    <common>
+      <name>motor4</name>
+      <localFrame>
+        <position>0 0.675 0.42</position>
+        <euler>0 90 0</euler>
+      </localFrame>
+      <localObjectProperty>
+        <selectModelBaseInstead>true</selectModelBaseInstead>
+      </localObjectProperty>
+    </common>
+    <type>revolute</type>
+    <mode>force</mode>
+    <switches>
+      <cyclic>true</cyclic>
+    </switches>
+    <sizes>
+      <length>0.05</length>
+      <diameter>0.015</diameter>
+    </sizes>
+    <dynamics>
+      <maxForce>2.5</maxForce>
+      <upperVelocityLimit>360</upperVelocityLimit>
+      <switches>
+        <motorEnabled>true</motorEnabled>
+      </switches>
+    </dynamics>
+  <shape>
+    <common>
+      <name>shape_motor4</name>
+    </common>
+    <primitive> <!--(should be compound, primitive, heightfield or mesh)-->
+      <type>cylinder</type> <!--(should be cuboid, sphere, cylinder, cone, plane or disc)-->
+      <size>0.015 0.015 0.025</size>
+      <localFrame> <!--(this is in addition to the local frame you may specify in <common>)-->
+        <position>0 0 0</position>
+        <euler>0 0 0</euler>
+      </localFrame>
+      <!--... (refer to generated files for details)-->
+    </primitive>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>   
+  </shape>
+  </joint>
+  <joint>
+    <common>
+      <name>motor5</name>
+      <localFrame>
+        <position>0 0.84 0.45</position>
+        <euler>0 90 0</euler>
+      </localFrame>
+      <localObjectProperty>
+        <selectModelBaseInstead>true</selectModelBaseInstead>
+      </localObjectProperty>
+    </common>
+    <type>revolute</type>
+    <mode>force</mode>
+    <switches>
+      <cyclic>true</cyclic>
+    </switches>
+    <sizes>
+      <length>0.05</length>
+      <diameter>0.01</diameter>
+    </sizes>
+    <dynamics>
+      <maxForce>2.5</maxForce>
+      <upperVelocityLimit>360</upperVelocityLimit>
+      <switches>
+        <motorEnabled>true</motorEnabled>
+      </switches>
+    </dynamics>
+  <shape>
+    <common>
+      <name>shape_motor5</name>
+    </common>
+    <primitive> <!--(should be compound, primitive, heightfield or mesh)-->
+      <type>cylinder</type> <!--(should be cuboid, sphere, cylinder, cone, plane or disc)-->
+      <size>0.01 0.01 0.025</size>
+      <localFrame> <!--(this is in addition to the local frame you may specify in <common>)-->
+        <position>0 0 0</position>
+        <euler>0 0 0</euler>
+      </localFrame>
+      <!--... (refer to generated files for details)-->
+    </primitive>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>   
+  </shape>
+  </joint>
+  <joint>
+    <common>
+      <name>motor6</name>
+      <localFrame>
+        <position>0 1.215 0.285</position>
+        <euler>0 90 0</euler>
+      </localFrame>
+      <localObjectProperty>
+        <selectModelBaseInstead>true</selectModelBaseInstead>
+      </localObjectProperty>
+    </common>
+    <type>revolute</type>
+    <mode>force</mode>
+    <switches>
+      <cyclic>true</cyclic>
+    </switches>
+    <sizes>
+      <length>0.05</length>
+      <diameter>0.01</diameter>
+    </sizes>
+    <dynamics>
+      <maxForce>2.5</maxForce>
+      <upperVelocityLimit>360</upperVelocityLimit>
+      <switches>
+        <motorEnabled>true</motorEnabled>
+      </switches>
+    </dynamics>
+  <shape>
+    <common>
+      <name>shape_motor6</name>
+    </common>
+    <primitive> <!--(should be compound, primitive, heightfield or mesh)-->
+      <type>cylinder</type> <!--(should be cuboid, sphere, cylinder, cone, plane or disc)-->
+      <size>0.01 0.01 0.025</size>
+      <localFrame> <!--(this is in addition to the local frame you may specify in <common>)-->
+        <position>0 0 0</position>
+        <euler>0 0 0</euler>
+      </localFrame>
+      <!--... (refer to generated files for details)-->
+    </primitive>
+  <dynamics>
+    <respondableMask>65535</respondableMask>
+    <mass>1.0</mass>
+    <localInertiaFrame>
+      <position>0.0 0.0 0.0</position>
+      <euler>0.0 0.0 0.0</euler>
+    </localInertiaFrame>
+    <principalMomentOfInertia>0.001667 0.001667 0.001667</principalMomentOfInertia>
+    <switches>
+      <static>true</static>
+      <respondable>false</respondable>
+      <!--... (refer to generated files for details)-->
+    </switches>
+    <material>
+      <engines>
+        <bullet>
+          <friction>0.5</friction>
+          <oldfriction>1.0</oldfriction>
+          <!--... (refer to generated files for details)-->
+        </bullet>
+        <ode>
+          <friction>1.0</friction>
+            <!--... (refer to generated files for details)-->
+        </ode>
+        <vortex>
+          <primlinearaxisfriction>1.0</primlinearaxisfriction>
+          <seclinearaxisfriction>1.0</seclinearaxisfriction>
+          <!--... (refer to generated files for details)-->
+        </vortex>
+        <newton>
+          <staticfriction>1.0</staticfriction>
+          <kineticfriction>1.0</kineticfriction>
+          <!--... (refer to generated files for details)-->
+        </newton>
+      </engines>
+    </material>
+  </dynamics>   
+  </shape>
+  </joint>
 </CoppeliaSim>
