@@ -19,6 +19,7 @@ left=3truecm,right=2.5truecm]{geometry}
 \usepackage{listings} %引用程式碼
 \usepackage{indentfirst}
 \usepackage{diagbox}%引用表格
+\usepackage{multirow}%表格置中
 
 \lstset{language=Python, %設定語言
 		basicstyle=\footnotesize, 
@@ -839,82 +840,124 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
         \label{fig_stroke:scale}
     	\end{figure}
        
-       
+%--------------避震機構分析範例--------------%	
+	   \newpage
        \section{避震機構分析範例}
-       \fourteen {此小節會將4.1節所得到的結果並配合4.2節所介紹的評比標準進行討論以檢驗是否得到最佳的尺寸。}
+       \fourteen {此小節會以Pivot Cycles Firebird 29(雙連桿懸架類型)作為分析範例利用4.1節所推導出的適應性函數配合4.2節介紹的評比標準進行討論以檢驗得到的尺寸優劣。下圖為Firebird在Pyslvs-UI中的機構簡圖。}
 		\begin{figure}[hbt!]
         \centering
         \includegraphics[scale=0.4]{Firebird_mechanism.png}
         \caption{合成所得之機構}
         \label{fig_Firebird_mechanism:scale}
     	\end{figure}
+    	
+    	
+    	\fourteen {表$\ref{tab_as_x:scale}$至$\ref{tab_ar_y:scale}$為Anti-squat量化評比和Anti-rise量化評比各旋轉接頭的位置隨著正x或負x方向及正y或負y方向移動時得到的不同結果，其中實線為合成所得的懸轉接頭位置，而虛線則是座標點變化時Anti-squat及Anti-rise的量化趨勢。}
+    	
+		\begin{table}[htbp] %htbp代表表格浮動位置
+			\centering%表格居中
+			\caption{座標點變化之Anti-squat評比}%表:標題
+			\large%字體大小
+		\label{tab_as_x:scale}
+			%\renewcommand{\arraystretch}{1.0}
+			% \linespread{2.0}\selectfont
+			\begin{tabular}{|c|c|c|c|}
+			\hline
+			\centering
+			\diagbox[width=5em, height=3em]{接頭}{座標點}& 往正x方向 & 往負x方向\\
+			\hline
+			p0 		& $ \includegraphics[scale=0.35]{./data/as_p0_x+.png}$ & $\includegraphics[scale=0.35]{./data/as_p0_x-.png}$\\
+			\hline
+			p1 		& $ \includegraphics[scale=0.35]{./data/as_p1_x+.png}$ & $\includegraphics[scale=0.35]{./data/as_p1_x-.png}$\\
+			\hline
+			p2 		& $ \includegraphics[scale=0.35]{./data/as_p2_x+.png}$  & $\includegraphics[scale=0.35]{./data/as_p2_x-.png}$\\
+			\hline
+			p3 		& $ \includegraphics[scale=0.35]{./data/as_p3_x+.png}$  & $\includegraphics[scale=0.35]{./data/as_p3_x+.png}$\\
+			\hline
+			p4 		& $ \includegraphics[scale=0.35]{./data/as_p4_x+.png}$  & $\includegraphics[scale=0.35]{./data/as_p4_x-.png}$\\
+			\hline
+			\end{tabular}
+		\end{table}	 
 		
-		\newpage
-		\begin{flushleft}
-	    \fourteen {圖\ref{fig_antisquat_x-:scale}為Point4 在x座標往負x方向移動時所得到Anti-squat評比結果，由該圖可知當Point4越往負x方向移動時所得到的結果會越偏離100\%。}
-	    \end{flushleft}
-      \begin{figure}[hbt!]
-        \centering
-        \includegraphics[scale=0.6]{anti-squat_x-.png}
-        \caption{Anti-squat x座標減少}
-        \label{fig_antisquat_x-:scale}
-    	\end{figure}
+		
+		\begin{table}[htbp] %htbp代表表格浮動位置
+			\centering%表格居中
+			\caption{座標點變化之Anti-squat評比(續)}%表:標題
+			\large%字體大小
+		\label{tab_as_y:scale}
+			\begin{tabular}{|c|c|c|c|}
+			\hline
+			\centering
+			\diagbox[width=6em, height=3em]{接頭}{座標點}& 往正y方向 & 往負y方向\\ 
+			\hline
+			p0 		& $ \includegraphics[scale=0.35]{./data/as_p0_y+.png}$ & $\includegraphics[scale=0.35]{./data/as_p0_y-.png}$\\
+			\hline
+			p1 		& $ \includegraphics[scale=0.35]{./data/as_p1_y+.png}$ & $\includegraphics[scale=0.35]{./data/as_p1_y-.png}$\\
+			\hline
+			p2 		& $ \includegraphics[scale=0.35]{./data/as_p2_y+.png}$  & $\includegraphics[scale=0.35]{./data/as_p2_y-.png}$\\
+			\hline
+			p3 		& $ \includegraphics[scale=0.35]{./data/as_p3_y+.png}$  & $\includegraphics[scale=0.35]{./data/as_p3_y-.png}$\\
+			\hline
+			p4 		& $ \includegraphics[scale=0.35]{./data/as_p4_y+.png}$  & $\includegraphics[scale=0.35]{./data/as_p4_y-.png}$\\
+			\hline
+			\end{tabular}
+		\end{table}
+		
+		
+		\begin{table}[htbp] %htbp代表表格浮動位置
+			\centering%表格居中
+			\caption{座標點變化之Anti-rise評比}%表:標題
+			\large%字體大小
+		\label{tab_ar_x:scale}
+			%\renewcommand{\arraystretch}{1.0}
+			% \linespread{2.0}\selectfont
+			\begin{tabular}{|c|c|c|c|}
+			\hline
+			\centering
+			\diagbox[width=5em, height=3em]{接頭}{座標點}& 往正x方向 & 往負x方向\\
+			\hline
+			p0 		& $ \includegraphics[scale=0.35]{./data/ar_p0_x+.png}$ & $\includegraphics[scale=0.35]{./data/ar_p0_x-.png}$\\
+			\hline
+			p1 		& $ \includegraphics[scale=0.35]{./data/ar_p1_x+.png}$ & $\includegraphics[scale=0.35]{./data/ar_p1_x-.png}$\\
+			\hline
+			p2 		& $ \includegraphics[scale=0.35]{./data/ar_p2_x+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p2_x-.png}$\\
+			\hline
+			p3 		& $ \includegraphics[scale=0.35]{./data/ar_p3_x+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p3_x+.png}$\\
+			\hline
+			p4 		& $ \includegraphics[scale=0.35]{./data/ar_p4_x-.png}$  & $\includegraphics[scale=0.35]{./data/ar_p4_x-.png}$\\
+			\hline
+			\end{tabular}
+		\end{table}
+		
+		
+		\begin{table}[htbp] %htbp代表表格浮動位置
+			\centering%表格居中
+			\caption{座標點變化之Anti-rise評比(續)}%表:標題
+			\large%字體大小
+		\label{tab_ar_y:scale}
+			%\renewcommand{\arraystretch}{1.0}
+			% \linespread{2.0}\selectfont
+			\begin{tabular}{|c|c|c|c|}
+			\hline
+			\centering
+			\diagbox[width=5em, height=3em]{接頭}{座標點}& 往正y方向 & 往負y方向\\
+			\hline
+			p0 		& $ \includegraphics[scale=0.35]{./data/ar_p0_y+.png}$ & $\includegraphics[scale=0.35]{./data/ar_p0_y-.png}$\\
+			\hline
+			p1 		& $ \includegraphics[scale=0.35]{./data/ar_p1_y+.png}$ & $\includegraphics[scale=0.35]{./data/ar_p1_y+.png}$\\
+			\hline
+			p2 		& $ \includegraphics[scale=0.35]{./data/ar_p2_y+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p2_y-.png}$\\
+			\hline
+			p3 		& $ \includegraphics[scale=0.35]{./data/ar_p3_y+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p3_y-.png}$\\
+			\hline
+			p4 		& $ \includegraphics[scale=0.35]{./data/ar_p4_y+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p4_y-.png}$\\
+			\hline
+			\end{tabular}
+		\end{table} 	
     	
-    	\begin{flushleft}
-    	\fourteen {圖\ref{fig_antisquat_y-:scale} 在y座標往負y方向移動時所得到Anti-squat評比結果，由該圖可知當Point4越往負y方向移動時所得到的結果會越偏離100\%。}
-    	\end{flushleft}
-      \begin{figure}[hbt!]
-        \centering
-        \includegraphics[scale=0.6]{anti-squat_y-.png}
-        \caption{Anti-squat y座標減少}
-        \label{fig_antisquat_y-:scale}
-    	\end{figure}
-    	
-    	
+		
+%--------------3D零件自動生成--------------%	
     	\newpage
-    	\begin{flushleft}
-    	\fourteen {圖\ref{fig_antisquat_x-y+:scale}為Point4 在x座標往負x方向y座標往正y方向移動時所得到Anti-squat評比結果，由該圖可知當Point4在x座標往負方向及y座標往正y方向移動時所得到的結果會越偏離100\%。}
-    	\end{flushleft}
-      \begin{figure}[hbt!]
-        \centering
-        \includegraphics[scale=0.6]{anti-squat_x-y+.png}
-        \caption{Anti-squat x座標減少 y座標增加}
-        \label{fig_antisquat_x-y+:scale}
-    	\end{figure}
-    	   	
-    	
-    	\begin{flushleft}
-    	\fourteen {圖\ref{fig_antirise_x-:scale}為Point4 在x座標往負x方向移動時所得到Anti-rise評比結果，由該圖可知當Point4在x座標往負方向移動時所得到的結果會越來越比原來的位置差。}
-    	\end{flushleft}
-      \begin{figure}[hbt!]
-        \centering
-        \includegraphics[scale=0.6]{anti-rise_x-.png}
-        \caption{Anti-rise x座標減少}
-        \label{fig_antirise_x-:scale}
-    	\end{figure}
-    	
-    	 \newpage
-    	 \begin{flushleft}
-    	 \fourteen {圖\ref{fig_antirise_y-:scale}為Point4 在y座標往負y方向移動時所得到Anti-rise評比結果，由該圖可知當Point4在y座標往負方向移動時所得到的結果會越來越比原來的位置差。}
-    	 \end{flushleft}
-      \begin{figure}[hbt!]
-        \centering
-        \includegraphics[scale=0.6]{anti-rise_y-.png}
-        \caption{Anti-rise y座標減少}
-        \label{fig_antirise_y-:scale}
-    	\end{figure}
-    	
-    	
-    	\begin{flushleft}
-    	\fourteen {圖\ref{fig_antirise_x-y+:scale}為Point4 在x座標往負x方向及y座標往正y方向移動時所得到Anti-rise評比結果，由該圖可知當Point4在x座標往負x方向及y座標往正方向移動時所得到的結果會越來越比原來的位置差。}
-    	\end{flushleft}
-      \begin{figure}[hbt!]
-        \centering
-        \includegraphics[scale=0.6]{anti-rise_x-y+.png}
-        \caption{Anti-rise x座標減少 y座標增加}
-        \label{fig_antirise_x-y+:scale}
-    	\end{figure}
-    	
     	\subsection{3D零件自動生成}
 	\begin{flushleft}
 	\fourteen {完成機構設計後接著就要進入CAD階段，不過在此階段常面臨突然遇到有其他的因素導致需要修改尺寸，此時若以手動將一個個零件一一重新修改會浪費許多時間，因此本專題建立一程式流程來進行參數化修改。}
@@ -924,11 +967,13 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
         \includegraphics[scale=0.6]{3D零件生成.png}
         \caption{3D零件生成流程圖}
         \label{fig_3Dparts:scale}
-    	\end{figure} 
+    \end{figure}
+    
 	
-	
+	\newpage
 	\begin{enumerate}
-	\item{\fourteen{繪製零件:建立後續會用到的零件}
+	\item{
+	\fourteen{繪製零件:建立後續會用到的零件}
 	\begin{figure}[hbt!]
         \centering
         \includegraphics[scale=0.4]{binary_link.png}
@@ -940,19 +985,25 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
         \caption{三接頭連桿}
         \label{fig_ternary_link:scale}
     \end{figure}
-    }
+    }\\
     
 	
 	\item
 	{
 	\begin{flushleft}
 	\fourteen{關鍵尺寸設定:將所需要的零件關鍵尺寸找出並在CAD軟體中建立該參數}
+	\begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.5]{parameter.png}
+        \caption{二接頭連桿}
+        \label{fig_binary_link:scale}
+    \end{figure}
 	\end{flushleft}
 	}
 	
 	\item{
 	\begin{flushleft}
-	\fourteen{程式流程:該流程主要以pywin32模組來完成，其中會利用該模組找到在電腦中的CAD軟體並開啟接著將找到要修改的零件模型的路徑並開啟，再將前面設定完成的尺寸參數名稱帶入函式中並輸入想要的數值，修改完畢後再更新零件才能在CAD軟體中看到修改後的變化，最後進行儲存的動作}    	
+	\fourteen{程式流程:該流程主要由我們自行撰寫程式來完成，其中會利用pywin32模組找到在電腦中的CAD軟體並開啟接著將找到要修改的零件模型的路徑並開啟，再將前面設定完成的尺寸參數名稱帶入函式中並輸入想要的數值，修改完畢後再更新零件才能在CAD軟體中看到修改後的變化，最後進行儲存的動作}    	
     \end{flushleft}
     }
     	
@@ -973,7 +1024,7 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
 
         \chapter{未來研究建議}
         {\begin{flushleft}
-        \fourteen {本專題以已建立一流程從尺寸合成至動態模擬軟體進行運動模擬，後續可將運動系統改為動力系統並利用有限元素法對該避震機構進行受力情況的分析。}
+        \fourteen {本專題以已建立一流程從機構尺寸合成、機構量化評比、動態系統設定、運動模擬，後續可將原有的動態系統加入自行車重量、騎乘者的重量、各接觸點的反力......以建立更完整的動態系統，接著可利用有限元素法進行結構分析。}
         \begin{figure}[hbt!]
         \centering
         \includegraphics[scale=0.6]{follow-up research.png}

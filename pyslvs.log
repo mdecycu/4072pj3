@@ -1,0 +1,12 @@
+[2021-05-16 21:34:33,472] [_sign_in_logger]:INFO: Pyslvs 20.12.0.dev0
+[2021-05-16 21:34:33,488] [_sign_in_logger]:INFO: OS Type: Windows 10 [AMD64]
+[2021-05-16 21:34:33,488] [_sign_in_logger]:INFO: Python Version: 3.8.5(final)
+[2021-05-16 21:34:33,489] [_sign_in_logger]:INFO: Python Compiler: MSC v.1924 64 bit (AMD64)
+[2021-05-16 21:34:33,489] [_sign_in_logger]:INFO: Qt wrapper: PyQt5 5.15.1
+[2021-05-16 21:34:33,490] [_sign_in_logger]:INFO: Qt: 5.15.1
+[2021-05-16 21:34:33,491] [_sign_in_logger]:INFO: SciPy: 1.5.4
+[2021-05-16 21:34:33,492] [_sign_in_logger]:INFO: -------
+[2021-05-16 21:34:39,452] [main]:INFO: Startup with: 1.92s
+[2021-05-16 21:34:39,454] [console_connect]:INFO: Connect to GUI console.
+[2021-05-16 21:34:39,457] [console_connect]:INFO: Connect to GUI console.
+[2021-05-16 21:35:02,639] [load_data]:INFO: Load data from version 20.12.0.dev0
