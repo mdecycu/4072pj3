@@ -401,7 +401,7 @@ Created by [KMOLab](http://lab.kmol.info/)
 <t tx="leo.20210520133953.3">## 目錄
 
 
-* 研究動機333
+* 研究動機
 * 研究流程
 * 平面多連桿機構套件
 * Pyslvs-UI介紹</t>
@@ -457,12 +457,8 @@ Created by [KMOLab](http://lab.kmol.info/)
 </t>
 <t tx="leo.20210520134443.3">### 平面多連桿機構套件比較
 
-&lt;small&gt;
-內容
-&lt;/small&gt;
-
-內容
-</t>
+ &lt;!--URL連結圖片比較不會跑掉--&gt;
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%A5%97%E4%BB%B6%E6%AF%94%E8%BC%83%E8%A1%A8%E6%A0%BC.png?raw=true" alt="alt text" width="800"/&gt;</t>
 <t tx="leo.20210520134443.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -564,7 +560,13 @@ Created by [KMOLab](http://lab.kmol.info/)
 
 						
 </t>
-<t tx="leo.20210520140725.2">### 平面多連桿機構套件</t>
+<t tx="leo.20210520140725.2">### 平面多連桿機構套件
+
+&lt;small&gt;
+內容
+&lt;/small&gt;
+
+內容</t>
 <t tx="leo.20210520141042.1">&lt;section&gt;
 @others
 &lt;/section&gt;
