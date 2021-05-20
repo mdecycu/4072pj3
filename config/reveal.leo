@@ -401,7 +401,7 @@ Created by [KMOLab](http://lab.kmol.info/)
 <t tx="leo.20210520133953.3">## 目錄
 
 
-* 研究動機
+* 研究動機333
 * 研究流程
 * 平面多連桿機構套件
 * Pyslvs-UI介紹</t>
@@ -663,7 +663,7 @@ Created by [KMOLab](http://lab.kmol.info/)
 <t tx="leo.20210520142259.2">### 導入圖片 template
 
  &lt;!--URL連結圖片比較不會跑掉--&gt;
-&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/st1.jpg?raw=true" alt="alt text" width="200"/&gt;</t>
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/anti-squat_x-.png?raw=true" alt="alt text" width="200"/&gt;</t>
 <t tx="leo.20210520150420.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
