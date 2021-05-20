@@ -58,6 +58,9 @@
 </v>
 </v>
 <v t="leo.20210520141042.1"><vh>延伸應用</vh>
+<v t="leo.20210520150420.1"><vh>轉場</vh>
+<v t="leo.20210520150420.2"><vh>轉場</vh></v>
+</v>
 <v t="leo.20210520141042.2"><vh>3D零件自動生成</vh>
 <v t="leo.20210520141042.3"><vh>3D零件內容</vh></v>
 </v>
@@ -213,7 +216,7 @@ make.start()
 <t tx="leo.20180902120523.5">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
 &lt;title&gt;
-Test Pyslvs.com
+Pyslvs-UI 平面多連桿機構套件之合成與應用
 &lt;/title&gt;
     &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
     &lt;meta name="author" content="Hakim El Hattab"&gt;
@@ -376,7 +379,6 @@ vertical: body pane on the botton</t>
 Created by [KMOLab](http://lab.kmol.info/)
 &lt;/small&gt;
 
-[Pyslvs.com](./../blog/index.html)
 
 
 </t>
@@ -662,5 +664,17 @@ Created by [KMOLab](http://lab.kmol.info/)
 
  &lt;!--URL連結圖片比較不會跑掉--&gt;
 &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/st1.jpg?raw=true" alt="alt text" width="200"/&gt;</t>
+<t tx="leo.20210520150420.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20210520150420.2">### 延伸應用</t>
 </tnodes>
 </leo_file>
