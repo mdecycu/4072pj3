@@ -477,12 +477,28 @@ Created by [KMOLab](http://lab.kmol.info/)
 						
 </t>
 <t tx="leo.20210520134443.5">### Pyslvs-UI架構
+&lt;/small&gt;
+採用系統動機
+&lt;small&gt;
+ * 平面多連桿機構設計分析之開放源套件系統
+ * 結構合成
+ * 驗證機構運動模擬
+ 
+&lt;/small&gt;
+Pyslvs架構背景
 
 &lt;small&gt;
-內容
-&lt;/small&gt;
+&lt;!--URL連結圖片比較不會跑掉--&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Pyslvs%E6%9E%B6%E6%A7%8B%E8%83%8C%E6%99%AF.png?raw=true" alt="alt text" width="480"/&gt;
 
-內容
+&lt;!--&lt;/small&gt;
+Pyslvs架構背景
+&lt;small&gt;
+ * Cython程式語言進行編譯成機構合成延伸做演算
+ * SWIG使Python可呼叫C語言動態連結庫以建構平面連桿機構模擬作業系統 
+ * PyQt5可將程式編譯內容後轉換成GUI圖形化介面--&gt;
+
+
 </t>
 <t tx="leo.20210520135544.1">&lt;section&gt;
 @others
@@ -630,6 +646,12 @@ Created by [KMOLab](http://lab.kmol.info/)
 <t tx="leo.20210520141042.7">### XXXXXXX標題XXXXXXX
 
 
+&lt;/small&gt;
+* Pyslvs架構背景
+&lt;small&gt;
+   * Cython程式語言進行編譯成機構合成延伸做演算
+   * SWIG使Python可呼叫C語言動態連結庫以建構平面連桿機構模擬作業系統 
+   * PyQt5可將程式編譯內容後轉換成GUI圖形化介面
 </t>
 <t tx="leo.20210520141843.1">&lt;section&gt;
 @others

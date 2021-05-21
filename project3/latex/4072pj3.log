@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11 Portable) (preloaded format=xelatex 2020.12.8)  20 MAY 2021 18:18
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11 Portable) (preloaded format=xelatex 2020.12.8)  21 MAY 2021 09:01
 entering extended mode
 **./4072pj3.tex
 (4072pj3.tex
@@ -1145,8 +1145,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1028--1029
 
  []
 
-File: coppeliasim API.png Graphic file (type bmp)
-<coppeliasim API.png>
+
+LaTeX Warning: Reference `fig_coppeliaSim API:scale' on page 35 undefined on in
+put line 1035.
+
+File: coppeliaSim API.png Graphic file (type bmp)
+<coppeliaSim API.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 1048--1050
 
@@ -1452,6 +1456,9 @@ Underfull \hbox (badness 10000) detected at line 1364
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  )
@@ -1462,10 +1469,10 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 269 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 11202 strings out of 412197
- 242863 string characters out of 2851899
+ 11203 strings out of 412197
+ 242890 string characters out of 2851899
  869383 words of memory out of 3000000
- 30476 multiletter control sequences out of 15000+200000
+ 30477 multiletter control sequences out of 15000+200000
  543772 words of font info for 98 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  79i,15n,85p,422b,1875s stack positions out of 5000i,500n,10000p,200000b,50000s
