@@ -457,14 +457,11 @@ Created by [KMOLab](http://lab.kmol.info/)
 </t>
 <t tx="leo.20210520134443.3">### 平面多連桿機構套件比較
 &lt;small&gt;
-結果
+與市面上已經有的套件進行比較
 &lt;/small&gt;
-&lt;small&gt;
-* 選用本研究室所開發的Pyslvs-UI平面多連桿機構套件
-* 為開源軟體
-* 有公開的原始碼
-* 可收集各套件優秀且實用的功能進行組合應用
-* 專題研究方面較好延伸</t>
+ &lt;!--URL連結圖片比較不會跑掉--&gt;
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%A5%97%E4%BB%B6%E6%AF%94%E8%BC%83%E8%A1%A8%E6%A0%BC.jpg?raw=true" alt="alt text" width="800"/&gt;
+</t>
 <t tx="leo.20210520134443.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -583,12 +580,6 @@ Pyslvs架構背景
 						
 </t>
 <t tx="leo.20210520140725.2">### 平面多連桿機構套件
-
-&lt;small&gt;
-與市面上已經有的套件進行比較
-&lt;/small&gt;
- &lt;!--URL連結圖片比較不會跑掉--&gt;
-&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%A5%97%E4%BB%B6%E6%AF%94%E8%BC%83%E8%A1%A8%E6%A0%BC.jpg?raw=true" alt="alt text" width="800"/&gt;
 
 </t>
 <t tx="leo.20210520141042.1">&lt;section&gt;
