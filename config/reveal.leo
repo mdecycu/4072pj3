@@ -47,8 +47,11 @@
 <v t="leo.20210520140311.1"><vh>機構合成轉場</vh>
 <v t="leo.20210520140311.2"><vh>評量內容</vh></v>
 </v>
-<v t="leo.20210520135544.2"><vh>避震評量介紹</vh>
-<v t="leo.20210520140133.1"><vh>評量內容</vh></v>
+<v t="leo.20210520135544.2"><vh>Anti-squat</vh>
+<v t="leo.20210521110904.1"><vh>Anti-squat</vh></v>
+</v>
+<v t="leo.20210521111034.1"><vh>Anti-rise</vh>
+<v t="leo.20210521111034.3"><vh>Anti-rise</vh></v>
 </v>
 <v t="leo.20210520135544.4"><vh>尺寸合成</vh>
 <v t="leo.20210520135544.5"><vh>尺寸合成內容</vh></v>
@@ -404,7 +407,11 @@ Created by [KMOLab](http://lab.kmol.info/)
 * 研究動機
 * 研究流程
 * 平面多連桿機構套件
-* Pyslvs-UI介紹</t>
+* 機構合成
+* 延伸應用
+* 結論
+
+</t>
 <t tx="leo.20210520134138.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -543,19 +550,6 @@ Pyslvs架構背景
 						
 </t>
 <t tx="leo.20210520135544.7">### 後避震機構量化分析
-
-
-</t>
-<t tx="leo.20210520140133.1">### 登山車後避震機構評量
-
-&lt;small&gt;
-內容
-&lt;/small&gt;
-
-內容
-
-
-
 
 
 </t>
@@ -708,5 +702,41 @@ Pyslvs架構背景
 						
 </t>
 <t tx="leo.20210520150420.2">### 延伸應用</t>
+<t tx="leo.20210521110904.1">### 登山車後避震機構評量
+
+
+
+Anti-squat
+&lt;iframe src="https://www.youtube.com/embed/9bfUZxRpyn0?autoplay=0&amp;fs=1&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=99&amp;end=160&amp;origin=https://youtubeembedcode.com" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+
+
+
+
+
+
+
+
+</t>
+<t tx="leo.20210521111034.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20210521111034.3">### 登山車後避震機構評量
+
+
+
+Anti-rise
+&lt;iframe src="https://www.youtube.com/embed/9bfUZxRpyn0?autoplay=0&amp;fs=1&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=55&amp;end=97&amp;origin=https://youtubeembedcode.com" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+
+</t>
 </tnodes>
 </leo_file>
