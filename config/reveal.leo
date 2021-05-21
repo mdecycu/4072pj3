@@ -407,14 +407,10 @@ Created by [KMOLab](http://lab.kmol.info/)
 * 研究動機
 * 研究流程
 * 平面多連桿機構套件
-<<<<<<< HEAD
 * 機構合成
 * 延伸應用
 * 結論
 
-=======
-* Pyslvs-UI介紹
->>>>>>> 7df07a34ee37d4554e40b846a99334cd9f467e2a
 </t>
 <t tx="leo.20210520134138.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -633,15 +629,22 @@ Pyslvs架構背景
 
 						
 </t>
-<t tx="leo.20210520141042.7">### XXXXXXX標題XXXXXXX
+<t tx="leo.20210520141042.7">### CoppeliaSim遠端API
 
 
 &lt;/small&gt;
-* Pyslvs架構背景
+遠端API功能介紹
 &lt;small&gt;
-   * Cython程式語言進行編譯成機構合成延伸做演算
-   * SWIG使Python可呼叫C語言動態連結庫以建構平面連桿機構模擬作業系統 
-   * PyQt5可將程式編譯內容後轉換成GUI圖形化介面
+ *  模擬組合件之避震器在行進時的實際狀況
+ *  遠端API便於Debug程式操作模擬、不須手動設定旋轉軸轉速
+
+&lt;/small&gt;
+遠端API程式架構
+
+&lt;small&gt;
+&lt;!--URL連結圖片比較不會跑掉--&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/coppeliasim%20API.png?raw=true" alt="alt text" width="550"/&gt;
+
 </t>
 <t tx="leo.20210520141843.1">&lt;section&gt;
 @others
@@ -699,8 +702,8 @@ Pyslvs架構背景
 
 						
 </t>
-<<<<<<< HEAD
-<t tx="leo.20210520150420.2">### 延伸應用</t>
+<t tx="leo.20210520150420.2">### 延伸應用
+</t>
 <t tx="leo.20210521110904.1">### 登山車後避震機構評量
 
 
@@ -736,9 +739,6 @@ Anti-rise
 &lt;iframe src="https://www.youtube.com/embed/9bfUZxRpyn0?autoplay=0&amp;fs=1&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=55&amp;end=97&amp;origin=https://youtubeembedcode.com" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
 
-=======
-<t tx="leo.20210520150420.2">### 延伸應用
->>>>>>> 7df07a34ee37d4554e40b846a99334cd9f467e2a
 </t>
 </tnodes>
 </leo_file>

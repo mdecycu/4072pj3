@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11 Portable) (preloaded format=xelatex 2020.12.8)  21 MAY 2021 09:01
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11 Portable) (preloaded format=xelatex 2020.12.8)  21 MAY 2021 16:32
 entering extended mode
 **./4072pj3.tex
 (4072pj3.tex
@@ -1146,11 +1146,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1028--1029
  []
 
 
+Overfull \hbox (0.74458pt too wide) in paragraph at lines 1031--1032
+\TU/標楷體(0)/b/n/14 理 條 件，|  藉 由 \TU/lmr/m/n/14 API(Application Programming Inter
+face) \TU/標楷體(0)/b/n/14 連 接 \TU/lmr/m/n/14 CoppeliaSim
+ []
+
+
 LaTeX Warning: Reference `fig_coppeliaSim API:scale' on page 35 undefined on in
 put line 1035.
 
-File: coppeliaSim API.png Graphic file (type bmp)
-<coppeliaSim API.png>
+File: CoppeliaSim API.png Graphic file (type bmp)
+<CoppeliaSim API.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 1048--1050
 
@@ -1471,7 +1477,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  11203 strings out of 412197
  242890 string characters out of 2851899
- 869383 words of memory out of 3000000
+ 872383 words of memory out of 3000000
  30477 multiletter control sequences out of 15000+200000
  543772 words of font info for 98 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
