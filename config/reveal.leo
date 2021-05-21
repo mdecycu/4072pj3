@@ -67,8 +67,8 @@
 <v t="leo.20210520141042.2"><vh>3D零件自動生成</vh>
 <v t="leo.20210520141042.3"><vh>3D零件內容</vh></v>
 </v>
-<v t="leo.20210520141042.4"><vh>動態軟體</vh>
-<v t="leo.20210520141042.5"><vh>動態軟體內容</vh></v>
+<v t="leo.20210520141042.4"><vh>CoppeliaSim動態模擬軟體</vh>
+<v t="leo.20210520141042.5"><vh>CoppeliaSim動態模擬軟體內容</vh></v>
 </v>
 <v t="leo.20210520141042.6"><vh>CoppeliaSim API</vh>
 <v t="leo.20210520141042.7"><vh>CoppeliaSim API內容</vh></v>
@@ -407,14 +407,10 @@ Created by [KMOLab](http://lab.kmol.info/)
 * 研究動機
 * 研究流程
 * 平面多連桿機構套件
-<<<<<<< HEAD
 * 機構合成
 * 延伸應用
 * 結論
 
-=======
-* Pyslvs-UI介紹
->>>>>>> 7df07a34ee37d4554e40b846a99334cd9f467e2a
 </t>
 <t tx="leo.20210520134138.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -611,10 +607,10 @@ Pyslvs架構背景
 
 						
 </t>
-<t tx="leo.20210520141042.5">### 後避震機構量化分析
+<t tx="leo.20210520141042.5">### CoppeliaSim動態模擬軟體
 &lt;small&gt;
 * 使用XML檔來匯入零件
-* 可以減少手動匯入的程序
+* 可減少手動匯入的程序
 * 快速調整所需參數
 
 &lt;br&gt;
@@ -699,8 +695,8 @@ Pyslvs架構背景
 
 						
 </t>
-<<<<<<< HEAD
-<t tx="leo.20210520150420.2">### 延伸應用</t>
+<t tx="leo.20210520150420.2">### 延伸應用
+</t>
 <t tx="leo.20210521110904.1">### 登山車後避震機構評量
 
 
@@ -736,9 +732,6 @@ Anti-rise
 &lt;iframe src="https://www.youtube.com/embed/9bfUZxRpyn0?autoplay=0&amp;fs=1&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=55&amp;end=97&amp;origin=https://youtubeembedcode.com" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
 
-=======
-<t tx="leo.20210520150420.2">### 延伸應用
->>>>>>> 7df07a34ee37d4554e40b846a99334cd9f467e2a
 </t>
 </tnodes>
 </leo_file>
