@@ -67,8 +67,8 @@
 <v t="leo.20210520141042.2"><vh>3D零件自動生成</vh>
 <v t="leo.20210520141042.3"><vh>3D零件內容</vh></v>
 </v>
-<v t="leo.20210520141042.4"><vh>動態軟體</vh>
-<v t="leo.20210520141042.5"><vh>動態軟體內容</vh></v>
+<v t="leo.20210520141042.4"><vh>CoppeliaSim動態模擬軟體</vh>
+<v t="leo.20210520141042.5"><vh>CoppeliaSim動態模擬軟體內容</vh></v>
 </v>
 <v t="leo.20210520141042.6"><vh>CoppeliaSim API</vh>
 <v t="leo.20210520141042.7"><vh>CoppeliaSim API內容</vh></v>
@@ -425,6 +425,8 @@ Created by [KMOLab](http://lab.kmol.info/)
 </t>
 <t tx="leo.20210520134138.2">### 研究流程
 
+研究架構圖
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E6%9E%B6%E6%A7%8B%E5%9C%96.png?raw=true" alt="alt text" width="1000"/&gt;
 
 </t>
 <t tx="leo.20210520134352.1">&lt;section data-markdown&gt;
@@ -441,21 +443,15 @@ Created by [KMOLab](http://lab.kmol.info/)
 <t tx="leo.20210520134352.2">### 研究動機
 
 
-&lt;small&gt;
-內容
-&lt;/small&gt;
+隨著科技越來越發達網路上有許多機構分析的套件，但是鮮少有機構合成功能的套件，且大多無公開原始碼。而本專題所使用的套件Pyslvs-UI 為本研究室所開發的套件且有公開原始碼，因此本專題利用該套件合成及模擬功能並以一登山車後避震機構為例。
 
-內容
 </t>
 <t tx="leo.20210520134443.1">&lt;section&gt;
 @others
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520134443.2">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-@others
+<t tx="leo.20210520134443.2">@others
     &lt;/script&gt;
 &lt;/section&gt;
 
@@ -463,13 +459,7 @@ Created by [KMOLab](http://lab.kmol.info/)
 
 						
 </t>
-<t tx="leo.20210520134443.3">### 平面多連桿機構套件比較
-&lt;small&gt;
-與市面上已經有的套件進行比較
-&lt;/small&gt;
- &lt;!--URL連結圖片比較不會跑掉--&gt;
-&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%A5%97%E4%BB%B6%E6%AF%94%E8%BC%83%E8%A1%A8%E6%A0%BC.jpg?raw=true" alt="alt text" width="800"/&gt;
-</t>
+<t tx="leo.20210520134443.3"></t>
 <t tx="leo.20210520134443.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -532,9 +522,10 @@ Pyslvs架構背景
 
 						
 </t>
-<t tx="leo.20210520135544.5">### 機構合成
+<t tx="leo.20210520135544.5">### 尺寸合成
 
 
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/DEflow.png?raw=true" alt="alt text" width="380" height="500" align="left"/&gt;
 </t>
 <t tx="leo.20210520135544.6">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -549,8 +540,8 @@ Pyslvs架構背景
 </t>
 <t tx="leo.20210520135544.7">### 後避震機構量化分析
 
-
-</t>
+Anti-squat 量化分析
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="1000"/&gt;</t>
 <t tx="leo.20210520140311.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -568,15 +559,24 @@ Pyslvs架構背景
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
 @others
+</t>
+<t tx="leo.20210520140725.2">### 平面多連桿機構套件
+
     &lt;/script&gt;
 &lt;/section&gt;
 
 
 
 						
-</t>
-<t tx="leo.20210520140725.2">### 平面多連桿機構套件
-
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+### 平面多連桿機構套件比較
+&lt;small&gt;
+與市面上已經有的套件進行比較
+&lt;/small&gt;
+ &lt;!--URL連結圖片比較不會跑掉--&gt;
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%A5%97%E4%BB%B6%E6%AF%94%E8%BC%83%E8%A1%A8%E6%A0%BC.jpg?raw=true" alt="alt text" width="800"/&gt;
 </t>
 <t tx="leo.20210520141042.1">&lt;section&gt;
 @others
@@ -595,6 +595,10 @@ Pyslvs架構背景
 						
 </t>
 <t tx="leo.20210520141042.3">### 3D零件自動生成
+
+
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/3D%E9%9B%B6%E4%BB%B6%E7%94%9F%E6%88%90.png?raw=true" alt="alt text" width="600"/&gt;
+
 </t>
 <t tx="leo.20210520141042.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -607,10 +611,10 @@ Pyslvs架構背景
 
 						
 </t>
-<t tx="leo.20210520141042.5">### 後避震機構量化分析
+<t tx="leo.20210520141042.5">### CoppeliaSim動態模擬軟體
 &lt;small&gt;
 * 使用XML檔來匯入零件
-* 可以減少手動匯入的程序
+* 可減少手動匯入的程序
 * 快速調整所需參數
 
 &lt;br&gt;
@@ -663,6 +667,10 @@ Pyslvs架構背景
 						
 </t>
 <t tx="leo.20210520141843.3">### 結論
+
+
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/follow-up%20research.png?raw=true" alt="alt text" width="1000"/&gt;
+
 </t>
 <t tx="leo.20210520141843.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
