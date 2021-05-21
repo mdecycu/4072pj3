@@ -619,16 +619,14 @@ Pyslvs架構背景
 
 						
 </t>
-<t tx="leo.20210520141042.5">### XXXXXXX標題XXXXXXX
-
+<t tx="leo.20210520141042.5">### 後避震機構量化分析
 &lt;small&gt;
-內容
-&lt;/small&gt;
+* 使用XML檔來匯入零件
+* 可以減少手動匯入的程序
+* 快速調整所需參數
 
-內容
-
-
-
+&lt;br&gt;
+&lt;iframe width="580" height="315" src="https://www.youtube.com/embed/JFDAjE7lJW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 
 </t>
