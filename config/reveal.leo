@@ -525,7 +525,8 @@ Pyslvs架構背景
 <t tx="leo.20210520135544.5">### 尺寸合成
 
 
-&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/DEflow.png?raw=true" alt="alt text" width="380" height="500" align="left"/&gt;</t>
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/DEflow.png?raw=true" alt="alt text" width="380" height="500" align="left"/&gt;
+</t>
 <t tx="leo.20210520135544.6">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -539,8 +540,8 @@ Pyslvs架構背景
 </t>
 <t tx="leo.20210520135544.7">### 後避震機構量化分析
 
-
-</t>
+Anti-squat 量化分析
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="1000"/&gt;</t>
 <t tx="leo.20210520140311.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
