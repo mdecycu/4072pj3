@@ -407,14 +407,10 @@ Created by [KMOLab](http://lab.kmol.info/)
 * 研究動機
 * 研究流程
 * 平面多連桿機構套件
-<<<<<<< HEAD
 * 機構合成
 * 延伸應用
 * 結論
 
-=======
-* Pyslvs-UI介紹
->>>>>>> 7df07a34ee37d4554e40b846a99334cd9f467e2a
 </t>
 <t tx="leo.20210520134138.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -429,6 +425,8 @@ Created by [KMOLab](http://lab.kmol.info/)
 </t>
 <t tx="leo.20210520134138.2">### 研究流程
 
+研究架構圖
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E6%9E%B6%E6%A7%8B%E5%9C%96.png?raw=true" alt="alt text" width="1000"/&gt;
 
 </t>
 <t tx="leo.20210520134352.1">&lt;section data-markdown&gt;
@@ -456,10 +454,7 @@ Created by [KMOLab](http://lab.kmol.info/)
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520134443.2">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-@others
+<t tx="leo.20210520134443.2">@others
     &lt;/script&gt;
 &lt;/section&gt;
 
@@ -467,13 +462,7 @@ Created by [KMOLab](http://lab.kmol.info/)
 
 						
 </t>
-<t tx="leo.20210520134443.3">### 平面多連桿機構套件比較
-&lt;small&gt;
-與市面上已經有的套件進行比較
-&lt;/small&gt;
- &lt;!--URL連結圖片比較不會跑掉--&gt;
-&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%A5%97%E4%BB%B6%E6%AF%94%E8%BC%83%E8%A1%A8%E6%A0%BC.jpg?raw=true" alt="alt text" width="800"/&gt;
-</t>
+<t tx="leo.20210520134443.3"></t>
 <t tx="leo.20210520134443.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -536,10 +525,10 @@ Pyslvs架構背景
 
 						
 </t>
-<t tx="leo.20210520135544.5">### 機構合成
+<t tx="leo.20210520135544.5">### 尺寸合成
 
 
-</t>
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/DEflow.png?raw=true" alt="alt text" width="380" height="500" align="left"/&gt;</t>
 <t tx="leo.20210520135544.6">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -572,15 +561,24 @@ Pyslvs架構背景
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
 @others
+</t>
+<t tx="leo.20210520140725.2">### 平面多連桿機構套件
+
     &lt;/script&gt;
 &lt;/section&gt;
 
 
 
 						
-</t>
-<t tx="leo.20210520140725.2">### 平面多連桿機構套件
-
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+### 平面多連桿機構套件比較
+&lt;small&gt;
+與市面上已經有的套件進行比較
+&lt;/small&gt;
+ &lt;!--URL連結圖片比較不會跑掉--&gt;
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%A5%97%E4%BB%B6%E6%AF%94%E8%BC%83%E8%A1%A8%E6%A0%BC.jpg?raw=true" alt="alt text" width="800"/&gt;
 </t>
 <t tx="leo.20210520141042.1">&lt;section&gt;
 @others
@@ -599,6 +597,10 @@ Pyslvs架構背景
 						
 </t>
 <t tx="leo.20210520141042.3">### 3D零件自動生成
+
+
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/3D%E9%9B%B6%E4%BB%B6%E7%94%9F%E6%88%90.png?raw=true" alt="alt text" width="600"/&gt;
+
 </t>
 <t tx="leo.20210520141042.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -660,6 +662,10 @@ Pyslvs架構背景
 						
 </t>
 <t tx="leo.20210520141843.3">### 結論
+
+
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/follow-up%20research.png?raw=true" alt="alt text" width="1000"/&gt;
+
 </t>
 <t tx="leo.20210520141843.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -699,8 +705,8 @@ Pyslvs架構背景
 
 						
 </t>
-<<<<<<< HEAD
-<t tx="leo.20210520150420.2">### 延伸應用</t>
+<t tx="leo.20210520150420.2">### 延伸應用
+</t>
 <t tx="leo.20210521110904.1">### 登山車後避震機構評量
 
 
@@ -736,9 +742,6 @@ Anti-rise
 &lt;iframe src="https://www.youtube.com/embed/9bfUZxRpyn0?autoplay=0&amp;fs=1&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=55&amp;end=97&amp;origin=https://youtubeembedcode.com" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
 
-=======
-<t tx="leo.20210520150420.2">### 延伸應用
->>>>>>> 7df07a34ee37d4554e40b846a99334cd9f467e2a
 </t>
 </tnodes>
 </leo_file>
