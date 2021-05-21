@@ -55,30 +55,30 @@ def link_gen_import_test():
 if __name__ == "__main__":
     inv = inv()
 
-    """
-    inv.open('Y:/pyslvs.io/project3/40723145/binary_link.ipt')
+
+    inv.open('E:/4072pj3/project3/bike/binary_link.ipt')
     inv.parameter(
         # binary link
-        center_distance=140,
-        hole=3,
-        thickness=3
+        center_distance=47,
+        hole=10,
+        thickness=5
     )
-    """
+
     
     """
-    inv.open('G:/4072pj3/project3/40723145/ternary_link.ipt')
+    inv.open('E:/4072pj3/project3/40723145/ternary_link.ipt')
     inv.parameter(
         # ternary link
-        center_distance1=80,
-        center_distance2=120,
-        center_distance3=135,
+        center_distance1=513,
+        center_distance2=198,
+        center_distance3=405,
         hole=10,
-        thickness=3
+        thickness=5
     )
     
-    """
+
     
-    """
+
     inv.open('G:/4072pj3/project3/bike/Slider1.ipt')
     inv.parameter(
         # slide block
@@ -89,7 +89,6 @@ if __name__ == "__main__":
         thickness2=170,
         slide_diameter=19
     )
-    """
 
     inv.open('G:/4072pj3/project3/bike/Slider.ipt')
     inv.parameter(
@@ -103,7 +102,7 @@ if __name__ == "__main__":
         slide_diameter=36.544
     )
 
+        """
     
-    
-    #inv.save_as("G:/4072pj3/project3/bike/Slider22.ipt")
+    inv.save_as("E:/4072pj3/project3/40723102/Firebird 29 bike/Binary link47.ipt")
     
