@@ -404,7 +404,8 @@ Created by [KMOLab](http://lab.kmol.info/)
 * 研究動機
 * 研究流程
 * 平面多連桿機構套件
-* Pyslvs-UI介紹</t>
+* Pyslvs-UI介紹
+</t>
 <t tx="leo.20210520134138.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -438,7 +439,8 @@ Created by [KMOLab](http://lab.kmol.info/)
 內容
 &lt;/small&gt;
 
-內容</t>
+內容
+</t>
 <t tx="leo.20210520134443.1">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -567,7 +569,8 @@ Pyslvs架構背景
 
 						
 </t>
-<t tx="leo.20210520140311.2">## 機構合成</t>
+<t tx="leo.20210520140311.2">## 機構合成
+</t>
 <t tx="leo.20210520140725.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -598,7 +601,8 @@ Pyslvs架構背景
 
 						
 </t>
-<t tx="leo.20210520141042.3">### 3D零件自動生成</t>
+<t tx="leo.20210520141042.3">### 3D零件自動生成
+</t>
 <t tx="leo.20210520141042.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -658,7 +662,8 @@ Pyslvs架構背景
 
 						
 </t>
-<t tx="leo.20210520141843.3">### 結論</t>
+<t tx="leo.20210520141843.3">### 結論
+</t>
 <t tx="leo.20210520141843.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -684,7 +689,8 @@ Pyslvs架構背景
 <t tx="leo.20210520142259.2">### 導入圖片 template
 
  &lt;!--URL連結圖片比較不會跑掉--&gt;
-&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/anti-squat_x-.png?raw=true" alt="alt text" width="200"/&gt;</t>
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/anti-squat_x-.png?raw=true" alt="alt text" width="200"/&gt;
+</t>
 <t tx="leo.20210520150420.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -696,6 +702,7 @@ Pyslvs架構背景
 
 						
 </t>
-<t tx="leo.20210520150420.2">### 延伸應用</t>
+<t tx="leo.20210520150420.2">### 延伸應用
+</t>
 </tnodes>
 </leo_file>
