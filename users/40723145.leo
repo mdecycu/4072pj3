@@ -18,33 +18,69 @@
 <v t="leo.20180902120523.6"><vh>body</vh>
 <v t="leo.20180902120523.7"><vh>reveal div</vh>
 <v t="leo.20180902120523.8"><vh>slides div</vh>
-<v t="leo.20180902120523.9"><vh>封面</vh></v>
-<v t="leo.20210520133953.1"><vh>架構介紹</vh>
-<v t="leo.20210520133953.3"><vh>目錄</vh></v>
-<v t="leo.20210520134352.2"><vh>研究動機</vh></v>
-<v t="leo.20210520134138.2"><vh>研究流程</vh></v>
+<v t="leo.20180902120523.9"><vh>封面</vh>
+<v t="leo.20210520133308.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20210520134443.1"><vh>平面多連桿機構套件</vh>
+<v t="leo.20210520133953.1"><vh>架構介紹</vh>
+<v t="leo.20210520133953.2"><vh>目錄</vh>
+<v t="leo.20210520133953.3"><vh>目錄內容</vh></v>
+</v>
+<v t="leo.20210520134352.1"><vh>研究動機</vh>
+<v t="leo.20210520134352.2"><vh>研究動機內容</vh></v>
+</v>
+<v t="leo.20210520134138.1"><vh>研究流程</vh>
+<v t="leo.20210520134138.2"><vh>研究流程內容</vh></v>
+</v>
+</v>
+<v t="leo.20210520134443.1"><vh>套件介紹</vh>
+<v t="leo.20210520140725.1"><vh>平面多連桿機構套件轉場</vh>
 <v t="leo.20210520140725.2"><vh>平面多連桿機構套件轉場</vh></v>
-<v t="leo.20210520134443.3"><vh>套件比較</vh></v>
-<v t="leo.20210520134443.5"><vh>Pyslvs_UI介紹</vh></v>
+</v>
+<v t="leo.20210520134443.2"><vh>套件比較</vh>
+<v t="leo.20210520134443.3"><vh>套件比較內容</vh></v>
+</v>
+<v t="leo.20210520134443.4"><vh>Pyslvs_UI介紹</vh>
+<v t="leo.20210520134443.5"><vh>Pyslvs_UI介紹內容</vh></v>
+</v>
 </v>
 <v t="leo.20210520135544.1"><vh>機構合成</vh>
-<v t="leo.20210520140311.2"><vh>機構合成轉場</vh></v>
+<v t="leo.20210520140311.1"><vh>機構合成轉場</vh>
+<v t="leo.20210520140311.2"><vh>評量內容</vh></v>
+</v>
+<v t="leo.20210520135544.2"><vh>Anti-squat</vh>
 <v t="leo.20210521110904.1"><vh>Anti-squat</vh></v>
+</v>
+<v t="leo.20210521111034.1"><vh>Anti-rise</vh>
 <v t="leo.20210521111034.3"><vh>Anti-rise</vh></v>
-<v t="leo.20210520135544.5"><vh>尺寸合成</vh></v>
-<v t="leo.20210520135544.7"><vh>量化評比</vh></v>
+</v>
+<v t="leo.20210520135544.4"><vh>尺寸合成</vh>
+<v t="leo.20210520135544.5"><vh>尺寸合成內容</vh></v>
+</v>
+<v t="leo.20210520135544.6"><vh>量化評比</vh>
+<v t="leo.20210520135544.7"><vh>量化評比內容</vh></v>
+</v>
 </v>
 <v t="leo.20210520141042.1"><vh>延伸應用</vh>
+<v t="leo.20210520150420.1"><vh>轉場</vh>
 <v t="leo.20210520150420.2"><vh>轉場</vh></v>
-<v t="leo.20210520141042.3"><vh>3D零件</vh></v>
-<v t="leo.20210520141042.5"><vh>CoppeliaSim動態模擬軟體</vh></v>
-<v t="leo.20210520141042.7"><vh>CoppeliaSim API</vh></v>
+</v>
+<v t="leo.20210520141042.2"><vh>3D零件自動生成</vh>
+<v t="leo.20210520141042.3"><vh>3D零件內容</vh></v>
+</v>
+<v t="leo.20210520141042.4"><vh>CoppeliaSim動態模擬軟體</vh>
+<v t="leo.20210520141042.5"><vh>CoppeliaSim動態模擬軟體內容</vh></v>
+</v>
+<v t="leo.20210520141042.6"><vh>CoppeliaSim API</vh>
+<v t="leo.20210520141042.7"><vh>CoppeliaSim API內容</vh></v>
+</v>
 </v>
 <v t="leo.20210520141843.1"><vh>結論</vh>
+<v t="leo.20210520141843.2"><vh>結論</vh>
 <v t="leo.20210520141843.3"><vh>結論內容</vh></v>
+</v>
+<v t="leo.20210520141843.4"><vh>感謝聆聽</vh>
 <v t="leo.20210520141843.5"><vh>感謝聆聽</vh></v>
+</v>
 </v>
 <v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
 <v t="leo.20210520142259.1"><vh>導入圖片</vh>
@@ -254,13 +290,10 @@ Pyslvs-UI 平面多連桿機構套件之合成與應用
 &lt;/div&gt;
 
 </t>
-<t tx="leo.20180902120523.9">&lt;section data-background="#dddddd"&gt;
-    &lt;h2&gt;Pyslvs-UI 平面多連桿機構套件之合成與應用&lt;/h2&gt;
-
-
-    &lt;small&gt;
-    Created by &lt;a href="http:/lab.kmol.info"&gt;KMOLab&lt;/a&gt;
-    &lt;/small&gt;
+<t tx="leo.20180902120523.9">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
 &lt;/section&gt;
 
 
@@ -342,65 +375,114 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
+<t tx="leo.20210520133308.2">## Pyslvs-UI 平面多連桿機構套件之合成與應用
+
+
+&lt;small&gt;
+Created by [KMOLab](http://lab.kmol.info/)
+&lt;/small&gt;
+
+
+
+</t>
 <t tx="leo.20210520133953.1">&lt;section&gt;
 @others
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520133953.3">&lt;section&gt;
-    &lt;h2&gt;目錄&lt;/h2&gt;
-    &lt;ul&gt;
-        &lt;li&gt;研究動機&lt;/li&gt;
-        &lt;li&gt;研究流程&lt;/li&gt;
-        &lt;li&gt;平面多連桿機構套件&lt;/li&gt;
-        &lt;li&gt;機構合成&lt;/li&gt;
-        &lt;li&gt;延伸應用&lt;/li&gt;
-        &lt;li&gt;結論&lt;/li&gt;
-    &lt;/ul&gt;
+<t tx="leo.20210520133953.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
 &lt;/section&gt;
-</t>
-<t tx="leo.20210520134138.2">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;研究流程&lt;/h2&gt;
-    &lt;p&gt;研究架構圖&lt;/p&gt;
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E6%9E%B6%E6%A7%8B%E5%9C%96.png?raw=true" alt="alt text" width="1000"/&gt;
 
-&lt;/section&gt;</t>
-<t tx="leo.20210520134352.2">&lt;section&gt;
-    &lt;/h2&gt;研究動機
-    &lt;p&gt;
-隨著科技越來越發達網路上有許多機構分析的套件，但是鮮少有機構合成功能的套件，且大多無公開原始碼。而本專題所使用的套件Pyslvs-UI 為本研究室所開發的套件且有公開原始碼，因此本專題利用該套件合成及模擬功能並以一登山車後避震機構為例。
-    &lt;/p&gt;
+
+
+						
+</t>
+<t tx="leo.20210520133953.3">## 目錄
+
+
+* 研究動機
+* 研究流程
+* 平面多連桿機構套件
+* 機構合成
+* 延伸應用
+* 結論
+
+</t>
+<t tx="leo.20210520134138.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
 &lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20210520134138.2">### 研究流程
+
+研究架構圖
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E6%9E%B6%E6%A7%8B%E5%9C%96.png?raw=true" alt="alt text" width="1000"/&gt;
+
+</t>
+<t tx="leo.20210520134352.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20210520134352.2">### 研究動機
+
+
+隨著科技越來越發達網路上有許多機構分析的套件，但是鮮少有機構合成功能的套件，且大多無公開原始碼。而本專題所使用的套件Pyslvs-UI 為本研究室所開發的套件且有公開原始碼，因此本專題利用該套件合成及模擬功能並以一登山車後避震機構為例。
+
 </t>
 <t tx="leo.20210520134443.1">&lt;section&gt;
 @others
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520134443.3">&lt;section&gt;
-    &lt;h2&gt;平面多連桿機構套件比較&lt;/h2&gt;
-    &lt;small&gt;
-    與市面上已經有的套件進行比較
-    &lt;/small&gt;
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%A5%97%E4%BB%B6%E6%AF%94%E8%BC%83%E8%A1%A8%E6%A0%BC.jpg?raw=true" alt="alt text" width="800"/&gt;
+<t tx="leo.20210520134443.2">@others
+    &lt;/script&gt;
+&lt;/section&gt;
 
-&lt;/section&gt;</t>
-<t tx="leo.20210520134443.5">&lt;section&gt;
-    &lt;h2&gt;Pyslvs-UI架構&lt;/h2&gt;
-    &lt;small&gt;
-    採用系統動機
-    &lt;/small&gt;
-    &lt;ul&gt;
-        &lt;li&gt;平面多連桿機構設計分析之開放源套件系統&lt;/li&gt;
-        &lt;li&gt;結構合成&lt;/li&gt;
-        &lt;li&gt;驗證機構運動模擬&lt;/li&gt;
 
-    &lt;/ul&gt;
 
-    &lt;small&gt;
-    Pyslvs架構背景
-    &lt;/small&gt;
-    &lt;/br&gt;
+						
+</t>
+<t tx="leo.20210520134443.3"></t>
+<t tx="leo.20210520134443.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20210520134443.5">### Pyslvs-UI架構
+&lt;/small&gt;
+採用系統動機
+&lt;small&gt;
+ * 平面多連桿機構設計分析之開放源套件系統
+ * 結構合成
+ * 驗證機構運動模擬
+ 
+&lt;/small&gt;
+Pyslvs架構背景
+
+&lt;small&gt;
 &lt;!--URL連結圖片比較不會跑掉--&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Pyslvs%E6%9E%B6%E6%A7%8B%E8%83%8C%E6%99%AF.png?raw=true" alt="alt text" width="480"/&gt;
 
@@ -410,7 +492,7 @@ Pyslvs架構背景
  * Cython程式語言進行編譯成機構合成延伸做演算
  * SWIG使Python可呼叫C語言動態連結庫以建構平面連桿機構模擬作業系統 
  * PyQt5可將程式編譯內容後轉換成GUI圖形化介面--&gt;
-&lt;/section&gt;
+
 
 </t>
 <t tx="leo.20210520135544.1">&lt;section&gt;
@@ -418,81 +500,191 @@ Pyslvs架構背景
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520135544.5">&lt;section&gt;
-    &lt;h2&gt;尺寸合成&lt;/h2&gt;
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/DEflow.png?raw=true" alt="alt text" width="380" height="500" align="left"/&gt;
-
-&lt;/section&gt;</t>
-<t tx="leo.20210520135544.7">&lt;section&gt;
-    &lt;h2&gt;後避震機構量化分析&lt;/h2&gt;
-    &lt;p&gt;Anti-squat 量化分析&lt;/p&gt;
-
-
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="1000"/&gt;
-&lt;/section&gt;</t>
-<t tx="leo.20210520140311.2">&lt;section&gt;
-    &lt;h2&gt;機構合成&lt;/h2&gt;
+<t tx="leo.20210520135544.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
 &lt;/section&gt;
+
+
+
+						
 </t>
-<t tx="leo.20210520140725.2">&lt;section&gt;
-    &lt;h2&gt;平面多連桿機構套件&lt;/h2&gt;
+<t tx="leo.20210520135544.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
 &lt;/section&gt;
 
+
+
+						
+</t>
+<t tx="leo.20210520135544.5">### 尺寸合成
+
+
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/DEflow.png?raw=true" alt="alt text" width="380" height="500" align="left"/&gt;
+</t>
+<t tx="leo.20210520135544.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20210520135544.7">### 後避震機構量化分析
+
+Anti-squat 量化分析
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="1000"/&gt;
+</t>
+<t tx="leo.20210520140311.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20210520140311.2">## 機構合成
+</t>
+<t tx="leo.20210520140725.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+</t>
+<t tx="leo.20210520140725.2">### 平面多連桿機構套件
+
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+### 平面多連桿機構套件比較
+&lt;small&gt;
+與市面上已經有的套件進行比較
+&lt;/small&gt;
+ &lt;!--URL連結圖片比較不會跑掉--&gt;
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%A5%97%E4%BB%B6%E6%AF%94%E8%BC%83%E8%A1%A8%E6%A0%BC.jpg?raw=true" alt="alt text" width="800"/&gt;
 </t>
 <t tx="leo.20210520141042.1">&lt;section&gt;
 @others
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520141042.3">&lt;section&gt;
-    &lt;h2&gt;3D零件自動生成&lt;/h2&gt;
-
-
-
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/3D%E9%9B%B6%E4%BB%B6%E7%94%9F%E6%88%90.png?raw=true" alt="alt text" width="600"/&gt;
+<t tx="leo.20210520141042.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
 &lt;/section&gt;
+
+
+
+						
 </t>
-<t tx="leo.20210520141042.5">&lt;section&gt;
-    &lt;h2&gt;CoppeliaSim動態模擬軟體&lt;/h2&gt;
-    &lt;ul&gt;
-        &lt;li&gt;使用XML檔來匯入零件&lt;/li&gt;
-        &lt;li&gt;可減少手動匯入的程序&lt;/li&gt;
-        &lt;li&gt;快速調整所需參數&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;br&gt;
-    &lt;iframe width="580" height="315" src="https://www.youtube.com/embed/JFDAjE7lJW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+<t tx="leo.20210520141042.3">### 3D零件自動生成
 
 
-&lt;/section&gt;</t>
-<t tx="leo.20210520141042.7">&lt;section&gt;
-    &lt;h2&gt;CoppeliaSim遠端API&lt;/h2&gt;
-    &lt;p&gt;遠端API功能介紹&lt;/p&gt;
-    &lt;ul&gt;&lt;small&gt;
-        &lt;li&gt;模擬組合件之避震器在行進時的實際狀況&lt;/li&gt;
-        &lt;li&gt;遠端API便於Debug程式操作模擬、不須手動設定旋轉軸轉速&lt;/li&gt;
-    &lt;/small&gt;&lt;/ul&gt;
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/3D%E9%9B%B6%E4%BB%B6%E7%94%9F%E6%88%90.png?raw=true" alt="alt text" width="600"/&gt;
 
-    &lt;p&gt;遠端API程式架構&lt;/p&gt;
+</t>
+<t tx="leo.20210520141042.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
 
+
+
+						
+</t>
+<t tx="leo.20210520141042.5">### CoppeliaSim動態模擬軟體
+&lt;small&gt;
+* 使用XML檔來匯入零件
+* 可減少手動匯入的程序
+* 快速調整所需參數
+
+&lt;br&gt;
+&lt;iframe width="580" height="315" src="https://www.youtube.com/embed/JFDAjE7lJW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+</t>
+<t tx="leo.20210520141042.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20210520141042.7">### CoppeliaSim遠端API
+
+
+&lt;/small&gt;
+遠端API功能介紹
+&lt;small&gt;
+ *  模擬組合件之避震器在行進時的實際狀況
+ *  遠端API便於Debug程式操作模擬、不須手動設定旋轉軸轉速
+
+&lt;/small&gt;
+遠端API程式架構
+
+&lt;small&gt;
+&lt;!--URL連結圖片比較不會跑掉--&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/coppeliasim%20API.png?raw=true" alt="alt text" width="550"/&gt;
 
-&lt;/section&gt;</t>
+</t>
 <t tx="leo.20210520141843.1">&lt;section&gt;
 @others
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520141843.3">&lt;section&gt;
-    &lt;h2&gt;結論&lt;/h2&gt;
-
-
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/follow-up%20research.png?raw=true" alt="alt text" width="1000"/&gt;
+<t tx="leo.20210520141843.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
 &lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20210520141843.3">### 結論
+
+
+&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/follow-up%20research.png?raw=true" alt="alt text" width="1000"/&gt;
 
 </t>
-<t tx="leo.20210520141843.5">&lt;section&gt;
-    &lt;h2&gt;Thank you for listening&lt;/h2&gt;
+<t tx="leo.20210520141843.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
 &lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20210520141843.5">### Thank you for listening
 </t>
 <t tx="leo.20210520142259.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -508,15 +700,27 @@ Pyslvs架構背景
  &lt;!--URL連結圖片比較不會跑掉--&gt;
 &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/anti-squat_x-.png?raw=true" alt="alt text" width="200"/&gt;
 </t>
-<t tx="leo.20210520150420.2">&lt;section&gt;
-    &lt;h2&gt;延伸應用&lt;/h2&gt;
-&lt;/section&gt;</t>
-<t tx="leo.20210521110904.1">&lt;section&gt;
-    &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
-    &lt;p&gt;Anti-squat&lt;/p&gt;
-    &lt;iframe src="https://www.youtube.com/embed/9bfUZxRpyn0?autoplay=0&amp;fs=1&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=99&amp;end=160&amp;origin=https://youtubeembedcode.com" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
+<t tx="leo.20210520150420.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
 &lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20210520150420.2">### 延伸應用
+</t>
+<t tx="leo.20210521110904.1">### 登山車後避震機構評量
+
+
+
+Anti-squat
+&lt;iframe src="https://www.youtube.com/embed/9bfUZxRpyn0?autoplay=0&amp;fs=1&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=99&amp;end=160&amp;origin=https://youtubeembedcode.com" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+
 
 
 
@@ -525,12 +729,25 @@ Pyslvs架構背景
 
 
 </t>
-<t tx="leo.20210521111034.3">&lt;section&gt;
-    &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
-    &lt;p&gt;Anti-rise&lt;/p&gt;
+<t tx="leo.20210521111034.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20210521111034.3">### 登山車後避震機構評量
+
+
+
+Anti-rise
 &lt;iframe src="https://www.youtube.com/embed/9bfUZxRpyn0?autoplay=0&amp;fs=1&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=55&amp;end=97&amp;origin=https://youtubeembedcode.com" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;/section&gt;
+
 </t>
 </tnodes>
 </leo_file>
