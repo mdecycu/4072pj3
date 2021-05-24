@@ -31,8 +31,8 @@
 </v>
 <v t="leo.20210520135544.1"><vh>機構合成</vh>
 <v t="leo.20210520140311.2"><vh>機構合成轉場</vh></v>
-<v t="leo.20210521110904.1"><vh>Anti-squat</vh></v>
-<v t="leo.20210521111034.3"><vh>Anti-rise</vh></v>
+<v t="leo.20210521110904.1"><vh>評量介紹</vh></v>
+<v t="leo.20210521111034.3"><vh>評量影片</vh></v>
 <v t="leo.20210520135544.5"><vh>尺寸合成</vh></v>
 <v t="leo.20210520135544.7"><vh>量化評比</vh></v>
 </v>
@@ -364,7 +364,8 @@ vertical: body pane on the botton</t>
     &lt;p&gt;研究架構圖&lt;/p&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E6%9E%B6%E6%A7%8B%E5%9C%96.png?raw=true" alt="alt text" width="1000"/&gt;
 
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="leo.20210520134352.2">&lt;section&gt;
     &lt;/h2&gt;研究動機
     &lt;p&gt;
@@ -384,7 +385,8 @@ vertical: body pane on the botton</t>
     &lt;/small&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%A5%97%E4%BB%B6%E6%AF%94%E8%BC%83%E8%A1%A8%E6%A0%BC.jpg?raw=true" alt="alt text" width="800"/&gt;
 
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="leo.20210520134443.5">&lt;section&gt;
     &lt;h2&gt;Pyslvs-UI架構&lt;/h2&gt;
     &lt;small&gt;
@@ -422,14 +424,16 @@ Pyslvs架構背景
     &lt;h2&gt;尺寸合成&lt;/h2&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/DEflow.png?raw=true" alt="alt text" width="380" height="500" align="left"/&gt;
 
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="leo.20210520135544.7">&lt;section&gt;
     &lt;h2&gt;後避震機構量化分析&lt;/h2&gt;
     &lt;p&gt;Anti-squat 量化分析&lt;/p&gt;
 
 
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="1000"/&gt;
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="leo.20210520140311.2">&lt;section&gt;
     &lt;h2&gt;機構合成&lt;/h2&gt;
 &lt;/section&gt;
@@ -463,7 +467,8 @@ Pyslvs架構背景
     &lt;iframe width="580" height="315" src="https://www.youtube.com/embed/JFDAjE7lJW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="leo.20210520141042.7">&lt;section&gt;
     &lt;h2&gt;CoppeliaSim遠端API&lt;/h2&gt;
     &lt;p&gt;遠端API功能介紹&lt;/p&gt;
@@ -476,7 +481,8 @@ Pyslvs架構背景
 
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/coppeliasim%20API.png?raw=true" alt="alt text" width="550"/&gt;
 
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="leo.20210520141843.1">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -510,12 +516,22 @@ Pyslvs架構背景
 </t>
 <t tx="leo.20210520150420.2">&lt;section&gt;
     &lt;h2&gt;延伸應用&lt;/h2&gt;
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="leo.20210521110904.1">&lt;section&gt;
     &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
-    &lt;p&gt;Anti-squat&lt;/p&gt;
-    &lt;iframe src="https://www.youtube.com/embed/9bfUZxRpyn0?autoplay=0&amp;fs=1&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=99&amp;end=160&amp;origin=https://youtubeembedcode.com" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
+    
+    
+    &lt;p align="left"&gt;Anti-rise (防後升):&lt;/p&gt;
+    &lt;img src="https://media1.tenor.com/images/50aeb46deae11e8db0067cf3de78db4a/tenor.gif?itemid=17730464 alt="Flowers in Chania" align="right" width="400" height="200"&gt;&lt;/p&gt;
+    &lt;small align="right"&gt;煞車時避震器抵抗上升力的能力&lt;/small&gt;
+    
+    &lt;br&gt;&lt;br&gt;&lt;br&gt;
+    
+    &lt;p align="left"&gt;Anti-squat (防後沉):&lt;/p&gt;
+    &lt;small align="left"&gt;加速時避震器抵抗下壓力的能力&lt;/small&gt;
+    &lt;img src="https://media1.tenor.com/images/ac1590317c0995871256ad29604aa686/tenor.gif?itemid=3404898" alt="Flowers in Chania" align="right" width="400" height="200"&gt;
+    
 &lt;/section&gt;
 
 
@@ -527,8 +543,7 @@ Pyslvs架構背景
 </t>
 <t tx="leo.20210521111034.3">&lt;section&gt;
     &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
-    &lt;p&gt;Anti-rise&lt;/p&gt;
-&lt;iframe src="https://www.youtube.com/embed/9bfUZxRpyn0?autoplay=0&amp;fs=1&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=55&amp;end=97&amp;origin=https://youtubeembedcode.com" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;iframe width="560" height="315" align="left" src="https://www.youtube.com/embed/d4oySS3ZMD8?start=67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;/section&gt;
 </t>
