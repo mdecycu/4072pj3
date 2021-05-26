@@ -32,6 +32,7 @@
 <v t="leo.20210520135544.1"><vh>機構合成</vh>
 <v t="leo.20210520140311.2"><vh>機構合成轉場</vh></v>
 <v t="leo.20210521110904.1"><vh>評量介紹</vh></v>
+<v t="leo.20210526193229.1"><vh>評量介紹-2</vh></v>
 <v t="leo.20210521111034.3"><vh>評量影片</vh></v>
 <v t="leo.20210520135544.5"><vh>尺寸合成</vh></v>
 <v t="leo.20210520135544.7"><vh>量化評比</vh></v>
@@ -420,19 +421,26 @@ Pyslvs架構背景
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520135544.5">&lt;section&gt;
+<t tx="leo.20210520135544.5">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;尺寸合成&lt;/h2&gt;
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/DEflow.png?raw=true" alt="alt text" width="380" height="500" align="left"/&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%B7%AE%E5%88%86%E9%80%B2%E5%8C%96%E6%BC%94%E7%AE%97%E6%B3%95.png?raw=true" alt="alt text" width="800" height="300"/&gt;
 
+    &lt;hr&gt;&lt;/hr&gt;
+    &lt;small&gt;\begin{aligned}
+    h_{2} = r_{of}\left (\frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}}\right ) + \left[ r_{ppy}-r_{ppx}\left( \frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}} \right) \right]
+    \end{aligned}&lt;/small&gt;
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520135544.7">&lt;section&gt;
+<t tx="leo.20210520135544.7">&lt;section data-auto-animate&gt;
     &lt;h2&gt;後避震機構量化分析&lt;/h2&gt;
     &lt;p&gt;Anti-squat 量化分析&lt;/p&gt;
-
-
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="1000"/&gt;
 &lt;/section&gt;
+    
+&lt;section data-auto-animate&gt;
+        &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/data/as_p0_x+.png?raw=true" alt="alt text" width="1000"/&gt;&lt;/p&gt;
+&lt;/section&gt;
+
 </t>
 <t tx="leo.20210520140311.2">&lt;section&gt;
     &lt;h2&gt;機構合成&lt;/h2&gt;
@@ -518,19 +526,19 @@ Pyslvs架構背景
     &lt;h2&gt;延伸應用&lt;/h2&gt;
 &lt;/section&gt;
 </t>
-<t tx="leo.20210521110904.1">&lt;section&gt;
+<t tx="leo.20210521110904.1">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
     
     
-    &lt;p align="left"&gt;Anti-rise (防後升):&lt;/p&gt;
-    &lt;img src="https://media1.tenor.com/images/50aeb46deae11e8db0067cf3de78db4a/tenor.gif?itemid=17730464 alt="Flowers in Chania" align="right" width="400" height="200"&gt;&lt;/p&gt;
-    &lt;small align="right"&gt;煞車時避震器抵抗上升力的能力&lt;/small&gt;
+    &lt;p&gt;Anti-rise (防後升):&lt;/p&gt;
+    &lt;img src="https://drive.google.com/file/d/1V9Qjl05D2DdpJW4i8Nb-npATODKG33hh/view?usp=sharing alt="Anti-rise" width="400" height="269" align="left"&gt;
     
-    &lt;br&gt;&lt;br&gt;&lt;br&gt;
+    &lt;br&gt;
+    &lt;img src="https://media1.tenor.com/images/50aeb46deae11e8db0067cf3de78db4a/tenor.gif?itemid=17730464 alt="Anti-rise" width="400" height="269" align="left"&gt;
+    &lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxQivsPMr_FyjgC3PrjcfkDc_rpENTo0E0g&amp;usqp=CAU alt="Anti-rise" width="400" height="269" align="right"&gt;
     
-    &lt;p align="left"&gt;Anti-squat (防後沉):&lt;/p&gt;
-    &lt;small align="left"&gt;加速時避震器抵抗下壓力的能力&lt;/small&gt;
-    &lt;img src="https://media1.tenor.com/images/ac1590317c0995871256ad29604aa686/tenor.gif?itemid=3404898" alt="Flowers in Chania" align="right" width="400" height="200"&gt;
+    
+    
     
 &lt;/section&gt;
 
@@ -543,9 +551,27 @@ Pyslvs架構背景
 </t>
 <t tx="leo.20210521111034.3">&lt;section&gt;
     &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
-    &lt;iframe width="560" height="315" align="left" src="https://www.youtube.com/embed/d4oySS3ZMD8?start=67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/d4oySS3ZMD8?start=67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;/section&gt;
+</t>
+<t tx="leo.20210526193229.1">&lt;section data-background="#FFFFFF"&gt;
+    &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
+    
+    
+    &lt;p&gt;Anti-squat (防後沉):&lt;/p&gt;
+    &lt;small&gt;加速時避震器抵抗下壓力的能力&lt;/small&gt;
+    &lt;br&gt;
+    &lt;iframe src="https://giphy.com/embed/7L7aH1CdikWgHLeNeo" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href="https://giphy.com/gifs/pureadk-mtb-biking-wilmington-ny-7L7aH1CdikWgHLeNeo"&gt;&lt;/a&gt;&lt;/p&gt;
+    
+&lt;/section&gt;
+
+
+
+
+
+
+
 </t>
 </tnodes>
 </leo_file>
