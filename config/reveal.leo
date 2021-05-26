@@ -255,7 +255,7 @@ Pyslvs-UI 平面多連桿機構套件之合成與應用
 &lt;/div&gt;
 
 </t>
-<t tx="leo.20180902120523.9">&lt;section data-background="#dddddd"&gt;
+<t tx="leo.20180902120523.9">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;Pyslvs-UI 平面多連桿機構套件之合成與應用&lt;/h2&gt;
 
 
@@ -348,14 +348,15 @@ vertical: body pane on the botton</t>
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520133953.3">&lt;section&gt;
-    &lt;h2&gt;目錄&lt;/h2&gt;
+<t tx="leo.20210520133953.3">&lt;section data-background="#FFFFFF"&gt;
+
+    &lt;h2&gt;議程&lt;/h2&gt;
     &lt;ul&gt;
-        &lt;li&gt;研究動機&lt;/li&gt;
-        &lt;li&gt;研究流程&lt;/li&gt;
-        &lt;li&gt;平面多連桿機構套件&lt;/li&gt;
-        &lt;li&gt;機構合成&lt;/li&gt;
-        &lt;li&gt;延伸應用&lt;/li&gt;
+        &lt;li&gt;研究動機---------------------------吳佳穎&lt;/li&gt;
+        &lt;li&gt;研究流程---------------------------吳佳穎&lt;/li&gt;
+        &lt;li&gt;平面多連桿機構套件-----------林昱秀&lt;/li&gt;
+        &lt;li&gt;機構合成---------------------------劉光智&lt;/li&gt;
+        &lt;li&gt;延伸應用----------------------劉光智、蔡育灃、林晏瑩&lt;/li&gt;
         &lt;li&gt;結論&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/section&gt;
@@ -423,6 +424,7 @@ Pyslvs架構背景
 </t>
 <t tx="leo.20210520135544.5">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;尺寸合成&lt;/h2&gt;
+    &lt;small&gt;差分進化演算法流程&lt;/small&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%B7%AE%E5%88%86%E9%80%B2%E5%8C%96%E6%BC%94%E7%AE%97%E6%B3%95.png?raw=true" alt="alt text" width="800" height="300"/&gt;
 
     &lt;hr&gt;&lt;/hr&gt;
@@ -530,12 +532,14 @@ Pyslvs架構背景
     &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
     
     
-    &lt;p&gt;Anti-rise (防後升):&lt;/p&gt;
-    &lt;img src="https://drive.google.com/file/d/1V9Qjl05D2DdpJW4i8Nb-npATODKG33hh/view?usp=sharing alt="Anti-rise" width="400" height="269" align="left"&gt;
+    &lt;small&gt;Anti-rise (防後升):煞車時避震器抵抗後升的能力&lt;/small&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/anti-rise_table.PNG?raw=true alt="Anti-rise" width="1000" height="200" align="left" border="0"&gt;
     
     &lt;br&gt;
-    &lt;img src="https://media1.tenor.com/images/50aeb46deae11e8db0067cf3de78db4a/tenor.gif?itemid=17730464 alt="Anti-rise" width="400" height="269" align="left"&gt;
-    &lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxQivsPMr_FyjgC3PrjcfkDc_rpENTo0E0g&amp;usqp=CAU alt="Anti-rise" width="400" height="269" align="right"&gt;
+
+    &lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxQivsPMr_FyjgC3PrjcfkDc_rpENTo0E0g&amp;usqp=CAU alt="Anti-rise" width="380" height="250" align="left"&gt;
+    
+    &lt;img src="https://media1.tenor.com/images/50aeb46deae11e8db0067cf3de78db4a/tenor.gif?itemid=17730464 alt="Anti-rise" width="380" height="250"&gt;
     
     
     
@@ -549,7 +553,7 @@ Pyslvs架構背景
 
 
 </t>
-<t tx="leo.20210521111034.3">&lt;section&gt;
+<t tx="leo.20210521111034.3">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
     &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/d4oySS3ZMD8?start=67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
@@ -557,12 +561,15 @@ Pyslvs架構背景
 </t>
 <t tx="leo.20210526193229.1">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
+
+    &lt;small&gt;Anti-squat (防後沉):加速時避震器抵抗下壓力的能力&lt;/small&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/anti-squat_table.PNG?raw=true alt="Anti-rise" width="1000" height="200" align="left" border="0"&gt;
     
-    
-    &lt;p&gt;Anti-squat (防後沉):&lt;/p&gt;
-    &lt;small&gt;加速時避震器抵抗下壓力的能力&lt;/small&gt;
     &lt;br&gt;
-    &lt;iframe src="https://giphy.com/embed/7L7aH1CdikWgHLeNeo" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href="https://giphy.com/gifs/pureadk-mtb-biking-wilmington-ny-7L7aH1CdikWgHLeNeo"&gt;&lt;/a&gt;&lt;/p&gt;
+    
+    &lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDuxFrTn99G2XbQp2PwpMtysdb_hSTmyZxiA&amp;usqp=CAU alt="Anti-rise" width="380" height="250" align="left"&gt;
+    
+    &lt;iframe src="https://giphy.com/embed/7L7aH1CdikWgHLeNeo" width="380" height="280" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href="https://giphy.com/gifs/pureadk-mtb-biking-wilmington-ny-7L7aH1CdikWgHLeNeo"&gt;&lt;/a&gt;&lt;/p&gt;
     
 &lt;/section&gt;
 
