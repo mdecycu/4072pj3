@@ -18,6 +18,8 @@ left=3truecm,right=2.5truecm]{geometry}
 \usepackage{enumerate}
 \usepackage{listings} %引用程式碼
 \usepackage{indentfirst}
+\usepackage{diagbox}%引用表格
+\usepackage{multirow}%表格置中
 
 \lstset{language=Python, %設定語言
 		basicstyle=\footnotesize, 
@@ -54,6 +56,7 @@ left=3truecm,right=2.5truecm]{geometry}
 \newcommand{\lotlabel}{表}
 \captionsetup{font={Large}} %設定標題大小
 \captionsetup[figure]{name=圖} %固定標題名稱
+\captionsetup[table]{name=表}
 
 \begin{document}
     {\renewcommand\baselinestretch{1.4}\selectfont %設定以下行距
@@ -135,114 +138,171 @@ left=3truecm,right=2.5truecm]{geometry}
 	\begin{flushleft}
 	\fontsize{14pt}{2.5pt}{關鍵字:機構合成、機構分析、登山車避震機構}
 	\end{flushleft}
-%目錄
+%---目錄---%
 \addcontentsline{toc}{chapter}{\fourteen{目錄}} %將目錄加入目錄
 {\begin{center}
 \renewcommand{\contentsname}{\centerline{\fontsize{20pt}{\baselineskip}\selectfont\textbf{目\quad 錄}}}
 {\fourteen \tableofcontents}
-%圖表目錄
-\addcontentsline{toc}{chapter}{\fourteen{圖表目錄}} %將圖表目錄加入目錄
-\renewcommand{\listfigurename}{\centerline{\fontsize{20pt}{\baselineskip}\selectfont\textbf{圖\quad 表\quad 目\quad 錄 }}}
+%---圖目錄---%
+\addcontentsline{toc}{chapter}{\fourteen{圖目錄}} %將圖表目錄加入目錄
+\renewcommand{\listfigurename}{\centerline{\fontsize{20pt}{\baselineskip}\selectfont\textbf{圖\quad 目\quad 錄 }}}
 \renewcommand{\numberline}[1]{\loflabel~#1\hspace*{1em}}
 {\fourteen \listoffigures}
+
+%---表目錄---%
+\addcontentsline{toc}{chapter}{\fourteen{表目錄}} %將圖表目錄加入目錄
+\renewcommand{\listtablename}{\centerline{\fontsize{20pt}{\baselineskip}\selectfont\textbf{表\quad 目\quad 錄 }}}
+\renewcommand{\numberline}[1]{\lotlabel~#1\hspace*{1em}}
+{\fourteen \listoftables}
+
 \end{center}}
-         
+
+
+
+%---簡介---%
 	{\begin{center}
-     \chapter{簡介}
-     \end{center}}
-      \section{研究背景與動機}
+	\chapter{簡介}
+	\end{center}}	
+\pagenumbering{arabic} %設定以下頁碼為阿拉伯數字
+
+	\section{研究背景與動機}
       \quad \fourteen {隨著科技越來越發達網路上有許多機構分析的套件，但是鮮少有機構合成功能的套件，且大多無公開原始碼。而本專題所使用的套件-Pyslvs-UI為本研究室所開發的套件且有公開原始碼，因此本專題利用該套件驗證合成及模擬功能並以合成一登山車後避震機構為例。}
 	  \\
-      \section{研究目的與方法}
+	\section{研究目的與方法}
       \quad \fourteen {首先建立一現有登山車避震機構，再針對不影響現有自行車車架的尺寸但對於避震能力有較大影響的接頭利用遺傳演算法求解最佳位置以得到最佳連桿尺寸，接著將上述所得到的接頭位置和連桿長度利用Inventor自動產生對應連桿尺寸的零件，後續利用xml格式匯入CoppeliaSim並利用CoppeliaSim API設定馬達讓該機構進行運動模擬。上述流程如下圖所示。}
      
-
+%---文獻探討---%
     {\begin{center}
-        \chapter{文獻探討}
-        \end{center}}
-      \section{平面機構分析套件}
-       	\hspace*{\fill} \\
-       	\subsection{Linkage}
-      \quad \fourteen {Linkage為電腦輔助設計的應用程式，用於機械鏈接的原型製作。基本功能為設計帶有樞軸連接器或滑動連接器之機構、驅動機構的輸入可以是旋轉或線性的、可在運動的連桿上安裝齒輪和鏈條機構、將繪圖功能分配給連接點顯示其運動之軌跡。}
- 		\begin{figure}[H]
+	\chapter{文獻探討}
+	\end{center}}
+%-------平面機構分析套件-------%	
+	\section{平面機構分析套件}
+		\hspace*{\fill} \\
+		\subsection{Linkage}
+		\fourteen {Linkage為電腦輔助設計的應用程式，用於機械鏈接的原型製作。基本功能為設計帶有樞軸連接器或滑動連接器之機構、驅動機構的輸入可以是旋轉或線性的、可在運動的連桿上安裝齒輪和鏈條機構、將繪圖功能分配給連接點顯示其運動之軌跡。其工作介面如圖\ref{fig_Linkage:scale}所示。}
+      
+      	\begin{figure}[hbt!]
         \centering
-        \includegraphics[scale=1]{Linkage.png} 
-        \caption{Linkage工作介面} 
-        \label{fig:scale}
+        \includegraphics[scale=1]{Linkage.png}
+        \caption{Linkage工作介面}
+        \label{fig_Linkage:scale}
     	\end{figure}
-	  	\hspace*{\fill} \\
+      	\hspace*{\fill} \\   	
+	  	 	
 \newpage
-	  	\subsection{M.Sketch}
-       	\hspace*{\fill} \\        
-       \fourteen {M.Sketch，一種原型設計工具，設計目的在為非專業人士提供簡單直觀的界面，輕鬆學習與使用幾何圖形的模擬，如圖2.2。其中有五個主要功能:}
-       \begin{itemize} 
-       \item 繪製機構草圖:軟體介面中，藉由單擊與拖動滑鼠來簡單的繪製連桿接點，也可將接點轉換為滑塊，以此快速設計連桿機構。
-       \item 運動軌跡可視化:根據馬達的旋轉值，可看到動畫上每個鏈接的坐標變化、設定欲關注之端點並給予標記，則可看到該端點預期的運動路徑。
-       \item 逐步設計:首先根據繪製所需之運動機構後，使其生成機構路徑，再優化當前機構所適合的路徑。
-       \item 加工支援:可導出PDF文件中每個鏈接的組合圖、示意圖和零件圖，亦可導出鏈接和關聯零件的3D模型，以匯入3D列印機等。
-       \item 高可及性:M.Sketch是作為Web的應用程序開發的，用戶可以在Web瀏覽器（例如GoogleChrome）上申請帳號後，即可直接使用，無需在電腦上進行任何安裝。
-\end{itemize}  
+
+		\subsection{M.Sketch}       
+		\fourteen {M.Sketch，一種原型設計工具，設計目的在為非專業人士提供簡單直觀的界面，輕鬆學習與使用幾何圖形的模擬。工作介面如圖\ref{fig_M.Sketch:scale}所示。\\
+		其中有五個主要功能:}
+		
+        \begin{itemize} 
+        \item 繪製機構草圖:軟體介面中，藉由單擊與拖動滑鼠來簡單的繪製連桿接點，也可將接點轉換為滑塊，以此快速設計連桿機構。
+        \item 運動軌跡可視化:根據馬達的旋轉值，可看到動畫上每個鏈接的坐標變化、設定欲關注之端點並給予標記，則可看到該端點預期的運動路徑。
+		\item 逐步設計:首先根據繪製所需之運動機構後，使其生成機構路徑，再優化當前機構所適合的路徑。
+		\item 加工支援:可導出PDF文件中每個鏈接的組合圖、示意圖和零件圖，亦可導出鏈接和關聯零件的3D模型，以匯入3D列印機等。
+		\item 高可及性:M.Sketch是作為Web的應用程序開發的，用戶可以在Web瀏覽器（例如GoogleChrome）上申請帳號後，即可直接使用，無需在電腦上進行任何安裝。
+		\end{itemize}  
        
  		\begin{figure}[H]
         \centering
         \includegraphics[scale=0.25]{M.Sketch.jpg} 
         \caption{M.Sketch工作介面} 
-        \label{fig:scale}
+		\label{fig_M.Sketch:scale}
     	\end{figure}
-\hspace*{\fill} \\
+		\hspace*{\fill} \\
 \newpage
-      \section{平面機構合成套件}
+
+%-------平面機構合成套件-------%
+	\section{平面機構合成套件}
       	\subsection{MeKin2D}
-       		\hspace*{\fill} \\
-       	\fourteen {MeKin2D是用Free Pascal編寫的子程序包，主要使用模組化方法對平面連桿機構進行運動學模擬，用於凸輪機構的合成和分析，以及漸開線齒輪的產生。MeKin2D的獨特功能包括:}
-       \begin{itemize}
-       \item 具有生成重複機構的能力。
-       \item 將速度和加速度（法向和切向）顯示為向量。
-       \item 將多邊形形狀附加到運動的接點。
-       \item 顯示動態時線性和角度的大小。
-       \item 顯示螺桿實際運作時的運動軌跡。
-       \item 可以合成與分析凸輪機構。
-\end{itemize}        
+		\fourteen {MeKin2D是用Free Pascal編寫的子程序包，主要使用模組化方法對平面連桿機構進行運動學模擬，運動學模擬圖如\ref{fig_平面連桿之運動學模擬:scale}所示。\\該套件亦可以用於凸輪機構的合成和分析，以及漸開線齒輪的產生，凸輪分析圖如\ref{fig_盤式凸輪機構之合成與分析:scale}所示。\\MeKin2D的獨特功能包括:}
+        \begin{itemize}
+        \item 具有生成重複機構的能力。
+        \item 將速度和加速度（法向和切向）顯示為向量。
+        \item 將多邊形形狀附加到運動的接點。
+        \item 顯示動態時線性和角度的大小。
+        \item 顯示螺桿實際運作時的運動軌跡。
+        \item 可以合成與分析凸輪機構。
+		\end{itemize}  
+		      
        	\begin{figure}[H]
-        	\centering
-        	\includegraphics[scale=0.4]{平面連桿之運動學模擬.png} 
-        	\caption{平面連桿之運動學模擬} 
-        	\label{fig:scale}
-        	\includegraphics[scale=0.8]{盤式凸輪機構之合成與分析.png} 
-        	\caption{盤式凸輪機構之合成與分析} 
-        	\label{fig:scale}   
+		\centering
+		\includegraphics[scale=0.4]{平面連桿之運動學模擬.png} 
+		\caption{平面連桿之運動學模擬} 
+		\label{fig_平面連桿之運動學模擬:scale}
+		
+		\includegraphics[scale=0.8]{盤式凸輪機構之合成與分析.png} 
+		\caption{盤式凸輪機構之合成與分析} 
+		\label{fig_盤式凸輪機構之合成與分析:scale}   
     	\end{figure}
-		 	\hspace*{\fill} \\
-       \subsection{WinMecC}
-       		\hspace*{\fill} \\        
-        \fourteen {WinMecC為一種電腦軟件，主要用於一自由度平面機構的分析與合成。基本功能為將機構的運動學和動力學分析之結果數值化或圖視化、可以優化分析創建的機構，依據特定點所期望遵循之路徑進行機構合成，如圖2.4所示。}
+		\hspace*{\fill} \\
+\newpage
+
+		\subsection{WinMecC}
+		\fourteen {WinMecC為一種電腦軟件，主要用於1個自由度平面機構的分析與合成。基本功能為將機構的運動學和動力學分析之結果數值化或圖視化、可以優化分析創建的機構，依據特定點所期望遵循之路徑進行機構合成，工作介面如圖\ref{fig_WinMecC:scale}所示。}
         \begin{figure}[H]
         \centering
         \includegraphics[scale=0.6]{WinMecC.png} 
         \caption{WinMecC} 
-        \label{fig:scale}
+        \label{fig_WinMecC:scale}
     	\end{figure}
-    	 \hspace*{\fill} \\
-       \subsection{GIM}
-       	\hspace*{\fill} \\        
-        \fourteen {GIM是COMPMECH Research Group創建的註冊免費軟件，用於平面機構的運動模擬合成以及機械結構的靜態分析。GIM軟件具有三個主要模組：幾何、運動、合成。}
+    	\hspace*{\fill} \\
+    	 
+		\subsection{GIM}     
+		\fourteen {GIM是COMPMECH Research Group創建的註冊免費軟件，用於平面機構的運動模擬合成以及機械結構的靜態分析。GIM軟件具有三個主要模組：幾何、運動、合成。}
         \begin{itemize} 
-       \item 幾何模組:設計要分析的機構，建立其節點與元件，定義連接點的類型（旋轉
-接頭或滑塊，並設定固定點。
-       \item 運動模組:透過運動學分析與模擬，在運動點繪製路徑以及路徑的曲率中心，可在畫面上看到運動極點的位置、速度和加速度向量，並繪製與分析數據相關的圖形和表格。
-       \item 合成模組:依據特定點所期望之運動路徑，進行機構軌跡合成。如圖2.5所示。
-       \end{itemize}
+       	\item 幾何模組:設計要分析的機構，建立其節點與元件，定義連接點的類型（旋轉接頭或滑塊)，並設定固定點。
+       	\item 運動模組:透過運動學分析與模擬，在運動點繪製路徑以及路徑的曲率中心，可在畫面上看到運動極點的位置、速度和加速度向量，並繪製與分析數據相關的圖形和表格。
+       	\item 合成模組:依據特定點所期望之運動路徑，進行機構軌跡合成。該套件之合成介面如圖\ref{fig_GIM:scale}所示。
+       	\end{itemize}
+       
         \begin{figure}[H]
         \centering
         \includegraphics[scale=0.8]{GIM.png} 
         \caption{GIM合成介面} 
-        \label{fig:scale}
+        \label{fig_GIM:scale}
     	\end{figure}
-      \newpage
+\newpage
+
+%-------比較結果-------%	
+	\section{比較結果}
+		\fourteen {經由表\ref{tab_機構套件比較表:scale}得知，市面上雖然有很多款平面機構分析與合成套件，各個套件的功能性質也都很高級，但共同缺點是各個套件都不是開源軟體，故最終選用\underline{張元}學長所開發的\underline{Pyslvs-UI平面多連桿機構套件}，運用其開源軟體的特點，來收集各套件優秀且實用的功能，進行組合與應用，來作為本專題之研究以及延伸。\\
+		\hspace*{\fill} \\
+
+		\begin{table}[htbp] %htbp代表表格浮動位置
+			\centering%表格居中
+			\caption{機構套件比較表}%表:標題
+			\large%字體大小
+			\label{tab_機構套件比較表:scale}
+			\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			\diagbox[width=9em]{功能}{套件}& Pyslvs-UI & Linkage & M.Sketch & MeKin2D & WinMecC & GIM \\ 
+			\hline
+			開源軟體 		&$\surd$&		&		&		&		&\\
+			\hline
+			編譯成可攜檔 	&$\surd$&		&		&		&		&\\
+			\hline
+			平面機構分析 	&$\surd$&$\surd$&$\surd$&$\surd$&$\surd$&\\
+			\hline
+			平面機構合成 	&$\surd$& 		&$\surd$&$\surd$&$\surd$&$\surd$\\
+			\hline
+			平面凸輪分析 	& 		&	    &		&$\surd$&		&\\
+			\hline
+			顯示運動軌跡 	&$\surd$&$\surd$&$\surd$&$\surd$&$\surd$&$\surd$\\
+			\hline
+			Web網頁版 	& 		&		&$\surd$&		&		&\\
+			\hline
+			速度/加速度向量 & 	&		&$\surd$&$\surd$&		&$\surd$\\
+			\hline
+			\end{tabular}
+		\end{table}	
+		
+		
+\newpage
       \section{自行車避震機構研究}
        \subsection{Single-pivot suspension(單軸懸架)}
-       \hspace*{\fill} \\
        \fourteen {最簡單的懸架設計為單樞軸，使用搖臂連接後軸、主樞軸、避震器，特點在於後軸直接連接至主樞軸，避震器連接到搖臂上，搖桿環繞在主樞軸中心旋轉，槓桿比由避震器的位置決定，固定中心可在行駛過程預測懸架特性，但也意味著不同階段修改懸架特性能力有限，示意圖產品型號為 Orange Stage的 Stage 6 Factory，如圖\ref{fig_Single-pivot:scale}。}
+       
      \begin{figure}[H]
         \centering
         \includegraphics[scale=0.8]{單軸懸架.jpg} 
@@ -250,10 +310,11 @@ left=3truecm,right=2.5truecm]{geometry}
         \caption{單軸懸架} %有caption的圖才會編入目錄中
         \label{fig_Single-pivot:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
     \end{figure}
+    
        \hspace*{\fill} \\
-       \subsection{Linkage-driven Single-pivot suspension(連桿驅動之單樞軸懸架)}
-       \hspace*{\fill} \\        
+       \subsection{Linkage-driven Single-pivot suspension(連桿驅動之單樞軸懸架)}     
         \fourteen {如同單樞軸設計藉由後軸通過搖臂連接到主樞軸，增加聯動裝置在避震與搖臂間允許調整槓桿比率曲線，並在搖臂與避震器間建立連桿以改變槓桿比，搖臂圍繞在主軸旋轉且將中心固定於整個行程中，示意圖產品車架為Orange Stage的Orange 2020 Alpine 6 Frame 27.5，如圖\ref{fig_Linkage-driven Single-pivot:scale}。}
+        
      \begin{figure}[H]
         \centering
         \includegraphics[scale=0.65]{連桿驅動之單樞軸懸架.jpg} 
@@ -261,14 +322,15 @@ left=3truecm,right=2.5truecm]{geometry}
         \caption{連桿驅動之單樞軸懸架} %有caption的圖才會編入目錄中
         \label{fig_Linkage-driven Single-pivot:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
     \end{figure}
+    
         \newpage
         \subsection{High-Pivot Idler suspension(高樞轉惰輪懸架)}
-        \hspace*{\fill} \\
         \fourteen{通常建構在單樞軸或鏈接驅動的單樞軸設計上，其樞軸位置位於鏈條上方，為使控制鏈條增長，鏈輪惰輪將鏈條從鏈輪佈置到主樞軸的頂部或非常靠近主樞軸的位置，主樞軸定位在鏈輪上方更高的位置，使用單樞軸同時中心在整個行程中是固定的。
          \hspace*{\fill} \\  
 但是，在撞擊過程中，後搖臂在主樞軸下方以曲線向上和向後旋轉，而不是在低樞軸位置向上和向後旋轉，且後軸路徑可以幫助懸架在方形撞擊中保持平穩。
 		 \hspace*{\fill} \\  
 鏈條繞到惰輪上，使鏈條與樞軸和後軸成一直線，大大減少了鏈增長的影響。惰輪的位置可以由設計人員用來增加或減少防下蹲的水平，但不會改變通常較高的防起落高度，如圖\ref{fig_High-Pivot Idler:scale}，產品來源為Forbidden Druid的Druid Frame – 2021。}
+
      \begin{figure}[hbt!]
         \centering
         \includegraphics[scale=0.6]{高樞轉惰輪懸架.jpg} 
@@ -276,12 +338,13 @@ left=3truecm,right=2.5truecm]{geometry}
         \caption{高樞轉惰輪懸架} %有caption的圖才會編入目錄中
         \label{fig_High-Pivot Idler:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
     \end{figure}  
+    
        \hspace*{\fill} \\
         \subsection{Twin-link suspension(雙連桿懸掛)}
-        \hspace*{\fill} \\
          \fourteen {搖臂通過兩個搖桿連桿安裝在框架上，從而將搖臂連接到主機樞軸，通過擺臂或搖臂連桿之一來驅動衝擊。
          \hspace*{\fill} \\  
          雙連桿懸架將樞軸的數量從一增加到四個，可修改中心位置，進而改變行程不同點的懸架特性，參考產品為Ibis’ DW-link Suspension的Mojo HD5 Frame – 2020，如圖\ref{fig_Twin-link:scale}。}
+         
      \begin{figure}[hbt!]
         \centering
         \includegraphics[scale=0.7]{雙連桿懸掛.jpg} 
@@ -289,10 +352,10 @@ left=3truecm,right=2.5truecm]{geometry}
         \caption{雙連桿懸掛} %有caption的圖才會編入目錄中
         \label{fig_Twin-link:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
     \end{figure}
+    
     \newpage  
     	\hspace*{\fill} \\
         \subsection{Horst-link suspension(霍斯特鏈懸掛)}
-        \hspace*{\fill} \\
          \fourteen {特性在於樞軸底端的鏈條，後軸則安裝在腳撐上增加了樞軸，其修改後的軸距繞即時中心旋轉，改變行進路線的位置，可在行進的不同階段優化防下蹲與上抬。
          \hspace*{\fill} \\  
 雙連桿懸掛相比，霍斯特連桿系統的較長連桿通常會提供更平滑的曲線，產品為 Canyon Spectral的Izzo Pro Race 29，如圖\ref{fig_Horst-link:scale}。}
@@ -416,9 +479,34 @@ left=3truecm,right=2.5truecm]{geometry}
 		}
 
 
-
-\subsection{環境與安裝套件}
+\subsection{Pyslvs大綱架構}
 		\begin{itemize}
+		\item{採用系統動機}\\
+		\fourteen {透過Pyslvs為平面多連桿機構設計分析之開放源套件系統、結構合成(Structural Synthesis)、驗證機構運動模擬(Kinematic Simulation) 的特性以此進行尺寸合成 (Dimensional Synthesis)相關主題的專題研究計畫，加上Pyslvs為開放源系統、同時延續學長開發出來的系統深入探討其軟體結構背景。} 
+      	\item{Pyslvs架構背景}\\
+		\fourteen {主要由Cython程式語言進行編譯成機構合成延伸做演算並搭配SWIG(Simplified Wrapper and Interface Generator)解析器使Python可呼叫C語言動態連結庫以建構平面連桿機構模擬作業系統。藉由PyQt程式庫中的GUI (Graphical User Interface)圖形化使用者介面，以便程式編譯內容後轉換成GUI圖形化介面，使操作者利用點選頁面、按鍵建立機構模擬分析。}
+
+		
+      	\begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.6]{Pyslvs架構背景.png} 
+        \caption{Pyslvs架構流程圖}
+        \label{fig:scale}
+        \end{figure}
+        
+      	\item{Cython}\\
+      	\fourteen {擁有Python簡潔有力的程式架構且在編譯完所生成的動態連結庫可直接被Python調用呼叫，透過對參數、變數宣告(cdef、def)轉變為C程式語言，同時提高程式整體運行速度，是兼具Python、C++兩者優點的程式語言。}
+      	\item{PyQt5}\\
+      	\fourteen {同樣與Qt都是由C++程式語言建構而成的程式庫，可直接使用Python程式語言使GUI (Graphical User Interface)創建圖形化介面，運用在作業系統上的範圍比Qt更加廣泛且在程式語法編寫上更加直觀方便debug。}
+		\item{SWIG}\\
+      	\fourteen {可將C++/C、其他高階程式語言(如:Python)進行連結的介面，為C++/C語言撰寫由Python呼叫動態函式庫或轉換成Python語法的解析器。}      	
+      	\end{itemize} 
+      	     	
+\subsection{環境與安裝套件}
+		\begin{itemize}		
+		\item{編譯過程}\\     
+		\fourteen {下載已經建立開發環境的套件(如:Mysy2程式、python38、solvespace)的可攜kmol-project檔案，之後安裝3.0a6版本的Cython模組以便進行Pyslvs編譯，另外安裝環境缺少的套件(如: PyQt、Numpy)，完成開發環境的架構後下載ps2020檔案，進入ps2020中在Makefile中進行編譯，完成後進入ps2020中Pyslvs檔案夾安裝setup.py檔，此動作主要壓縮並包裝檔案於資料夾中，最後回到ps2020根目錄再次安裝下載setup.py為使整個環境、編譯動態連結庫封裝成Pyslvs.exe執行檔，最後只需打Pyslvs即可呼叫啟動位於資料夾中的Pyslvs.exe執行檔，出現在畫面中的頁面為編譯完成後的結果。} 
+
 		\item 下載倉儲且安裝 3.0a6 版本的 Cython 模組
 		\begin{lstlisting}[caption=下載倉儲安裝Cython]
 https://github.com/mdecourse/ps2020.git
@@ -480,11 +568,11 @@ python setup.py install
       
 
       
-    
-      \section{Pyslvs-UI 範例}
+\newpage
+\section{Pyslvs-UI 範例}
 		\subsection{曲柄滑塊機構}
-       \hspace*{\fill} \\
        \fourteen {主要以6個連桿、7個接頭，4個雙接頭連桿、1個三接頭連桿所構成，如圖\ref{fig_Crank Lifter:scale}，由四連桿機構衍伸而來多樣性運動型態、軌跡，可滿足一般運動需求，常用於汽車工業中加速與製動，從踏板的輸入到化油器、製動缸、自行車剎車都廣泛運用在其中，如圖\ref{fig_Crank Lifter1:scale}。}\\
+       
      \begin{figure}[H]
         \centering
         \includegraphics[scale=0.5]{曲柄滑塊機構.png} 
@@ -492,6 +580,7 @@ python setup.py install
         \caption{曲柄滑塊機構} %有caption的圖才會編入目錄中
         \label{fig_Crank Lifter:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
     \end{figure}
+    
     \begin{figure}[H]
         \centering
         \includegraphics[scale=0.6]{曲柄滑塊機構運用範圍.png} 
@@ -503,8 +592,9 @@ python setup.py install
     
        \hspace*{\fill} \\
        \subsection{曲柄搖桿機構}
-       \hspace*{\fill} \\        
+        
         \fourteen {為4個連桿、5個接頭，2個雙接頭連桿、1個三接頭連桿所組成，如圖\ref{fig_Crank Rocker:scale}，曲柄旋轉運動透過連接桿轉換至搖桿的搖擺運動，此四連桿機構構造最簡單也最常在生活周遭出現，如:老虎鉗、雷達調整機構、縫紉機腳踏機構、鋼材輸送機，如圖\ref{fig_Crank Rocker1:scale}。}
+        
      \begin{figure}[H]
         \centering
         \includegraphics[scale=0.5]{曲柄搖桿機構.png} 
@@ -512,6 +602,7 @@ python setup.py install
         \caption{曲柄搖桿機構} %有caption的圖才會編入目錄中
         \label{fig_Crank Rocker:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
     \end{figure}
+    
     \begin{figure}[H]
         \centering
         \includegraphics[scale=0.6]{曲柄搖桿機構範例.png} 
@@ -522,8 +613,7 @@ python setup.py install
     
     
     	\hspace*{\fill} \\
-       \subsection{史蒂芬生機構}
-       \hspace*{\fill} \\        
+       \subsection{史蒂芬生機構}       
         \fourteen {為6個連桿、7個接頭，3個雙接頭連桿、2個三接頭連桿所組成，使三接頭連桿作為固定桿，其中一雙接頭連桿作曲柄運動，其餘桿件與三接頭連桿一起做搖擺運動，如圖\ref{fig_Stephenson:scale}，此機構僅次於四連桿組的重要單自由度連桿機構也稱作複合連桿組機構，常用於自動化夾緊機構、越野摩托車後懸吊系統，如圖\ref{fig_Stephenson1:scale}。
 }
      \begin{figure}[H]
@@ -543,9 +633,9 @@ python setup.py install
     
     
     \hspace*{\fill} \\
-       \subsection{瓦特氏運動機構}
-       \hspace*{\fill} \\        
+       \subsection{瓦特氏運動機構}      
         \fourteen {由6個連桿、7個接頭，4個雙接頭連桿、1個三接頭連桿構成，本身機械鏈構型為上下左右對稱，使三接頭桿為固定桿另其中一支雙接頭桿為曲柄作旋轉運動，其他桿件則是搖擺運動，如圖\ref{fig_Watt:scale}，常用於自動化平台舉高移送機構、自動化包裹移送機構、磨耗測試裝置、飛機起落收放機構，如圖\ref{fig_Watt1:scale}。}
+        
      \begin{figure}[H]
         \centering
         \includegraphics[scale=0.5]{瓦特氏運動機構.png} 
@@ -553,6 +643,7 @@ python setup.py install
         \caption{瓦特氏運動機構} %有caption的圖才會編入目錄中
         \label{fig_Watt:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
     \end{figure}
+    
     \begin{figure}[H]
         \centering
         \includegraphics[scale=0.6]{瓦特氏運動機構飛機起落收放.png} 
@@ -563,9 +654,9 @@ python setup.py install
     
     
   	 \hspace*{\fill} \\
-       \subsection{二段式提球機構}
-       \hspace*{\fill} \\        
+       \subsection{二段式提球機構}      
         \fourteen {由兩個史蒂芬生 (Stephenson) 機構衍伸出來，將機構融合調整位置後為10個連桿、14個接頭，8個雙接頭連桿、1個三接頭連桿所組成，如圖\ref{fig_Double Ball Lifter:scale}，便於機構執行時接近置球點底部，將球提起並筆直向上提升與下一個提球機構交會完成傳接行程，常運用在搖臂式發球機上，如圖\ref{fig_Double Ball Lifter1:scale}。}
+        
     \begin{figure}[H]
         \centering
         \includegraphics[scale=0.6]{雙球升降器.png} 
@@ -573,6 +664,7 @@ python setup.py install
         \caption{雙球升降器} %有caption的圖才會編入目錄中
         \label{fig_Double Ball Lifter:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
     \end{figure}
+    
     \begin{figure}[H]
         \centering
         \includegraphics[scale=0.3]{搖臂式發球機.jpg} 
@@ -580,6 +672,7 @@ python setup.py install
         \caption{搖臂式發球機} %有caption的圖才會編入目錄中
         \label{fig_Double Ball Lifter1:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
     \end{figure}
+    
         \chapter{登山車避震機構}
       \section{避震機構合成}
       \subsection{差分進化演算法}
@@ -755,82 +848,289 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
         \label{fig_stroke:scale}
     	\end{figure}
        
-       
+%--------------避震機構分析範例--------------%	
+	   \newpage
        \section{避震機構分析範例}
-       \fourteen {此小節會將4.1節所得到的結果並配合4.2節所介紹的評比標準進行討論以檢驗是否得到最佳的尺寸。}
+       \fourteen {此小節會以Pivot Cycles Firebird 29(雙連桿懸架類型)作為分析範例利用4.1節所推導出的適應性函數配合4.2節介紹的評比標準進行討論以檢驗得到的尺寸優劣。下圖為Firebird在Pyslvs-UI中的機構簡圖。}
 		\begin{figure}[hbt!]
         \centering
         \includegraphics[scale=0.4]{Firebird_mechanism.png}
         \caption{合成所得之機構}
         \label{fig_Firebird_mechanism:scale}
     	\end{figure}
+    	
+    	
+    	\fourteen {表$\ref{tab_as_x:scale}$至$\ref{tab_ar_y:scale}$為Anti-squat量化評比和Anti-rise量化評比各旋轉接頭的位置隨著正x或負x方向及正y或負y方向移動時得到的不同結果，其中實線為合成所得的懸轉接頭位置，而虛線則是座標點變化時Anti-squat及Anti-rise的量化趨勢。}
+    	
+		\begin{table}[htbp] %htbp代表表格浮動位置
+			\centering%表格居中
+			\caption{座標點變化之Anti-squat評比}%表:標題
+			\large%字體大小
+		\label{tab_as_x:scale}
+			%\renewcommand{\arraystretch}{1.0}
+			% \linespread{2.0}\selectfont
+			\begin{tabular}{|c|c|c|c|}
+			\hline
+			\centering
+			\diagbox[width=5em, height=3em]{接頭}{座標點}& 往正x方向 & 往負x方向\\
+			\hline
+			p0 		& $ \includegraphics[scale=0.35]{./data/as_p0_x+.png}$ & $\includegraphics[scale=0.35]{./data/as_p0_x-.png}$\\
+			\hline
+			p1 		& $ \includegraphics[scale=0.35]{./data/as_p1_x+.png}$ & $\includegraphics[scale=0.35]{./data/as_p1_x-.png}$\\
+			\hline
+			p2 		& $ \includegraphics[scale=0.35]{./data/as_p2_x+.png}$  & $\includegraphics[scale=0.35]{./data/as_p2_x-.png}$\\
+			\hline
+			p3 		& $ \includegraphics[scale=0.35]{./data/as_p3_x+.png}$  & $\includegraphics[scale=0.35]{./data/as_p3_x+.png}$\\
+			\hline
+			p4 		& $ \includegraphics[scale=0.35]{./data/as_p4_x+.png}$  & $\includegraphics[scale=0.35]{./data/as_p4_x-.png}$\\
+			\hline
+			\end{tabular}
+		\end{table}	 
 		
-		\newpage
-		\begin{flushleft}
-	    \fourteen {圖\ref{fig_antisquat_x-:scale}為Point4 在x座標往負x方向移動時所得到Anti-squat評比結果，由該圖可知當Point4越往負x方向移動時所得到的結果會越偏離100\%。}
-	    \end{flushleft}
-      \begin{figure}[hbt!]
-        \centering
-        \includegraphics[scale=0.6]{anti-squat_x-.png}
-        \caption{Anti-squat x座標減少}
-        \label{fig_antisquat_x-:scale}
-    	\end{figure}
+		
+		\begin{table}[htbp] %htbp代表表格浮動位置
+			\centering%表格居中
+			\caption{座標點變化之Anti-squat評比(續)}%表:標題
+			\large%字體大小
+		\label{tab_as_y:scale}
+			\begin{tabular}{|c|c|c|c|}
+			\hline
+			\centering
+			\diagbox[width=6em, height=3em]{接頭}{座標點}& 往正y方向 & 往負y方向\\ 
+			\hline
+			p0 		& $ \includegraphics[scale=0.35]{./data/as_p0_y+.png}$ & $\includegraphics[scale=0.35]{./data/as_p0_y-.png}$\\
+			\hline
+			p1 		& $ \includegraphics[scale=0.35]{./data/as_p1_y+.png}$ & $\includegraphics[scale=0.35]{./data/as_p1_y-.png}$\\
+			\hline
+			p2 		& $ \includegraphics[scale=0.35]{./data/as_p2_y+.png}$  & $\includegraphics[scale=0.35]{./data/as_p2_y-.png}$\\
+			\hline
+			p3 		& $ \includegraphics[scale=0.35]{./data/as_p3_y+.png}$  & $\includegraphics[scale=0.35]{./data/as_p3_y-.png}$\\
+			\hline
+			p4 		& $ \includegraphics[scale=0.35]{./data/as_p4_y+.png}$  & $\includegraphics[scale=0.35]{./data/as_p4_y-.png}$\\
+			\hline
+			\end{tabular}
+		\end{table}
+		
+		
+		\begin{table}[htbp] %htbp代表表格浮動位置
+			\centering%表格居中
+			\caption{座標點變化之Anti-rise評比}%表:標題
+			\large%字體大小
+		\label{tab_ar_x:scale}
+			%\renewcommand{\arraystretch}{1.0}
+			% \linespread{2.0}\selectfont
+			\begin{tabular}{|c|c|c|c|}
+			\hline
+			\centering
+			\diagbox[width=5em, height=3em]{接頭}{座標點}& 往正x方向 & 往負x方向\\
+			\hline
+			p0 		& $ \includegraphics[scale=0.35]{./data/ar_p0_x+.png}$ & $\includegraphics[scale=0.35]{./data/ar_p0_x-.png}$\\
+			\hline
+			p1 		& $ \includegraphics[scale=0.35]{./data/ar_p1_x+.png}$ & $\includegraphics[scale=0.35]{./data/ar_p1_x-.png}$\\
+			\hline
+			p2 		& $ \includegraphics[scale=0.35]{./data/ar_p2_x+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p2_x-.png}$\\
+			\hline
+			p3 		& $ \includegraphics[scale=0.35]{./data/ar_p3_x+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p3_x+.png}$\\
+			\hline
+			p4 		& $ \includegraphics[scale=0.35]{./data/ar_p4_x-.png}$  & $\includegraphics[scale=0.35]{./data/ar_p4_x-.png}$\\
+			\hline
+			\end{tabular}
+		\end{table}
+		
+		
+		\begin{table}[htbp] %htbp代表表格浮動位置
+			\centering%表格居中
+			\caption{座標點變化之Anti-rise評比(續)}%表:標題
+			\large%字體大小
+		\label{tab_ar_y:scale}
+			%\renewcommand{\arraystretch}{1.0}
+			% \linespread{2.0}\selectfont
+			\begin{tabular}{|c|c|c|c|}
+			\hline
+			\centering
+			\diagbox[width=5em, height=3em]{接頭}{座標點}& 往正y方向 & 往負y方向\\
+			\hline
+			p0 		& $ \includegraphics[scale=0.35]{./data/ar_p0_y+.png}$ & $\includegraphics[scale=0.35]{./data/ar_p0_y-.png}$\\
+			\hline
+			p1 		& $ \includegraphics[scale=0.35]{./data/ar_p1_y+.png}$ & $\includegraphics[scale=0.35]{./data/ar_p1_y+.png}$\\
+			\hline
+			p2 		& $ \includegraphics[scale=0.35]{./data/ar_p2_y+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p2_y-.png}$\\
+			\hline
+			p3 		& $ \includegraphics[scale=0.35]{./data/ar_p3_y+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p3_y-.png}$\\
+			\hline
+			p4 		& $ \includegraphics[scale=0.35]{./data/ar_p4_y+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p4_y-.png}$\\
+			\hline
+			\end{tabular}
+		\end{table} 	
     	
-    	\begin{flushleft}
-    	\fourteen {圖\ref{fig_antisquat_y-:scale} 在y座標往負y方向移動時所得到Anti-squat評比結果，由該圖可知當Point4越往負y方向移動時所得到的結果會越偏離100\%。}
-    	\end{flushleft}
-      \begin{figure}[hbt!]
-        \centering
-        \includegraphics[scale=0.6]{anti-squat_y-.png}
-        \caption{Anti-squat y座標減少}
-        \label{fig_antisquat_y-:scale}
-    	\end{figure}
-    	
-    	
+		
+%--------------3D零件自動生成--------------%	
     	\newpage
-    	\begin{flushleft}
-    	\fourteen {圖\ref{fig_antisquat_x-y+:scale}為Point4 在x座標往負x方向y座標往正y方向移動時所得到Anti-squat評比結果，由該圖可知當Point4在x座標往負方向及y座標往正y方向移動時所得到的結果會越偏離100\%。}
-    	\end{flushleft}
-      \begin{figure}[hbt!]
+    	\subsection{3D零件自動生成}
+	\begin{flushleft}
+	\fourteen {完成機構設計後接著就要進入CAD階段，不過在此階段常面臨突然遇到有其他的因素導致需要修改尺寸，此時若以手動將一個個零件一一重新修改會浪費許多時間，因此本專題建立一程式流程來進行參數化修改。}
+	\end{flushleft}
+	\begin{figure}[hbt!]
         \centering
-        \includegraphics[scale=0.6]{anti-squat_x-y+.png}
-        \caption{Anti-squat x座標減少 y座標增加}
-        \label{fig_antisquat_x-y+:scale}
-    	\end{figure}
-    	   	
-    	
-    	\begin{flushleft}
-    	\fourteen {圖\ref{fig_antirise_x-:scale}為Point4 在x座標往負x方向移動時所得到Anti-rise評比結果，由該圖可知當Point4在x座標往負方向移動時所得到的結果會越來越比原來的位置差。}
-    	\end{flushleft}
-      \begin{figure}[hbt!]
+        \includegraphics[scale=0.6]{3D零件生成.png}
+        \caption{3D零件生成流程圖}
+        \label{fig_3Dparts:scale}
+    \end{figure}
+    
+	
+	\newpage
+	\begin{enumerate}
+	\item{
+	\fourteen{繪製零件:建立後續會用到的零件}
+	\begin{figure}[hbt!]
         \centering
-        \includegraphics[scale=0.6]{anti-rise_x-.png}
-        \caption{Anti-rise x座標減少}
-        \label{fig_antirise_x-:scale}
-    	\end{figure}
-    	
-    	 \newpage
-    	 \begin{flushleft}
-    	 \fourteen {圖\ref{fig_antirise_y-:scale}為Point4 在y座標往負y方向移動時所得到Anti-rise評比結果，由該圖可知當Point4在y座標往負方向移動時所得到的結果會越來越比原來的位置差。}
-    	 \end{flushleft}
-      \begin{figure}[hbt!]
+        \includegraphics[scale=0.4]{binary_link.png}
+        \caption{二接頭連桿}
+        \label{fig_binary_link:scale}
+        
         \centering
-        \includegraphics[scale=0.6]{anti-rise_y-.png}
-        \caption{Anti-rise y座標減少}
-        \label{fig_antirise_y-:scale}
-    	\end{figure}
-    	
-    	
-    	\begin{flushleft}
-    	\fourteen {圖\ref{fig_antirise_x-y+:scale}為Point4 在x座標往負x方向及y座標往正y方向移動時所得到Anti-rise評比結果，由該圖可知當Point4在x座標往負x方向及y座標往正方向移動時所得到的結果會越來越比原來的位置差。}
-    	\end{flushleft}
-      \begin{figure}[hbt!]
+        \includegraphics[scale=0.5]{ternary_link.png}
+        \caption{三接頭連桿}
+        \label{fig_ternary_link:scale}
+    \end{figure}
+    }\\
+    
+	
+	\item
+	{
+	\begin{flushleft}
+	\fourteen{關鍵尺寸設定:將所需要的零件關鍵尺寸找出並在CAD軟體中建立該參數}
+	\begin{figure}[hbt!]
         \centering
-        \includegraphics[scale=0.6]{anti-rise_x-y+.png}
-        \caption{Anti-rise x座標減少 y座標增加}
-        \label{fig_antirise_x-y+:scale}
-    	\end{figure} 	
+        \includegraphics[scale=0.5]{parameter.png}
+        \caption{二接頭連桿}
+        \label{fig_binary_link:scale}
+    \end{figure}
+	\end{flushleft}
+	}
+	
+	\item{
+	\begin{flushleft}
+	\fourteen{程式流程:該流程主要由我們自行撰寫程式來完成，其中會利用pywin32模組找到在電腦中的CAD軟體並開啟接著將找到要修改的零件模型的路徑並開啟，再將前面設定完成的尺寸參數名稱帶入函式中並輸入想要的數值，修改完畢後再更新零件才能在CAD軟體中看到修改後的變化，最後進行儲存的動作}    	
+    \end{flushleft}
+    }
     	
+    % %%%% test the subfigure syntax
+	%\begin{figure}
+	%\centering
+	%$\subfigure$[binary_link]{\label{fig:a} \includegraphics[width=60mm]{binary_link.png}}$
+	%$\subfigure$[ternary_link]{\label{fig:b} \includegraphics[width=60mm]{ternary_link.png}}$
+	%\caption{my caption}
+	%\end{figure}
+	\end{enumerate}
+    	
+    	\chapter{CoppeliaSim}
+    	\hspace*{\fill} \\
+      \section{CoppeliaSim遠端API}
+      \subsection{遠端API功能介紹}
+      \fourteen {利用組合件放入CoppeliaSim中進行從屬關係的架設與半自動設定物理條件，藉由API(Application Programming Interface)連接CoppeliaSim遠端操控馬達使組合件作動，以查證組合件之機構在運作時的實際狀況。}
+      \begin{itemize}
+     \item 遠端API程式架構
+     \hspace*{\fill} \\
+     導入CoppeliaSim必要函式庫與其他數學模組以便操作正常，並利用Python語法建立架構使用類別區分各運作步驟，藉由呼叫函式使步驟接續作動，可實際查證組合件的運作過程，如圖\ref{fig_coppeliaSim API:scale}所示。
+     \end{itemize}
+     
+     \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.6]{CoppeliaSim API.png} 
+        \caption{Pyslvs架構流程圖}
+        \label{fig_coppeliasim API:scale}
+        \end{figure}
+        
+     
+     
+     \begin{itemize}
+     \item 遠端API程式撰寫
+     \hspace*{\fill} \\
+		\begin{lstlisting}[caption=遠端API程式架構]
+import math 
+import time
+import datetime
+import sim 
+import simConst
+
+
+class  ConnectedremoteAPI:
+    def __init__(self):
+        sim.simxFinish(-1)
+        self.clientID = sim.simxStart('127.0.0.1', 19997, True, True, 5000, 5)
+        print("Connection success")
+          
+    def connectedAPI(self):
+        if self.clientID!=-1:
+            print ('Connected to remote API server')
+        else:
+            print('cant not to connnected')
+            
+        
+    def simulation(self) :
+        sim.simxSynchronous(self.clientID,1)
+        #同步模式
+        sim.simxSynchronousTrigger(self.clientID)
+        # Start simulation
+        sim.simxStartSimulation(self.clientID, sim.simx_opmode_oneshot_wait)
+        print ("Simulation start")
+
+        
+    
+    def getposition(self,step):
+        sim.simxSynchronousTrigger(self.clientID)
+        sim.simxGetPingTime(self.clientID)
+        deg = math.pi/180
+        for i in range(step):
+            res,joint1 = sim.simxGetObjectHandle(self.clientID, "Revolute_joint5",  sim.simx_opmode_oneshot_wait)
+            res,position = sim.simxGetJointPosition(self.clientID,joint1,sim.simx_opmode_streaming)
+            ping_s,number = sim.simxGetPingTime(self.clientID)
+            print(position,ping_s)
+   
+    def setrunningtime(self,number):
+        sim.simxSynchronousTrigger(self.clientID)
+        sim.simxGetPingTime(self.clientID)
+        res,main_time = sim.simxGetFloatingParameter(self.clientID,number,sim.simx_opmode_oneshot_wait)
+        sim.simxFinish(self.clientID)
+        print('setting time')
+        
+      
+    def velocity(self,max1,mag):
+        res,joint0 = sim.simxGetObjectHandle(self.clientID, "motor",  sim.simx_opmode_oneshot_wait)#定義物件名稱
+        sim.simxSynchronousTrigger(self.clientID)#模擬同步化確認
+        left_Code =sim.simxSetJointTargetVelocity(self.clientID,joint0 ,max1,sim.simx_opmode_oneshot_wait)#目標速度設定
+        sim.simxSetIntegerParameter(self.clientID,sim.sim_intparam_speedmodifier,mag , sim.simx_opmode_oneshot_wait) #(調整速度倍率)
+        print('finish velocity setting')
+        
+                 
+
+    def settime(A):
+         if max1>0 :
+             A=sim.getSimulationTime()+3 
+
+    def finishcoderunning(self): 
+            sim.simxSynchronousTrigger(self.clientID)
+            sim.simxStopSimulation(self.clientID, sim.simx_opmode_oneshot)
+            #sim.simxFinish(self.clientID)
+            print("finish code")
+        
+        
+#call code section!!!!!
+
+connected = ConnectedremoteAPI( )#類別取名(較好整理)
+connected. connectedAPI()#連接coppeliasim服務端
+connected.simulation()#啟動模擬
+connected.getposition(2)#抓取物體位置
+connected.settime= time.sleep(2)#延長開始模擬時間
+connected.velocity(1,1)#速度:倍率
+connected.setrunningtime(5000)#設定模擬時間
+connected.finishcoderunning()#停止模擬
+
+print('finish entire code')
+		\end{lstlisting}
+		\end{itemize}
+
     	
         \chapter{結論}
         {\begin{flushleft}
@@ -839,7 +1139,7 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
 
         \chapter{未來研究建議}
         {\begin{flushleft}
-        \fourteen {本專題以已建立一流程從尺寸合成至動態模擬軟體進行運動模擬，後續可將運動系統改為動力系統並利用有限元素法對該避震機構進行受力情況的分析。}
+        \fourteen {本專題以已建立一流程從機構尺寸合成、機構量化評比、動態系統設定、運動模擬，後續可將原有的動態系統加入自行車重量、騎乘者的重量、各接觸點的反力......以建立更完整的動態系統，接著可利用有限元素法進行結構分析。}
         \begin{figure}[hbt!]
         \centering
         \includegraphics[scale=0.6]{follow-up research.png}
@@ -847,7 +1147,76 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
         \label{fig:scale}
     	\end{figure}
         \end{flushleft}
-          
+        
+        \newpage
+        \addcontentsline{toc}{chapter}{\fourteen{附錄}}
+        \addcontentsline{toc}{section}{\fourteen{LaTex}}
+	\begin{center}
+	\twenty \bf{附錄}\\
+	\end{center}
+	
+	 \begin{itemize} 
+        \item LaTex簡介：LaTex是一套由美國計算機科學家Leslie Lamport於20世紀80年代初期所開發的排版格式，相較於Word的「所見所得」編輯模式，純文字檔的模式更像在寫程式。LaTex當初建立的宗旨，就是要能完美排版文件，除了可編輯中文(簡、繁體)、英文，更可以畫圖、製表，甚至繪製五線譜和音符，基於其強大的對齊功能，LaTex已變成編輯各式文件的最佳排版方法。
+		\item 特點：\\
+		\end{itemize} 
+		
+		 \begin{enumerate}
+		 \item 相容性：LaTex是免費軟體並且具有極高的可移植性，因此它幾乎可以在任何硬體平台上運行。Word有分為舊版的.doc和新版的.docx，在平台支援上，也分為for Windows和for Mac。一份在Windows上完成的文件，拿到Mac開啟，原本設定好的表格和對齊的文字都會產生變動。相較LaTex，不管是將寫好的編碼在Mac或是Windows開啟並進行編譯，最後將能得到完全相同的文件內容。
+		 \item 文件排版：在處理多頁數文件時，若想將兩個不同小節互換，不僅中間每一小節在跨頁時設定好的分段都會受到影響，在進行整個區域的移動時，排版也會跑掉、長距離的圖片搬移也容易出現錯誤。且會因為快取內容即時預覽，導致向下滑動時會發生卡頓、程式短時間無法回應、甚至崩潰等情況，這些都是「前台編輯」容易發生的情況。\\
+LaTex屬於「後台編輯」，因此在還沒編譯前都不會產生PDF文件，所有圖片都是以路徑方式呈現，並透過參數來設定到時的排版位置、大小和效果，因此在全部都還是編碼的情況下，調整文字位置與圖片相較容易，編輯器也不會有需要及時預覽的問題。\\
+在撰寫英文文章時，LaTex也會自動幫你將每行文字數目做最佳分配，並在斷句時自動將單字從正確的音節位置分行。
+		\item 編輯數學式：數學是非常重要且強大的工具。從理論推導到各式分析等，都需要數學的幫助。因此如何以最佳方式呈現數學，就成了非常重要的問題。在Word排版時，大部分都是直接用MathType，在編輯器的面板上輸入數字、選擇希臘字母、上下標後，再將其插入Word，但不易更改字型且這些公式都不帶有書籤功能，因此在內文中無法自動引用這些方程式。\\
+在LaTex內進行編輯時我們只負責公式內容，公式在整份文件中的編號將會自動執行，且字型會以統一格式呈現。
+	
+		\begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.8]{公式比較圖.png} 
+        \caption{公式比較圖} 
+		\label{fig_公式比較圖:scale}
+    	\end{figure}
+    	
+    	\item 巨集指令：
+在LaTex內有許多巨集套件(package)可供使用，這些套件能強化環境及增加許多讓使用者進行細部微調的功能，除了引用已有套件外，也可以編寫自己的巨集(macros)，為自己所需要的排版，量身訂做適合的套件。
+		 \end{enumerate}
+		 
+		 \begin{table}[htbp] %htbp代表表格浮動位置
+			\centering%表格居中
+			\caption{文字編輯軟體比較表}%表:標題
+			\large%字體大小
+			\label{tab_文字編輯軟體比較表:scale}
+			\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			\diagbox[width=4em]& 相容性 & 直觀性 & 排版對齊 & 數學公式 & 微調細部\\ 
+			\hline
+			LaTeX 		&$\surd$&		&$\surd$&$\surd$&$\surd$\\
+			\hline
+			Word	 	&		&$\surd$&		&		&$\surd$\\
+			\hline
+			
+			\end{tabular}
+		\end{table}	
+		
+		 \begin{itemize}
+		 \item 安裝流程：綜上所述，我們經過比較與研究最終選用LaTex編輯系統，以MikTex(系統套件)搭配Texmaker(編譯器)作為編寫專題報告的工具。
+		 
+        \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.2]{LaTex安裝流程圖.png} 
+        \caption{LaTex安裝流程圖} 
+		\label{fig_LaTex安裝流程圖:scale}
+    	\end{figure}
+		 
+		 \item 倉儲介紹：透過Github遠端連線協同，讓每位成員皆可在自己的電腦編譯文件，並且在倉儲內有清楚的提交紀錄與內容，在後續需要進行進度回顧或尋找某一特定版次時相較輕鬆且明確。
+        
+        \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.7]{倉儲推送紀錄.png} 
+        \caption{倉儲推送紀錄} 
+		\label{fig_倉儲推送紀錄:scale}
+    	\end{figure}
+    	
+    	\end{itemize}
+		
         \newpage
         \addcontentsline{toc}{chapter}{\fourteen{參考文獻}}
 	\begin{center}

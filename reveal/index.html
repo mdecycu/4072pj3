@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 <title>
-Pyslvs.com
+Pyslvs-UI 平面多連桿機構套件之合成與應用
 </title>
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Hakim El Hattab">
@@ -37,41 +37,224 @@ Pyslvs.com
 <div class="reveal">
 <!-- Any section element inside of this container is displayed as a slide -->
 <div class="slides">
-<section data-markdown>
-    <script type="text/template">
-## Pyslvs.com
-
-### Pyslvs.com
-
-<small>
-Created by [KMOLab](http://lab.kmol.info/)
-</small>
-
-[Pyslvs.com](./../blog/index.html)
+<section data-background="#FFFFFF">
+    <h2>Pyslvs-UI 平面多連桿機構套件之合成與應用</h2>
 
 
-    </script>
-</section>
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-# 投影片快捷鍵
-
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
-
-    </script>
+    <small>
+    Created by <a href="http:/lab.kmol.info">KMOLab</a>
+    </small>
 </section>
 
 
 						
 <section>
+<section data-background="#FFFFFF">
+
+    <h2>議程</h2>
+    <ul>
+        <li>研究動機---------------------------吳佳穎</li>
+        <li>研究流程---------------------------吳佳穎</li>
+        <li>平面多連桿機構套件-----------林昱秀</li>
+        <li>機構合成---------------------------劉光智</li>
+        <li>延伸應用----------------------劉光智、蔡育灃、林晏瑩</li>
+        <li>結論</li>
+    </ul>
+</section>
+<section>
+    </h2>研究動機
+    <p>
+隨著科技越來越發達網路上有許多機構分析的套件，但是鮮少有機構合成功能的套件，且大多無公開原始碼。而本專題所使用的套件Pyslvs-UI 為本研究室所開發的套件且有公開原始碼，因此本專題利用該套件合成及模擬功能並以一登山車後避震機構為例。
+    </p>
+</section>
+<section data-background="#FFFFFF">
+    <h2>研究流程</h2>
+    <p>研究架構圖</p>
+    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E6%9E%B6%E6%A7%8B%E5%9C%96.png?raw=true" alt="alt text" width="1000"/>
+
+</section>
+</section>
+
+<section>
+<section>
+    <h2>平面多連桿機構套件</h2>
+</section>
+
+<section>
+    <h2>平面多連桿機構套件比較</h2>
+    <small>
+    與市面上已經有的套件進行比較
+    </small>
+    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%A5%97%E4%BB%B6%E6%AF%94%E8%BC%83%E8%A1%A8%E6%A0%BC.jpg?raw=true" alt="alt text" width="800"/>
+
+</section>
+<section>
+    <h2>Pyslvs-UI架構</h2>
+    <small>
+    採用系統動機
+    </small>
+    <ul>
+        <li>平面多連桿機構設計分析之開放源套件系統</li>
+        <li>結構合成</li>
+        <li>驗證機構運動模擬</li>
+
+    </ul>
+
+    <small>
+    Pyslvs架構背景
+    </small>
+    </br>
+<!--URL連結圖片比較不會跑掉-->
+    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Pyslvs%E6%9E%B6%E6%A7%8B%E8%83%8C%E6%99%AF.png?raw=true" alt="alt text" width="480"/>
+
+<!--</small>
+Pyslvs架構背景
+<small>
+ * Cython程式語言進行編譯成機構合成延伸做演算
+ * SWIG使Python可呼叫C語言動態連結庫以建構平面連桿機構模擬作業系統 
+ * PyQt5可將程式編譯內容後轉換成GUI圖形化介面-->
+</section>
+
+</section>
+
+<section>
+<section>
+    <h2>機構合成</h2>
+</section>
+<section data-background="#FFFFFF">
+    <h2>登山車後避震機構評量</h2>
+    
+    
+    <small>Anti-rise (防後升):煞車時避震器抵抗後升的能力</small>
+    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/anti-rise_table.PNG?raw=true alt="Anti-rise" width="1000" height="200" align="left" border="0">
+    
+    <br>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxQivsPMr_FyjgC3PrjcfkDc_rpENTo0E0g&usqp=CAU alt="Anti-rise" width="380" height="250" align="left">
+    
+    <img src="https://media1.tenor.com/images/50aeb46deae11e8db0067cf3de78db4a/tenor.gif?itemid=17730464 alt="Anti-rise" width="380" height="250">
+    
+    
+    
+    
+</section>
+
+
+
+
+
+
+
+<section data-background="#FFFFFF">
+    <h2>登山車後避震機構評量</h2>
+
+    <small>Anti-squat (防後沉):加速時避震器抵抗下壓力的能力</small>
+    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/anti-squat_table.PNG?raw=true alt="Anti-rise" width="1000" height="200" align="left" border="0">
+    
+    <br>
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDuxFrTn99G2XbQp2PwpMtysdb_hSTmyZxiA&usqp=CAU alt="Anti-rise" width="380" height="250" align="left">
+    
+    <iframe src="https://giphy.com/embed/7L7aH1CdikWgHLeNeo" width="380" height="280" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/pureadk-mtb-biking-wilmington-ny-7L7aH1CdikWgHLeNeo"></a></p>
+    
+</section>
+
+
+
+
+
+
+
+<section data-background="#FFFFFF">
+    <h2>登山車後避震機構評量</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/d4oySS3ZMD8?start=67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</section>
+<section data-background="#FFFFFF">
+    <h2>尺寸合成</h2>
+    <small>差分進化演算法流程</small>
+    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%B7%AE%E5%88%86%E9%80%B2%E5%8C%96%E6%BC%94%E7%AE%97%E6%B3%95.png?raw=true" alt="alt text" width="800" height="300"/>
+
+    <hr></hr>
+    <small>\begin{aligned}
+    h_{2} = r_{of}\left (\frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}}\right ) + \left[ r_{ppy}-r_{ppx}\left( \frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}} \right) \right]
+    \end{aligned}</small>
+</section>
+<section data-auto-animate>
+    <h2>後避震機構量化分析</h2>
+    <p>Anti-squat 量化分析</p>
+    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="1000"/>
+</section>
+    
+<section data-auto-animate>
+        <p><img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/data/as_p0_x+.png?raw=true" alt="alt text" width="1000"/></p>
+</section>
+
+</section>
+
+<section>
+<section>
+    <h2>延伸應用</h2>
+</section>
+<section>
+    <h2>3D零件自動生成</h2>
+
+
+
+    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/3D%E9%9B%B6%E4%BB%B6%E7%94%9F%E6%88%90.png?raw=true" alt="alt text" width="600"/>
+</section>
+<section>
+    <h2>CoppeliaSim動態模擬軟體</h2>
+    <ul>
+        <li>使用XML檔來匯入零件</li>
+        <li>可減少手動匯入的程序</li>
+        <li>快速調整所需參數</li>
+    </ul>
+    <br>
+    <iframe width="580" height="315" src="https://www.youtube.com/embed/JFDAjE7lJW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</section>
+<section>
+    <h2>CoppeliaSim遠端API</h2>
+    <p>遠端API功能介紹</p>
+    <ul><small>
+        <li>模擬組合件之避震器在行進時的實際狀況</li>
+        <li>遠端API便於Debug程式操作模擬、不須手動設定旋轉軸轉速</li>
+    </small></ul>
+
+    <p>遠端API程式架構</p>
+
+    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/coppeliasim%20API.png?raw=true" alt="alt text" width="550"/>
+
+</section>
+</section>
+
+<section>
+<section>
+    <h2>結論</h2>
+
+
+    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/follow-up%20research.png?raw=true" alt="alt text" width="1000"/>
+</section>
+
+<section>
+    <h2>Thank you for listening</h2>
+</section>
+</section>
+
+<section>
+<section data-markdown>
+    <script type="text/template">
+### 導入圖片 template
+
+ <!--URL連結圖片比較不會跑掉-->
+<img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/anti-squat_x-.png?raw=true" alt="alt text" width="200"/>
+    </script>
+</section>
+
+
+						
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
@@ -136,6 +319,22 @@ make.start()
 						
 </section>
 
+<section data-markdown>
+    <script type="text/template">
+# 投影片快捷鍵
+
+* 利用箭頭上下前後換頁
+* 按 f 鍵進入全螢幕模式 (full screen)
+* 按 s 鍵可以顯示投影片筆記 (show)
+* 按 o 鍵可以切換單張或全域檢視 (overview)
+* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
+* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+
+    </script>
+</section>
+
+
+						
 </div>
 
 </div>

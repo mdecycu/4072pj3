@@ -146,7 +146,8 @@ def _img(type, h1, rear_pline_pos, theta, travel_step=10):
     ar_list = []
     
     if type == "Twin-link suspension (Firebird)":
-        dtheta_list = [0, 3.16, 2.9642, 2.7607, 2.5415, 2.3085, 2.0611, 1.799, 1.5202, 1.2224, 0.9009, 0.5468, 0.1447, -0.3348, 0.0453, -2.8763]
+        # dtheta_list = [0, 3.16, 2.9642, 2.7607, 2.5415, 2.3085, 2.0611, 1.799, 1.5202, 1.2224, 0.9009, 0.5468, 0.1447, -0.3348, 0.0453, -2.8763]
+        dtheta_list = [0, 3.98, 3.77, 3.54, 3.29, 3.02, 2.72, 2.41, 2.06, 1.69, 1.27, 0.83, 0.3, -0.32, -1.2, -2.71]
     elif type =="Horst-link suspension (RDO)":
         dtheta_list = [0, 3.17, 3.09, 3.0223, 2.9428, 2.8634, 2.7809, 2.6942, 2.602, 2.5036, 2.3974, 2.2824, 2.1573, 2.0207, 1.8711, 1.7067]
     
@@ -184,15 +185,24 @@ if __name__ == "__main__":
     ########### Joint configuration ###########
     
     # Firebird
+    """
     p0 = (0, 0)
     p1 = (-41.52, -5.1)
     p2 = (-397.41, -42.50)
     p3 = (17.68, 111.69)
     # p4 = (-3.2, 154.98)
-    # p4 = (-3, 153)    # test the point from different algorithm (OK)
+    # p4 = (-3, 153)    # test the point from different algorithm
     p4 = (-4.39, 151.56)
     p5 = (89, 201.72)
     theta = 187.14
+    """
+    p0 = (0, 0)
+    p1 = (-40, -10)
+    p2 = (-390, -40)
+    p3 = (20, 120)
+    p4 = (-5, 150)
+    p5 = (89, 201.72)
+    theta = 194.04
 
     # lf = lower frame
     lf = (-12.72, -63.05)
@@ -200,9 +210,10 @@ if __name__ == "__main__":
     p2_r = 85.56/2
     
     # other essential config
-    h1 = 1037
-    origin2front = 662.6
-    rear_pline_pos = (-394.0851, -368.3)
+    h1 = 1057
+    origin2front = 670
+    rear_pline_pos = (p2[0], -408.3)
+    
     
     """
     # RDO
