@@ -37,12 +37,12 @@
 <v t="leo.20210521111034.3"><vh>評量影片</vh></v>
 <v t="leo.20210520135544.5"><vh>尺寸合成</vh></v>
 <v t="leo.20210520135544.7"><vh>量化評比</vh></v>
-<v t="leo.20210527145053.1"><vh>量化評比單張</vh></v>
 </v>
 <v t="leo.20210520141042.1"><vh>延伸應用</vh>
 <v t="leo.20210520150420.2"><vh>轉場</vh></v>
 <v t="leo.20210520141042.3"><vh>3D零件</vh></v>
 <v t="leo.20210520141042.5"><vh>CoppeliaSim動態模擬軟體</vh></v>
+<v t="leo.20210527170311.1"><vh>XML檔案結構</vh></v>
 <v t="leo.20210520141042.7"><vh>CoppeliaSim API</vh></v>
 </v>
 <v t="leo.20210520141843.1"><vh>結論</vh>
@@ -395,7 +395,8 @@ vertical: body pane on the botton</t>
 &lt;small&gt;
     &lt;table&gt;
         &lt;thead&gt;
-            &lt;tr&gt;
+</t>
+<t tx="leo.20210520134443.5">            &lt;tr&gt;
                 &lt;th&gt;&lt;/th&gt;
                 &lt;th&gt;Pyslvs-UI&lt;/th&gt;
                 &lt;th&gt;Linkage&lt;/th&gt;
@@ -482,8 +483,7 @@ vertical: body pane on the botton</t>
     &lt;/table&gt;
 &lt;/small&gt;
 &lt;/section&gt;
-</t>
-<t tx="leo.20210520134443.5">&lt;section data-background="#FFFFFF" id="Pyslvs-UI架構"&gt;
+&lt;section data-background="#FFFFFF" id="Pyslvs-UI架構"&gt;
     &lt;h2&gt;Pyslvs-UI架構&lt;/h2&gt;
     &lt;small&gt;
     &lt;h2&gt;採用系統動機&lt;/h2&gt;
@@ -546,6 +546,16 @@ Pyslvs架構背景
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="1000"/&gt;
 &lt;/section&gt;
 
+&lt;section data-background="#FFFFFF"&gt;
+    &lt;h2&gt;後避震機構量化分析&lt;/h2&gt;
+    &lt;p&gt;Anti-squat 在Point0隨座標正x方向改變的評量趨勢&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Firebird_mechanism.png?raw=true" alt="alt text" width="480" align="left"/&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/data/as_p0_x+.png?raw=true" alt="alt text" width="450" align="right"/&gt;&lt;/p&gt;
+        
+        
+&lt;/section&gt;
+
 </t>
 <t tx="leo.20210520140311.2">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;機構合成&lt;/h2&gt;
@@ -577,7 +587,7 @@ Pyslvs架構背景
         &lt;li&gt;快速調整所需參數&lt;/li&gt;
     &lt;/ul&gt;
     &lt;br&gt;
-    &lt;iframe width="580" height="315" src="https://www.youtube.com/embed/JFDAjE7lJW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/mnfTqShjmqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 
 &lt;/section&gt;
@@ -697,16 +707,211 @@ Pyslvs架構背景
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210527145053.1">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;後避震機構量化分析&lt;/h2&gt;
-    &lt;p&gt;Anti-squat 在Point0隨座標正x方向改變的評量趨勢&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Firebird_mechanism.png?raw=true" alt="alt text" width="480" align="left"/&gt;&lt;/p&gt;
-        &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/data/as_p0_x+.png?raw=true" alt="alt text" width="450" align="right"/&gt;&lt;/p&gt;
-        
-        
+<t tx="leo.20210527170311.1">&lt;section data-background="#FFFFFF"&gt;
+    &lt;h2 data-id="code-title"&gt;XML檔案結構&lt;/h2&gt;
+    &lt;pre data-id="code-animation"&gt;&lt;code class="xml" data-trim data-line-numbers&gt;
+&lt;CoppeliaSim&gt;
+  &lt;filetype&gt;simpleScene&lt;/filetype&gt;
+  &lt;xmlSerializationNb&gt;1&lt;/xmlSerializationNb&gt;
+  &lt;camera&gt;
+    &lt;common&gt;
+      &lt;name&gt;main camera&lt;/name&gt;
+      &lt;localFrame&gt;
+        &lt;position&gt;1 1 1&lt;/position&gt;
+        &lt;euler&gt;90 -45 0&lt;/euler&gt;
+      &lt;/localFrame&gt;
+    &lt;/common&gt;
+    &lt;mainCamera&gt;true&lt;/mainCamera&gt;
+  &lt;/camera&gt;
+  &lt;dummy&gt;
+    &lt;common&gt;
+      &lt;name&gt;light&lt;/name&gt;
+      &lt;localFrame&gt;
+        &lt;position&gt;0 0 0&lt;/position&gt;
+        &lt;euler&gt;0 0 0&lt;/euler&gt;
+      &lt;/localFrame&gt;
+    &lt;/common&gt;
+  &lt;light&gt;
+    &lt;common&gt;
+      &lt;name&gt;lightA&lt;/name&gt;
+      &lt;localFrame&gt;
+        &lt;position&gt;2.5 0 3&lt;/position&gt;
+        &lt;euler&gt;100 -50 0&lt;/euler&gt;
+      &lt;/localFrame&gt;
+      &lt;layer&gt;0&lt;/layer&gt;
+    &lt;/common&gt;
+    &lt;type&gt;directional&lt;/type&gt;
+    &lt;color&gt;
+      &lt;light&gt;
+        &lt;ambientDiffuse&gt;127 127 127&lt;/ambientDiffuse&gt;
+      &lt;/light&gt;
+    &lt;/color&gt;
+ &lt;/light&gt;
+  &lt;light&gt;
+    &lt;common&gt;
+      &lt;name&gt;lightB&lt;/name&gt;
+      &lt;localFrame&gt;
+        &lt;position&gt;0 2.5 3&lt;/position&gt;
+        &lt;euler&gt;100 -50 0&lt;/euler&gt;
+      &lt;/localFrame&gt;
+      &lt;layer&gt;0&lt;/layer&gt;
+    &lt;/common&gt;
+    &lt;type&gt;directional&lt;/type&gt;
+    &lt;color&gt;
+      &lt;light&gt;
+        &lt;ambientDiffuse&gt;127 127 127&lt;/ambientDiffuse&gt;
+      &lt;/light&gt;
+    &lt;/color&gt;
+ &lt;/light&gt;
+  &lt;light&gt;
+    &lt;common&gt;
+      &lt;name&gt;lightC&lt;/name&gt;
+      &lt;localFrame&gt;
+        &lt;position&gt;0 -2.5 3&lt;/position&gt;
+        &lt;euler&gt;-100 -50 0&lt;/euler&gt;
+      &lt;/localFrame&gt;
+      &lt;layer&gt;0&lt;/layer&gt;
+    &lt;/common&gt;
+    &lt;type&gt;directional&lt;/type&gt;
+    &lt;color&gt;
+      &lt;light&gt;
+        &lt;ambientDiffuse&gt;127 127 127&lt;/ambientDiffuse&gt;
+      &lt;/light&gt;
+    &lt;/color&gt;
+ &lt;/light&gt;
+  &lt;light&gt;
+    &lt;common&gt;
+      &lt;name&gt;lightD&lt;/name&gt;
+      &lt;localFrame&gt;
+        &lt;position&gt;-2.5 0 3&lt;/position&gt;
+        &lt;euler&gt;100 -50 0&lt;/euler&gt;
+      &lt;/localFrame&gt;
+      &lt;layer&gt;0&lt;/layer&gt;
+    &lt;/common&gt;
+    &lt;type&gt;directional&lt;/type&gt;
+    &lt;color&gt;
+      &lt;light&gt;
+        &lt;ambientDiffuse&gt;127 127 127&lt;/ambientDiffuse&gt;
+      &lt;/light&gt;
+    &lt;/color&gt;
+  &lt;/light&gt;
+  &lt;/dummy&gt;
+  &lt;shape&gt;
+    &lt;common&gt;
+      &lt;name&gt;floor&lt;/name&gt;
+      &lt;localFrame&gt;
+        &lt;position&gt;0 0 -0.14&lt;/position&gt;
+      &lt;/localFrame&gt;
+      &lt;localObjectProperty&gt;
+        &lt;selectable&gt;false&lt;/selectable&gt;
+      &lt;/localObjectProperty&gt;
+      &lt;localObjectSpecialProperty&gt;
+        &lt;collidable&gt;true&lt;/collidable&gt;
+        &lt;measurable&gt;true&lt;/measurable&gt;
+        &lt;renderable&gt;true&lt;/renderable&gt;
+        &lt;detectable&gt;true&lt;/detectable&gt;
+      &lt;/localObjectSpecialProperty&gt;
+    &lt;/common&gt;
+    &lt;primitive&gt;
+      &lt;type&gt;cuboid&lt;/type&gt;
+      &lt;size&gt;5 5 0.04&lt;/size&gt;
+      &lt;color&gt;
+        &lt;ambientDiffuse&gt;209 209 209&lt;/ambientDiffuse&gt;
+      &lt;/color&gt;
+    &lt;/primitive&gt;
+    &lt;dynamics&gt;
+      &lt;switches&gt;
+        &lt;static&gt;true&lt;/static&gt;
+        &lt;respondable&gt;true&lt;/respondable&gt;
+      &lt;/switches&gt;
+    &lt;/dynamics&gt;
+  &lt;/shape&gt;
+  &lt;shape&gt;
+    &lt;common&gt;
+      &lt;name&gt;Fork&lt;/name&gt;
+    &lt;/common&gt;
+    &lt;mesh&gt;
+      &lt;fileName&gt;Fork.stl&lt;/fileName&gt;
+      &lt;localFrame&gt;
+        &lt;position&gt;0 0.289 0.64&lt;/position&gt;
+        &lt;euler&gt;70 0 0&lt;/euler&gt;
+      &lt;/localFrame&gt;
+      &lt;localObjectProperty&gt;
+        &lt;selectable&gt;false&lt;/selectable&gt;
+      &lt;/localObjectProperty&gt;
+      &lt;localObjectSpecialProperty&gt;
+        &lt;collidable&gt;true&lt;/collidable&gt;
+        &lt;measurable&gt;true&lt;/measurable&gt;
+        &lt;renderable&gt;true&lt;/renderable&gt;
+        &lt;detectable&gt;true&lt;/detectable&gt;
+      &lt;/localObjectSpecialProperty&gt;
+    &lt;/mesh&gt;
+    &lt;dynamics&gt;
+      &lt;respondableMask&gt;65535&lt;/respondableMask&gt;
+      &lt;mass&gt;0.02&lt;/mass&gt;
+      &lt;localInertiaFrame&gt;
+        &lt;position&gt;0.040001 0.019509 0.044991&lt;/position&gt;
+        &lt;euler&gt;90.595184 20.325485 119.255615&lt;/euler&gt;
+      &lt;/localInertiaFrame&gt;
+      &lt;principalMomentOfInertia&gt;0.001000 0.012904 0.012904&lt;/principalMomentOfInertia&gt;
+      &lt;switches&gt;
+        &lt;static&gt;true&lt;/static&gt;
+        &lt;respondable&gt;false&lt;/respondable&gt;
+        &lt;startSleeping&gt;false&lt;/startSleeping&gt;
+        &lt;setToDynamicIfGetsParent&gt;true&lt;/setToDynamicIfGetsParent&gt;
+        &lt;dynamicsEnabled&gt;true&lt;/dynamicsEnabled&gt;
+        &lt;showContactPoints&gt;false&lt;/showContactPoints&gt;
+      &lt;/switches&gt;
+    &lt;/dynamics&gt;
+    &lt;joint&gt;
+      &lt;common&gt;
+        &lt;name&gt;motor1&lt;/name&gt;
+        &lt;localFrame&gt;
+          &lt;position&gt;1 0 0&lt;/position&gt;
+          &lt;euler&gt;0 0 0&lt;/euler&gt;
+        &lt;/localFrame&gt;
+        &lt;localObjectProperty&gt;
+          &lt;selectModelBaseInstead&gt;true&lt;/selectModelBaseInstead&gt;
+        &lt;/localObjectProperty&gt;
+      &lt;/common&gt;
+      &lt;type&gt;revolute&lt;/type&gt;
+      &lt;mode&gt;force&lt;/mode&gt;
+      &lt;switches&gt;
+        &lt;cyclic&gt;true&lt;/cyclic&gt;
+      &lt;/switches&gt;
+      &lt;sizes&gt;
+        &lt;length&gt;0.2&lt;/length&gt;
+        &lt;diameter&gt;0.1&lt;/diameter&gt;
+      &lt;/sizes&gt;
+      &lt;dynamics&gt;
+        &lt;maxForce&gt;2.5&lt;/maxForce&gt;
+        &lt;upperVelocityLimit&gt;360&lt;/upperVelocityLimit&gt;
+        &lt;switches&gt;
+          &lt;motorEnabled&gt;true&lt;/motorEnabled&gt;
+        &lt;/switches&gt;
+      &lt;/dynamics&gt;
+        &lt;shape&gt;
+          &lt;common&gt;
+            &lt;name&gt;motor1&lt;/name&gt;
+          &lt;/common&gt;
+          &lt;mesh&gt;
+            &lt;fileName&gt;Handlebar.stl&lt;/fileName&gt;
+            &lt;localFrame&gt;
+              &lt;position&gt;0.1 -0.1 -0.1&lt;/position&gt;
+              &lt;euler&gt;0 0 90&lt;/euler&gt;
+            &lt;/localFrame&gt;
+          &lt;/mesh&gt;
+          &lt;dynamics&gt;
+            &lt;switches&gt;
+              &lt;static&gt;false&lt;/static&gt;
+              &lt;respondable&gt;true&lt;/respondable&gt;
+            &lt;/switches&gt;
+          &lt;/dynamics&gt;
+        &lt;/shape&gt;
+    &lt;/joint&gt;
+&lt;/CoppeliaSim&gt;
+    &lt;/code&gt;&lt;/pre&gt;
 &lt;/section&gt;
-
 </t>
 </tnodes>
 </leo_file>
