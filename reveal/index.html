@@ -42,7 +42,12 @@ Pyslvs-UI 平面多連桿機構套件之合成與應用
 
 
     <small>
-    Created by <a href="http:/lab.kmol.info">KMOLab</a>
+    組員:<br>
+    40723102 林昱秀<br>
+    40723103 林晏瑩<br>
+    40723145 劉光智<br>
+    40723153 吳佳穎<br>
+    40723245 蔡育灃
     </small>
 </section>
 
@@ -61,7 +66,7 @@ Pyslvs-UI 平面多連桿機構套件之合成與應用
         <li>結論</li>
     </ul>
 </section>
-<section>
+<section data-background="#FFFFFF">
     </h2>研究動機
     <p>
 隨著科技越來越發達網路上有許多機構分析的套件，但是鮮少有機構合成功能的套件，且大多無公開原始碼。而本專題所使用的套件Pyslvs-UI 為本研究室所開發的套件且有公開原始碼，因此本專題利用該套件合成及模擬功能並以一登山車後避震機構為例。
@@ -76,36 +81,149 @@ Pyslvs-UI 平面多連桿機構套件之合成與應用
 </section>
 
 <section>
-<section>
+<section data-background="#FFFFFF">
     <h2>平面多連桿機構套件</h2>
 </section>
 
-<section>
+<section data-background="#FFFFFF">
     <h2>平面多連桿機構套件比較</h2>
-    <small>
+     <small>
     與市面上已經有的套件進行比較
     </small>
-    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%A5%97%E4%BB%B6%E6%AF%94%E8%BC%83%E8%A1%A8%E6%A0%BC.jpg?raw=true" alt="alt text" width="800"/>
-
+<small>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Pyslvs-UI</th>
+                <th>Linkage</th>
+                 <th>M.Sketch</th>
+                <th>MeKin2D</th>
+                <th>WinMecC</th>
+                 <th>GIM</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>開源軟體</td>
+                <td>*</td>
+                <td>*</td>
+                <td></td>
+                 <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>編譯成可攜檔</td>
+                <td>*</td>
+                <td></td>
+                <td></td>
+                 <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>平面機構分析</td>
+                <td>*</td>
+                <td>*</td>
+                <td>*</td>
+                 <td>*</td>
+                <td>*</td>
+                <td></td>
+            </tr>
+             <tr>
+                <td>平面機構合成</td>
+                <td>*</td>
+                <td></td>
+                <td>*</td>
+                 <td>*</td>
+                <td>*</td>
+                <td>*</td>
+            </tr>
+             <tr>
+                <td>平面凸輪分析</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                 <td>*</td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td>顯示運動軌跡</td>
+                <td>*</td>
+                <td>*</td>
+                <td>*</td>
+                <td>*</td>
+                <td>*</td>
+                <td>*</td>
+            </tr>
+             <tr>
+                <td>Web網頁版</td>
+                <td> </td>
+                <td></td>
+                <td>*</td>
+                <td></td>
+                <td></td>
+                <td></td>
+             </tr>
+             <tr>
+                <td>速度/加速度向量</td>
+                <td></td>
+                <td></td>
+                <td>*</td>
+                <td>*</td>
+                <td></td>
+                <td>*</td>
+            </tr>
+        </tbody>
+    </table>
+</small>
 </section>
-<section>
+<section data-background="#FFFFFF" id="Pyslvs-UI架構">
     <h2>Pyslvs-UI架構</h2>
     <small>
-    採用系統動機
+    <h2>採用系統動機</h2>
     </small>
     <ul>
-        <li>平面多連桿機構設計分析之開放源套件系統</li>
-        <li>結構合成</li>
-        <li>驗證機構運動模擬</li>
-
+            <p class="fragment grow">平面多連桿機構設計分析之開放源套件系統</p>
+            <p class="fragment grow">結構合成</p>
+            <p class="fragment grow">驗證機構運動模擬</p>
     </ul>
+<!--</small>
+Pyslvs架構背景
+<small>
+ * Cython程式語言進行編譯成機構合成延伸做演算
+ * SWIG使Python可呼叫C語言動態連結庫以建構平面連桿機構模擬作業系統 
+ * PyQt5可將程式編譯內容後轉換成GUI圖形化介面-->
+</section>
 
-    <small>
-    Pyslvs架構背景
-    </small>
-    </br>
+
+<!--運用到的程式碼
+<section id="fragments">
+    <h2>Fragments</h2>
+    <p>Hit the next arrow...</p>
+    <p class="fragment">... to step through ...</p>
+    <p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+
+    <aside class="notes">
+        This slide has fragments which are also stepped through in the notes window.
+    </aside>
+</section>
+
+<section style="text-align: left;">
+    <h1>THE END</h1>
+    <p>
+        - <a href="https://slides.com">Try the online editor</a> <br>
+        - <a h ref="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+    </p>
+</section>
+-->
+ 
+<section data-background="#FFFFFF">
+    <h2>Pyslvs架構背景</h2>
 <!--URL連結圖片比較不會跑掉-->
-    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Pyslvs%E6%9E%B6%E6%A7%8B%E8%83%8C%E6%99%AF.png?raw=true" alt="alt text" width="480"/>
+    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Pyslvs%E6%9E%B6%E6%A7%8B%E8%83%8C%E6%99%AF.png?raw=true" alt="alt text" width="800"/>
 
 <!--</small>
 Pyslvs架構背景
@@ -118,7 +236,7 @@ Pyslvs架構背景
 </section>
 
 <section>
-<section>
+<section data-background="#FFFFFF">
     <h2>機構合成</h2>
 </section>
 <section data-background="#FFFFFF">
@@ -180,30 +298,36 @@ Pyslvs架構背景
     h_{2} = r_{of}\left (\frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}}\right ) + \left[ r_{ppy}-r_{ppx}\left( \frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}} \right) \right]
     \end{aligned}</small>
 </section>
-<section data-auto-animate>
+<section data-background="#FFFFFF">
     <h2>後避震機構量化分析</h2>
     <p>Anti-squat 量化分析</p>
     <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="1000"/>
 </section>
+
+<section data-background="#FFFFFF">
+    <h2>後避震機構量化分析</h2>
+    <p>Anti-squat 在Point0隨座標正x方向改變的評量趨勢</p>
     
-<section data-auto-animate>
-        <p><img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/data/as_p0_x+.png?raw=true" alt="alt text" width="1000"/></p>
+    <p><img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Firebird_mechanism.png?raw=true" alt="alt text" width="480" align="left"/></p>
+        <p><img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/data/as_p0_x+.png?raw=true" alt="alt text" width="450" align="right"/></p>
+        
+        
 </section>
 
 </section>
 
 <section>
-<section>
+<section data-background="#FFFFFF">
     <h2>延伸應用</h2>
 </section>
-<section>
+<section data-background="#FFFFFF">
     <h2>3D零件自動生成</h2>
-
-
-
-    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/3D%E9%9B%B6%E4%BB%B6%E7%94%9F%E6%88%90.png?raw=true" alt="alt text" width="600"/>
+    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/3D%E9%9B%B6%E4%BB%B6%E7%94%9F%E6%88%90.png?raw=true" alt="alt text" width="500" align="left"/>
+    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/binary_link.PNG?raw=true" alt="alt text" width="300" align="right"/>
+    <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/ternary_link.PNG?raw=true" alt="alt text" width="300" align="right"/>
+    
 </section>
-<section>
+<section data-background="#FFFFFF">
     <h2>CoppeliaSim動態模擬軟體</h2>
     <ul>
         <li>使用XML檔來匯入零件</li>
@@ -215,7 +339,7 @@ Pyslvs架構背景
 
 
 </section>
-<section>
+<section data-background="#FFFFFF">
     <h2>CoppeliaSim遠端API</h2>
     <p>遠端API功能介紹</p>
     <ul><small>
@@ -231,14 +355,14 @@ Pyslvs架構背景
 </section>
 
 <section>
-<section>
+<section data-background="#FFFFFF">
     <h2>結論</h2>
 
 
     <img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/follow-up%20research.png?raw=true" alt="alt text" width="1000"/>
 </section>
 
-<section>
+<section data-background="#FFFFFF">
     <h2>Thank you for listening</h2>
 </section>
 </section>
