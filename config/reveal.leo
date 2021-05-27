@@ -37,6 +37,7 @@
 <v t="leo.20210521111034.3"><vh>評量影片</vh></v>
 <v t="leo.20210520135544.5"><vh>尺寸合成</vh></v>
 <v t="leo.20210520135544.7"><vh>量化評比</vh></v>
+<v t="leo.20210527145053.1"><vh>量化評比單張</vh></v>
 </v>
 <v t="leo.20210520141042.1"><vh>延伸應用</vh>
 <v t="leo.20210520150420.2"><vh>轉場</vh></v>
@@ -447,14 +448,10 @@ Pyslvs架構背景
     \end{aligned}&lt;/small&gt;
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520135544.7">&lt;section data-auto-animate&gt;
+<t tx="leo.20210520135544.7">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;後避震機構量化分析&lt;/h2&gt;
     &lt;p&gt;Anti-squat 量化分析&lt;/p&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="1000"/&gt;
-&lt;/section&gt;
-    
-&lt;section data-auto-animate&gt;
-        &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/data/as_p0_x+.png?raw=true" alt="alt text" width="1000"/&gt;&lt;/p&gt;
 &lt;/section&gt;
 
 </t>
@@ -472,12 +469,12 @@ Pyslvs架構背景
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520141042.3">&lt;section&gt;
+<t tx="leo.20210520141042.3">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;3D零件自動生成&lt;/h2&gt;
-
-
-
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/3D%E9%9B%B6%E4%BB%B6%E7%94%9F%E6%88%90.png?raw=true" alt="alt text" width="600"/&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/3D%E9%9B%B6%E4%BB%B6%E7%94%9F%E6%88%90.png?raw=true" alt="alt text" width="500" align="left"/&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/binary_link.PNG?raw=true" alt="alt text" width="300" align="right"/&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/ternary_link.PNG?raw=true" alt="alt text" width="300" align="right"/&gt;
+    
 &lt;/section&gt;
 </t>
 <t tx="leo.20210520141042.5">&lt;section&gt;
@@ -605,6 +602,17 @@ Pyslvs架構背景
  * Cython程式語言進行編譯成機構合成延伸做演算
  * SWIG使Python可呼叫C語言動態連結庫以建構平面連桿機構模擬作業系統 
  * PyQt5可將程式編譯內容後轉換成GUI圖形化介面--&gt;
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20210527145053.1">&lt;section data-background="#FFFFFF"&gt;
+    &lt;h2&gt;後避震機構量化分析&lt;/h2&gt;
+    &lt;p&gt;Anti-squat 在Point0隨座標正x方向改變的評量趨勢&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Firebird_mechanism.png?raw=true" alt="alt text" width="480" align="left"/&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/data/as_p0_x+.png?raw=true" alt="alt text" width="450" align="right"/&gt;&lt;/p&gt;
+        
+        
 &lt;/section&gt;
 
 </t>
