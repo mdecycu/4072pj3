@@ -262,7 +262,12 @@ Pyslvs-UI 平面多連桿機構套件之合成與應用
 
 
     &lt;small&gt;
-    Created by &lt;a href="http:/lab.kmol.info"&gt;KMOLab&lt;/a&gt;
+    組員:&lt;br&gt;
+    40723102 林昱秀&lt;br&gt;
+    40723103 林晏瑩&lt;br&gt;
+    40723145 劉光智&lt;br&gt;
+    40723153 吳佳穎&lt;br&gt;
+    40723245 蔡育灃
     &lt;/small&gt;
 &lt;/section&gt;
 
@@ -370,7 +375,7 @@ vertical: body pane on the botton</t>
 
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520134352.2">&lt;section&gt;
+<t tx="leo.20210520134352.2">&lt;section data-background="#FFFFFF"&gt;
     &lt;/h2&gt;研究動機
     &lt;p&gt;
 隨著科技越來越發達網路上有許多機構分析的套件，但是鮮少有機構合成功能的套件，且大多無公開原始碼。而本專題所使用的套件Pyslvs-UI 為本研究室所開發的套件且有公開原始碼，因此本專題利用該套件合成及模擬功能並以一登山車後避震機構為例。
@@ -382,7 +387,7 @@ vertical: body pane on the botton</t>
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520134443.3">&lt;section&gt;
+<t tx="leo.20210520134443.3">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;平面多連桿機構套件比較&lt;/h2&gt;
      &lt;small&gt;
     與市面上已經有的套件進行比較
@@ -478,7 +483,7 @@ vertical: body pane on the botton</t>
 &lt;/small&gt;
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520134443.5">&lt;section id="Pyslvs-UI架構"&gt;
+<t tx="leo.20210520134443.5">&lt;section data-background="#FFFFFF" id="Pyslvs-UI架構"&gt;
     &lt;h2&gt;Pyslvs-UI架構&lt;/h2&gt;
     &lt;small&gt;
     &lt;h2&gt;採用系統動機&lt;/h2&gt;
@@ -542,11 +547,11 @@ Pyslvs架構背景
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520140311.2">&lt;section&gt;
+<t tx="leo.20210520140311.2">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;機構合成&lt;/h2&gt;
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520140725.2">&lt;section&gt;
+<t tx="leo.20210520140725.2">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;平面多連桿機構套件&lt;/h2&gt;
 &lt;/section&gt;
 
@@ -564,7 +569,7 @@ Pyslvs架構背景
     
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520141042.5">&lt;section&gt;
+<t tx="leo.20210520141042.5">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;CoppeliaSim動態模擬軟體&lt;/h2&gt;
     &lt;ul&gt;
         &lt;li&gt;使用XML檔來匯入零件&lt;/li&gt;
@@ -577,7 +582,7 @@ Pyslvs架構背景
 
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520141042.7">&lt;section&gt;
+<t tx="leo.20210520141042.7">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;CoppeliaSim遠端API&lt;/h2&gt;
     &lt;p&gt;遠端API功能介紹&lt;/p&gt;
     &lt;ul&gt;&lt;small&gt;
@@ -589,13 +594,14 @@ Pyslvs架構背景
 
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/coppeliasim%20API.png?raw=true" alt="alt text" width="550"/&gt;
 
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="leo.20210520141843.1">&lt;section&gt;
 @others
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520141843.3">&lt;section&gt;
+<t tx="leo.20210520141843.3">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;結論&lt;/h2&gt;
 
 
@@ -603,7 +609,7 @@ Pyslvs架構背景
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520141843.5">&lt;section&gt;
+<t tx="leo.20210520141843.5">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;Thank you for listening&lt;/h2&gt;
 &lt;/section&gt;
 </t>
@@ -621,7 +627,7 @@ Pyslvs架構背景
  &lt;!--URL連結圖片比較不會跑掉--&gt;
 &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/anti-squat_x-.png?raw=true" alt="alt text" width="200"/&gt;
 </t>
-<t tx="leo.20210520150420.2">&lt;section&gt;
+<t tx="leo.20210520150420.2">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;延伸應用&lt;/h2&gt;
 &lt;/section&gt;
 </t>
@@ -677,7 +683,7 @@ Pyslvs架構背景
 
 
 </t>
-<t tx="leo.20210527133817.1">&lt;section&gt;
+<t tx="leo.20210527133817.1">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;Pyslvs架構背景&lt;/h2&gt;
 &lt;!--URL連結圖片比較不會跑掉--&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Pyslvs%E6%9E%B6%E6%A7%8B%E8%83%8C%E6%99%AF.png?raw=true" alt="alt text" width="800"/&gt;
