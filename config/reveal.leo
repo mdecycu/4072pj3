@@ -591,7 +591,6 @@ Pyslvs架構背景
 
 
 &lt;/section&gt;
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 </t>
 <t tx="leo.20210520141042.7">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;CoppeliaSim遠端API&lt;/h2&gt;
