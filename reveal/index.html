@@ -335,9 +335,214 @@ Pyslvs架構背景
         <li>快速調整所需參數</li>
     </ul>
     <br>
-    <iframe width="580" height="315" src="https://www.youtube.com/embed/JFDAjE7lJW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mnfTqShjmqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+</section>
+<section data-background="#FFFFFF">
+    <h2 data-id="code-title">XML檔案結構</h2>
+    <pre data-id="code-animation"><code class="xml" data-trim data-line-numbers>
+<CoppeliaSim>
+  <filetype>simpleScene</filetype>
+  <xmlSerializationNb>1</xmlSerializationNb>
+  <camera>
+    <common>
+      <name>main camera</name>
+      <localFrame>
+        <position>1 1 1</position>
+        <euler>90 -45 0</euler>
+      </localFrame>
+    </common>
+    <mainCamera>true</mainCamera>
+  </camera>
+  <dummy>
+    <common>
+      <name>light</name>
+      <localFrame>
+        <position>0 0 0</position>
+        <euler>0 0 0</euler>
+      </localFrame>
+    </common>
+  <light>
+    <common>
+      <name>lightA</name>
+      <localFrame>
+        <position>2.5 0 3</position>
+        <euler>100 -50 0</euler>
+      </localFrame>
+      <layer>0</layer>
+    </common>
+    <type>directional</type>
+    <color>
+      <light>
+        <ambientDiffuse>127 127 127</ambientDiffuse>
+      </light>
+    </color>
+ </light>
+  <light>
+    <common>
+      <name>lightB</name>
+      <localFrame>
+        <position>0 2.5 3</position>
+        <euler>100 -50 0</euler>
+      </localFrame>
+      <layer>0</layer>
+    </common>
+    <type>directional</type>
+    <color>
+      <light>
+        <ambientDiffuse>127 127 127</ambientDiffuse>
+      </light>
+    </color>
+ </light>
+  <light>
+    <common>
+      <name>lightC</name>
+      <localFrame>
+        <position>0 -2.5 3</position>
+        <euler>-100 -50 0</euler>
+      </localFrame>
+      <layer>0</layer>
+    </common>
+    <type>directional</type>
+    <color>
+      <light>
+        <ambientDiffuse>127 127 127</ambientDiffuse>
+      </light>
+    </color>
+ </light>
+  <light>
+    <common>
+      <name>lightD</name>
+      <localFrame>
+        <position>-2.5 0 3</position>
+        <euler>100 -50 0</euler>
+      </localFrame>
+      <layer>0</layer>
+    </common>
+    <type>directional</type>
+    <color>
+      <light>
+        <ambientDiffuse>127 127 127</ambientDiffuse>
+      </light>
+    </color>
+  </light>
+  </dummy>
+  <shape>
+    <common>
+      <name>floor</name>
+      <localFrame>
+        <position>0 0 -0.14</position>
+      </localFrame>
+      <localObjectProperty>
+        <selectable>false</selectable>
+      </localObjectProperty>
+      <localObjectSpecialProperty>
+        <collidable>true</collidable>
+        <measurable>true</measurable>
+        <renderable>true</renderable>
+        <detectable>true</detectable>
+      </localObjectSpecialProperty>
+    </common>
+    <primitive>
+      <type>cuboid</type>
+      <size>5 5 0.04</size>
+      <color>
+        <ambientDiffuse>209 209 209</ambientDiffuse>
+      </color>
+    </primitive>
+    <dynamics>
+      <switches>
+        <static>true</static>
+        <respondable>true</respondable>
+      </switches>
+    </dynamics>
+  </shape>
+  <shape>
+    <common>
+      <name>Fork</name>
+    </common>
+    <mesh>
+      <fileName>Fork.stl</fileName>
+      <localFrame>
+        <position>0 0.289 0.64</position>
+        <euler>70 0 0</euler>
+      </localFrame>
+      <localObjectProperty>
+        <selectable>false</selectable>
+      </localObjectProperty>
+      <localObjectSpecialProperty>
+        <collidable>true</collidable>
+        <measurable>true</measurable>
+        <renderable>true</renderable>
+        <detectable>true</detectable>
+      </localObjectSpecialProperty>
+    </mesh>
+    <dynamics>
+      <respondableMask>65535</respondableMask>
+      <mass>0.02</mass>
+      <localInertiaFrame>
+        <position>0.040001 0.019509 0.044991</position>
+        <euler>90.595184 20.325485 119.255615</euler>
+      </localInertiaFrame>
+      <principalMomentOfInertia>0.001000 0.012904 0.012904</principalMomentOfInertia>
+      <switches>
+        <static>true</static>
+        <respondable>false</respondable>
+        <startSleeping>false</startSleeping>
+        <setToDynamicIfGetsParent>true</setToDynamicIfGetsParent>
+        <dynamicsEnabled>true</dynamicsEnabled>
+        <showContactPoints>false</showContactPoints>
+      </switches>
+    </dynamics>
+    <joint>
+      <common>
+        <name>motor1</name>
+        <localFrame>
+          <position>1 0 0</position>
+          <euler>0 0 0</euler>
+        </localFrame>
+        <localObjectProperty>
+          <selectModelBaseInstead>true</selectModelBaseInstead>
+        </localObjectProperty>
+      </common>
+      <type>revolute</type>
+      <mode>force</mode>
+      <switches>
+        <cyclic>true</cyclic>
+      </switches>
+      <sizes>
+        <length>0.2</length>
+        <diameter>0.1</diameter>
+      </sizes>
+      <dynamics>
+        <maxForce>2.5</maxForce>
+        <upperVelocityLimit>360</upperVelocityLimit>
+        <switches>
+          <motorEnabled>true</motorEnabled>
+        </switches>
+      </dynamics>
+        <shape>
+          <common>
+            <name>motor1</name>
+          </common>
+          <mesh>
+            <fileName>Handlebar.stl</fileName>
+            <localFrame>
+              <position>0.1 -0.1 -0.1</position>
+              <euler>0 0 90</euler>
+            </localFrame>
+          </mesh>
+          <dynamics>
+            <switches>
+              <static>false</static>
+              <respondable>true</respondable>
+            </switches>
+          </dynamics>
+        </shape>
+    </joint>
+</CoppeliaSim>
+    </code></pre>
 </section>
 <section data-background="#FFFFFF">
     <h2>CoppeliaSim遠端API</h2>
