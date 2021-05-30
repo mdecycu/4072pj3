@@ -37,6 +37,7 @@
 <v t="leo.20210521111034.3"><vh>評量影片</vh></v>
 <v t="leo.20210520135544.5"><vh>尺寸合成</vh></v>
 <v t="leo.20210520135544.7"><vh>量化評比</vh></v>
+<v t="leo.20210530202854.1"><vh>量化評比-2</vh></v>
 </v>
 <v t="leo.20210520141042.1"><vh>延伸應用</vh>
 <v t="leo.20210520150420.2"><vh>轉場</vh></v>
@@ -260,7 +261,7 @@ Pyslvs-UI 平面多連桿機構套件之合成與應用
 <t tx="leo.20180902120523.9">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;Pyslvs-UI 平面多連桿機構套件之合成與應用&lt;/h2&gt;
 
-
+    &lt;br&gt;
     &lt;small&gt;
     組員:&lt;br&gt;
     40723102 林昱秀&lt;br&gt;
@@ -361,10 +362,10 @@ vertical: body pane on the botton</t>
     &lt;ul&gt;
         &lt;li&gt;研究動機---------------------------吳佳穎&lt;/li&gt;
         &lt;li&gt;研究流程---------------------------吳佳穎&lt;/li&gt;
-        &lt;li&gt;平面多連桿機構套件-----------林昱秀&lt;/li&gt;
+        &lt;li&gt;平面多連桿機構套件-------林昱秀、林晏瑩&lt;/li&gt;
         &lt;li&gt;機構合成---------------------------劉光智&lt;/li&gt;
         &lt;li&gt;延伸應用----------------------劉光智、蔡育灃、林晏瑩&lt;/li&gt;
-        &lt;li&gt;結論&lt;/li&gt;
+        &lt;li&gt;結論----------------------------------吳佳穎&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/section&gt;
 </t>
@@ -481,7 +482,8 @@ vertical: body pane on the botton</t>
         &lt;/tbody&gt;
     &lt;/table&gt;
 &lt;/small&gt;
-&lt;/section&gt;</t>
+&lt;/section&gt;
+</t>
 <t tx="leo.20210520134443.5">&lt;section data-background="#FFFFFF" id="Pyslvs-UI架構"&gt;
     &lt;h2&gt;Pyslvs-UI架構&lt;/h2&gt;
     &lt;small&gt;
@@ -541,16 +543,10 @@ Pyslvs架構背景
 </t>
 <t tx="leo.20210520135544.7">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;後避震機構量化分析&lt;/h2&gt;
-    &lt;p&gt;Anti-squat 量化分析&lt;/p&gt;
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="1000"/&gt;
-&lt;/section&gt;
-
-&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;後避震機構量化分析&lt;/h2&gt;
     &lt;p&gt;Anti-squat 在Point0隨座標正x方向改變的評量趨勢&lt;/p&gt;
     
     &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Firebird_mechanism.png?raw=true" alt="alt text" width="480" align="left"/&gt;&lt;/p&gt;
-        &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/data/as_p0_x+.png?raw=true" alt="alt text" width="450" align="right"/&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/p4_x-.png?raw=true" alt="alt text" width="450" align="right"/&gt;&lt;/p&gt;
         
         
 &lt;/section&gt;
@@ -978,6 +974,14 @@ Pyslvs架構背景
 
 
 
+
+
+</t>
+<t tx="leo.20210530202854.1">&lt;section data-background="#FFFFFF"&gt;
+    &lt;h2&gt;後避震機構量化分析&lt;/h2&gt;
+    &lt;p&gt;Anti-squat 量化分析&lt;/p&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="1000"/&gt;
+&lt;/section&gt;
 
 
 </t>
