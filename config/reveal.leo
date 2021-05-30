@@ -543,9 +543,9 @@ Pyslvs架構背景
 </t>
 <t tx="leo.20210520135544.7">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;後避震機構量化分析&lt;/h2&gt;
-    &lt;p&gt;Anti-squat 在Point0隨座標正x方向改變的評量趨勢&lt;/p&gt;
+    &lt;p&gt;Anti-squat 在P0隨座標往負x方向改變的評量趨勢&lt;/p&gt;
     
-    &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Firebird_mechanism.png?raw=true" alt="alt text" width="480" align="left"/&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/mechanism_text.png?raw=true" alt="alt text" width="480" height="300" align="left"/&gt;&lt;/p&gt;
         &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/p4_x-.png?raw=true" alt="alt text" width="450" align="right"/&gt;&lt;/p&gt;
         
         
