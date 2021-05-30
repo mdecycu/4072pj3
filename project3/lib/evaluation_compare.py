@@ -189,11 +189,11 @@ def _img(type, h1, rear_pline_pos, theta, travel_step=10):
         dtheta_list = [0, 3.17, 3.09, 3.0223, 2.9428, 2.8634, 2.7809, 2.6942, 2.602, 2.5036, 2.3974, 2.2824, 2.1573, 2.0207, 1.8711, 1.7067]
         
     for i in range(4):
-        p0 = (0, 0-i)
+        p0 = (0, 0)
         p1 = (-40, -10)
         p2 = (-390, -40)
         p3 = (20, 120)
-        p4 = (-5, 150)
+        p4 = (-5-i, 150)
         p5 = (89, 201.72)
         theta = 194.04
         
@@ -224,9 +224,9 @@ def _img(type, h1, rear_pline_pos, theta, travel_step=10):
             
         # show the anti-rise graph now
         if i == 0:
-            plt.plot(wheel_travel, ar_list1, label=p0)
+            plt.plot(wheel_travel, as_list1, label=p4)
         else:
-            plt.plot(wheel_travel, ar_list1, linestyle="--", label=p0)
+            plt.plot(wheel_travel, as_list1, linestyle="--", label=p4)
     
     
     """------------------------------------------------------------------------------"""
@@ -240,8 +240,8 @@ def _img(type, h1, rear_pline_pos, theta, travel_step=10):
     plt.ylabel("%")
     # plt.xlim(0, 170)
     # plt.ylim(-100, 160,)
-    # plt.legend(loc="best")
-    plt.title("p0")
+    plt.legend(loc="best")
+    plt.title("p4")
     plt.grid(True, linewidth="0.5")
     plt.show()
         

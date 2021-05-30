@@ -32,8 +32,8 @@
 </v>
 <v t="leo.20210520135544.1"><vh>機構合成</vh>
 <v t="leo.20210520140311.2"><vh>機構合成轉場</vh></v>
-<v t="leo.20210521110904.1"><vh>評量介紹</vh></v>
-<v t="leo.20210526193229.1"><vh>評量介紹-2</vh></v>
+<v t="leo.20210529235949.1"><vh>評量介紹</vh></v>
+<v t="leo.20210530000914.1"><vh>評量介紹-2</vh></v>
 <v t="leo.20210521111034.3"><vh>評量影片</vh></v>
 <v t="leo.20210520135544.5"><vh>尺寸合成</vh></v>
 <v t="leo.20210520135544.7"><vh>量化評比</vh></v>
@@ -395,8 +395,7 @@ vertical: body pane on the botton</t>
 &lt;small&gt;
     &lt;table&gt;
         &lt;thead&gt;
-</t>
-<t tx="leo.20210520134443.5">            &lt;tr&gt;
+                &lt;tr&gt;
                 &lt;th&gt;&lt;/th&gt;
                 &lt;th&gt;Pyslvs-UI&lt;/th&gt;
                 &lt;th&gt;Linkage&lt;/th&gt;
@@ -482,8 +481,8 @@ vertical: body pane on the botton</t>
         &lt;/tbody&gt;
     &lt;/table&gt;
 &lt;/small&gt;
-&lt;/section&gt;
-&lt;section data-background="#FFFFFF" id="Pyslvs-UI架構"&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20210520134443.5">&lt;section data-background="#FFFFFF" id="Pyslvs-UI架構"&gt;
     &lt;h2&gt;Pyslvs-UI架構&lt;/h2&gt;
     &lt;small&gt;
     &lt;h2&gt;採用系統動機&lt;/h2&gt;
@@ -641,57 +640,11 @@ Pyslvs架構背景
     &lt;h2&gt;延伸應用&lt;/h2&gt;
 &lt;/section&gt;
 </t>
-<t tx="leo.20210521110904.1">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
-    
-    
-    &lt;small&gt;Anti-rise (防後升):煞車時避震器抵抗後升的能力&lt;/small&gt;
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/anti-rise_table.PNG?raw=true alt="Anti-rise" width="1000" height="200" align="left" border="0"&gt;
-    
-    &lt;br&gt;
-
-    &lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxQivsPMr_FyjgC3PrjcfkDc_rpENTo0E0g&amp;usqp=CAU alt="Anti-rise" width="380" height="250" align="left"&gt;
-    
-    &lt;img src="https://media1.tenor.com/images/50aeb46deae11e8db0067cf3de78db4a/tenor.gif?itemid=17730464 alt="Anti-rise" width="380" height="250"&gt;
-    
-    
-    
-    
-&lt;/section&gt;
-
-
-
-
-
-
-
-</t>
 <t tx="leo.20210521111034.3">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
     &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/d4oySS3ZMD8?start=67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;/section&gt;
-</t>
-<t tx="leo.20210526193229.1">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
-
-    &lt;small&gt;Anti-squat (防後沉):加速時避震器抵抗下壓力的能力&lt;/small&gt;
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/anti-squat_table.PNG?raw=true alt="Anti-rise" width="1000" height="200" align="left" border="0"&gt;
-    
-    &lt;br&gt;
-    
-    &lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDuxFrTn99G2XbQp2PwpMtysdb_hSTmyZxiA&amp;usqp=CAU alt="Anti-rise" width="380" height="250" align="left"&gt;
-    
-    &lt;iframe src="https://giphy.com/embed/7L7aH1CdikWgHLeNeo" width="380" height="280" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href="https://giphy.com/gifs/pureadk-mtb-biking-wilmington-ny-7L7aH1CdikWgHLeNeo"&gt;&lt;/a&gt;&lt;/p&gt;
-    
-&lt;/section&gt;
-
-
-
-
-
-
-
 </t>
 <t tx="leo.20210527133817.1">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;Pyslvs架構背景&lt;/h2&gt;
@@ -912,6 +865,121 @@ Pyslvs架構背景
 &lt;/CoppeliaSim&gt;
     &lt;/code&gt;&lt;/pre&gt;
 &lt;/section&gt;
+</t>
+<t tx="leo.20210529235949.1">&lt;section data-background="#FFFFFF"&gt;
+    &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
+    
+&lt;small&gt;
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Anti-rise (%)&lt;/th&gt;
+                &lt;th&gt;&lt;/th&gt;
+                &lt;th&gt;&lt;/th&gt;
+                &lt;th&gt;&lt;/th&gt;
+                &lt;th&gt;&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&gt;100&lt;/td&gt;
+                &lt;td&gt;表示足以抵抗後升的力量，超過的會變成壓縮力&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;=100&lt;/td&gt;
+                &lt;td&gt;表示完全抵抗了後升現象&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;100&lt;/td&gt;
+                &lt;td&gt;表示僅部分後升力量被抵抗&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/small&gt;
+    
+    &lt;br&gt;&lt;br&gt;
+
+    &lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxQivsPMr_FyjgC3PrjcfkDc_rpENTo0E0g&amp;usqp=CAU alt="Anti-rise" width="380" height="250" align="left"&gt;
+    
+    &lt;img src="https://media1.tenor.com/images/50aeb46deae11e8db0067cf3de78db4a/tenor.gif?itemid=17730464 alt="Anti-rise" width="380" height="250"&gt;
+    
+    
+    
+    
+&lt;/section&gt;
+
+
+
+
+
+
+
+</t>
+<t tx="leo.20210530000914.1">&lt;section data-background="#FFFFFF"&gt;
+    &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
+
+    &lt;small&gt;Anti-squat (防後沉):加速時避震器抵抗下壓力的能力&lt;/small&gt;
+    
+&lt;small&gt;
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Anti-squat (%)&lt;/th&gt;
+                &lt;th&gt;&lt;/th&gt;
+                &lt;th&gt;&lt;/th&gt;
+                &lt;th&gt;&lt;/th&gt;
+                &lt;th&gt;&lt;/th&gt;
+            &lt;/thead&gt;
+            &lt;/tr&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&gt;100&lt;/td&gt;
+                &lt;td&gt;表示足以抵抗後沉的力量，超過的會變成拉伸力&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;=100&lt;/td&gt;
+                &lt;td&gt;表示完全抵抗了後沉現象&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;100&lt;/td&gt;
+                &lt;td&gt;表示僅部分後沉力量被抵抗&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/small&gt;
+    
+    &lt;br&gt;&lt;br&gt;
+    
+    &lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDuxFrTn99G2XbQp2PwpMtysdb_hSTmyZxiA&amp;usqp=CAU alt="Anti-rise" width="380" height="250" align="left"&gt;
+    
+    &lt;iframe src="https://giphy.com/embed/7L7aH1CdikWgHLeNeo" width="380" height="280" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href="https://giphy.com/gifs/pureadk-mtb-biking-wilmington-ny-7L7aH1CdikWgHLeNeo"&gt;&lt;/a&gt;&lt;/p&gt;
+    
+&lt;/section&gt;
+
+
+
+
+
+
+
 </t>
 </tnodes>
 </leo_file>
