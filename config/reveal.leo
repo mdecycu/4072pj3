@@ -45,6 +45,7 @@
 <v t="leo.20210520141042.5"><vh>CoppeliaSim動態模擬軟體</vh></v>
 <v t="leo.20210527170311.1"><vh>XML檔案結構</vh></v>
 <v t="leo.20210520141042.7"><vh>CoppeliaSim API</vh></v>
+<v t="leo.20210531222107.1"><vh>CoppeliaSim API_1</vh></v>
 </v>
 <v t="leo.20210520141843.1"><vh>結論</vh>
 <v t="leo.20210520141843.3"><vh>結論內容</vh></v>
@@ -489,10 +490,10 @@ vertical: body pane on the botton</t>
     &lt;small&gt;
     &lt;h2&gt;採用系統動機&lt;/h2&gt;
     &lt;/small&gt;
-    &lt;ul&gt;
-            &lt;p class="fragment grow"&gt;平面多連桿機構設計分析之開放源套件系統&lt;/p&gt;
-            &lt;p class="fragment grow"&gt;結構合成&lt;/p&gt;
-            &lt;p class="fragment grow"&gt;驗證機構運動模擬&lt;/p&gt;
+     &lt;ul&gt;
+        &lt;li&gt;平面多連桿機構設計分析之開放源套件系統&lt;/li&gt;
+        &lt;li&gt;結構合成&lt;/li&gt;
+        &lt;li&gt;驗證機構運動模擬&lt;/li&gt;
     &lt;/ul&gt;
 &lt;!--&lt;/small&gt;
 Pyslvs架構背景
@@ -594,8 +595,6 @@ Pyslvs架構背景
         &lt;li&gt;模擬組合件之避震器在行進時的實際狀況&lt;/li&gt;
         &lt;li&gt;遠端API便於Debug程式操作模擬、不須手動設定旋轉軸轉速&lt;/li&gt;
     &lt;/small&gt;&lt;/ul&gt;
-
-    &lt;p&gt;遠端API程式架構&lt;/p&gt;
 
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/coppeliasim%20API.png?raw=true" alt="alt text" width="550"/&gt;
 
@@ -983,6 +982,14 @@ Pyslvs架構背景
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="1000"/&gt;
 &lt;/section&gt;
 
+
+</t>
+<t tx="leo.20210531222107.1">&lt;section data-background="#FFFFFF"&gt;
+    &lt;h2&gt;CoppeliaSim遠端API&lt;/h2&gt;
+    &lt;p&gt;遠端API實際模擬操作&lt;/p&gt;
+    
+    &lt;img src=" https://giant.gfycat.com/PeacefulZanyAmericangoldfinch.mp4 alt="CoppeliaSim遠端API" width="380" height="250"&gt;
+&lt;/section&gt;
 
 </t>
 </tnodes>
