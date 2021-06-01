@@ -583,7 +583,7 @@ Pyslvs架構背景
         &lt;li&gt;快速調整所需參數&lt;/li&gt;
     &lt;/ul&gt;
     &lt;br&gt;
-    &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/mnfTqShjmqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;img src=" https://gitlab.com/mdecourse/4072pj3/-/blob/master/project3/40723245/CoppeliaSim_bike_suspension_partial_zoom.gif" alt="CoppeliaSim動態模擬軟體" width="600" height="325"&gt;
 
 
 &lt;/section&gt;
@@ -988,7 +988,7 @@ Pyslvs架構背景
     &lt;h2&gt;CoppeliaSim遠端API&lt;/h2&gt;
     &lt;p&gt;遠端API實際模擬操作&lt;/p&gt;
     
-    &lt;img src=" https://giant.gfycat.com/PeacefulZanyAmericangoldfinch.mp4 alt="CoppeliaSim遠端API" width="380" height="250"&gt;
+    &lt;img src=" https://gitlab.com/mdecourse/4072pj3/-/raw/master/project3/40723103/CoppeliaSim%20Edu%20-%20bike%20-.gif" alt="CoppeliaSim遠端API" width="600" height="325"&gt;
 &lt;/section&gt;
 
 </t>
