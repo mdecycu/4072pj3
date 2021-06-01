@@ -644,7 +644,7 @@ Pyslvs架構背景
 <t tx="leo.20210527133817.1">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;Pyslvs架構背景&lt;/h2&gt;
 &lt;!--URL連結圖片比較不會跑掉--&gt;
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Pyslvs%E6%9E%B6%E6%A7%8B%E8%83%8C%E6%99%AF.png?raw=true" alt="alt text" width="800"/&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Pyslvs%E6%9E%B6%E6%A7%8B%E8%83%8C%E6%99%AF.png?raw=true" alt="alt text" width="600"/&gt;
 
 &lt;!--&lt;/small&gt;
 Pyslvs架構背景
