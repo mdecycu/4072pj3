@@ -577,13 +577,13 @@ Pyslvs架構背景
 </t>
 <t tx="leo.20210520141042.5">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;CoppeliaSim動態模擬軟體&lt;/h2&gt;
-    &lt;ul&gt;
+    &lt;ul&gt;&lt;small&gt;
         &lt;li&gt;使用XML檔來匯入零件&lt;/li&gt;
         &lt;li&gt;可減少手動匯入的程序&lt;/li&gt;
         &lt;li&gt;快速調整所需參數&lt;/li&gt;
-    &lt;/ul&gt;
+    &lt;/small&gt;&lt;/ul&gt;
     &lt;br&gt;
-    &lt;img src=" https://gitlab.com/mdecourse/4072pj3/-/blob/master/project3/40723245/CoppeliaSim_bike_suspension_partial_zoom.gif" alt="CoppeliaSim動態模擬軟體" width="600" height="325"&gt;
+    &lt;img src=" https://gitlab.com/mdecourse/4072pj3/-/raw/master/project3/40723245/CoppeliaSim_bike_suspension_partial_zoom.gif" alt="CoppeliaSim動態模擬軟體" width="600" height="325"&gt;
 
 
 &lt;/section&gt;
