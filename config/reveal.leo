@@ -27,7 +27,6 @@
 <v t="leo.20210520134443.1"><vh>平面多連桿機構套件</vh>
 <v t="leo.20210520140725.2"><vh>平面多連桿機構套件轉場</vh></v>
 <v t="leo.20210520134443.3"><vh>套件比較</vh></v>
-<v t="leo.20210520134443.5"><vh>Pyslvs_UI介紹</vh></v>
 <v t="leo.20210527133817.1"><vh>Pyslvs_UI介紹_1</vh></v>
 </v>
 <v t="leo.20210520135544.1"><vh>機構合成</vh>
@@ -492,47 +491,6 @@ vertical: body pane on the botton</t>
 &lt;/small&gt;
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520134443.5">&lt;section data-background="#FFFFFF" id="Pyslvs-UI架構"&gt;
-    &lt;h2&gt;Pyslvs-UI架構&lt;/h2&gt;
-    &lt;small&gt;
-    &lt;h2&gt;採用系統動機&lt;/h2&gt;
-    &lt;/small&gt;
-     &lt;ul&gt;
-        &lt;li&gt;平面多連桿機構設計分析之開放源套件系統&lt;/li&gt;
-        &lt;li&gt;結構合成&lt;/li&gt;
-        &lt;li&gt;驗證機構運動模擬&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;!--&lt;/small&gt;
-Pyslvs架構背景
-&lt;small&gt;
- * Cython程式語言進行編譯成機構合成延伸做演算
- * SWIG使Python可呼叫C語言動態連結庫以建構平面連桿機構模擬作業系統 
- * PyQt5可將程式編譯內容後轉換成GUI圖形化介面--&gt;
-&lt;/section&gt;
-
-
-&lt;!--運用到的程式碼
-&lt;section id="fragments"&gt;
-    &lt;h2&gt;Fragments&lt;/h2&gt;
-    &lt;p&gt;Hit the next arrow...&lt;/p&gt;
-    &lt;p class="fragment"&gt;... to step through ...&lt;/p&gt;
-    &lt;p&gt;&lt;span class="fragment"&gt;... a&lt;/span&gt; &lt;span class="fragment"&gt;fragmented&lt;/span&gt; &lt;span class="fragment"&gt;slide.&lt;/span&gt;&lt;/p&gt;
-
-    &lt;aside class="notes"&gt;
-        This slide has fragments which are also stepped through in the notes window.
-    &lt;/aside&gt;
-&lt;/section&gt;
-
-&lt;section style="text-align: left;"&gt;
-    &lt;h1&gt;THE END&lt;/h1&gt;
-    &lt;p&gt;
-        - &lt;a href="https://slides.com"&gt;Try the online editor&lt;/a&gt; &lt;br&gt;
-        - &lt;a h ref="https://github.com/hakimel/reveal.js"&gt;Source code &amp;amp; documentation&lt;/a&gt;
-    &lt;/p&gt;
-&lt;/section&gt;
---&gt;
- 
-</t>
 <t tx="leo.20210520135544.1">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -655,7 +613,7 @@ Pyslvs架構背景
 &lt;/section&gt;
 </t>
 <t tx="leo.20210527133817.1">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;Pyslvs架構背景&lt;/h2&gt;
+    &lt;h2&gt;Pyslvs架構&lt;/h2&gt;
 &lt;!--URL連結圖片比較不會跑掉--&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Pyslvs%E6%9E%B6%E6%A7%8B%E8%83%8C%E6%99%AF.png?raw=true" alt="alt text" width="600"/&gt;
 
@@ -667,7 +625,26 @@ Pyslvs架構背景
  * PyQt5可將程式編譯內容後轉換成GUI圖形化介面--&gt;
 &lt;/section&gt;
 
-</t>
+&lt;!--運用到的程式碼
+&lt;section id="fragments"&gt;
+    &lt;h2&gt;Fragments&lt;/h2&gt;
+    &lt;p&gt;Hit the next arrow...&lt;/p&gt;
+    &lt;p class="fragment"&gt;... to step through ...&lt;/p&gt;
+    &lt;p&gt;&lt;span class="fragment"&gt;... a&lt;/span&gt; &lt;span class="fragment"&gt;fragmented&lt;/span&gt; &lt;span class="fragment"&gt;slide.&lt;/span&gt;&lt;/p&gt;
+
+    &lt;aside class="notes"&gt;
+        This slide has fragments which are also stepped through in the notes window.
+    &lt;/aside&gt;
+&lt;/section&gt;
+
+&lt;section style="text-align: left;"&gt;
+    &lt;h1&gt;THE END&lt;/h1&gt;
+    &lt;p&gt;
+        - &lt;a href="https://slides.com"&gt;Try the online editor&lt;/a&gt; &lt;br&gt;
+        - &lt;a h ref="https://github.com/hakimel/reveal.js"&gt;Source code &amp;amp; documentation&lt;/a&gt;
+    &lt;/p&gt;
+&lt;/section&gt;
+--&gt;</t>
 <t tx="leo.20210529235949.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
     &lt;p&gt;&lt;font color="black"&gt;登山車後避震機構評量&lt;/font&gt;&lt;/p&gt;
     
