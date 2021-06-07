@@ -27,25 +27,24 @@
 <v t="leo.20210520134443.1"><vh>平面多連桿機構套件</vh>
 <v t="leo.20210520140725.2"><vh>平面多連桿機構套件轉場</vh></v>
 <v t="leo.20210520134443.3"><vh>套件比較</vh></v>
-<v t="leo.20210520134443.5"><vh>Pyslvs_UI介紹</vh></v>
 <v t="leo.20210527133817.1"><vh>Pyslvs_UI介紹_1</vh></v>
 </v>
 <v t="leo.20210520135544.1"><vh>機構合成</vh>
 <v t="leo.20210520140311.2"><vh>機構合成轉場</vh></v>
 <v t="leo.20210529235949.1"><vh>評量介紹</vh></v>
 <v t="leo.20210530000914.1"><vh>評量介紹-2</vh></v>
-<v t="leo.20210521111034.3"><vh>評量影片</vh></v>
 <v t="leo.20210520135544.5"><vh>尺寸合成</vh></v>
+<v t="leo.20210606231441.1"><vh>尺寸合成結果</vh></v>
 <v t="leo.20210520135544.7"><vh>量化評比</vh></v>
-<v t="leo.20210530202854.1"><vh>量化評比-2</vh></v>
+<v t="leo.20210530202854.1"><vh>量化評比表格x</vh></v>
+<v t="leo.20210606232629.1"><vh>量化評比表格y</vh></v>
 </v>
 <v t="leo.20210520141042.1"><vh>延伸應用</vh>
 <v t="leo.20210520150420.2"><vh>轉場</vh></v>
 <v t="leo.20210520141042.3"><vh>3D零件</vh></v>
 <v t="leo.20210520141042.5"><vh>CoppeliaSim動態模擬軟體</vh></v>
-<v t="leo.20210527170311.1"><vh>XML樹狀結構</vh></v>
+<v t="leo.20210602220015.1"><vh>XML樹狀圖</vh></v>
 <v t="leo.20210520141042.7"><vh>CoppeliaSim API</vh></v>
-<v t="leo.20210531222107.1"><vh>CoppeliaSim API_1</vh></v>
 </v>
 <v t="leo.20210520141843.1"><vh>結論</vh>
 <v t="leo.20210520141843.3"><vh>結論內容</vh></v>
@@ -259,8 +258,9 @@ Pyslvs-UI 平面多連桿機構套件之合成與應用
 &lt;/div&gt;
 
 </t>
-<t tx="leo.20180902120523.9">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;Pyslvs-UI 平面多連桿機構套件之合成與應用&lt;/h2&gt;
+<t tx="leo.20180902120523.9">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+&lt;font color="black"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;Pyslvs-UI 平面多連桿機構套件之合成與應用&lt;/font&gt;&lt;/h2&gt;
 
     &lt;br&gt;
     &lt;small&gt;
@@ -271,6 +271,7 @@ Pyslvs-UI 平面多連桿機構套件之合成與應用
     40723153 吳佳穎&lt;br&gt;
     40723245 蔡育灃
     &lt;/small&gt;
+&lt;/font&gt;
 &lt;/section&gt;
 
 
@@ -357,9 +358,10 @@ vertical: body pane on the botton</t>
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520133953.3">&lt;section data-background="#FFFFFF"&gt;
+<t tx="leo.20210520133953.3">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
 
-    &lt;h2&gt;議程&lt;/h2&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;議程&lt;/font&gt;&lt;/h2&gt;
+    &lt;font color="black"&gt;
     &lt;ul&gt;
         &lt;li&gt;研究動機---------------------------吳佳穎&lt;/li&gt;
         &lt;li&gt;研究流程---------------------------吳佳穎&lt;/li&gt;
@@ -368,7 +370,10 @@ vertical: body pane on the botton</t>
         &lt;li&gt;延伸應用----------------------劉光智、蔡育灃、林晏瑩&lt;/li&gt;
         &lt;li&gt;結論----------------------------------吳佳穎&lt;/li&gt;
     &lt;/ul&gt;
+    &lt;/font&gt;
+    
 &lt;/section&gt;
+
 </t>
 <t tx="leo.20210520134138.2">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;研究流程&lt;/h2&gt;
@@ -486,80 +491,44 @@ vertical: body pane on the botton</t>
 &lt;/small&gt;
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520134443.5">&lt;section data-background="#FFFFFF" id="Pyslvs-UI架構"&gt;
-    &lt;h2&gt;Pyslvs-UI架構&lt;/h2&gt;
-    &lt;small&gt;
-    &lt;h2&gt;採用系統動機&lt;/h2&gt;
-    &lt;/small&gt;
-     &lt;ul&gt;
-        &lt;li&gt;平面多連桿機構設計分析之開放源套件系統&lt;/li&gt;
-        &lt;li&gt;結構合成&lt;/li&gt;
-        &lt;li&gt;驗證機構運動模擬&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;!--&lt;/small&gt;
-Pyslvs架構背景
-&lt;small&gt;
- * Cython程式語言進行編譯成機構合成延伸做演算
- * SWIG使Python可呼叫C語言動態連結庫以建構平面連桿機構模擬作業系統 
- * PyQt5可將程式編譯內容後轉換成GUI圖形化介面--&gt;
-&lt;/section&gt;
-
-
-&lt;!--運用到的程式碼
-&lt;section id="fragments"&gt;
-    &lt;h2&gt;Fragments&lt;/h2&gt;
-    &lt;p&gt;Hit the next arrow...&lt;/p&gt;
-    &lt;p class="fragment"&gt;... to step through ...&lt;/p&gt;
-    &lt;p&gt;&lt;span class="fragment"&gt;... a&lt;/span&gt; &lt;span class="fragment"&gt;fragmented&lt;/span&gt; &lt;span class="fragment"&gt;slide.&lt;/span&gt;&lt;/p&gt;
-
-    &lt;aside class="notes"&gt;
-        This slide has fragments which are also stepped through in the notes window.
-    &lt;/aside&gt;
-&lt;/section&gt;
-
-&lt;section style="text-align: left;"&gt;
-    &lt;h1&gt;THE END&lt;/h1&gt;
-    &lt;p&gt;
-        - &lt;a href="https://slides.com"&gt;Try the online editor&lt;/a&gt; &lt;br&gt;
-        - &lt;a h ref="https://github.com/hakimel/reveal.js"&gt;Source code &amp;amp; documentation&lt;/a&gt;
-    &lt;/p&gt;
-&lt;/section&gt;
---&gt;
- 
-</t>
 <t tx="leo.20210520135544.1">&lt;section&gt;
 @others
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520135544.5">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;尺寸合成&lt;/h2&gt;
+<t tx="leo.20210520135544.5">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+
+    &lt;font color="black"&gt;
+    &lt;p&gt;尺寸合成&lt;/p&gt;
     &lt;small&gt;差分進化演算法流程&lt;/small&gt;
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%B7%AE%E5%88%86%E9%80%B2%E5%8C%96%E6%BC%94%E7%AE%97%E6%B3%95.png?raw=true" alt="alt text" width="800" height="300"/&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E5%B7%AE%E5%88%86%E9%80%B2%E5%8C%96%E6%BC%94%E7%AE%97%E6%B3%95.png?raw=true" alt="alt text" width="800" height="250"/&gt;
 
     &lt;hr&gt;&lt;/hr&gt;
     &lt;small&gt;\begin{aligned}
     h_{2} = r_{of}\left (\frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}}\right ) + \left[ r_{ppy}-r_{ppx}\left( \frac{r_{ppy}-IFC_{y}}{r_{ppx}-IFC_{x}} \right) \right]
     \end{aligned}&lt;/small&gt;
+    &lt;/font&gt;
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520135544.7">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;後避震機構量化分析&lt;/h2&gt;
-    &lt;p&gt;Anti-squat 在P0隨座標往負x方向改變的評量趨勢&lt;/p&gt;
+<t tx="leo.20210520135544.7">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+
+    &lt;font color="black"&gt;
+    &lt;p&gt;後避震機構量化分析&lt;/p&gt;
+    &lt;small&gt;以p4接頭為例在座標點往負x方向改變的Anti-squat評量趨勢&lt;/small&gt;
     
     &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/mechanism_text.png?raw=true" alt="alt text" width="480" height="300" align="left"/&gt;&lt;/p&gt;
         &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/p4_x-.png?raw=true" alt="alt text" width="450" align="right"/&gt;&lt;/p&gt;
-        
+&lt;/font&gt;
         
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520140311.2">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;機構合成&lt;/h2&gt;
+<t tx="leo.20210520140311.2">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;機構合成&lt;/font&gt;&lt;/h2&gt;
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520140725.2">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;平面多連桿機構套件&lt;/h2&gt;
+<t tx="leo.20210520140725.2">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;平面多連桿機構套件&lt;/font&gt;&lt;/h2&gt;
 &lt;/section&gt;
 
 </t>
@@ -600,17 +569,24 @@ Pyslvs架構背景
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/coppeliasim%20API.png?raw=true" alt="alt text" width="550"/&gt;
 
 &lt;/section&gt;
+&lt;section data-background="#FFFFFF"&gt;
+    &lt;h2&gt;CoppeliaSim遠端API&lt;/h2&gt;
+    &lt;p&gt;遠端API實際模擬操作&lt;/p&gt;
+    
+    &lt;img src=" https://gitlab.com/mdecourse/4072pj3/-/raw/master/project3/40723103/CoppeliaSim%20Edu%20-%20bike%20-.gif" alt="CoppeliaSim遠端API" width="600" height="325"&gt;
+&lt;/section&gt;
+
 </t>
 <t tx="leo.20210520141843.1">&lt;section&gt;
 @others
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520141843.3">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;結論&lt;/h2&gt;
+<t tx="leo.20210520141843.3">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;p&gt;&lt;font color="black"&gt;結論&lt;/font&gt;&lt;/p&gt;
 
 
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/follow-up%20research.png?raw=true" alt="alt text" width="1000"/&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/follow-up%20research.png?raw=true" alt="alt text" width="800"/&gt;
 &lt;/section&gt;
 
 </t>
@@ -632,18 +608,12 @@ Pyslvs架構背景
  &lt;!--URL連結圖片比較不會跑掉--&gt;
 &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/anti-squat_x-.png?raw=true" alt="alt text" width="200"/&gt;
 </t>
-<t tx="leo.20210520150420.2">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;延伸應用&lt;/h2&gt;
-&lt;/section&gt;
-</t>
-<t tx="leo.20210521111034.3">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
-    &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/d4oySS3ZMD8?start=67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-
+<t tx="leo.20210520150420.2">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;延伸應用&lt;/font&gt;&lt;/h2&gt;
 &lt;/section&gt;
 </t>
 <t tx="leo.20210527133817.1">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;Pyslvs架構背景&lt;/h2&gt;
+    &lt;h2&gt;Pyslvs架構&lt;/h2&gt;
 &lt;!--URL連結圖片比較不會跑掉--&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Pyslvs%E6%9E%B6%E6%A7%8B%E8%83%8C%E6%99%AF.png?raw=true" alt="alt text" width="600"/&gt;
 
@@ -655,17 +625,30 @@ Pyslvs架構背景
  * PyQt5可將程式編譯內容後轉換成GUI圖形化介面--&gt;
 &lt;/section&gt;
 
-</t>
-<t tx="leo.20210527170311.1">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;XML樹狀結構&lt;/h2&gt;
-    &lt;p&gt;&lt;small&gt;XML有許多分支呈現樹狀結構狀&lt;/small&gt;&lt;/p&gt;
-    &lt;p&gt;&lt;img src=" https://github.com/mdecourse/4072pj3/blob/master/project3/40723245/xml_tree_structure_joint.PNG?raw=true" alt="xml" width="480" height="370"align="left"/&gt;&lt;/p&gt;
-        &lt;p&gt;&lt;img src=" https://github.com/mdecourse/4072pj3/blob/master/project3/40723245/xml_tree_structure_shape.PNG?raw=true" alt="xml" width="450"align="right"/&gt;&lt;/p&gt;
+&lt;!--運用到的程式碼
+&lt;section id="fragments"&gt;
+    &lt;h2&gt;Fragments&lt;/h2&gt;
+    &lt;p&gt;Hit the next arrow...&lt;/p&gt;
+    &lt;p class="fragment"&gt;... to step through ...&lt;/p&gt;
+    &lt;p&gt;&lt;span class="fragment"&gt;... a&lt;/span&gt; &lt;span class="fragment"&gt;fragmented&lt;/span&gt; &lt;span class="fragment"&gt;slide.&lt;/span&gt;&lt;/p&gt;
+
+    &lt;aside class="notes"&gt;
+        This slide has fragments which are also stepped through in the notes window.
+    &lt;/aside&gt;
 &lt;/section&gt;
-</t>
-<t tx="leo.20210529235949.1">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
+
+&lt;section style="text-align: left;"&gt;
+    &lt;h1&gt;THE END&lt;/h1&gt;
+    &lt;p&gt;
+        - &lt;a href="https://slides.com"&gt;Try the online editor&lt;/a&gt; &lt;br&gt;
+        - &lt;a h ref="https://github.com/hakimel/reveal.js"&gt;Source code &amp;amp; documentation&lt;/a&gt;
+    &lt;/p&gt;
+&lt;/section&gt;
+--&gt;</t>
+<t tx="leo.20210529235949.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;p&gt;&lt;font color="black"&gt;登山車後避震機構評量&lt;/font&gt;&lt;/p&gt;
     
+&lt;font color="black"&gt;
 &lt;small&gt;
     &lt;table&gt;
         &lt;thead&gt;
@@ -693,7 +676,7 @@ Pyslvs架構背景
                 &lt;td&gt;&lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
-                &lt;td&gt;&lt;100&lt;/td&gt;
+                &lt;td&gt;&amp;lt100&lt;/td&gt;
                 &lt;td&gt;表示僅部分後升力量被抵抗&lt;/td&gt;
                 &lt;td&gt;&lt;/td&gt;
                 &lt;td&gt;&lt;/td&gt;
@@ -702,6 +685,7 @@ Pyslvs架構背景
         &lt;/tbody&gt;
     &lt;/table&gt;
 &lt;/small&gt;
+&lt;/font&gt;
     
     &lt;br&gt;&lt;br&gt;
 
@@ -721,11 +705,10 @@ Pyslvs架構背景
 
 
 </t>
-<t tx="leo.20210530000914.1">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;登山車後避震機構評量&lt;/h2&gt;
+<t tx="leo.20210530000914.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;p&gt;&lt;font color="black"&gt;登山車後避震機構評量&lt;/font&gt;&lt;/p&gt;
 
-    &lt;small&gt;Anti-squat (防後沉):加速時避震器抵抗下壓力的能力&lt;/small&gt;
-    
+&lt;font color="black"&gt;
 &lt;small&gt;
     &lt;table&gt;
         &lt;thead&gt;
@@ -762,6 +745,7 @@ Pyslvs架構背景
         &lt;/tbody&gt;
     &lt;/table&gt;
 &lt;/small&gt;
+&lt;/font&gt;
     
     &lt;br&gt;&lt;br&gt;
     
@@ -778,20 +762,81 @@ Pyslvs架構背景
 
 
 </t>
-<t tx="leo.20210530202854.1">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;後避震機構量化分析&lt;/h2&gt;
-    &lt;p&gt;Anti-squat 量化分析&lt;/p&gt;
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="1000"/&gt;
+<t tx="leo.20210530202854.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;font color="black"&gt;
+    &lt;p&gt;後避震機構Anti-squat量化分析&lt;/p&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="750"/&gt;
+    &lt;/font&gt;
 &lt;/section&gt;
 
 
 </t>
-<t tx="leo.20210531222107.1">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;CoppeliaSim遠端API&lt;/h2&gt;
-    &lt;p&gt;遠端API實際模擬操作&lt;/p&gt;
-    
-    &lt;img src=" https://gitlab.com/mdecourse/4072pj3/-/raw/master/project3/40723103/CoppeliaSim%20Edu%20-%20bike%20-.gif" alt="CoppeliaSim遠端API" width="600" height="325"&gt;
+<t tx="leo.20210602220015.1">&lt;section data-background="#FFFFFF"&gt;
+    &lt;h2&gt;XML樹狀結構&lt;/h2&gt;
+    &lt;p&gt;&lt;small&gt;XML有許多分支呈現樹狀結構狀&lt;/small&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=" https://github.com/mdecourse/4072pj3/blob/master/project3/40723245/xml_tree_structure_joint.PNG?raw=true" alt="xml" width="480" height="370"align="left"/&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=" https://github.com/mdecourse/4072pj3/blob/master/project3/40723245/xml_tree_structure_shape.PNG?raw=true" alt="xml" width="450"align="right"/&gt;&lt;/p&gt;
 &lt;/section&gt;
+</t>
+<t tx="leo.20210606231441.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;p&gt;&lt;font color="black"&gt;尺寸合成結果&lt;/font&gt;&lt;/p&gt;
+
+&lt;font color="black"&gt;
+&lt;small&gt;
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;&lt;/th&gt;
+                &lt;th align='center' valign="middle"&gt;p0&lt;/th&gt;
+                &lt;th align='center' valign="middle"&gt;p1&lt;/th&gt;
+                &lt;th align='center' valign="middle"&gt;p2&lt;/th&gt;
+                &lt;th align='center' valign="middle"&gt;p3&lt;/th&gt;
+                &lt;th align='center' valign="middle"&gt;p4&lt;/th&gt;
+            &lt;/thead&gt;
+            &lt;/tr&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td &gt;實際產品位置&lt;/td&gt;
+                &lt;td align='center' valign="middle"&gt;(0, 0)&lt;/td&gt;
+                &lt;td align='center' valign="middle"&gt;(-41.5, -5.1)&lt;/td&gt;
+                &lt;td align='center' valign="middle"&gt;(-397.5, -42.5)&lt;/td&gt;
+                &lt;td align='center' valign="middle"&gt;(18, 112)&lt;/td&gt;
+                &lt;td align='center' valign="middle"&gt;(-3, 155)&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;尺寸合成位置&lt;/td&gt;
+                &lt;td align='center' valign="middle"&gt;(0, 0)&lt;/td&gt;
+                &lt;td align='center' valign="middle"&gt;(-40, -10)&lt;/td&gt;
+                &lt;td align='center' valign="middle"&gt;(-390, -40)&lt;/td&gt;
+                &lt;td align='center' valign="middle"&gt;(20, 120)&lt;/td&gt;
+                &lt;td align='center' valign="middle"&gt;(-5, 150)&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/small&gt;
+&lt;/font&gt;
+    
+    &lt;br&gt;&lt;br&gt;
+    
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/mechanism_text.png?raw=true" alt="alt text" width="450" height="280" align="left"&gt;
+    
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/compare.png?raw=true alt="compare" width="380" height="250" align="right"&gt;
+&lt;/section&gt;
+
+
+
+
+
+
+
+</t>
+<t tx="leo.20210606232629.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;font color="black"&gt;
+    &lt;p&gt;後避震機構Anti-squat量化分析&lt;/p&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_y.png?raw=true" alt="alt text" width="750"/&gt;
+    &lt;/font&gt;
+&lt;/section&gt;
+
 
 </t>
 </tnodes>

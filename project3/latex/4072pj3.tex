@@ -1025,7 +1025,54 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
 	\end{enumerate}
     	
     	\chapter{CoppeliaSim}
-    	\hspace*{\fill} \\
+      \section{XML匯入Coppeliasim}
+      \subsection{使用XML的目的}
+      {\begin{flushleft}
+      \quad \quad \fourteen {在CoppeliaSim4.1的版本可以使用XML檔自動匯入STL的零件檔，並且可以從中去設定物體的大小、重量、從屬關係....等等的參數都可以用XML檔來做調整，目的是打算在CoppeliaSim做到直接匯入就能直接完成所有的流程，不過因為技術上的問題，我們使用半自動的方式來完成腳踏車避震系統的動態模擬。}
+      \end{flushleft}
+      \subsection{CoppeliaSim基本介紹}
+      {\begin{flushleft}
+      \quad \quad \fourteen {在CoppeliaSim裡有內建的物體(shape)和馬達(joint)，其中我們比較常用到的是立方體(Cuboid)和旋轉接頭馬達(Revolute joint)，以下我們會對這2種物件進行介紹。}
+      \end{flushleft}
+      \begin{itemize}
+      \item 圓柱體(Cylinder)
+      \begin{enumerate}
+      \item{可以從CoppeliaSim上面的介面找到Add-->Primitive shape-->Sphere如圖5.1所示，會出現如圖5.2所示的視窗。}
+
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.72]{add_cylinder.png} 
+        \caption{新增圓柱體}
+        \label{fig_add_cylinder:scale}
+        \end{figure}
+      
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.76]{cylinder_window.png} 
+        \caption{設定圓柱體的參數}
+        \label{fig_cylinder_window:scale}
+        \end{figure}
+      
+      \item{點選如圖5.3的Object/item shift圖示會出現如圖5.4的視窗}
+      
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.75]{Object_item_shift.png}
+        \caption{Object item shift}
+        \label{fig_Object_item_shift:scale}
+        \end{figure}
+        
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.75]{Object_item_Translation_Position.png}
+        \caption{Object/item Translation/Position}
+        \label{fig_Object_item_Translation_Position.png:scale}
+        \end{figure}      
+      
+      \end{enumerate}
+      \end{itemize}
+
+        
       \section{CoppeliaSim遠端API}
       \subsection{遠端API功能介紹}
       \fourteen {利用組合件放入CoppeliaSim中進行從屬關係的架設與半自動設定物理條件，藉由API(Application Programming Interface)連接CoppeliaSim遠端操控馬達使組合件作動，以查證組合件之機構在運作時的實際狀況。}
