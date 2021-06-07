@@ -18,7 +18,7 @@
 <v t="leo.20180902120523.6"><vh>body</vh>
 <v t="leo.20180902120523.7"><vh>reveal div</vh>
 <v t="leo.20180902120523.8"><vh>slides div</vh>
-<v t="leo.20210607131426.1"><vh>封面</vh></v>
+<v t="leo.20180902120523.9"><vh>封面</vh></v>
 <v t="leo.20210520133953.1"><vh>架構介紹</vh>
 <v t="leo.20210520133953.3"><vh>目錄</vh></v>
 <v t="leo.20210520134352.2"><vh>研究動機</vh></v>
@@ -27,7 +27,7 @@
 <v t="leo.20210520134443.1"><vh>平面多連桿機構套件</vh>
 <v t="leo.20210520140725.2"><vh>平面多連桿機構套件轉場</vh></v>
 <v t="leo.20210520134443.3"><vh>套件比較</vh></v>
-<v t="leo.20210527133817.1"><vh>Pyslvs_UI介紹_1</vh></v>
+<v t="leo.20210527133817.1"><vh>Pyslvs_UI架構</vh></v>
 </v>
 <v t="leo.20210520135544.1"><vh>機構合成</vh>
 <v t="leo.20210520140311.2"><vh>機構合成轉場</vh></v>
@@ -257,6 +257,29 @@ Pyslvs-UI 平面多連桿機構套件之合成與應用
 @others
 &lt;/div&gt;
 
+</t>
+<t tx="leo.20180902120523.9">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+&lt;font color="black"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;Pyslvs-UI 平面多連桿機構套件之合成與應用&lt;/font&gt;&lt;/h2&gt;
+
+    &lt;br&gt;
+    &lt;small&gt;
+    &lt;p align=left&gt;組員:&lt;/p&gt;
+    &lt;br&gt;
+    &lt;figure&gt;
+   &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723102.jpg?raw=true" alt="alt text" width="130"/&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723103.jpg?raw=true" alt="alt text" width="130"/&gt; &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723145.png?raw=true" alt="alt text" width="130"/&gt; &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723153.jpg?raw=true" alt="alt text" width="130"/&gt; &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723245.jpg?raw=true" alt="alt text" width="130"/&gt;
+   &lt;br /&gt;
+   &lt;font size="3"&gt;
+   &lt;figcaption&gt; 40723102 林昱秀 &amp;emsp;&amp;ensp; 40723103 林晏瑩&amp;emsp;&amp;ensp; 40723145 劉光智&amp;emsp; &amp;ensp;40723153 吳佳穎&amp;emsp;&amp;ensp; 40723245 蔡育灃
+&lt;/font&gt;
+   &lt;/figcaption&gt;
+   &lt;/figure&gt;　
+
+
+    &lt;/small&gt;
+&lt;/font&gt;
+&lt;/section&gt;
+						
 </t>
 <t tx="leo.20180902120538.1"></t>
 <t tx="leo.20180902120538.2">QTreeWidget {
@@ -554,7 +577,7 @@ vertical: body pane on the botton</t>
     &lt;h2&gt;CoppeliaSim遠端API&lt;/h2&gt;
     &lt;p&gt;遠端API實際模擬操作&lt;/p&gt;
     
-    &lt;img src=" https://gitlab.com/mdecourse/4072pj3/-/raw/master/project3/40723103/CoppeliaSim%20Edu%20-%20bike%20-.gif" alt="CoppeliaSim遠端API" width="600" height="325"&gt;
+    &lt;img src=" https://github.com/mdecourse/4072pj3/blob/master/project3/40723103/0607CoppeliaSim%20Edu%20-%20bike.gif?raw=true" alt="CoppeliaSim遠端API" width="600" height="450"&gt;
 &lt;/section&gt;
 
 </t>
@@ -596,7 +619,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20210527133817.1">&lt;section data-background="#FFFFFF"&gt;
     &lt;h2&gt;Pyslvs架構&lt;/h2&gt;
 &lt;!--URL連結圖片比較不會跑掉--&gt;
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/Pyslvs%E6%9E%B6%E6%A7%8B%E8%83%8C%E6%99%AF.png?raw=true" alt="alt text" width="600"/&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723103/0607coppeliasim%20%E6%B5%81%E7%A8%8B%E8%A1%A8.png?raw=true" alt="alt text" width="550"/&gt;
 
 &lt;!--&lt;/small&gt;
 Pyslvs架構背景
@@ -820,29 +843,6 @@ Pyslvs架構背景
 &lt;/section&gt;
 
 
-</t>
-<t tx="leo.20210607131426.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
-&lt;font color="black"&gt;
-    &lt;h2&gt;&lt;font color="black"&gt;Pyslvs-UI 平面多連桿機構套件之合成與應用&lt;/font&gt;&lt;/h2&gt;
-
-    &lt;br&gt;
-    &lt;small&gt;
-    &lt;p align=left&gt;組員:&lt;/p&gt;
-    &lt;br&gt;
-    &lt;figure&gt;
-   &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723102.jpg?raw=true" alt="alt text" width="130"/&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723103.jpg?raw=true" alt="alt text" width="130"/&gt; &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723145.png?raw=true" alt="alt text" width="130"/&gt; &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723153.jpg?raw=true" alt="alt text" width="130"/&gt; &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723245.jpg?raw=true" alt="alt text" width="130"/&gt;
-   &lt;br /&gt;
-   &lt;font size="3"&gt;
-   &lt;figcaption&gt; 40723102 林昱秀 &amp;emsp;&amp;ensp; 40723103 林晏瑩&amp;emsp;&amp;ensp; 40723145 劉光智&amp;emsp; &amp;ensp;40723153 吳佳穎&amp;emsp;&amp;ensp; 40723245 蔡育灃
-&lt;/font&gt;
-   &lt;/figcaption&gt;
-   &lt;/figure&gt;　
-
-
-    &lt;/small&gt;
-&lt;/font&gt;
-&lt;/section&gt;
-						
 </t>
 </tnodes>
 </leo_file>
