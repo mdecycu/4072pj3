@@ -18,7 +18,7 @@
 <v t="leo.20180902120523.6"><vh>body</vh>
 <v t="leo.20180902120523.7"><vh>reveal div</vh>
 <v t="leo.20180902120523.8"><vh>slides div</vh>
-<v t="leo.20180902120523.9"><vh>封面</vh></v>
+<v t="leo.20210607131426.1"><vh>封面</vh></v>
 <v t="leo.20210520133953.1"><vh>架構介紹</vh>
 <v t="leo.20210520133953.3"><vh>目錄</vh></v>
 <v t="leo.20210520134352.2"><vh>研究動機</vh></v>
@@ -257,25 +257,6 @@ Pyslvs-UI 平面多連桿機構套件之合成與應用
 @others
 &lt;/div&gt;
 
-</t>
-<t tx="leo.20180902120523.9">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
-&lt;font color="black"&gt;
-    &lt;h2&gt;&lt;font color="black"&gt;Pyslvs-UI 平面多連桿機構套件之合成與應用&lt;/font&gt;&lt;/h2&gt;
-
-    &lt;br&gt;
-    &lt;small&gt;
-    組員:&lt;br&gt;
-    40723102 林昱秀&lt;br&gt;
-    40723103 林晏瑩&lt;br&gt;
-    40723145 劉光智&lt;br&gt;
-    40723153 吳佳穎&lt;br&gt;
-    40723245 蔡育灃
-    &lt;/small&gt;
-&lt;/font&gt;
-&lt;/section&gt;
-
-
-						
 </t>
 <t tx="leo.20180902120538.1"></t>
 <t tx="leo.20180902120538.2">QTreeWidget {
@@ -644,7 +625,8 @@ Pyslvs架構背景
         - &lt;a h ref="https://github.com/hakimel/reveal.js"&gt;Source code &amp;amp; documentation&lt;/a&gt;
     &lt;/p&gt;
 &lt;/section&gt;
---&gt;</t>
+--&gt;
+</t>
 <t tx="leo.20210529235949.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
     &lt;p&gt;&lt;font color="black"&gt;登山車後避震機構評量&lt;/font&gt;&lt;/p&gt;
     
@@ -838,6 +820,29 @@ Pyslvs架構背景
 &lt;/section&gt;
 
 
+</t>
+<t tx="leo.20210607131426.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+&lt;font color="black"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;Pyslvs-UI 平面多連桿機構套件之合成與應用&lt;/font&gt;&lt;/h2&gt;
+
+    &lt;br&gt;
+    &lt;small&gt;
+    &lt;p align=left&gt;組員:&lt;/p&gt;
+    &lt;br&gt;
+    &lt;figure&gt;
+   &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723102.jpg?raw=true" alt="alt text" width="130"/&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723103.jpg?raw=true" alt="alt text" width="130"/&gt; &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723145.png?raw=true" alt="alt text" width="130"/&gt; &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723153.jpg?raw=true" alt="alt text" width="130"/&gt; &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723102/image/40723245.jpg?raw=true" alt="alt text" width="130"/&gt;
+   &lt;br /&gt;
+   &lt;font size="3"&gt;
+   &lt;figcaption&gt; 40723102 林昱秀 &amp;emsp;&amp;ensp; 40723103 林晏瑩&amp;emsp;&amp;ensp; 40723145 劉光智&amp;emsp; &amp;ensp;40723153 吳佳穎&amp;emsp;&amp;ensp; 40723245 蔡育灃
+&lt;/font&gt;
+   &lt;/figcaption&gt;
+   &lt;/figure&gt;　
+
+
+    &lt;/small&gt;
+&lt;/font&gt;
+&lt;/section&gt;
+						
 </t>
 </tnodes>
 </leo_file>
