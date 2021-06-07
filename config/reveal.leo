@@ -45,6 +45,7 @@
 <v t="leo.20210520141042.5"><vh>CoppeliaSim動態模擬軟體</vh></v>
 <v t="leo.20210602220015.1"><vh>XML樹狀圖</vh></v>
 <v t="leo.20210520141042.7"><vh>CoppeliaSim API</vh></v>
+<v t="leo.20210607194739.1"><vh>CoppeliaSim API-2</vh></v>
 </v>
 <v t="leo.20210520141843.1"><vh>結論</vh>
 <v t="leo.20210520141843.3"><vh>結論內容</vh></v>
@@ -379,18 +380,20 @@ vertical: body pane on the botton</t>
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520134138.2">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;研究流程&lt;/h2&gt;
-    &lt;p&gt;研究架構圖&lt;/p&gt;
+<t tx="leo.20210520134138.2">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;研究流程&lt;/font&gt;&lt;/h2&gt;
+    &lt;p&gt;&lt;font color="black"&gt;研究架構圖&lt;/font&gt;&lt;/p&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E6%9E%B6%E6%A7%8B%E5%9C%96.png?raw=true" alt="alt text" width="1000"/&gt;
 
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520134352.2">&lt;section data-background="#FFFFFF"&gt;
-    &lt;/h2&gt;研究動機
+<t tx="leo.20210520134352.2">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;研究動機&lt;/font&gt;&lt;/h2&gt;
+    &lt;font color="black"&gt;
     &lt;p&gt;
 隨著科技越來越發達網路上有許多機構分析的套件，但是鮮少有機構合成功能的套件，且大多無公開原始碼。而本專題所使用的套件Pyslvs-UI 為本研究室所開發的套件且有公開原始碼，因此本專題利用該套件合成及模擬功能並以一登山車後避震機構為例。
     &lt;/p&gt;
+    &lt;/font&gt;
 &lt;/section&gt;
 </t>
 <t tx="leo.20210520134443.1">&lt;section&gt;
@@ -398,8 +401,10 @@ vertical: body pane on the botton</t>
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520134443.3">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;平面多連桿機構套件比較&lt;/h2&gt;
+<t tx="leo.20210520134443.3">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;平面多連桿機構套件比較&lt;/font&gt;&lt;/h2&gt;
+    
+    &lt;font color="black"&gt;
      &lt;small&gt;
     與市面上已經有的套件進行比較
     &lt;/small&gt;
@@ -493,6 +498,7 @@ vertical: body pane on the botton</t>
         &lt;/tbody&gt;
     &lt;/table&gt;
 &lt;/small&gt;
+&lt;/font&gt;
 &lt;/section&gt;
 </t>
 <t tx="leo.20210520135544.1">&lt;section&gt;
@@ -541,16 +547,18 @@ vertical: body pane on the botton</t>
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520141042.3">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;3D零件自動生成&lt;/h2&gt;
+<t tx="leo.20210520141042.3">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;3D零件自動生成&lt;/font&gt;&lt;/h2&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/3D%E9%9B%B6%E4%BB%B6%E7%94%9F%E6%88%90.png?raw=true" alt="alt text" width="500" align="left"/&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/binary_link.PNG?raw=true" alt="alt text" width="300" align="right"/&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/ternary_link.PNG?raw=true" alt="alt text" width="300" align="right"/&gt;
     
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520141042.5">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;CoppeliaSim動態模擬軟體&lt;/h2&gt;
+<t tx="leo.20210520141042.5">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;CoppeliaSim動態模擬軟體&lt;/font&gt;&lt;/h2&gt;
+    
+    &lt;font color="black"&gt;
     &lt;ul&gt;&lt;small&gt;
         &lt;li&gt;使用XML檔來匯入零件&lt;/li&gt;
         &lt;li&gt;可減少手動匯入的程序&lt;/li&gt;
@@ -558,12 +566,15 @@ vertical: body pane on the botton</t>
     &lt;/small&gt;&lt;/ul&gt;
     &lt;br&gt;
     &lt;img src=" https://gitlab.com/mdecourse/4072pj3/-/raw/master/project3/40723245/CoppeliaSim_bike_suspension_partial_zoom.gif" alt="CoppeliaSim動態模擬軟體" width="600" height="325"&gt;
+    &lt;/font&gt;
 
 
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520141042.7">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;CoppeliaSim遠端API&lt;/h2&gt;
+<t tx="leo.20210520141042.7">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;CoppeliaSim遠端API&lt;/font&gt;&lt;/h2&gt;
+    
+    &lt;font color="black"&gt;
     &lt;p&gt;遠端API功能介紹&lt;/p&gt;
     &lt;ul&gt;&lt;small&gt;
         &lt;li&gt;模擬組合件之避震器在行進時的實際狀況&lt;/li&gt;
@@ -571,14 +582,9 @@ vertical: body pane on the botton</t>
     &lt;/small&gt;&lt;/ul&gt;
 
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/coppeliasim%20API.png?raw=true" alt="alt text" width="550"/&gt;
+    &lt;/font&gt;
+&lt;/section&gt;
 
-&lt;/section&gt;
-&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;CoppeliaSim遠端API&lt;/h2&gt;
-    &lt;p&gt;遠端API實際模擬操作&lt;/p&gt;
-    
-    &lt;img src=" https://github.com/mdecourse/4072pj3/blob/master/project3/40723103/0607CoppeliaSim%20Edu%20-%20bike.gif?raw=true" alt="CoppeliaSim遠端API" width="600" height="450"&gt;
-&lt;/section&gt;
 
 </t>
 <t tx="leo.20210520141843.1">&lt;section&gt;
@@ -594,8 +600,8 @@ vertical: body pane on the botton</t>
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20210520141843.5">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;Thank you for listening&lt;/h2&gt;
+<t tx="leo.20210520141843.5">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;Thank you for listening&lt;/font&gt;&lt;/h2&gt;
 &lt;/section&gt;
 </t>
 <t tx="leo.20210520142259.1">&lt;section data-markdown&gt;
@@ -616,8 +622,8 @@ vertical: body pane on the botton</t>
     &lt;h2&gt;&lt;font color="black"&gt;延伸應用&lt;/font&gt;&lt;/h2&gt;
 &lt;/section&gt;
 </t>
-<t tx="leo.20210527133817.1">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;Pyslvs架構&lt;/h2&gt;
+<t tx="leo.20210527133817.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;Pyslvs架構&lt;/font&gt;&lt;/h2&gt;
 &lt;!--URL連結圖片比較不會跑掉--&gt;
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/40723103/0607coppeliasim%20%E6%B5%81%E7%A8%8B%E8%A1%A8.png?raw=true" alt="alt text" width="550"/&gt;
 
@@ -776,11 +782,14 @@ Pyslvs架構背景
 
 
 </t>
-<t tx="leo.20210602220015.1">&lt;section data-background="#FFFFFF"&gt;
-    &lt;h2&gt;XML樹狀結構&lt;/h2&gt;
+<t tx="leo.20210602220015.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;XML樹狀結構&lt;/font&gt;&lt;/h2&gt;
+    
+    &lt;font color="black"&gt;
     &lt;p&gt;&lt;small&gt;XML有許多分支呈現樹狀結構狀&lt;/small&gt;&lt;/p&gt;
     &lt;p&gt;&lt;img src=" https://github.com/mdecourse/4072pj3/blob/master/project3/40723245/xml_tree_structure_joint.PNG?raw=true" alt="xml" width="480" height="370"align="left"/&gt;&lt;/p&gt;
         &lt;p&gt;&lt;img src=" https://github.com/mdecourse/4072pj3/blob/master/project3/40723245/xml_tree_structure_shape.PNG?raw=true" alt="xml" width="450"align="right"/&gt;&lt;/p&gt;
+    &lt;/font&gt;
 &lt;/section&gt;
 </t>
 <t tx="leo.20210606231441.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
@@ -842,6 +851,17 @@ Pyslvs架構背景
     &lt;/font&gt;
 &lt;/section&gt;
 
+
+</t>
+<t tx="leo.20210607194739.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
+    &lt;h2&gt;&lt;font color="black"&gt;CoppeliaSim遠端API&lt;/font&gt;&lt;/h2&gt;
+    
+    &lt;font color="black"&gt;
+    &lt;p&gt;遠端API實際模擬操作&lt;/p&gt;
+    
+    &lt;img src=" https://github.com/mdecourse/4072pj3/blob/master/project3/40723103/0607CoppeliaSim%20Edu%20-%20bike.gif?raw=true" alt="CoppeliaSim遠端API" width="600" height="450"&gt;
+    &lt;/font&gt;
+&lt;/section&gt;
 
 </t>
 </tnodes>
