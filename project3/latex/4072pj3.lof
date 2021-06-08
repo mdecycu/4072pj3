@@ -1,56 +1,56 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Linkage工作介面\relax }}{2}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces M.Sketch工作介面\relax }}{3}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces 平面連桿之運動學模擬\relax }}{4}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces 盤式凸輪機構之合成與分析\relax }}{4}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces WinMecC\relax }}{5}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces GIM合成介面\relax }}{5}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces 單軸懸架\relax }}{7}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces 連桿驅動之單樞軸懸架\relax }}{7}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces 高樞轉惰輪懸架\relax }}{8}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces 雙連桿懸掛\relax }}{8}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces 霍斯特鏈懸掛\relax }}{9}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Linkage工作介面\relax }}{2}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces M.Sketch工作介面\relax }}{3}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 平面連桿之運動學模擬\relax }}{4}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces 盤式凸輪機構之合成與分析\relax }}{4}{}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces WinMecC\relax }}{5}{}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces GIM合成介面\relax }}{5}{}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces 單軸懸架\relax }}{7}{}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces 連桿驅動之單樞軸懸架\relax }}{7}{}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces 高樞轉惰輪懸架\relax }}{8}{}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces 雙連桿懸掛\relax }}{8}{}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces 霍斯特鏈懸掛\relax }}{9}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Pyslvs-UI架構圖\relax }}{10}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Python-Solvespace流程圖\relax }}{11}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Sketch slove流程圖\relax }}{11}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces 實數編碼遺傳算法流程圖\relax }}{12}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces 螢火蟲算法流程圖\relax }}{13}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces 差分進化演算法流程圖\relax }}{13}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces PyQt圖示\relax }}{14}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Pyslvs架構流程圖\relax }}{15}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces 編譯成功畫面\relax }}{17}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces 曲柄滑塊機構\relax }}{18}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces 曲柄滑塊機構運用範圍\relax }}{18}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces 曲柄搖桿機構\relax }}{19}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces 曲柄搖桿機構範例\relax }}{19}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces 史蒂芬生機構作動\relax }}{20}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces 史蒂芬生機構範例\relax }}{20}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces 瓦特氏運動機構\relax }}{21}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces 瓦特氏運動機構飛機起落收放\relax }}{21}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces 雙球升降器\relax }}{22}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces 搖臂式發球機\relax }}{22}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Pyslvs-UI架構圖\relax }}{10}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Python-Solvespace流程圖\relax }}{11}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Sketch slove流程圖\relax }}{11}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 實數編碼遺傳算法流程圖\relax }}{12}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 螢火蟲算法流程圖\relax }}{13}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces 差分進化演算法流程圖\relax }}{13}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces PyQt圖示\relax }}{14}{}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Pyslvs架構流程圖\relax }}{15}{}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces 編譯成功畫面\relax }}{17}{}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces 曲柄滑塊機構\relax }}{18}{}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces 曲柄滑塊機構運用範圍\relax }}{18}{}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces 曲柄搖桿機構\relax }}{19}{}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces 曲柄搖桿機構範例\relax }}{19}{}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces 史蒂芬生機構作動\relax }}{20}{}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces 史蒂芬生機構範例\relax }}{20}{}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces 瓦特氏運動機構\relax }}{21}{}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces 瓦特氏運動機構飛機起落收放\relax }}{21}{}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces 雙球升降器\relax }}{22}{}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces 搖臂式發球機\relax }}{22}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 差分進化演算法流程圖\relax }}{23}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Anti-squat\relax }}{26}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Anti-rise\relax }}{26}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 避震器\relax }}{27}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 合成所得之機構\relax }}{28}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces 3D零件生成流程圖\relax }}{33}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces 二接頭連桿\relax }}{34}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces 三接頭連桿\relax }}{34}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces 二接頭連桿\relax }}{34}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 差分進化演算法流程圖\relax }}{23}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Anti-squat\relax }}{26}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Anti-rise\relax }}{26}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 避震器\relax }}{27}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 合成所得之機構\relax }}{28}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces 3D零件生成流程圖\relax }}{33}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces 二接頭連桿\relax }}{34}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces 三接頭連桿\relax }}{34}{}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces 二接頭連桿\relax }}{34}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces 新增圓柱體\relax }}{35}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces 設定圓柱體的參數\relax }}{35}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Object item shift\relax }}{36}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Object/item Translation/Position\relax }}{36}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Pyslvs架構流程圖\relax }}{36}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces 新增圓柱體\relax }}{35}{}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces 設定圓柱體的參數\relax }}{36}{}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Object item shift\relax }}{36}{}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Object/item Translation/Position\relax }}{36}{}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Pyslvs架構流程圖\relax }}{36}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces 後續研究\relax }}{40}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces 公式比較圖\relax }}{41}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces LaTex安裝流程圖\relax }}{42}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces 倉儲推送紀錄\relax }}{43}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces 後續研究\relax }}{40}{}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces 公式比較圖\relax }}{41}{}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces LaTex安裝流程圖\relax }}{42}{}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces 倉儲推送紀錄\relax }}{43}{}%
 \contentsfinish 
