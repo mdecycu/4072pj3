@@ -382,14 +382,14 @@ vertical: body pane on the botton</t>
 <t tx="leo.20210520134138.2">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
     &lt;h2&gt;&lt;font color="black"&gt;研究流程&lt;/font&gt;&lt;/h2&gt;
     &lt;p&gt;&lt;font color="black"&gt;研究架構圖&lt;/font&gt;&lt;/p&gt;
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E6%9E%B6%E6%A7%8B%E5%9C%96.png?raw=true" alt="alt text" width="1000"/&gt;
+    &lt;img src="https://raw.githubusercontent.com/mdecourse/4072pj3/master/project3/40723153/%E6%9E%B6%E6%A7%8B%E5%9C%96L.png" alt="alt text" width="1500"/&gt;
 
 &lt;/section&gt;
 </t>
 <t tx="leo.20210520134352.2">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
     &lt;h2&gt;&lt;font color="black"&gt;研究動機&lt;/font&gt;&lt;/h2&gt;
     &lt;font color="black"&gt;
-    &lt;p&gt;
+    &lt;p align="left"&gt;&amp;emsp;&amp;emsp;
 隨著科技越來越發達網路上有許多機構分析的套件，但是鮮少有機構合成功能的套件，且大多無公開原始碼。而本專題所使用的套件Pyslvs-UI 為本研究室所開發的套件且有公開原始碼，因此本專題利用該套件合成及模擬功能並以一登山車後避震機構為例。
     &lt;/p&gt;
     &lt;/font&gt;
