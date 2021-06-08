@@ -31,7 +31,6 @@
 </v>
 <v t="leo.20210520135544.1"><vh>機構合成</vh>
 <v t="leo.20210520140311.2"><vh>機構合成轉場</vh></v>
-<v t="leo.20210529235949.1"><vh>評量介紹</vh></v>
 <v t="leo.20210530000914.1"><vh>評量介紹-2</vh></v>
 <v t="leo.20210520135544.5"><vh>尺寸合成</vh></v>
 <v t="leo.20210606231441.1"><vh>尺寸合成結果</vh></v>
@@ -526,7 +525,7 @@ vertical: body pane on the botton</t>
     &lt;p&gt;後避震機構量化分析&lt;/p&gt;
     &lt;small&gt;以p4接頭為例在座標點往負x方向改變的Anti-squat評量趨勢&lt;/small&gt;
     
-    &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/mechanism_text.png?raw=true" alt="alt text" width="480" height="300" align="left"/&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/mechanism_point_position.png?raw=true" alt="alt text" width="480" height="300" align="left"/&gt;&lt;/p&gt;
         &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/p4_x-.png?raw=true" alt="alt text" width="450" align="right"/&gt;&lt;/p&gt;
 &lt;/font&gt;
         
@@ -656,66 +655,6 @@ Pyslvs架構背景
 &lt;/section&gt;
 --&gt;
 </t>
-<t tx="leo.20210529235949.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
-    &lt;p&gt;&lt;font color="black"&gt;登山車後避震機構評量&lt;/font&gt;&lt;/p&gt;
-    
-&lt;font color="black"&gt;
-&lt;small&gt;
-    &lt;table&gt;
-        &lt;thead&gt;
-            &lt;tr&gt;
-                &lt;th&gt;Anti-rise (%)&lt;/th&gt;
-                &lt;th&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;/th&gt;
-            &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-            &lt;tr&gt;
-                &lt;td&gt;&gt;100&lt;/td&gt;
-                &lt;td&gt;表示足以抵抗後升的力量，超過的會變成壓縮力&lt;/td&gt;
-                &lt;td&gt;&lt;/td&gt;
-                &lt;td&gt;&lt;/td&gt;
-                &lt;td&gt;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;=100&lt;/td&gt;
-                &lt;td&gt;表示完全抵抗了後升現象&lt;/td&gt;
-                &lt;td&gt;&lt;/td&gt;
-                &lt;td&gt;&lt;/td&gt;
-                &lt;td&gt;&lt;/td&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;td&gt;&amp;lt100&lt;/td&gt;
-                &lt;td&gt;表示僅部分後升力量被抵抗&lt;/td&gt;
-                &lt;td&gt;&lt;/td&gt;
-                &lt;td&gt;&lt;/td&gt;
-                &lt;td&gt;&lt;/td&gt;
-            &lt;/tr&gt;
-        &lt;/tbody&gt;
-    &lt;/table&gt;
-&lt;/small&gt;
-&lt;/font&gt;
-    
-    &lt;br&gt;&lt;br&gt;
-
-    &lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxQivsPMr_FyjgC3PrjcfkDc_rpENTo0E0g&amp;usqp=CAU alt="Anti-rise" width="380" height="250" align="left"&gt;
-    
-    &lt;img src="https://media1.tenor.com/images/50aeb46deae11e8db0067cf3de78db4a/tenor.gif?itemid=17730464 alt="Anti-rise" width="380" height="250"&gt;
-    
-    
-    
-    
-&lt;/section&gt;
-
-
-
-
-
-
-
-</t>
 <t tx="leo.20210530000914.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
     &lt;p&gt;&lt;font color="black"&gt;登山車後避震機構評量&lt;/font&gt;&lt;/p&gt;
 
@@ -832,7 +771,7 @@ Pyslvs架構背景
     
     &lt;br&gt;&lt;br&gt;
     
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/mechanism_text.png?raw=true" alt="alt text" width="450" height="280" align="left"&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/mechanism_point_position.png?raw=true" alt="alt text" width="450" height="280" align="left"&gt;
     
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/compare.png?raw=true alt="compare" width="380" height="250" align="right"&gt;
 &lt;/section&gt;
