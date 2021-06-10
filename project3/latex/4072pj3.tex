@@ -27,7 +27,7 @@ left=3truecm,right=2.5truecm]{geometry}
 		caption={Python code}, %設定capion
 		label={lst:example} %設定label
 		}
-\renewcommand{\baselinestretch}{1.0} %設定行距1.0
+\renewcommand{\baselinestretch}{1.025} %設定行距1.0
 
 \newcommand{\thirty}{\fontsize{30pt}\baselineskip\selectfont}%字體大小30pt
 \newcommand{\twentyfour}{\fontsize{24pt}{\baselineskip}\selectfont}%字體大小24pt
@@ -692,7 +692,7 @@ python setup.py install
         \chapter{登山車避震機構}
       \section{避震機構合成}
       \subsection{差分進化演算法}
-      \hspace*{\fill} \\
+ 
       \fourteen \quad {差分進化演算法\textrm{(Differential Evolution Algorithm)}概念是以向量為基礎，透過母體間的個體差異性，並以隨機搜尋方式將差異向量加上其中之個體中，並透過突變(Mutation)、重組(Recombination)、選擇(Selection)三個步驟進行演化，而透過迭代不斷地進行運算，並觀察個體是否能在搜尋解空間找到最佳解，該流程圖如圖\ref{fig_DEflow:scale}所示。}\\
 	        
       \begin{figure}[hbt!]
@@ -721,7 +721,6 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
       v_{n}^{g+1} = x_{r1n}^{g}+F(x_{r2n}^{g}- x_{r3n}^{g})
       \end{equation*}
       $v_{n}^{g+1}$: 合成向量
-      \hspace*{\fill} \\
 	  \hspace*{\fill} \\
 	  F: 權重因子
       }\\
@@ -1027,7 +1026,7 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
 	
 	\item{
 	\begin{flushleft}
-	\fourteen{程式流程:該流程主要由我們自行撰寫程式來完成，其中會利用pywin32模組找到在電腦中的CAD軟體並開啟接著將找到要修改的零件模型的路徑並開啟，再將前面設定完成的尺寸參數名稱帶入函式中並輸入想要的數值，修改完畢後再更新零件才能在CAD軟體中看到修改後的變化，最後進行儲存的動作}    	
+	\fourteen{程式流程:該流程主要由我們自行撰寫程式來完成，其中會利用pywin32模組找到在電腦中的CAD軟體並開啟接著將找到要修改的零件模型的路徑並開啟，再將前面設定完成的尺寸參數名稱帶入函式中並輸入想要的數值，修改完畢後再更新零件才能在CAD軟體中看到修改後的變化，最後進行儲存的動作。}    	
     \end{flushleft}
     }
     	
@@ -1202,7 +1201,7 @@ print('finish entire code')
 
         \chapter{未來研究建議}
         {\begin{flushleft}
-        \fourteen {本專題以已建立一流程從機構尺寸合成、機構量化評比、動態系統設定、運動模擬，後續可將原有的動態系統加入自行車重量、騎乘者的重量、各接觸點的反力......以建立更完整的動態系統，接著可利用有限元素法進行結構分析。}
+        \fourteen {本專題已建立一流程從機構尺寸合成、機構量化評比、動態系統設定、運動模擬，後續可將原有的動態系統加入自行車重量、騎乘者的重量、各接觸點的反力......以建立更完整的動態系統，接著可利用有限元素法進行結構分析。}
         \begin{figure}[hbt!]
         \centering
         \includegraphics[scale=0.6]{follow-up research.png}
