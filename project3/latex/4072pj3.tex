@@ -1040,10 +1040,10 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
 	\end{enumerate}
     	
     	\chapter{CoppeliaSim}
-      \section{XML匯入Coppeliasim}
-      \subsection{使用XML的目的}
+      \section{xml匯入Coppeliasim}
+      \subsection{使用xml的目的}
       {\begin{flushleft}
-      \quad \quad \fourteen {在CoppeliaSim4.1的版本可以使用XML檔自動匯入STL的零件檔，並且可以從中去設定物體的大小、重量、從屬關係....等等的參數都可以用XML檔來做調整，目的是打算在CoppeliaSim做到直接匯入就能直接完成所有的流程，不過因為技術上的問題，我們使用半自動的方式來完成腳踏車避震系統的動態模擬。}
+      \quad \quad \fourteen {在CoppeliaSim4.1的版本可以使用xml檔自動匯入stl的零件檔，並且可以從中去設定物體的大小、重量、從屬關係....等等的參數都可以用xml檔來做調整，目的是打算在CoppeliaSim做到直接匯入就能直接完成所有的流程，不過因為技術上的問題，我們使用半自動的方式來完成腳踏車避震系統的動態模擬。}
       \end{flushleft}
       \subsection{CoppeliaSim基本介紹}
       {\begin{flushleft}
@@ -1051,31 +1051,41 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
       \end{flushleft}
       \begin{itemize}
       \item 圓柱體(Cylinder)
-      \begin{enumerate}
-      \item{可以從CoppeliaSim上面的介面找到Add-->Primitive shape-->Sphere如圖5.1所示，會出現如圖5.2所示的視窗。}
+      	\begin{enumerate}
+      	\item{可以從CoppeliaSim上面的介面找到Add-->Primitive shape-->Sphere如圖\ref{fig_add_cylinder:scale}所示，會出現如圖\ref{fig_cylinder_window:scale}所示的視窗，調整完參數大小後，按下OK即可生成圓柱體如圖\ref{fig_add_cylinder_at_scene:scale}所示}
+      \item{點選如圖\ref{fig_Object_item_shift:scale}的Object/item shift圖示會出現如圖\ref{fig_Object_item_Translation_Position.png:scale}的視窗}\\\\\\\\
+
+
 
       \begin{figure}[hbt!]
         \centering
-        \includegraphics[scale=0.72]{add_cylinder.png} 
+        \includegraphics[scale=0.6]{add_cylinder.png} 
         \caption{新增圓柱體}
         \label{fig_add_cylinder:scale}
-        \end{figure}
+      \end{figure}
       
       \begin{figure}[hbt!]
         \centering
         \includegraphics[scale=0.76]{cylinder_window.png} 
         \caption{設定圓柱體的參數}
         \label{fig_cylinder_window:scale}
-        \end{figure}
+      \end{figure}
       
-      \item{點選如圖5.3的Object/item shift圖示會出現如圖5.4的視窗}
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.4]{add_cylinder_at_scene.png} 
+        \caption{成功創建圓柱體}
+        \label{fig_add_cylinder_at_scene:scale}
+      \end{figure}
+      \hspace*{\fill} \\
+      \hspace*{\fill} \\
       
       \begin{figure}[hbt!]
         \centering
         \includegraphics[scale=0.75]{Object_item_shift.png}
         \caption{Object item shift}
         \label{fig_Object_item_shift:scale}
-        \end{figure}
+      \end{figure}
         
       \begin{figure}[hbt!]
         \centering
@@ -1084,9 +1094,55 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
         \label{fig_Object_item_Translation_Position.png:scale}
         \end{figure}      
       
-      \end{enumerate}
+      	\end{enumerate}
       \end{itemize}
-
+      
+      \begin{itemize}
+      \item 旋轉接頭馬達(Revolute joint)
+      	\begin{enumerate}
+      	\item{可以從CoppeliaSim上面的介面找到Add-->Joint-->Revolute如圖\ref{fig_add_revolute_joint:scale}所示，點下去後即可創建旋轉接頭馬達如圖\ref{fig_Revolute_joint:scale}所示，之後可以進入joint的介面去調整其參數。}
+      		
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.75]{add_revolute_joint.png}
+        \caption{新增旋轉接頭馬達}
+        \label{fig_add_revolute_joint:scale}
+      \end{figure}
+      \hspace*{\fill} \\
+      \hspace*{\fill} \\
+      
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.4]{Revolute_joint.png}
+        \caption{成功創建旋轉接頭馬達}
+        \label{fig_Revolute_joint:scale}
+      \end{figure}
+      
+      	\end{enumerate}
+      \end{itemize}
+      
+      \subsection{xml樹狀結構}
+      {\begin{flushleft}
+      \quad \quad \fourteen {xml的結構像樹狀般，一層包著一層，由一個本體延伸出許多分支向外擴展，又被稱為xml樹。在CoppeliaSim裡是由許多tag(標籤)組合而成，不管是本體還是分支都是用tag來呈現，在CoppeliaSim裡最外層的tag就代表一個物件，可以從中去設定物件的參數，像是CoppeliaSim內建的物體、馬達或是從外部匯入的stl檔都可以使用xml去調整參數，複雜的從屬關係也可以從xml調整，如圖\ref{fig_xml_tree_structure_joint:scale}、\ref{fig_xml_tree_structure_shape:scale}所示。}
+      \end{flushleft}
+      \hspace*{\fill} \\
+      \hspace*{\fill} \\
+      \hspace*{\fill} \\
+      \hspace*{\fill} \\
+      
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.6]{xml_tree_structure_joint.PNG} 
+        \caption{馬達參數}
+        \label{fig_xml_tree_structure_joint:scale}
+      \end{figure}
+      
+      \begin{figure}[hbt!]
+        \centering
+        \includegraphics[scale=0.6]{xml_tree_structure_shape.PNG} 
+        \caption{物體參數}
+        \label{fig_xml_tree_structure_shape:scale}
+      \end{figure}
         
       \section{CoppeliaSim遠端API}
       \subsection{遠端API功能介紹}
