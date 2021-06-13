@@ -746,7 +746,7 @@ Pyslvs架構背景
     
     &lt;br&gt;
     
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/synthesis_result_bike2.png?raw=true" alt="alt text" width="420" height="290" align="left"&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/synthesis_result_bike2.png?raw=true" alt="alt text" width="450" height="290" align="left"&gt;
     
     &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/compare.png?raw=true" alt="compare" width="420" height="290" align="right"&gt;
     
