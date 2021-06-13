@@ -34,9 +34,6 @@
 <v t="leo.20210530000914.1"><vh>評量介紹-2</vh></v>
 <v t="leo.20210520135544.5"><vh>尺寸合成</vh></v>
 <v t="leo.20210606231441.1"><vh>尺寸合成結果</vh></v>
-<v t="leo.20210520135544.7"><vh>量化評比</vh></v>
-<v t="leo.20210530202854.1"><vh>量化評比表格x</vh></v>
-<v t="leo.20210606232629.1"><vh>量化評比表格y</vh></v>
 </v>
 <v t="leo.20210520141042.1"><vh>延伸應用</vh>
 <v t="leo.20210520150420.2"><vh>轉場</vh></v>
@@ -519,19 +516,6 @@ vertical: body pane on the botton</t>
     &lt;/font&gt;
 &lt;/section&gt;
 </t>
-<t tx="leo.20210520135544.7">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
-
-    &lt;font color="black"&gt;
-    &lt;p&gt;後避震機構量化分析&lt;/p&gt;
-    &lt;small&gt;以p4接頭為例在座標點往負x方向改變的Anti-squat評量趨勢&lt;/small&gt;
-    
-    &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/mechanism_point_position.png?raw=true" alt="alt text" width="480" height="300" align="left"/&gt;&lt;/p&gt;
-        &lt;p&gt;&lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/p4_x-.png?raw=true" alt="alt text" width="450" align="right"/&gt;&lt;/p&gt;
-&lt;/font&gt;
-        
-&lt;/section&gt;
-
-</t>
 <t tx="leo.20210520140311.2">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
     &lt;h2&gt;&lt;font color="black"&gt;機構合成&lt;/font&gt;&lt;/h2&gt;
 &lt;/section&gt;
@@ -712,15 +696,6 @@ Pyslvs架構背景
 
 
 </t>
-<t tx="leo.20210530202854.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
-    &lt;font color="black"&gt;
-    &lt;p&gt;後避震機構Anti-squat量化分析&lt;/p&gt;
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_x.png?raw=true" alt="alt text" width="750"/&gt;
-    &lt;/font&gt;
-&lt;/section&gt;
-
-
-</t>
 <t tx="leo.20210602220015.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
     &lt;h2&gt;&lt;font color="black"&gt;XML樹狀結構&lt;/font&gt;&lt;/h2&gt;
     
@@ -769,11 +744,13 @@ Pyslvs架構背景
 &lt;/small&gt;
 &lt;/font&gt;
     
-    &lt;br&gt;&lt;br&gt;
+    &lt;br&gt;
     
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/mechanism_point_position.png?raw=true" alt="alt text" width="450" height="280" align="left"&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/synthesis_result_bike2.png?raw=true" alt="alt text" width="420" height="290" align="left"&gt;
     
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/compare.png?raw=true alt="compare" width="380" height="250" align="right"&gt;
+    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/compare.png?raw=true" alt="compare" width="420" height="290" align="right"&gt;
+    
+  
 &lt;/section&gt;
 
 
@@ -782,13 +759,6 @@ Pyslvs架構背景
 
 
 
-</t>
-<t tx="leo.20210606232629.1">&lt;section data-background="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/background3.png?raw=true"&gt;
-    &lt;font color="black"&gt;
-    &lt;p&gt;後避震機構Anti-squat量化分析&lt;/p&gt;
-    &lt;img src="https://github.com/mdecourse/4072pj3/blob/master/project3/latex/%E9%87%8F%E5%8C%96%E8%A9%95%E6%AF%94_anti_squat_y.png?raw=true" alt="alt text" width="750"/&gt;
-    &lt;/font&gt;
-&lt;/section&gt;
 
 
 </t>
