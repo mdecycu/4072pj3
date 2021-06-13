@@ -768,7 +768,7 @@ Pyslvs架構背景
     &lt;font color="black"&gt;
     &lt;p&gt;遠端API實際模擬操作&lt;/p&gt;
     
-    &lt;img src=" https://github.com/mdecourse/4072pj3/blob/master/project3/40723103/0607CoppeliaSim%20Edu%20-%20bike.gif?raw=true" alt="CoppeliaSim遠端API" width="580" height="420"&gt;
+    &lt;img src=" https://github.com/mdecourse/4072pj3/blob/master/project3/40723103/0613coppeliasim%20gif.gif?raw=true" alt="CoppeliaSim遠端API" width="800" height="450"&gt;
     &lt;/font&gt;
 &lt;/section&gt;
 
