@@ -41,7 +41,7 @@
 \contentsline {section}{\numberline {4.2}避震機構評量}{27}{}%
 \contentsline {subsection}{\numberline {4.2.1}Anti-squat}{27}{}%
 \contentsline {subsection}{\numberline {4.2.2}Anti-rise}{28}{}%
-\contentsline {subsection}{\numberline {4.2.3}Leverage Ratio}{28}{}%
+\contentsline {subsection}{\numberline {4.2.3}Leverage Ratio}{29}{}%
 \contentsline {section}{\numberline {4.3}避震機構分析範例}{30}{}%
 \contentsline {subsection}{\numberline {4.3.1}3D零件自動生成}{35}{}%
 \contentsline {chapter}{\numberline {5}CoppeliaSim}{38}{}%
@@ -55,7 +55,7 @@
 \contentsline {chapter}{\numberline {7}未來研究建議}{47}{}%
 \contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {附錄}}{48}{}%
 \contentsline {section}{\fontsize {14pt}{\baselineskip }\selectfont {LaTex}}{48}{}%
-\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {參考文獻}}{52}{}%
-\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {誌謝}}{53}{}%
-\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {作者簡介}}{54}{}%
+\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {參考文獻}}{51}{}%
+\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {誌謝}}{52}{}%
+\contentsline {chapter}{\fontsize {14pt}{\baselineskip }\selectfont {作者簡介}}{53}{}%
 \contentsfinish 
