@@ -1,3 +1,9 @@
 # Byte-compiled
 __pycache__/
 
+*.aux
+*.lof
+*.log
+*.out
+*.toc
+
