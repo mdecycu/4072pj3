@@ -10,6 +10,14 @@
 <v t="leo.20151212173315.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="leo.20151212173315.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
+<v t="yen.20210616095023.1"><vh>@path ./../</vh>
+<v t="yen.20210616095031.1"><vh>@path .github/workflows</vh>
+<v t="yen.20210616095044.1"><vh>@edit main.yml</vh></v>
+</v>
+<v t="yen.20210616095103.1"><vh>@path project3/latex</vh>
+<v t="yen.20210616095120.1"><vh>@edit 4072pj3.tex</vh></v>
+</v>
+</v>
 <v t="leo.20171104213755.1"><vh>@button www server</vh></v>
 <v t="leo.20171105094839.1"><vh>@button ipv6 https server</vh></v>
 <v t="amd.20160106095324.1"><vh>@path ./../</vh>
@@ -296,5 +304,8 @@ Pyslvs-UI 套件介紹 Introduction of Pyslvs-UI
 未來研究建議 Suggestions for Future Research
 
 </t>
+<t tx="yen.20210616095023.1"></t>
+<t tx="yen.20210616095031.1"></t>
+<t tx="yen.20210616095103.1"></t>
 </tnodes>
 </leo_file>
