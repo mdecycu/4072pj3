@@ -1,7 +1,7 @@
 \documentclass[14pt,a4paper]{report}  %紙張設定
 \usepackage{xeCJK}%中文字體模組
-%\setCJKmainfont{標楷體} %設定中文字體
-\setCJKmainfont{MoeStandardKai.ttf}
+\setCJKmainfont{標楷體} %設定中文字體
+%\setCJKmainfont{MoeStandardKai.ttf}
 \usepackage{amsmath,amssymb}%數學公式、符號
 \usepackage{graphicx, subfig}%圖形
 \usepackage{graphicx, subfig}%圖片模組
@@ -197,6 +197,14 @@ left=3truecm,right=2.5truecm]{geometry}
 	  \\
 	\section{研究目的與方法}
       \quad \fourteen {首先建立一現有登山車避震機構，再針對不影響現有自行車車架的尺寸但對於避震能力有較大影響的接頭利用遺傳演算法求解最佳位置以得到最佳連桿尺寸，接著將上述所得到的接頭位置和連桿長度利用Inventor自動產生對應連桿尺寸的零件，後續利用xml格式匯入CoppeliaSim並利用CoppeliaSim API設定馬達讓該機構進行運動模擬。上述流程如下圖所示。}
+      \begin{figure}[hbt!]
+        \centerline{
+        \includegraphics[width=6in, height=3in]{架構圖.png}}
+        \caption{研究架構圖}
+        \label{架構圖:scale}
+      \end{figure}
+	     
+      
      
 %---文獻探討---%
     {\begin{center}
@@ -703,6 +711,8 @@ python setup.py install
         \label{fig_Double Ball Lifter1:scale} %此處的label相當於一個圖片的專屬標誌，目的是方便上下文的引用
     \end{figure}
     
+    
+%----------第四章 登山車避震機構----------%
         \chapter{登山車避震機構}
       \section{避震機構合成}
       \subsection{差分進化演算法}
@@ -879,123 +889,57 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
        
 %--------------避震機構分析範例--------------%	
 	   \newpage
-       \section{避震機構分析範例}
-       \fourteen {此小節會以Pivot Cycles Firebird 29(雙連桿懸架類型)作為分析範例利用4.1節所推導出的適應性函數配合4.2節介紹的評比標準進行討論以檢驗得到的尺寸優劣。下圖為Firebird在Pyslvs-UI中的機構簡圖。}
+       \section{避震機構合成結果}
+       \fourteen {此小節會以Pivot Cycles Firebird 29(雙連桿懸架類型)作為分析範例利用4.1節所推導出的適應性函數配合4.2節介紹的評比標準進行討論以檢驗得到的尺寸優劣。圖\ref{fig_Firebird_mechanism:scale}為Firebird在Pyslvs-UI中的機構簡圖。}
 		\begin{figure}[hbt!]
+		%----figure1----%
+		\includegraphics[scale=0.4]{synthesis_result_bike2.png}
+        \caption{Pivot Cycles Firebird 29}
+        \label{Pivot cycles firebird:scale}
+        %----figure1----%
+		%----figure2----%
         \centering
         \includegraphics[scale=0.4]{Firebird_mechanism.png}
-        \caption{合成所得之機構}
+        \caption{後避震機構簡圖}
         \label{fig_Firebird_mechanism:scale}
+        %----figure2----%
     	\end{figure}
     	
     	
-    	\fourteen {表$\ref{tab_as_x:scale}$至$\ref{tab_ar_y:scale}$為Anti-squat量化評比和Anti-rise量化評比各旋轉接頭的位置隨著正x或負x方向及正y或負y方向移動時得到的不同結果，其中實線為合成所得的懸轉接頭位置，而虛線則是座標點變化時Anti-squat及Anti-rise的量化趨勢。}
-    	
-		\begin{table}[htbp] %htbp代表表格浮動位置
-			\centering%表格居中
-			\caption{座標點變化之Anti-squat評比}%表:標題
-			\large%字體大小
-		\label{tab_as_x:scale}
-			%\renewcommand{\arraystretch}{1.0}
-			% \linespread{2.0}\selectfont
-			\begin{tabular}{|c|c|c|c|}
-			\hline
-			\centering
-			\diagbox[width=5em, height=3em]{接頭}{座標點}& 往正x方向 & 往負x方向\\
-			\hline
-			p0 		& $ \includegraphics[scale=0.35]{./data/as_p0_x+.png}$ & $\includegraphics[scale=0.35]{./data/as_p0_x-.png}$\\
-			\hline
-			p1 		& $ \includegraphics[scale=0.35]{./data/as_p1_x+.png}$ & $\includegraphics[scale=0.35]{./data/as_p1_x-.png}$\\
-			\hline
-			p2 		& $ \includegraphics[scale=0.35]{./data/as_p2_x+.png}$  & $\includegraphics[scale=0.35]{./data/as_p2_x-.png}$\\
-			\hline
-			p3 		& $ \includegraphics[scale=0.35]{./data/as_p3_x+.png}$  & $\includegraphics[scale=0.35]{./data/as_p3_x+.png}$\\
-			\hline
-			p4 		& $ \includegraphics[scale=0.35]{./data/as_p4_x+.png}$  & $\includegraphics[scale=0.35]{./data/as_p4_x-.png}$\\
-			\hline
-			\end{tabular}
-		\end{table}	 
-		
-		
-		\begin{table}[htbp] %htbp代表表格浮動位置
-			\centering%表格居中
-			\caption{座標點變化之Anti-squat評比(續)}%表:標題
-			\large%字體大小
-		\label{tab_as_y:scale}
-			\begin{tabular}{|c|c|c|c|}
-			\hline
-			\centering
-			\diagbox[width=6em, height=3em]{接頭}{座標點}& 往正y方向 & 往負y方向\\ 
-			\hline
-			p0 		& $ \includegraphics[scale=0.35]{./data/as_p0_y+.png}$ & $\includegraphics[scale=0.35]{./data/as_p0_y-.png}$\\
-			\hline
-			p1 		& $ \includegraphics[scale=0.35]{./data/as_p1_y+.png}$ & $\includegraphics[scale=0.35]{./data/as_p1_y-.png}$\\
-			\hline
-			p2 		& $ \includegraphics[scale=0.35]{./data/as_p2_y+.png}$  & $\includegraphics[scale=0.35]{./data/as_p2_y-.png}$\\
-			\hline
-			p3 		& $ \includegraphics[scale=0.35]{./data/as_p3_y+.png}$  & $\includegraphics[scale=0.35]{./data/as_p3_y-.png}$\\
-			\hline
-			p4 		& $ \includegraphics[scale=0.35]{./data/as_p4_y+.png}$  & $\includegraphics[scale=0.35]{./data/as_p4_y-.png}$\\
-			\hline
-			\end{tabular}
-		\end{table}
-		
-		
-		\begin{table}[htbp] %htbp代表表格浮動位置
-			\centering%表格居中
-			\caption{座標點變化之Anti-rise評比}%表:標題
-			\large%字體大小
-		\label{tab_ar_x:scale}
-			%\renewcommand{\arraystretch}{1.0}
-			% \linespread{2.0}\selectfont
-			\begin{tabular}{|c|c|c|c|}
-			\hline
-			\centering
-			\diagbox[width=5em, height=3em]{接頭}{座標點}& 往正x方向 & 往負x方向\\
-			\hline
-			p0 		& $ \includegraphics[scale=0.35]{./data/ar_p0_x+.png}$ & $\includegraphics[scale=0.35]{./data/ar_p0_x-.png}$\\
-			\hline
-			p1 		& $ \includegraphics[scale=0.35]{./data/ar_p1_x+.png}$ & $\includegraphics[scale=0.35]{./data/ar_p1_x-.png}$\\
-			\hline
-			p2 		& $ \includegraphics[scale=0.35]{./data/ar_p2_x+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p2_x-.png}$\\
-			\hline
-			p3 		& $ \includegraphics[scale=0.35]{./data/ar_p3_x+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p3_x+.png}$\\
-			\hline
-			p4 		& $ \includegraphics[scale=0.35]{./data/ar_p4_x-.png}$  & $\includegraphics[scale=0.35]{./data/ar_p4_x-.png}$\\
-			\hline
-			\end{tabular}
-		\end{table}
-		
-		
-		\begin{table}[htbp] %htbp代表表格浮動位置
-			\centering%表格居中
-			\caption{座標點變化之Anti-rise評比(續)}%表:標題
-			\large%字體大小
-		\label{tab_ar_y:scale}
-			%\renewcommand{\arraystretch}{1.0}
-			% \linespread{2.0}\selectfont
-			\begin{tabular}{|c|c|c|c|}
-			\hline
-			\centering
-			\diagbox[width=5em, height=3em]{接頭}{座標點}& 往正y方向 & 往負y方向\\
-			\hline
-			p0 		& $ \includegraphics[scale=0.35]{./data/ar_p0_y+.png}$ & $\includegraphics[scale=0.35]{./data/ar_p0_y-.png}$\\
-			\hline
-			p1 		& $ \includegraphics[scale=0.35]{./data/ar_p1_y+.png}$ & $\includegraphics[scale=0.35]{./data/ar_p1_y+.png}$\\
-			\hline
-			p2 		& $ \includegraphics[scale=0.35]{./data/ar_p2_y+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p2_y-.png}$\\
-			\hline
-			p3 		& $ \includegraphics[scale=0.35]{./data/ar_p3_y+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p3_y-.png}$\\
-			\hline
-			p4 		& $ \includegraphics[scale=0.35]{./data/ar_p4_y+.png}$  & $\includegraphics[scale=0.35]{./data/ar_p4_y-.png}$\\
-			\hline
-			\end{tabular}
-		\end{table} 	
-    	
-		
-%--------------3D零件自動生成--------------%	
     	\newpage
-    	\subsection{3D零件自動生成}
+    	\fourteen {表$\ref{tab_尺寸合成結果:scale}$為Pivot Cycles Firebird 29實際產品的後避震機構的旋轉接頭座標點位置和本團隊利用差分進化演算法及藉由避震機構評量推導的適應性函數求得的各旋轉接頭位置。\ref{compare:scale}為實際產品的尺寸和本團隊尺寸合成所得到的尺寸在Anti-squat評比中所得到的結果比較，由圖中可得到在一開始的時候會有些差距但是當後輪行程(wheel travel)到60mm的時候兩條曲線會慢慢貼合。}\\
+    	
+		\begin{table}[htbp] 
+		%htbp代表表格浮動位置
+			\centering%表格居中
+			\caption{尺寸合成結果}%表:標題
+			\large%字體大小
+			\label{tab_尺寸合成結果:scale}
+			\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\diagbox[width=9em] & p0 & p1 & p2 & p3 & p4 \\ 
+			\hline
+			實際產品位置 	&(0, 0)&(-41.5, -5.1)&(-397.5, -42.5)&(18, 112)&(-3, 155)\\
+			\hline
+			尺寸合成位置 	&(0, 0)&(-40, -40)&(-390, -40)&(20m 120)&(-5, 150)\\
+			\hline
+			\end{tabular}
+		\end{table}    	
+    	
+    	%----figure----%
+		\begin{figure}[hbt!]
+		\centering
+		\includegraphics[scale=0.8]{compare.png}
+        \caption{尺寸合成結果與實際產品比較}
+        \label{compare:scale}
+    	\end{figure} 
+    	%----figure----%   		
+    	
+
+%--------------第五章 延伸應用--------------%
+    \chapter{延伸應用}
+%--------------3D零件自動生成--------------%
+	\section{3D零件自動生成}
 	\begin{flushleft}
 	\fourteen {完成機構設計後接著就要進入CAD階段，不過在此階段常面臨突然遇到有其他的因素導致需要修改尺寸，此時若以手動將一個個零件一一重新修改會浪費許多時間，因此本專題建立一程式流程來進行參數化修改。}
 	\end{flushleft}
@@ -1043,17 +987,10 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
 	\fourteen{程式流程:該流程主要由我們自行撰寫程式來完成，其中會利用pywin32模組找到在電腦中的CAD軟體並開啟接著將找到要修改的零件模型的路徑並開啟，再將前面設定完成的尺寸參數名稱帶入函式中並輸入想要的數值，修改完畢後再更新零件才能在CAD軟體中看到修改後的變化，最後進行儲存的動作。}    	
     \end{flushleft}
     }
-    	
-    % %%%% test the subfigure syntax
-	%\begin{figure}
-	%\centering
-	%$\subfigure$[binary_link]{\label{fig:a} \includegraphics[width=60mm]{binary_link.png}}$
-	%$\subfigure$[ternary_link]{\label{fig:b} \includegraphics[width=60mm]{ternary_link.png}}$
-	%\caption{my caption}
-	%\end{figure}
-	\end{enumerate}
-    	
-    	\chapter{CoppeliaSim}
+	\end{enumerate}    
+    
+    
+    
       \section{xml匯入Coppeliasim}
       \subsection{使用xml的目的}
       {\begin{flushleft}
