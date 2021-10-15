@@ -505,6 +505,7 @@ left=3truecm,right=2.5truecm]{geometry}
         \caption{PyQt圖示}
         \label{fig:scale}
         \end{figure}
+     
       \section{Pyslvs-UI 編譯}
        \lstset{language=Python, %設定語言
 		basicstyle=\footnotesize, 
@@ -513,14 +514,13 @@ left=3truecm,right=2.5truecm]{geometry}
 		label={lst:example} %設定label
 		}
 
-
-\subsection{Pyslvs大綱架構}
+	\subsection{Pyslvs大綱架構}
 		\begin{itemize}
 		\item{採用系統動機}\\
 		\fourteen {透過Pyslvs為平面多連桿機構設計分析之開放源套件系統、結構合成(Structural Synthesis)、驗證機構運動模擬(Kinematic Simulation) 的特性以此進行尺寸合成 (Dimensional Synthesis)相關主題的專題研究計畫，加上Pyslvs為開放源系統、同時延續學長開發出來的系統深入探討其軟體結構背景。} 
+		\hspace*{\fill} \\
       	\item{Pyslvs架構背景}\\
 		\fourteen {主要由Cython程式語言進行編譯成機構合成延伸做演算並搭配SWIG(Simplified Wrapper and Interface Generator)解析器使Python可呼叫C語言動態連結庫以建構平面連桿機構模擬作業系統。藉由PyQt程式庫中的GUI (Graphical User Interface)圖形化使用者介面，以便程式編譯內容後轉換成GUI圖形化介面，使操作者利用點選頁面、按鍵建立機構模擬分析。}
-
 		
       	\begin{figure}[hbt!]
         \centering
@@ -991,7 +991,7 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
     
     
     
-      \section{xml匯入Coppeliasim}
+      \section{xml匯入CoppeliaSim}
       \subsection{使用xml的目的}
       {\begin{flushleft}
       \quad \quad \fourteen {在CoppeliaSim4.1的版本可以使用xml檔自動匯入stl的零件檔，並且可以從中去設定物體的大小、重量、從屬關係....等等的參數都可以用xml檔來做調整，目的是打算在CoppeliaSim做到直接匯入就能直接完成所有的流程，不過因為技術上的問題，我們使用半自動的方式來完成腳踏車避震系統的動態模擬。}
@@ -1105,7 +1105,7 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
       \begin{itemize}
      \item 遠端API程式架構
      \hspace*{\fill} \\
-     導入CoppeliaSim必要函式庫與其他數學模組以便操作正常，並利用Python語法建立架構使用類別區分各運作步驟，藉由呼叫函式使步驟接續作動，可實際查證組合件的運作過程，如圖\ref{fig_coppeliaSim API:scale}所示。
+     導入CoppeliaSim必要函式庫與其他數學模組以便操作正常，並利用Python語法建立架構使用類別區分各運作步驟，藉由呼叫函式使步驟接續作動，可實際查證組合件的運作過程，如圖\ref{fig_coppeliasim API:scale}所示。
      \end{itemize}
      
      \begin{figure}[hbt!]
@@ -1115,7 +1115,7 @@ i = 1,2,3,...D \ and \ n = 1,2,3,...N
         \label{fig_coppeliasim API:scale}
         \end{figure}
         
-     
+     \hspace*{\fill} \\
      \hspace*{\fill} \\
      \hspace*{\fill} \\
      \hspace*{\fill} \\
@@ -1177,8 +1177,7 @@ class  ConnectedremoteAPI:
         left_Code =sim.simxSetJointTargetVelocity(self.clientID,joint0 ,max1,sim.simx_opmode_oneshot_wait)#目標速度設定
         sim.simxSetIntegerParameter(self.clientID,sim.sim_intparam_speedmodifier,mag , sim.simx_opmode_oneshot_wait) #(調整速度倍率)
         print('finish velocity setting')
-        
-                 
+                    
 
     def settime(A):
          if max1>0 :
