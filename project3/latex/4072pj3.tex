@@ -73,16 +73,16 @@ left=3truecm,right=2.5truecm]{geometry}
     {\begin{center} %以下文字置中
         \twentyfour{國立虎尾科技大學}\\{機械設計工程系}\\{專題製作報告}\\
         \hspace*{\fill} \\
-        \bf \thirty {Pyslvs-UI 平面多連桿機構套件之合成與應用}\\
+        \bf \thirty {平面多連桿機構套件之合成與應用}\\
         {\renewcommand\baselinestretch{1.3}\selectfont %設定以下行距
-        \bf \thirty {Synthesis and Application of Pyslvs-UI Planar Multi-link Mechanism Package}\\}
+        \bf \thirty {Synthesis and Application of Planar Multi-link Mechanism Package}\\}
     \end{center}}
     \par} %結束指定行距
 
      {\renewcommand\baselinestretch{1.2}\selectfont %設定以下行距
     {\begin{textblock}{30}(1.45,1.1) %{寬度}(以左上角為原點之右移量,下移量)
     \noindent \eigh \makebox[6em][s]{指導教授}\enspace:\qquad
-    \eigh \makebox[8em][s]{李武鉦}\\ %\noindent指定首行不進行縮排
+    \eigh \makebox[8em][s]{李武鉦、嚴家銘}\\ %\noindent指定首行不進行縮排
     \eigh \makebox[6em][s]{班級}\enspace:\qquad
     \eigh \makebox[8em][s]{四設計三甲} \\ %\makebox為文本盒子
     \eigh \makebox[6em][s]{學生}\enspace:\qquad
@@ -113,7 +113,7 @@ left=3truecm,right=2.5truecm]{geometry}
          \par} %結束指定行距
     {\renewcommand\baselinestretch{1.2}\selectfont %設定以下行距
     {\begin{textblock}{30}(1.8,4)
-    \noindent \fourteen 專題製作題目\enspace :\quad Pyslvs-UI 平面多連桿機構套件之合成與應用
+    \noindent \fourteen 專題製作題目\enspace :\quad 平面多連桿機構套件之合成與應用
     \hspace*{\fill} \\
     \hspace*{\fill} \\
     \noindent \fourteen 經評量合格，特此證明
@@ -293,7 +293,7 @@ left=3truecm,right=2.5truecm]{geometry}
        
         \begin{figure}[H]
         \centering
-        \includegraphics[scale=0.8]{GIM.png} 
+        \includegraphics[scale=0.65]{GIM.png} 
         \caption{GIM合成介面} 
         \label{fig_GIM:scale}
     	\end{figure}
@@ -1222,7 +1222,8 @@ print('finish entire code')
         \label{fig:scale}
     	\end{figure}
         \end{flushleft}
-        
+  %---------------附錄-------------% 
+          
         \newpage
         \addcontentsline{toc}{chapter}{\fourteen{附錄}}
         \addcontentsline{toc}{section}{\fourteen{LaTex}}
@@ -1231,18 +1232,16 @@ print('finish entire code')
 	\end{center}
 	
 	 \begin{itemize} 
-        \item LaTex簡介：LaTex是一套由美國計算機科學家Leslie Lamport於20世紀80年代初期所開發的排版格式，相較於Word的「所見所得」編輯模式，純文字檔的模式更像在寫程式。LaTex當初建立的宗旨，就是要能完美排版文件，除了可編輯中文(簡、繁體)、英文，更可以畫圖、製表，甚至繪製五線譜和音符，基於其強大的對齊功能，LaTex已變成編輯各式文件的最佳排版方法。
+        \item LaTex 簡介：LaTex 是一套由美國計算機科學家 Leslie Lamport 於 20 世紀 80 年代初期所開發的排版格式，相較於 Word 的「所見所得」編輯模式，純文字檔的模式更像在寫程式。其最初創建的宗旨，就是要能完美排版文件，它除了可編輯中文 (簡、繁體)、英文， 更可以畫圖、製表，甚至繪製樂譜和符號，其強大的對齊功能與多樣化的工具，使LaTex 已變成編輯各式文件的最佳排版方法。 
 		\item 特點：\\
 		\end{itemize} 
 		
 		 \begin{enumerate}
-		 \item 相容性：LaTex是免費軟體並且具有極高的可移植性，因此它幾乎可以在任何硬體平台上運行。Word有分為舊版的.doc和新版的.docx，在平台支援上，也分為for Windows和for Mac。一份在Windows上完成的文件，拿到Mac開啟，原本設定好的表格和對齊的文字都會產生變動。相較LaTex，不管是將寫好的編碼在Mac或是Windows開啟並進行編譯，最後將能得到完全相同的文件內容。
-		 \item 文件排版：在處理多頁數文件時，若想將兩個不同小節互換，不僅中間每一小節在跨頁時設定好的分段都會受到影響，在進行整個區域的移動時，排版也會跑掉、長距離的圖片搬移也容易出現錯誤。且會因為快取內容即時預覽，導致向下滑動時會發生卡頓、程式短時間無法回應、甚至崩潰等情況，這些都是「前台編輯」容易發生的情況。\\
-LaTex屬於「後台編輯」，因此在還沒編譯前都不會產生PDF文件，所有圖片都是以路徑方式呈現，並透過參數來設定到時的排版位置、大小和效果，因此在全部都還是編碼的情況下，調整文字位置與圖片相較容易，編輯器也不會有需要及時預覽的問題。\\
-在撰寫英文文章時，LaTex也會自動幫你將每行文字數目做最佳分配，並在斷句時自動將單字從正確的音節位置分行。
-		\item 編輯數學式：數學是非常重要且強大的工具。從理論推導到各式分析等，都需要數學的幫助。因此如何以最佳方式呈現數學，就成了非常重要的問題。在Word排版時，大部分都是直接用MathType，在編輯器的面板上輸入數字、選擇希臘字母、上下標後，再將其插入Word，但不易更改字型且這些公式都不帶有書籤功能，因此在內文中無法自動引用這些方程式。\\
-在LaTex內進行編輯時我們只負責公式內容，公式在整份文件中的編號將會自動執行，且字型會以統一格式呈現。
+		 \item LaTex 是免費軟體並且具有極高的可移植性，它幾乎可以在任何硬體平台上運行。而Word 則是分為舊版的.doc 和新版的.docx，在平台支援上，也分為 for Windows 和 for Mac不同版本。一份在 Windows 上完成的文件，拿到 Mac 開啟，原本設定好的表格和對齊的文字都會產生變動，甚至是相同作業系統但不同電腦也會出現相同情況。相較於 LaTex，不管是將寫好的編碼在任何版本與作業系統上開啟並進行編譯，最後皆能得到完全相同的文件排版、內容。
+		 \item 文件排版：在處理多頁數文件時，若想將兩個不同小節互換，不僅中間每一小節在跨頁時設定好的分段都會受到影響，在進行區域頁面的移動時，排版也會跑掉、長距離的圖片搬移也容易出現錯誤。 且會因為需使快取內容能即時預覽，導致向下滑動時會發生卡頓、程式短時間無法回應、甚至崩潰等情況，這些都是「前台編輯」容易發生的情況。 而LaTex 屬於「後台編輯」，因此在還沒編譯前都不會產生 PDF 文件， 所有圖片都是以路徑方式呈現，並透過參數來設定到時的排版位置、大小和效果，因此在全部都還是編碼的情況下，調整 文字位置與圖片相較容易許多，編輯器也不會有需要及時預覽的問題。在撰寫英文文章時，LaTex 亦會自動幫你將每行文字數目做最佳分配，使其版面整潔俐落並在斷句時自動將單字從正確的音節位置分行，降低閱讀不順暢的情況。 
+		\item 編輯數學式：數學是非常重要且強大的工具。從理論推導到各式分析，從物理橫跨機械領域等，都需要數學的幫助。因此如何以最佳方式呈現數學，就成了非常重要的關鍵。在 Word 排版時，大部分都是直接用 MathType， 在編輯器的面板上輸入數字、選擇希臘字母、上下標後，再將其插入 Word，但不易更改字型且這些公式都不帶有書籤功能，因此在內文中無法自動引用這些方程式。 而在 LaTex 內進行編輯時我們只負責公式內容，公式在整份文件中的編號將會自動執行，且字型會以統一格式呈現。
 	
+		
 		\begin{figure}[H]
         \centering
         \includegraphics[scale=0.8]{公式比較圖.png} 
@@ -1250,10 +1249,9 @@ LaTex屬於「後台編輯」，因此在還沒編譯前都不會產生PDF文件
 		\label{fig_公式比較圖:scale}
     	\end{figure}
     	
-    	\item 巨集指令：
-在LaTex內有許多巨集套件(package)可供使用，這些套件能強化環境及增加許多讓使用者進行細部微調的功能，除了引用已有套件外，也可以編寫自己的巨集(macros)，為自己所需要的排版，量身訂做適合的套件。
-		 \end{enumerate}
-		 
+		\item 巨集指令：在 LaTex 內有許多巨集套件 (package) 可供使用，這些套件能強化環境及增加許多讓使用者進行細部微調的功能，除了引用已有套件外，也可以編寫自己的巨集 (macros)，為自己所需要的排版，量身訂做適合的套件。
+		\end{enumerate}    	
+    	
 		 \begin{table}[htbp] %htbp代表表格浮動位置
 			\centering%表格居中
 			\caption{文字編輯軟體比較表}%表:標題
@@ -1271,6 +1269,7 @@ LaTex屬於「後台編輯」，因此在還沒編譯前都不會產生PDF文件
 			\end{tabular}
 		\end{table}	
 		
+		 \hspace*{\fill} \\
 		 \begin{itemize}
 		 \item 安裝流程：綜上所述，我們經過比較與研究最終選用LaTex編輯系統，以MikTex(系統套件)搭配Texmaker(編譯器)作為編寫專題報告的工具。
 		 
@@ -1317,13 +1316,12 @@ LaTex屬於「後台編輯」，因此在還沒編譯前都不會產生PDF文件
 	\twenty \bf{誌謝}\\
 	\end{center}
 
-	\fourteen {德國詩人歌德曾說過：「我不應把我的作品全歸功於自己的智慧，還應歸功於我以外向我提供素材的成千成萬的事情和人物。」
-	\hspace*{\fill} \\
-	本研究之所以可以順利完成，首先感謝負責指導的專題教授嚴家銘老師，老師細心的指導與適時的提供建議下，確立整體研究架構與目標，更讓我們深入了解平面多連桿機構套件的理論，並在研究過程中培養我們解決問題以及獨立思考的能力。
-	\hspace*{\fill} \\
-	再來要感謝共同指導教授李武鉦老師，運用課堂所教導的Python程式語法，使我們在專題研究中，得以延伸學習與應用，跳脫僵化的思維去探討所要面對之問題。
-	\hspace*{\fill} \\
-	最後感謝學校提供完善的設備與資源，使本專題能夠圓滿完成；在專題研究上，系上提供軟硬體設備以及專題實驗室，讓我們可以利用空堂及課後時間製作與討論專題。}
+	\quad \fourteen {德國詩人歌德曾說過：「我不應把我的作品全歸功於自己的智慧，還應歸功於我以外向我提供素材的成千成萬的事情和人物。」}
+
+	\quad \fourteen {本研究之所以可以順利完成，首先感謝負責指導的專題教授嚴家銘老師，老師細心的指導與適時的提供建議下，確立整體研究架構與目標，更讓我們深入了解平面多連桿機構套件的理論，並在研究過程中培養我們解決問題以及獨立思考的能力。}
+
+	\quad \fourteen {再來要感謝共同指導教授李武鉦老師，運用課堂所教導的Python程式語法，使我們在專題研究中，得以延伸學習與應用，跳脫僵化的思維去探討所要面對之問題。}
+	\quad \fourteen {最後感謝學校提供完善的設備與資源，使本專題能夠圓滿完成；在專題研究上，系上提供軟硬體設備以及專題實驗室，讓我們可以利用空堂及課後時間製作與討論專題。}
 
     \newpage
  
@@ -1338,104 +1336,150 @@ LaTex屬於「後台編輯」，因此在還沒編譯前都不會產生PDF文件
 	\includegraphics[width=1.15in]{st1.jpg} 
 	\end{figure}
 	\end{textblock}}
-	{\renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
-	{\begin{textblock}{15}(3.5,0.7)%{寬度}(以左上角為原點之右移量,下移量)
+	{\renewcommand\baselinestretch{0.96}\selectfont %設定以下行距
+
+	{\begin{textblock}{15}(3.5,0.5)%{寬度}(以左上角為原點之右移量,下移量)
 	\noindent\fourteen \makebox[4em][s]{姓名}\enspace:\enspace
-    \fourteen \makebox[4em][s]{林昱秀}\\     \hspace*{\fill} \\
+    \fourteen \makebox[4em][s]{林昱秀}\\     
     \fourteen \makebox[4em][s]{學號}\enspace:\enspace
     \fourteen \makebox[4em][s]{40723102} \\ %\makebox為文本盒子
-    \hspace*{\fill} \\
     \fourteen \makebox[4em][s]{畢業學校}\enspace:\enspace
     \fourteen \makebox[9em][s]{國立虎尾科技大學}\\
     \fourteen \makebox[5em][s]{\quad}\enspace\enspace
     \fourteen \makebox[8em][s]{機械設計工程系}\\
-    \hspace*{\fill} \\
     \fourteen \makebox[4em][s]{經歷}\enspace:\enspace
     \end{textblock}}}
     \hspace*{\fill} \\
 
-	{\begin{textblock}{6}(0,2.3)
+	{\begin{textblock}{6}(0,1.8)
 	\begin{figure}
 	\includegraphics[width=1.15in]{st2.jpg} 
     \end{figure}
     \end{textblock}}
-    {\renewcommand\baselinestretch{0.99}
+    {\renewcommand\baselinestretch{0.96}
     \selectfont %設定以下行距
-    {\begin{textblock}{15}(3.5,2.5) %{寬度}(以左上角為原點之右移量,下移量)
+    {\begin{textblock}{15}(3.5,1.8) %{寬度}(以左上角為原點之右移量,下移量)
 \noindent\fourteen \makebox[4em][s]{姓名}\enspace:\enspace
 \fourteen \makebox[4em][s]{林晏瑩}\\ 
-\hspace*{\fill} \\
 \fourteen \makebox[4em][s]{學號}\enspace:\enspace
 \fourteen \makebox[4em][s]{40723103} \\ 
-\hspace*{\fill} \\
 \fourteen \makebox[4em][s]{畢業學校}\enspace:\enspace
 \fourteen \makebox[9em][s]{國立虎尾科技大學}\\
 \fourteen \makebox[5em][s]{\quad}\enspace\enspace
 \fourteen \makebox[8em][s]{機械設計工程系}\\
-\hspace*{\fill} \\
 \fourteen \makebox[4em][s]{經歷}\enspace:\enspace
     \end{textblock}}}
     \hspace*{\fill} \\
 
 
-    {\begin{textblock}{6}(0,4.1)
+    {\begin{textblock}{6}(0,3)
     \begin{figure}
         \includegraphics[width=1.15in]{st3.jpg} 
     \end{figure}
     \end{textblock}}
-    {\renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
-    {\begin{textblock}{15}(3.5,4.3) %{寬度}(以左上角為原點之右移量,下移量)
+    {\renewcommand\baselinestretch{0.96}\selectfont %設定以下行距
+    {\begin{textblock}{15}(3.5,3) %{寬度}(以左上角為原點之右移量,下移量)
 \noindent\fourteen \makebox[4em][s]{姓名}\enspace:\enspace%\noindent指定首行不進行縮排
 \fourteen \makebox[4em][s]{劉光智}\\ 
-\hspace*{\fill} \\
 \fourteen \makebox[4em][s]{學號}\enspace:\enspace
 \fourteen \makebox[4em][s]{40723145} \\ %\makebox為文本盒子
-\hspace*{\fill} \\
 \fourteen \makebox[4em][s]{畢業學校}\enspace:\enspace
 \fourteen \makebox[9em][s]{國立虎尾科技大學}\\
 \fourteen \makebox[5em][s]{\quad}\enspace\enspace
 \fourteen \makebox[8em][s]{機械設計工程系}\\
-\hspace*{\fill} \\
 \fourteen \makebox[4em][s]{經歷}\enspace:\enspace
     \end{textblock}}}
     \hspace*{\fill} \\
 
-    {\begin{textblock}{6}(0,5.9)
+    {\begin{textblock}{6}(0,4.25)
     \begin{figure}
         \includegraphics[width=1.15in]{st4.jpg} %{}內是圖片文件的相對路徑
     \end{figure}
     \end{textblock}}
-    {\renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
-    {\begin{textblock}{15}(3.5,6.1) %{寬度}(以左上角為原點之右移量,下移量)
+    {\renewcommand\baselinestretch{0.96}\selectfont %設定以下行距
+    {\begin{textblock}{15}(3.5,4.25) %{寬度}(以左上角為原點之右移量,下移量)
 \noindent\fourteen \makebox[4em][s]{姓名}\enspace:\enspace
-\fourteen \makebox[4em][s]{吳佳穎}\\ \hspace*{\fill} \\
+\fourteen \makebox[4em][s]{吳佳穎}\\ 
 \fourteen \makebox[4em][s]{學號}\enspace:\enspace
-\fourteen \makebox[4em][s]{40723153} \\ \hspace*{\fill} \\
+\fourteen \makebox[4em][s]{40723153} \\ 
 \fourteen \makebox[4em][s]{畢業學校}\enspace:\enspace
 \fourteen \makebox[9em][s]{國立虎尾科技大學}\\
 \fourteen \makebox[5em][s]{\quad}\enspace\enspace
 \fourteen \makebox[8em][s]{機械設計工程系}\\
-\hspace*{\fill} \\
 \fourteen \makebox[4em][s]{經歷}\enspace:\enspace
     \end{textblock}}}
     \hspace*{\fill} \\
 
-    {\begin{textblock}{6}(0,7.7)
+    {\begin{textblock}{6}(0,5.7)
     \begin{figure}
         \includegraphics[width=1.15in]{st5.jpg} %{}內是圖片文件的相對路徑
     \end{figure}
     \end{textblock}}
-    \renewcommand\baselinestretch{0.99}\selectfont %設定以下行距
-    {\begin{textblock}{15}(3.5,7.9) %{寬度}(以左上角為原點之右移量,下移量)
+    \renewcommand\baselinestretch{0.96}\selectfont %設定以下行距
+    {\begin{textblock}{15}(3.5,5.7) %{寬度}(以左上角為原點之右移量,下移量)
 	\noindent\fourteen \makebox[4em][s]{姓名}\enspace:\enspace
-	\fourteen \makebox[4em][s]{蔡育灃}\\ \hspace*{\fill} \\
+	\fourteen \makebox[4em][s]{蔡育灃}\\ 
 	\fourteen \makebox[4em][s]{學號}\enspace:\enspace
-	\fourteen \makebox[4em][s]{40723245} \\ \hspace*{\fill} \\
+	\fourteen \makebox[4em][s]{40723245} \\ 
 	\fourteen \makebox[4em][s]{畢業學校}\enspace:\enspace
 	\fourteen \makebox[9em][s]{國立虎尾科技大學}\\
 	\fourteen \makebox[5em][s]{\quad}\enspace\enspace
 	\fourteen \makebox[8em][s]{機械設計工程系}\\
-	\hspace*{\fill} \\
 	\fourteen \makebox[4em][s]{經歷}\enspace:\enspace
     \end{textblock}}
+    \newpage
+
+%=----------------書背----------------------=%
+\pagestyle{empty}%設定沒有頁眉和頁腳
+\begin{center}
+\fontsize{0.001pt}{1pt}\selectfont .\\
+\vspace{4em}
+\fontsize{24pt}{24pt}\selectfont 【11】 \\
+\fontsize{16pt}{16pt}\selectfont
+\vspace{0.5em}
+分\\
+類\\
+編\\
+號\\
+\vspace{0.5em}
+\hspace{-0.5em}：\\
+\vspace{0.5em}
+\rotatebox[origin=cc]{270}{\sectionef\LARGE
+\textbf{109-4-CAD-3006-1}}\\ %旋轉
+\vspace{1em}
+\rotatebox[origin=cc]{270}{\sectionef\LARGE
+\textbf{}}\\
+\vspace{0.5em}
+平\\
+面\\
+多\\
+連\\
+桿\\
+機\\
+構\\
+套\\
+件\\
+之\\
+合\\
+成\\
+與\\
+應\\
+用\\
+\vspace{1em}
+一\\
+一\\
+零\\
+級\\
+
+\end{center}
+
+%\newpage
+%\begin{landscape}  %橫式環境
+%\begin{center}
+%\fontsize{0.001pt}{1pt}\selectfont .
+%\vspace{70mm}
+%\rotatebox[origin=cc]{90}{\LARGE 【14】}\rotatebox[origin=cc]%{180}{\LARGE 1-2-APP-8765} %旋轉
+%\end{center}
+%\end{landscape}
+
 \end{document}
